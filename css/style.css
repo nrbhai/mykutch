@@ -926,3 +926,37 @@ nav.scrolled .nav-logo {
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 4rem; }
 }
+
+/* Development Banner */
+.dev-banner {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: rgba(194, 65, 12, 0.9);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(194, 65, 12, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    font-family: var(--font-heading);
+}
+
+.dev-banner::before {
+    content: '●';
+    margin-right: 8px;
+    color: #ffd700;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
