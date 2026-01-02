@@ -1,0 +1,12 @@
+.git/
+.gitignore
+wrangler.toml
+wrangler.jsonc
+check_all_images.py
+check_images.py
+generate_craft_pages.py
+generate_pages.py
+temp_fix_logo.py
+image_check_results.txt
+final_image_results.txt
+.wranglerignore
