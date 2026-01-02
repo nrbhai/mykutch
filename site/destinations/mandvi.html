@@ -1,82 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandvi — Where the Desert Meets the Sea | Kutch Travel Guide</title>
-    <meta name="description" content="Explore Mandvi — Where the Desert Meets the Sea. Complete travel guide with attractions, itinerary, how to reach, and local tips.">
-    
+    <meta name="description"
+        content="Explore Mandvi — Where the Desert Meets the Sea. Complete travel guide with attractions, itinerary, how to reach, and local tips.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
     <style>
-        .editorial-container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
-        .section-header { text-align: center; margin-bottom: 3rem; margin-top: 5rem; }
-        .section-header h2 { font-size: 2.5rem; color: var(--color-heading); margin-bottom: 1rem; position: relative; display: inline-block; }
-        .section-header h2::after { content: ''; display: block; width: 40px; height: 2px; background: var(--color-primary); margin: 1rem auto 0; }
-        .guide-section { margin-bottom: 4rem; }
-        .lead-text { font-size: 1.25rem; line-height: 1.8; color: #444; font-weight: 300; }
-        .lead-text::first-letter { font-size: 3.5rem; float: left; line-height: 0.8; margin-right: 0.5rem; margin-top: 0.2rem; font-family: var(--font-heading); color: var(--color-primary); }
-        .styled-list { list-style: none; padding: 0; display: grid; gap: 1.5rem; }
-        .styled-list li { position: relative; padding-left: 1.5rem; font-size: 1.1rem; color: var(--color-text); border-left: 2px solid rgba(0,0,0,0.1); padding-left: 1.5rem; transition: border-color 0.3s; }
-        .styled-list li:hover { border-left-color: var(--color-primary); }
-        .styled-list strong, .styled-list b { color: var(--color-heading); font-weight: 600; display: block; margin-bottom: 0.25rem; font-family: var(--font-heading); letter-spacing: 0.02em; }
-        .styled-list li:nth-child(4n+1) strong { color: #C2410C; }
-        .styled-list li:nth-child(4n+2) strong { color: #059669; }
-        .styled-list li:nth-child(4n+3) strong { color: #0891B2; }
-        .styled-list li:nth-child(4n+4) strong { color: #B45309; }
-        .styled-list li:nth-child(4n+4) strong { color: #B45309; }
-        
-        /* Heading Cycle */
-        .editorial-container section:nth-of-type(4n+1) h2, .editorial-container section:nth-of-type(4n+1) h3 { color: #C2410C !important; }
-        .editorial-container section:nth-of-type(4n+2) h2, .editorial-container section:nth-of-type(4n+2) h3 { color: #059669 !important; }
-        .editorial-container section:nth-of-type(4n+3) h2, .editorial-container section:nth-of-type(4n+3) h3 { color: #0891B2 !important; }
-        .editorial-container section:nth-of-type(4n+4) h2, .editorial-container section:nth-of-type(4n+4) h3 { color: #B45309 !important; }
-        .section-header h2::after { background: currentColor !important; opacity: 0.5; }
-        .day-header { color: inherit !important; }
-        .itinerary-box:nth-child(4n+1) .day-header { color: #C2410C !important; }
-        .itinerary-box:nth-child(4n+2) .day-header { color: #059669 !important; }
-        .itinerary-box:nth-child(4n+3) .day-header { color: #0891B2 !important; }
-        .itinerary-box:nth-child(4n+4) .day-header { color: #B45309 !important; }
+        .editorial-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
 
-        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
-        .attraction-card { background: white; border: 1px solid rgba(0,0,0,0.05); transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease; height: 100%; display: flex; flex-direction: column; }
-        .attraction-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.0); }
-        .attraction-img-wrapper { overflow: hidden; aspect-ratio: 4/3; }
-        .attraction-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s ease; }
-        .attraction-card:hover img { transform: scale(1.05); }
-        .attraction-content { padding: 2rem; flex-grow: 1; }
-        .attraction-title { font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 0.75rem; color: var(--color-heading); }
-        .attraction-desc { font-size: 0.95rem; opacity: 0.8; line-height: 1.6; }
-        .itinerary-box { border-left: 1px solid #ddd; margin-left: 1rem; padding: 0 0 2rem 2.5rem; position: relative; }
-        .itinerary-box:last-child { padding-bottom: 0; border: none; padding-left: 2.6rem; }
-        .timeline-dot { position: absolute; left: -6px; top: 0; width: 11px; height: 11px; background: var(--color-primary); border-radius: 50%; box-shadow: 0 0 0 4px white; }
-        .day-header { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--color-heading); margin-bottom: 0.5rem; display: block; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary); }
-        .editorial-note { background-color: #F9F9F9; border-top: 1px solid #000; border-bottom: 1px solid #000; padding: 3rem; margin: 2rem 0; text-align: center; }
-        .editorial-note h3 { font-family: var(--font-heading); text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.9rem; margin-bottom: 2rem; color: #888; }
-        .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: left; }
-        .tip-item h4 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--color-heading); }
-        .tip-item p { font-size: 0.9rem; color: #666; }
-        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
-        .gallery-grid img { width: 100%; aspect-ratio: 4/3; height: auto; object-fit: cover; transition: opacity 0.3s; }
-        .gallery-grid img:hover { opacity: 0.9; }
-        
-        .hero-text-bright { color: #ffffff; text-shadow: 0 4px 12px rgba(0,0,0,0.6); }
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            margin-top: 5rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--color-heading);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--color-primary);
+            margin: 1rem auto 0;
+        }
+
+        .guide-section {
+            margin-bottom: 4rem;
+        }
+
+        .lead-text {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: #444;
+            font-weight: 300;
+        }
+
+        .lead-text::first-letter {
+            font-size: 3.5rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.5rem;
+            margin-top: 0.2rem;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+        }
+
+        .styled-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .styled-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--color-text);
+            border-left: 2px solid rgba(0, 0, 0, 0.1);
+            padding-left: 1.5rem;
+            transition: border-color 0.3s;
+        }
+
+        .styled-list li:hover {
+            border-left-color: var(--color-primary);
+        }
+
+        .styled-list strong,
+        .styled-list b {
+            color: var(--color-heading);
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.25rem;
+            font-family: var(--font-heading);
+            letter-spacing: 0.02em;
+        }
+
+        .styled-list li:nth-child(4n+1) strong {
+            color: #C2410C;
+        }
+
+        .styled-list li:nth-child(4n+2) strong {
+            color: #059669;
+        }
+
+        .styled-list li:nth-child(4n+3) strong {
+            color: #0891B2;
+        }
+
+        .styled-list li:nth-child(4n+4) strong {
+            color: #B45309;
+        }
+
+        .styled-list li:nth-child(4n+4) strong {
+            color: #B45309;
+        }
+
+        /* Heading Cycle */
+        .editorial-container section:nth-of-type(4n+1) h2,
+        .editorial-container section:nth-of-type(4n+1) h3 {
+            color: #C2410C !important;
+        }
+
+        .editorial-container section:nth-of-type(4n+2) h2,
+        .editorial-container section:nth-of-type(4n+2) h3 {
+            color: #059669 !important;
+        }
+
+        .editorial-container section:nth-of-type(4n+3) h2,
+        .editorial-container section:nth-of-type(4n+3) h3 {
+            color: #0891B2 !important;
+        }
+
+        .editorial-container section:nth-of-type(4n+4) h2,
+        .editorial-container section:nth-of-type(4n+4) h3 {
+            color: #B45309 !important;
+        }
+
+        .section-header h2::after {
+            background: currentColor !important;
+            opacity: 0.5;
+        }
+
+        .day-header {
+            color: inherit !important;
+        }
+
+        .itinerary-box:nth-child(4n+1) .day-header {
+            color: #C2410C !important;
+        }
+
+        .itinerary-box:nth-child(4n+2) .day-header {
+            color: #059669 !important;
+        }
+
+        .itinerary-box:nth-child(4n+3) .day-header {
+            color: #0891B2 !important;
+        }
+
+        .itinerary-box:nth-child(4n+4) .day-header {
+            color: #B45309 !important;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .attraction-card {
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+            border-color: rgba(0, 0, 0, 0.0);
+        }
+
+        .attraction-img-wrapper {
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .attraction-content {
+            padding: 2rem;
+            flex-grow: 1;
+        }
+
+        .attraction-title {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-heading);
+        }
+
+        .attraction-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .itinerary-box {
+            border-left: 1px solid #ddd;
+            margin-left: 1rem;
+            padding: 0 0 2rem 2.5rem;
+            position: relative;
+        }
+
+        .itinerary-box:last-child {
+            padding-bottom: 0;
+            border: none;
+            padding-left: 2.6rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 11px;
+            height: 11px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px white;
+        }
+
+        .day-header {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--color-heading);
+            margin-bottom: 0.5rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-primary);
+        }
+
+        .editorial-note {
+            background-color: #F9F9F9;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 3rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .editorial-note h3 {
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            color: #888;
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .tip-item h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-heading);
+        }
+
+        .tip-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            height: auto;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            opacity: 0.9;
+        }
+
+        .hero-text-bright {
+            color: #ffffff;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
 
         @media (max-width: 768px) {
-            .section-header h2 { font-size: 2rem; }
-            .lead-text { font-size: 1.1rem; }
-            .editorial-container { padding: 0 1rem; }
-            .editorial-note { padding: 2rem 1rem; }
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .lead-text {
+                font-size: 1.1rem;
+            }
+
+            .editorial-container {
+                padding: 0 1rem;
+            }
+
+            .editorial-note {
+                padding: 2rem 1rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <nav>
         <div class="container nav-content">
-            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="MyKutch" class="nav-logo"></a>
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="MyKutch"
+                    class="nav-logo"></a>
             <button class="mobile-toggle">☰</button>
             <div class="nav-links">
                 <a href="../index.html">Home</a>
@@ -91,10 +353,13 @@
         </div>
     </nav>
 
-    <header class="destination-hero" style="background-image: url('../assets/images/mandvi/mandvi1.webp'); justify-content: center; text-align: center;">
+    <header class="destination-hero"
+        style="background-image: url('../assets/images/mandvi/mandvi1.webp'); justify-content: center; text-align: center;">
         <div class="hero-content-inner reveal">
             <h1 class="hero-text-bright">Mandvi</h1>
-            <p class="hero-text-bright" style="font-size: 1.2rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 500;">Where the Desert Meets the Sea</p>
+            <p class="hero-text-bright"
+                style="font-size: 1.2rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 500;">Where the
+                Desert Meets the Sea</p>
         </div>
     </header>
 
@@ -102,71 +367,125 @@
         <article class="editorial-container">
             <section class="guide-section reveal" style="margin-top: 4rem;">
                 <p class="lead-text">
-                    Mandvi is the only premier beach destination in Kutch, offering a perfect relaxed break from the arid desert landscape. Once a major port for the spice trade, it is now a popular day-trip and weekend getaway from Bhuj (1 hour away). Known for its pristine beaches, the royal Vijay Vilas Palace, and a 400-year-old shipbuilding tradition, Mandvi is where history meets the Arabian Sea. A typical visit lasts 1 to 2 days, making it ideal for unwinding after exploring the White Rann.
+                    Mandvi is the only premier beach destination in Kutch, offering a perfect relaxed break from the
+                    arid desert landscape. Once a major port for the spice trade, it is now a popular day-trip and
+                    weekend getaway from Bhuj (1 hour away). Known for its pristine beaches, the royal Vijay Vilas
+                    Palace, and a 400-year-old shipbuilding tradition, Mandvi is where history meets the Arabian Sea. A
+                    typical visit lasts 1 to 2 days, making it ideal for unwinding after exploring the White Rann.
                 </p>
             </section>
-            
+
             <div class="grid-2 reveal">
                 <section class="guide-section">
-                    <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;"><h2>Who Should Visit</h2></div>
-                    <ul class="styled-list"><li><strong>Families</strong>: Safe beaches with camel rides and water sports keep kids entertained.</li><li><strong>Couples</strong>: Romantic sunsets at the Wind Farm Beach and royal palace vibes.</li><li><strong>History Buffs</strong>: The living heritage of the Dhow shipbuilding yard is fascinating.</li><li><strong>Relaxed Travelers</strong>: Anyone looking to escape the desert heat and chill by the ocean.</li></ul>
+                    <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;">
+                        <h2>Who Should Visit</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Families</strong>: Safe beaches with camel rides and water sports keep kids
+                            entertained.</li>
+                        <li><strong>Couples</strong>: Romantic sunsets at the Wind Farm Beach and royal palace vibes.
+                        </li>
+                        <li><strong>History Buffs</strong>: The living heritage of the Dhow shipbuilding yard is
+                            fascinating.</li>
+                        <li><strong>Relaxed Travelers</strong>: Anyone looking to escape the desert heat and chill by
+                            the ocean.</li>
+                    </ul>
                 </section>
                 <section class="guide-section">
-                    <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;"><h2>How to Reach</h2></div>
-                    <ul class="styled-list"><li><strong>From Bhuj (Most Popular)</strong>: 58km | 1 hr 15 mins. The road is excellent (NH 341). State buses run every 30 mins, but a private taxi (₹1500-2000 return) allows you to stop at places en route.</li><li><strong>From Gandhidham</strong>: 100km | 2 hours. Good for those arriving by train to Gandhidham.</li><li><strong>By Air/Train</strong>: Nearest airport and railway station are in Bhuj. No direct flights/trains to Mandvi.</li><li><strong>Local Transport</strong>: Auto-rickshaws are the best way to get around Mandvi town (₹50-100 per ride).</li></ul>
+                    <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;">
+                        <h2>How to Reach</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>From Bhuj (Most Popular)</strong>: 58km | 1 hr 15 mins. The road is excellent (NH
+                            341). State buses run every 30 mins, but a private taxi (₹1500-2000 return) allows you to
+                            stop at places en route.</li>
+                        <li><strong>From Gandhidham</strong>: 100km | 2 hours. Good for those arriving by train to
+                            Gandhidham.</li>
+                        <li><strong>By Air/Train</strong>: Nearest airport and railway station are in Bhuj. No direct
+                            flights/trains to Mandvi.</li>
+                        <li><strong>Local Transport</strong>: Auto-rickshaws are the best way to get around Mandvi town
+                            (₹50-100 per ride).</li>
+                    </ul>
                 </section>
             </div>
 
-            <section class="guide-section reveal"><div class="section-header"><h2>Landmarks & Heritage</h2><p style="opacity: 0.6; margin-top: 0.5rem;">The defining monuments</p></div><div class="grid-2">
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2>Landmarks & Heritage</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">The defining monuments</p>
+                </div>
+                <div class="grid-2">
                     <div class="attraction-card">
                         <div class="attraction-img-wrapper">
-                             <img src="../assets/images/mandvi/mandvi1.webp" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'" alt="Vijay Vilas Palace">
+                            <img src="../assets/images/mandvi/mandvi1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Vijay Vilas Palace">
                         </div>
                         <div class="attraction-content">
                             <h3 class="attraction-title">Vijay Vilas Palace</h3>
-                            <p class="attraction-desc">(1-2 Hours) Visit in the afternoon (3 PM - 5 PM) to see the royal grandeur. Famous for 'Hum Dil De Chuke Sanam' shoot. Entry: ₹50. Phone cameras allowed.</p>
+                            <p class="attraction-desc">(1-2 Hours) Visit in the afternoon (3 PM - 5 PM) to see the royal
+                                grandeur. Famous for 'Hum Dil De Chuke Sanam' shoot. Entry: ₹50. Phone cameras allowed.
+                            </p>
                         </div>
                     </div>
                     <div class="attraction-card">
                         <div class="attraction-img-wrapper">
-                             <img src="../assets/images/mandvi/mandvi1.webp" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'" alt="Mandvi Wind Farm Beach">
+                            <img src="../assets/images/mandvi/mandvi1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Mandvi Wind Farm Beach">
                         </div>
                         <div class="attraction-content">
                             <h3 class="attraction-title">Mandvi Wind Farm Beach</h3>
-                            <p class="attraction-desc">(Evening) The best sunset point. Enjoy camel rides, horse rides, and street food. It gets crowded on weekends, so go a bit further down for peace.</p>
+                            <p class="attraction-desc">(Evening) The best sunset point. Enjoy camel rides, horse rides,
+                                and street food. It gets crowded on weekends, so go a bit further down for peace.</p>
                         </div>
                     </div>
                     <div class="attraction-card">
                         <div class="attraction-img-wrapper">
-                             <img src="../assets/images/mandvi/mandvi1.webp" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'" alt="Shipbuilding Yard">
+                            <img src="../assets/images/mandvi/mandvi1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Shipbuilding Yard">
                         </div>
                         <div class="attraction-content">
                             <h3 class="attraction-title">Shipbuilding Yard</h3>
-                            <p class="attraction-desc">(30-45 Mins) Visit in the morning. Watch craftsmen build massive wooden ships by hand on the banks of Rukmavati River. Free to watch from the bridge.</p>
+                            <p class="attraction-desc">(30-45 Mins) Visit in the morning. Watch craftsmen build massive
+                                wooden ships by hand on the banks of Rukmavati River. Free to watch from the bridge.</p>
                         </div>
                     </div>
                     <div class="attraction-card">
                         <div class="attraction-img-wrapper">
-                             <img src="../assets/images/mandvi/mandvi1.webp" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'" alt="72 Jinalaya">
+                            <img src="../assets/images/mandvi/mandvi1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="72 Jinalaya">
                         </div>
                         <div class="attraction-content">
                             <h3 class="attraction-title">72 Jinalaya</h3>
-                            <p class="attraction-desc">(45 Mins) A stunning Jain temple complex 10km from town. Best visited on the way to/from Mundra. Peaceful and photogenic architecture.</p>
+                            <p class="attraction-desc">(45 Mins) A stunning Jain temple complex 10km from town. Best
+                                visited on the way to/from Mundra. Peaceful and photogenic architecture.</p>
                         </div>
                     </div>
                     <div class="attraction-card">
                         <div class="attraction-img-wrapper">
-                             <img src="../assets/images/mandvi/mandvi1.webp" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'" alt="Shyamji Krishna Varma Memorial">
+                            <img src="../assets/images/mandvi/mandvi1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Shyamji Krishna Varma Memorial">
                         </div>
                         <div class="attraction-content">
                             <h3 class="attraction-title">Shyamji Krishna Varma Memorial</h3>
-                            <p class="attraction-desc">(1 Hour) Interactive museum dedicated to the freedom fighter. Great for history lovers. Closed on Thursdays.</p>
+                            <p class="attraction-desc">(1 Hour) Interactive museum dedicated to the freedom fighter.
+                                Great for history lovers. Closed on Thursdays.</p>
                         </div>
-                    </div></div></section>
-            <section class="guide-section reveal"><div class="editorial-note"><h3>Curated Local Advice</h3><div class="tips-grid">
+                    </div>
+                </div>
+            </section>
+            <section class="guide-section reveal">
+                <div class="editorial-note">
+                    <h3>Curated Local Advice</h3>
+                    <div class="tips-grid">
                         <div class="tip-item">
                             <h4>Timing</h4>
-                            <p>Don't visit the beach at noon (12-3 PM); it's too hot. Mornings and evenings are perfect.</p>
+                            <p>Don't visit the beach at noon (12-3 PM); it's too hot. Mornings and evenings are perfect.
+                            </p>
                         </div>
                         <div class="tip-item">
                             <h4>Palace</h4>
@@ -174,135 +493,204 @@
                         </div>
                         <div class="tip-item">
                             <h4>Swimming</h4>
-                            <p>Mandvi beaches are generally safe, but avoid swimming near the rocky patches. The wind farm beach has strong breezes.</p>
+                            <p>Mandvi beaches are generally safe, but avoid swimming near the rocky patches. The wind
+                                farm beach has strong breezes.</p>
                         </div>
                         <div class="tip-item">
                             <h4>Food</h4>
-                            <p>Don't leave without eating Dabeli at a local street stall (e.g., Joshi's) - it tastes different here!</p>
-                        </div></div></div></section>
-            <section class="guide-section reveal"><div class="section-header"><h2>Suggested Itinerary</h2></div><div style="max-width: 600px; margin: 0 auto;">
-                     <div class="itinerary-box">
+                            <p>Don't leave without eating Dabeli at a local street stall (e.g., Joshi's) - it tastes
+                                different here!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2>Suggested Itinerary</h2>
+                </div>
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <div class="itinerary-box">
                         <div class="timeline-dot"></div>
                         <span class="day-header">10</span>
                         <p>00 AM: Arrive in Mandvi. Visit the Shipbuilding Yard.</p>
                     </div>
-                     <div class="itinerary-box">
+                    <div class="itinerary-box">
                         <div class="timeline-dot"></div>
                         <span class="day-header">11</span>
                         <p>30 AM: Explore Shyamji Krishna Varma Memorial.</p>
                     </div>
-                     <div class="itinerary-box">
+                    <div class="itinerary-box">
                         <div class="timeline-dot"></div>
                         <span class="day-header">01</span>
                         <p>00 PM: Authentic Gujarati Thali lunch at Osho or a local dining hall.</p>
                     </div>
-                     <div class="itinerary-box">
+                    <div class="itinerary-box">
                         <div class="timeline-dot"></div>
                         <span class="day-header">03</span>
                         <p>30 PM: Head to Vijay Vilas Palace. Explore the interiors and royal grounds.</p>
                     </div>
-                     <div class="itinerary-box">
+                    <div class="itinerary-box">
                         <div class="timeline-dot"></div>
                         <span class="day-header">05</span>
                         <p>30 PM: Reach Wind Farm Beach. Enjoy water sports, sunset, and Dabeli for a snack.</p>
                     </div>
-                     <div class="itinerary-box">
+                    <div class="itinerary-box">
                         <div class="timeline-dot"></div>
                         <span class="day-header">07</span>
                         <p>30 PM: Return to Bhuj.</p>
-                    </div></div></section>
+                    </div>
+                </div>
+            </section>
 
             <section class="guide-section reveal">
                 <div class="grid-2">
                     <div>
-                         <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-family: var(--font-heading); text-decoration: underline;">Shopping & Bazaars</h3>
-                         <ul class="styled-list"><li><strong>Main Market (Bazaar Road)</strong>: The heart of Mandvi's shopping. Find authentic Bandhani textiles, local handicrafts, and traditional Kutchi embroidery at lower prices than Bhuj.</li><li><strong>Ship Building Area Market</strong>: Small shops selling nautical items, ship models, and maritime souvenirs. Unique to Mandvi's shipbuilding heritage.</li><li><strong>Beach Road Stalls</strong>: Evening market near Wind Farm Beach selling local snacks, Dabeli, beachwear, and colorful kites.</li><li><strong>Textile Shops</strong>: Several family-run shops specializing in Bandhani and block-printed fabrics. Ask for factory-direct prices.</li><li><strong>Handicraft Emporiums</strong>: Government-certified stores near the palace offering authentic Kutchi crafts with fixed prices.</li></ul>
+                        <h3
+                            style="font-size: 1.5rem; margin-bottom: 1.5rem; font-family: var(--font-heading); text-decoration: underline;">
+                            Shopping & Bazaars</h3>
+                        <ul class="styled-list">
+                            <li><strong>Main Market (Bazaar Road)</strong>: The heart of Mandvi's shopping. Find
+                                authentic Bandhani textiles, local handicrafts, and traditional Kutchi embroidery at
+                                lower prices than Bhuj.</li>
+                            <li><strong>Ship Building Area Market</strong>: Small shops selling nautical items, ship
+                                models, and maritime souvenirs. Unique to Mandvi's shipbuilding heritage.</li>
+                            <li><strong>Beach Road Stalls</strong>: Evening market near Wind Farm Beach selling local
+                                snacks, Dabeli, beachwear, and colorful kites.</li>
+                            <li><strong>Textile Shops</strong>: Several family-run shops specializing in Bandhani and
+                                block-printed fabrics. Ask for factory-direct prices.</li>
+                            <li><strong>Handicraft Emporiums</strong>: Government-certified stores near the palace
+                                offering authentic Kutchi crafts with fixed prices.</li>
+                        </ul>
                     </div>
                     <div>
-                         <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-family: var(--font-heading); text-decoration: underline;">Local Eats</h3>
-                         <ul class="styled-list"><li><strong>Dabeli</strong>: Mandvi is the BIRTHPLACE of Dabeli. Try the authentic version which is less sweet and more spicy than elsewhere.</li><li><strong>Kutchi Thali</strong>: Unlimited vegetarian meal. Try 'Rotla' (millet bread) with 'Olo' (roasted eggplant).</li><li><strong>Bandhani</strong>: Mandvi has a small but authentic Bandhani manufacturing community. Prices here can be lower than Bhuj.</li></ul>
+                        <h3
+                            style="font-size: 1.5rem; margin-bottom: 1.5rem; font-family: var(--font-heading); text-decoration: underline;">
+                            Local Eats</h3>
+                        <ul class="styled-list">
+                            <li><strong>Dabeli</strong>: Mandvi is the BIRTHPLACE of Dabeli. Try the authentic version
+                                which is less sweet and more spicy than elsewhere.</li>
+                            <li><strong>Kutchi Thali</strong>: Unlimited vegetarian meal. Try 'Rotla' (millet bread)
+                                with 'Olo' (roasted eggplant).</li>
+                            <li><strong>Bandhani</strong>: Mandvi has a small but authentic Bandhani manufacturing
+                                community. Prices here can be lower than Bhuj.</li>
+                        </ul>
                     </div>
                 </div>
             </section>
-            
-             <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px;">
+
+            <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px;">
                 <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1rem;">When to Visit</h3>
-                <p><strong>October to March (Winter):</strong> Best time. Days are pleasant (20-30°C) and evenings are cool. Perfect for beach activities.<br><br><strong>April to June (Summer):</strong> Hot and humid. Day temps hit 35-40°C. Good for evening beach walks but avoid day sightseeing.<br><br><strong>July to September (Monsoon):</strong> Mandvi looks beautiful with green surroundings and dramatic clouds, but swimming is restricted due to rough seas.</p>
+                <p><strong>October to March (Winter):</strong> Best time. Days are pleasant (20-30°C) and evenings are
+                    cool. Perfect for beach activities.<br><br><strong>April to June (Summer):</strong> Hot and humid.
+                    Day temps hit 35-40°C. Good for evening beach walks but avoid day sightseeing.<br><br><strong>July
+                        to September (Monsoon):</strong> Mandvi looks beautiful with green surroundings and dramatic
+                    clouds, but swimming is restricted due to rough seas.</p>
             </section>
 
-            <section class="guide-section reveal"><div class="section-header"><h2>Nearby Places to Visit</h2></div><div class="grid-2">
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2>Nearby Places to Visit</h2>
+                </div>
+                <div class="grid-2">
+                    <a href="kashi-vishwanath-beach.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content" style="padding: 1.5rem;">
                             <h3 class="attraction-title" style="font-size: 1.1rem;">Kashi Vishwanath Temple & Beach</h3>
                             <p style="font-size: 0.9rem;">5km - Serene secluded beach with Shiv temple nearby</p>
                         </div>
                     </a>
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="vijay-vilas-palace.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content" style="padding: 1.5rem;">
                             <h3 class="attraction-title" style="font-size: 1.1rem;">Vijay Vilas Palace</h3>
-                            <p style="font-size: 0.9rem;">8km - Royal palace with private beach and stunning architecture</p>
+                            <p style="font-size: 0.9rem;">8km - Royal palace with private beach and stunning
+                                architecture</p>
                         </div>
                     </a>
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="asar-mata-beach.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content" style="padding: 1.5rem;">
                             <h3 class="attraction-title" style="font-size: 1.1rem;">Asar Mata Temple & Beach</h3>
-                            <p style="font-size: 0.9rem;">10-12km - Serene and secluded temple site with peaceful beach</p>
+                            <p style="font-size: 0.9rem;">10-12km - Serene and secluded temple site with peaceful beach
+                            </p>
                         </div>
                     </a>
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="72-jinalaya.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content" style="padding: 1.5rem;">
                             <h3 class="attraction-title" style="font-size: 1.1rem;">72 Jinalaya</h3>
-                            <p style="font-size: 0.9rem;">2km - Beautiful Jain temple complex with intricate architecture</p>
+                            <p style="font-size: 0.9rem;">2km - Beautiful Jain temple complex with intricate
+                                architecture</p>
                         </div>
                     </a>
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="maska.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content" style="padding: 1.5rem;">
                             <h3 class="attraction-title" style="font-size: 1.1rem;">Maska</h3>
-                            <p style="font-size: 0.9rem;">25km - Coastal village with traditional crafts and local culture</p>
+                            <p style="font-size: 0.9rem;">25km - Coastal village with traditional crafts and local
+                                culture</p>
                         </div>
                     </a>
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="shyamji-krishnavarma-memorial.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content" style="padding: 1.5rem;">
                             <h3 class="attraction-title" style="font-size: 1.1rem;">Shyamji Krishnavarma Memorial</h3>
-                            <p style="font-size: 0.9rem;">3km - Kranti Tirth dedicated to the freedom fighter and scholar</p>
+                            <p style="font-size: 0.9rem;">3km - Kranti Tirth dedicated to the freedom fighter and
+                                scholar</p>
                         </div>
                     </a>
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="ravalpir-beach.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content" style="padding: 1.5rem;">
                             <h3 class="attraction-title" style="font-size: 1.1rem;">Ravalpir Temple & Beach</h3>
-                            <p style="font-size: 0.9rem;">15km - Sacred temple rebuilt in 1819 with clean beach nearby</p>
+                            <p style="font-size: 0.9rem;">15km - Sacred temple rebuilt in 1819 with clean beach nearby
+                            </p>
                         </div>
-                    </a></div></section>
+                    </a>
+                </div>
+            </section>
 
             <section class="guide-section reveal">
-                 <div class="section-header"><h2>Location & Gallery</h2></div>
-                <div style="height: 400px; border-radius: 4px; overflow: hidden; margin-bottom: 2rem; border: 1px solid #eee;">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58976.01309221809!2d69.3378!3d22.8288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950ec6e1e559f19%3A0x2e23b8365f3870e1!2sMandvi%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="section-header">
+                    <h2>Location & Gallery</h2>
+                </div>
+                <div
+                    style="height: 400px; border-radius: 4px; overflow: hidden; margin-bottom: 2rem; border: 1px solid #eee;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58976.01309221809!2d69.3378!3d22.8288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950ec6e1e559f19%3A0x2e23b8365f3870e1!2sMandvi%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 <div class="gallery-grid">
-                    <img src="../assets/images/mandvi/mandvi1.webp" alt="Vijay Vilas Palace"><img src="../assets/images/mandvi/mandvi2.webp" alt="Mandvi Beach">
+                    <img src="../assets/images/mandvi/mandvi1.webp" alt="Vijay Vilas Palace"><img
+                        src="../assets/images/mandvi/mandvi2.webp" alt="Mandvi Beach">
                 </div>
             </section>
 
         </article>
     </main>
 
-    <footer class="footer-main" style="margin-top: 4rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
+    <footer class="footer-main"
+        style="margin-top: 4rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
         <div class="container">
             <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">About MyKutch.org</h3>
-                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">
+                    About MyKutch.org</h3>
+                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the
+                    vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
                 <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
                     <div style="font-size: 0.9rem;">
                         <span style="opacity: 0.8; margin-right: 0.5rem;">Contact:</span>
-                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91 98250 34580</a>
+                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91
+                            98250 34580</a>
                     </div>
                     <div style="font-size: 0.9rem;">
                         <span style="opacity: 0.8; margin-right: 0.5rem;">Email:</span>
-                        <a href="mailto:rachh.niraj@gmail.com" style="color: white; text-decoration: none; font-weight: 500;">rachh.niraj@gmail.com</a>
+                        <a href="mailto:rachh.niraj@gmail.com"
+                            style="color: white; text-decoration: none; font-weight: 500;">rachh.niraj@gmail.com</a>
                     </div>
                 </div>
-                <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
+                <div
+                    style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
                     <p>Developed with Love for Kutch by MyKutch.org team</p>
                 </div>
             </div>
@@ -310,4 +698,5 @@
     </footer>
     <script src="../js/script.js"></script>
 </body>
+
 </html>
