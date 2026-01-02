@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kutch Arts & Crafts | Cultural Heritage Guide</title>
-    <meta name="description" content="Explore the vibrant arts and crafts of Kutch. From Ajrakh block printing to Rogan art, discover the rich cultural heritage of Gujarat.">
-    
+    <meta name="description"
+        content="Explore the vibrant arts and crafts of Kutch. From Ajrakh block printing to Rogan art, discover the rich cultural heritage of Gujarat.">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WQBTM9EPH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5WQBTM9EPH');
+    </script>
+
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, h4, .logo { font-family: 'Poppins', sans-serif; }
-        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .logo {
+            font-family: 'Poppins', sans-serif;
+        }
+
         .page-hero {
             height: 60vh;
             background-image: url('assets/images/crafts/ajrakh/ajrakh2.webp');
@@ -28,20 +52,24 @@
             color: white;
             text-align: center;
         }
+
         .page-hero::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.5);
         }
+
         .hero-title {
             position: relative;
             z-index: 2;
         }
+
         .hero-title h1 {
             font-size: 4rem;
             margin-bottom: 1rem;
         }
+
         .hero-title p {
             font-size: 1.5rem;
             opacity: 0.9;
@@ -53,38 +81,45 @@
             gap: 2rem;
             padding: 4rem 0;
         }
+
         .craft-card {
             background: #fff;
             border-radius: 1rem;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s;
             text-decoration: none;
             color: inherit;
             display: flex;
             flex-direction: column;
         }
+
         .craft-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
+
         .craft-thumb {
             aspect-ratio: 4/3;
             height: auto;
             overflow: hidden;
         }
+
         .craft-thumb img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s;
         }
+
         .craft-card:hover .craft-thumb img {
             transform: scale(1.1);
         }
+
         .craft-info {
             padding: 1.5rem;
         }
+
         .craft-tag {
             font-size: 0.8rem;
             text-transform: uppercase;
@@ -92,11 +127,13 @@
             color: var(--color-primary);
             font-weight: 600;
         }
+
         .craft-title {
             font-size: 1.5rem;
             margin: 0.5rem 0;
             color: var(--color-heading);
         }
+
         .craft-desc {
             font-size: 0.9rem;
             color: #666;
@@ -104,6 +141,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav>
         <div class="container nav-content">
@@ -132,9 +170,12 @@
     <main class="container">
         <section class="reveal">
             <div style="text-align: center; margin-top: 4rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--color-heading);">Handcrafted Legacies</h2>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--color-heading);">Handcrafted Legacies
+                </h2>
                 <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    Kutch is renowned worldwide for its rich diversity of handicrafts. Each community has its own distinct tradition, passed down through generations, making the region a living museum of textile and craft art.
+                    Kutch is renowned worldwide for its rich diversity of handicrafts. Each community has its own
+                    distinct tradition, passed down through generations, making the region a living museum of textile
+                    and craft art.
                 </p>
             </div>
 
@@ -147,7 +188,8 @@
                     <div class="craft-info">
                         <span class="craft-tag">Block Printing</span>
                         <h3 class="craft-title">Ajrakh</h3>
-                        <p class="craft-desc">Ancient geometric block printing using natural dyes like indigo and madder.</p>
+                        <p class="craft-desc">Ancient geometric block printing using natural dyes like indigo and
+                            madder.</p>
                     </div>
                 </a>
 
@@ -159,7 +201,8 @@
                     <div class="craft-info">
                         <span class="craft-tag">Tie-Dye</span>
                         <h3 class="craft-title">Bandhani</h3>
-                        <p class="craft-desc">Intricate tie-dye technique creating beautiful dotted patterns on silk and cotton.</p>
+                        <p class="craft-desc">Intricate tie-dye technique creating beautiful dotted patterns on silk and
+                            cotton.</p>
                     </div>
                 </a>
 
@@ -171,12 +214,13 @@
                     <div class="craft-info">
                         <span class="craft-tag">Painting</span>
                         <h3 class="craft-title">Rogan Art</h3>
-                        <p class="craft-desc">Rare oil-based painting on fabric, practiced by a single family in Nirona.</p>
+                        <p class="craft-desc">Rare oil-based painting on fabric, practiced by a single family in Nirona.
+                        </p>
                     </div>
                 </a>
 
                 <!-- Embroidery (Weaving as proxy or general) -->
-                 <a href="crafts/weaving.html" class="craft-card reveal">
+                <a href="crafts/weaving.html" class="craft-card reveal">
                     <div class="craft-thumb">
                         <img src="assets/images/crafts/weaving/weaving-hero.webp" alt="Kutchi Weaving">
                     </div>
@@ -195,7 +239,8 @@
                     <div class="craft-info">
                         <span class="craft-tag">Ceramics</span>
                         <h3 class="craft-title">Khavda Pottery</h3>
-                        <p class="craft-desc">Distinctive painted pottery from Northern Kutch using local clay and natural colors.</p>
+                        <p class="craft-desc">Distinctive painted pottery from Northern Kutch using local clay and
+                            natural colors.</p>
                     </div>
                 </a>
 
@@ -207,12 +252,13 @@
                     <div class="craft-info">
                         <span class="craft-tag">Leatherwork</span>
                         <h3 class="craft-title">Leather Art</h3>
-                        <p class="craft-desc">Handcrafted leather goods decorated with threadwork and traditional motifs.</p>
+                        <p class="craft-desc">Handcrafted leather goods decorated with threadwork and traditional
+                            motifs.</p>
                     </div>
                 </a>
-                
+
                 <!-- Mirror Work (Lippan?) -->
-                 <a href="crafts/mirror-work.html" class="craft-card reveal">
+                <a href="crafts/mirror-work.html" class="craft-card reveal">
                     <div class="craft-thumb">
                         <img src="assets/images/crafts/mirror/mirror1.webp" alt="Mirror Work">
                     </div>
@@ -239,22 +285,28 @@
         </section>
     </main>
 
-    <footer class="footer-main" style="margin-top: 5rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
+    <footer class="footer-main"
+        style="margin-top: 5rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
         <div class="container">
             <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">About MyKutch.org</h3>
-                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">
+                    About MyKutch.org</h3>
+                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the
+                    vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
                 <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
                     <div style="font-size: 0.9rem;">
                         <span style="opacity: 0.8; margin-right: 0.5rem;">Contact:</span>
-                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91 98250 34580</a>
+                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91
+                            98250 34580</a>
                     </div>
                     <div style="font-size: 0.9rem;">
                         <span style="opacity: 0.8; margin-right: 0.5rem;">Email:</span>
-                        <a href="mailto:info@mykutch.org" style="color: white; text-decoration: none; font-weight: 500;">info@mykutch.org</a>
+                        <a href="mailto:info@mykutch.org"
+                            style="color: white; text-decoration: none; font-weight: 500;">info@mykutch.org</a>
                     </div>
                 </div>
-                <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
+                <div
+                    style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
                     <p>Developed with Love for Kutch by MyKutch.org team</p>
                 </div>
             </div>
@@ -263,4 +315,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
