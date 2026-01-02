@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscapes & Gallery | MyKutch.org</title>
+    <meta name="description" content="Visual journey through the mystical landscapes of Kutch. High-resolution gallery of the White Rann, ancient heritage, and hidden gems.">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-header {
+            height: 50vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/about-hero.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: white;
+            border: 1px solid rgba(0,0,0,0.1);
+            padding: 0.8rem 2rem;
+            border-radius: 3rem;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition-base);
+            color: var(--color-heading);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+            box-shadow: 0 10px 20px rgba(194, 65, 12, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .masonry-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 2.5rem;
+            padding: 2rem 0;
+        }
+
+        .gallery-card {
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+            transition: var(--transition-slow);
+            cursor: pointer;
+        }
+
+        .gallery-image-wrapper {
+            aspect-ratio: 16 / 9;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition-slow);
+        }
+
+        .gallery-card:hover .gallery-image-wrapper {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition-slow);
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .grid-caption {
+            margin-top: 1.25rem;
+            color: var(--color-heading);
+            font-family: var(--font-heading);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.25em;
+            font-size: 0.75rem;
+            text-align: center;
+            opacity: 0.8;
+            transition: var(--transition-base);
+        }
+
+        .gallery-card:hover .grid-caption {
+            opacity: 1;
+            color: var(--color-primary);
+        }
+
+        .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 80%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .modal-content img {
+            max-width: 100%;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 0.5rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .modal-caption {
+            margin-top: 2rem;
+            color: #fff;
+            font-family: var(--font-heading);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.4em;
+            font-size: 0.8rem;
+            text-align: center;
+            opacity: 0.7;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: -3rem;
+            right: 0;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        @media (max-width: 768px) {
+            .masonry-gallery {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="MyKutch" class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="hidden-gems.html">Hidden Gems</a>
+                <a href="blog.html">Blog</a>
+                <a href="history.html">History</a>
+                <a href="crafts.html">Crafts</a>
+                <a href="landscapes.html">Landscapes</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="gallery-header">
+        <div class="container reveal">
+            <h1 class="metallic-gold">Landscapes</h1>
+            <p style="color: white; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; margin-top: 1rem;">A Visual Journey through Mystical Sands</p>
+        </div>
+    </header>
+
+    <main class="container" style="padding: var(--spacing-lg) var(--spacing-md);">
+        <div class="filter-container reveal">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="landscapes">Nature</button>
+            <button class="filter-btn" data-filter="heritage">Heritage</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+        </div>
+
+        <div class="masonry-gallery reveal" id="gallery-root">
+            <!-- Gallery items will be populated here -->
+        </div>
+    </main>
+
+    <div class="modal" id="gallery-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="Enlarged view">
+            <div class="modal-caption" id="modal-caption"></div>
+        </div>
+    </div>
+
+    <footer class="footer-main" style="margin-top: 5rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">About MyKutch.org</h3>
+                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+                <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <div style="font-size: 0.9rem;">
+                        <span style="opacity: 0.8; margin-right: 0.5rem;">Contact:</span>
+                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91 98250 34580</a>
+                    </div>
+                    <div style="font-size: 0.9rem;">
+                        <span style="opacity: 0.8; margin-right: 0.5rem;">Email:</span>
+                        <a href="mailto:info@mykutch.org" style="color: white; text-decoration: none; font-weight: 500;">info@mykutch.org</a>
+                    </div>
+                </div>
+                <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
+                    <p>Developed with Love for Kutch by MyKutch.org team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        const galleryData = [
+            { src: 'assets/images/dhordo1.webp', category: 'landscapes', title: 'White Rann' },
+            { src: 'assets/images/kadia-dhrow/kadia-dhrow1.webp', category: 'landscapes', title: 'Kadia Dhrow' },
+            { src: 'assets/images/bhuj/bhuj1.webp', category: 'heritage', title: 'Bhuj Heritage' },
+            { src: 'assets/images/mandvi/mandvi1.webp', category: 'heritage', title: 'Mandvi Palace' },
+            { src: 'assets/images/road-to-heaven/road-to-heaven1.webp', category: 'landscapes', title: 'Road to Heaven' },
+            { src: 'assets/images/dholavira/dholavira1.webp', category: 'heritage', title: 'Ancient Dholavira' },
+            { src: 'assets/images/crafts/bandhani/bandhani1.webp', category: 'culture', title: 'Bandhani Art' },
+            { src: 'assets/images/crafts/ajrakh/ajrakh1.webp', category: 'culture', title: 'Ajrakh Blocks' },
+            { src: 'assets/images/gallery/20230714_183923~2.webp', category: 'landscapes', title: 'Sunset over Rann' },
+            { src: 'assets/images/gallery/IMG20191211130818.webp', category: 'heritage', title: 'Aina Mahal' },
+            { src: 'assets/images/carousel/kutch2.webp', category: 'culture', title: 'Traditional Attire' },
+            { src: 'assets/images/carousel/kutch7.webp', category: 'landscapes', title: 'Desert Caravan' },
+            { src: 'assets/images/gallery/IMG_20191211_233019.webp', category: 'heritage', title: 'Night Palace' },
+            { src: 'assets/images/gallery/IMG20210307184357.webp', category: 'landscapes', title: 'Golden Sands' },
+            { src: 'assets/images/carousel/kutch17.webp', category: 'culture', title: 'Local Artisan' }
+        ];
+
+        const galleryRoot = document.getElementById('gallery-root');
+        const modal = document.getElementById('gallery-modal');
+        const modalImg = modal.querySelector('img');
+        const modalCaption = document.getElementById('modal-caption');
+        const closeBtn = modal.querySelector('.close-modal');
+
+        function cleanFilename(path) {
+            const filename = path.split('/').pop().split('.')[0];
+            return filename.replace(/[-_]/g, ' ').replace(/\d/g, '').trim();
+        }
+
+        function renderGallery(filter = 'all') {
+            galleryRoot.innerHTML = '';
+            const filtered = filter === 'all' ? galleryData : galleryData.filter(item => item.category === filter);
+            
+            filtered.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'gallery-card reveal';
+                card.dataset.category = item.category;
+                card.style.transitionDelay = `${(index % 3) * 100}ms`;
+                
+                const displayTitle = item.title || cleanFilename(item.src);
+                
+                card.innerHTML = `
+                    <div class="gallery-image-wrapper">
+                        <img src="${item.src}" alt="${displayTitle}" loading="lazy">
+                    </div>
+                    <div class="grid-caption">${displayTitle}</div>
+                `;
+                
+                card.addEventListener('click', () => {
+                    modalImg.src = item.src;
+                    modalCaption.innerText = displayTitle;
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                });
+                
+                galleryRoot.appendChild(card);
+                
+                // Trigger reveal
+                setTimeout(() => card.classList.add('active'), 50);
+            });
+        }
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+                renderGallery(btn.dataset.filter);
+            });
+        });
+
+        closeBtn.addEventListener('click', closeModal);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                closeModal();
+            }
+        });
+
+        function closeModal() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === 'flex') {
+                closeModal();
+            }
+        });
+
+        // Initial render
+        renderGallery();
+    </script>
+</body>
+</html>
