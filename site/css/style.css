@@ -92,18 +92,31 @@
     background-size: 200% auto;
 }
 
-.metallic-silver-green {
-    background: linear-gradient(to bottom,
-            #f8fafc 0%,
-            #e2e8f0 25%,
-            #94a3b8 50%,
-            #475569 75%,
-            #94a3b8 100%);
+/* Metallic Blue Gradient for Headings */
+.heading-bright-blue {
+    background: linear-gradient(to right,
+            #0061ff 0%,
+            /* Bright Electric Blue */
+            #60efff 100%
+            /* Cyan/Aqua */
+        );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% auto;
-    animation: metallic 12s linear infinite;
+    animation: metallic 8s linear infinite;
+}
+
+[data-theme="dark"] .heading-bright-blue {
+    background: linear-gradient(to right,
+            #3b82f6 0%,
+            /* Blue 500 */
+            #2dd4bf 100%
+            /* Teal 400 */
+        );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes metallic {
@@ -365,13 +378,49 @@ nav.scrolled .nav-logo {
     filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
 }
 
-.hero p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 0 auto 3rem;
+/* Hero Typography */
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    /* Reduced size to keep in one line */
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 0.2rem;
+    color: #ffffff;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+    /* Force one line */
+}
+
+.hero-subtitle {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    /* Slightly adjusted for better proportion */
+    font-weight: 700;
+    color: #1e3a8a;
+    /* Deep Royal Blue */
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    /* Lighter shadow for visibility on dark blue if needed, or keeping dark shadow but adjusting for contrast */
+    transform: none;
+    /* Make straight */
+    display: inline-block;
+}
+
+[data-theme="dark"] .hero-subtitle {
+    color: #bfdbfe;
+    /* Lighter blue for dark mode contrast */
+}
+
+.hero p.hero-desc {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 1.5rem auto 3rem;
     font-weight: 500;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Featured Section */
@@ -407,6 +456,7 @@ nav.scrolled .nav-logo {
     transition: var(--transition-slow);
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 [data-theme="dark"] .card {
@@ -434,6 +484,67 @@ nav.scrolled .nav-logo {
 .card-content {
     padding: 2.5rem;
     flex-grow: 1;
+    position: relative;
+    z-index: 2;
+    background: var(--color-card-bg);
+    /* Ensure content sits on top of bg if needed, though usually fine */
+}
+
+/* Shimmer Effect */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    /* Start further back */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            /* Stronger center for visibility */
+            transparent 100%);
+    transform: skewX(-25deg);
+    transition: 0s;
+    /* Instant reset */
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Trigger Shimmer on Hover */
+.card:hover::before {
+    left: 150%;
+    transition: 0.8s ease-in-out;
+}
+
+/* Hover Elevation & Glow */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(194, 65, 12, 0.25);
+    /* Rich terracotta glow */
+    border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .card:hover {
+    box-shadow: 0 25px 50px -12px rgba(251, 146, 60, 0.15);
+    border-color: var(--color-secondary);
+}
+
+/* Image Highlight on Hover */
+.card:hover .card-img-wrapper::after {
+    opacity: 1;
+}
+
+/* Add a subtle inner sheen to the image wrapper */
+.card-img-wrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 100%);
+    opacity: 0.6;
+    transition: var(--transition-base);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .card-category {
@@ -511,6 +622,16 @@ nav.scrolled .nav-logo {
 .btn-text:hover:after {
     transform: scaleX(1);
     background: var(--color-accent-1);
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    content: "";
 }
 
 /* Essentials Section */
@@ -1236,4 +1357,88 @@ nav.scrolled .nav-logo {
         height: 48px;
         font-size: 1.2rem;
     }
+}
+
+/* Diversity Strip Section */
+.diversity-strip {
+    background: #fff;
+    /* Clean white separation */
+    padding: 3rem 0;
+    margin-top: -2rem;
+    /* Pull up slightly to bridge hero and main */
+    position: relative;
+    z-index: 20;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.diversity-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .diversity-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.diversity-card {
+    background: #fafafa;
+    border-radius: 1.5rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: var(--transition-base);
+    border: 1px solid transparent;
+    cursor: default;
+}
+
+.diversity-card:hover {
+    background: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    border-color: var(--color-primary);
+}
+
+.diversity-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    transition: transform 0.4s ease;
+}
+
+.diversity-card:hover .diversity-icon {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.diversity-card h4 {
+    color: var(--color-heading);
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.diversity-card p {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .diversity-strip {
+    background: var(--color-bg);
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+    /* Subtle separator */
+}
+
+[data-theme="dark"] .diversity-card {
+    background: var(--color-card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .diversity-card:hover {
+    border-color: var(--color-secondary);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
