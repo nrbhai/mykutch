@@ -4,16 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajrakh - Ancient Block Printing Art of Kutch | Kutch Travel | Kutch Travel Guide</title>
+    <title>Ajrakh — Ancient Block Printing Art of Kutch | MyKutch.org</title>
     <meta name="description"
-        content="Discover the art of Ajrakh - Ancient Block Printing Art of Kutch | Kutch Travel in Kutch. Ancient Block Printing Art.">
+        content="Discover Ajrakh, the 4000-year-old block printing technique from Kutch. Learn about its history, natural dyes, traditional patterns, and where to buy authentic pieces.">
 
-    <!-- Google Fonts -->
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Ajrakh, block printing, Kutch crafts, natural dyes, indigo, Ajrakhpur, Khatri family, textile art, handicrafts">
+    <meta name="author" content="MyKutch.org">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mykutch.org/crafts/ajrakh.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mykutch.org/crafts/ajrakh.html">
+    <meta property="og:title" content="Ajrakh — Ancient Block Printing Art of Kutch">
+    <meta property="og:description" content="Discover Ajrakh, the 4000-year-old block printing technique from Kutch using natural dyes.">
+    <meta property="og:image" content="https://mykutch.org/assets/images/crafts/ajrakh/ajrakh1.webp">
+    <meta property="og:site_name" content="MyKutch.org">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ajrakh — Ancient Block Printing Art of Kutch">
+    <meta name="twitter:description" content="Discover Ajrakh, the 4000-year-old block printing technique from Kutch.">
+    <meta name="twitter:image" content="https://mykutch.org/assets/images/crafts/ajrakh/ajrakh1.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -23,375 +40,470 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-5WQBTM9EPH');
     </script>
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .lead-text {
+                font-size: 1rem;
+            }
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        .logo {
-            font-family: 'Poppins', sans-serif;
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            text-align: left;
         }
 
-        .craft-hero {
-            position: relative;
-            height: 70vh;
-            min-height: 500px;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .craft-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.4);
-        }
-
-        .hero-content-inner {
-            position: relative;
-            z-index: 2;
-            padding: 0 1rem;
-            max-width: 900px;
-        }
-
-        .hero-content-inner h1 {
-            font-size: clamp(2.5rem, 6vw, 5rem);
-            margin-bottom: 1rem;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            opacity: 0.9;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-        }
-
-        .craft-section {
-            padding: 6rem 0;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-        }
-
-        .craft-section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        .craft-text {
-            flex: 1;
-        }
-
-        .craft-image {
-            flex: 1;
-        }
-
-        .craft-image img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
+        .attraction-card {
+            background: white;
+            border: none;
             border-radius: 1rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: left;
         }
 
-        .section-heading {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--color-heading);
-            position: relative;
+        .attraction-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .attraction-img-wrapper {
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .attraction-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .attraction-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: #00d26a;
+            font-weight: 600;
+            line-height: 1.3;
+            border-bottom: 2px solid #FBC02D;
             display: inline-block;
         }
 
-        .section-heading::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--color-primary);
-            margin-top: 0.5rem;
+        .attraction-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            color: var(--color-text);
         }
 
-        .facts-grid {
+        .editorial-note {
+            background-color: #f8fafc;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            text-align: left;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .tip-item h4 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-heading);
+            font-weight: 600;
+        }
+
+        .tip-item p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .styled-list {
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .styled-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .styled-list li strong {
+            color: #333;
+            border-bottom: 2px solid #E91E63;
+            display: inline-block;
+            line-height: 1.2;
+            margin-right: 0.3rem;
+        }
+
+        .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            background: #fff;
-            padding: 4rem;
-            border-radius: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            margin: 4rem 0;
-        }
-
-        .fact-card {
-            display: flex;
             gap: 1rem;
-            align-items: center;
+            margin-top: 2rem;
         }
 
-        .fact-icon {
-            font-size: 2rem;
+        .gallery-grid img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            transition: opacity 0.3s;
         }
 
-        @media (max-width: 900px) {
-            .craft-section {
-                flex-direction: column !important;
-                gap: 2rem;
-                padding: 4rem 0;
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem !important;
+            margin-top: 0 !important;
+        }
+
+        .section-header p {
+            text-align: left !important;
+            margin-left: 0 !important;
+            margin-top: 0.5rem !important;
+        }
+
+        .section-header h2, .heading-bright-blue {
+            font-size: 1.8rem !important;
+            background-color: #8B0000;
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0 !important;
+            font-weight: 700 !important;
+        }
+
+        main {
+            text-align: left;
+        }
+
+        .shining-blue-text {
+            color: #007bff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .destination-hero::before {
+            background: none !important;
+            display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            .editorial-container {
+                padding: 0 1rem;
             }
 
-            .craft-image img {
-                height: 300px;
+            .editorial-note {
+                padding: 2rem 1.5rem;
             }
 
-            .facts-grid {
-                padding: 2rem;
+            .grid-2 {
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+            }
+
+            .shining-blue-text {
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                padding: 0 1rem;
             }
         }
     </style>
 </head>
 
 <body>
-    <nav class="scrolled">
+    <nav>
         <div class="container nav-content">
-            <a href="../index.html" class="logo">KUTCH TRAVEL</a>
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="MyKutch" class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
             <div class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../index.html#destinations">Destinations</a>
-                <a href="../index.html#crafts">Crafts</a>
+                <a href="../hidden-gems.html">Hidden Gems</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../history.html">History</a>
+                <a href="../crafts.html">Crafts</a>
+                <a href="../bookings.html">Bookings</a>
+                <a href="../about.html">About</a>
             </div>
         </div>
     </nav>
 
-    <header class="craft-hero" style="background-image: url('../assets/images/crafts/ajrakh/ajrakh1.webp')">
+    <header class="destination-hero"
+        style="background-image: url('../assets/images/crafts/ajrakh/ajrakh2.webp'); justify-content: center; text-align: center;">
         <div class="hero-content-inner reveal">
-            <h1>Ajrakh - Ancient Block Printing Art of Kutch | Kutch Travel</h1>
-            <div class="subtitle">Ancient Block Printing Art</div>
         </div>
     </header>
 
-    <main class="container">
+    <div class="container reveal">
+        <h1 class="shining-blue-text">Ajrakh — Ancient Block Printing Art</h1>
+    </div>
 
+    <main>
+        <article class="editorial-container">
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <p class="lead-text">
+                    Ajrakh is an ancient block printing technique believed to be over 4,000 years old, with roots tracing back to the Indus Valley Civilization. The name "Ajrakh" is derived from "Azrak," meaning blue in Arabic — a tribute to the deep indigo that defines this craft. Each piece undergoes 16 meticulous stages of washing, dyeing, and printing, taking up to a month to complete. The Khatri community brought this art to Kutch from Sindh around 400 years ago, and today, the village of <strong>Ajrakhpur</strong> near Bhuj remains the global hub of this UNESCO-recognized heritage craft.
+                </p>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Overview</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Ajrakh is an ancient
-                    block printing technique believed to be over 4000 years old. The name</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Overview">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">History</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">The Khatri community
-                    brought Ajrakh printing to Kutch from Sindh (now in Pakistan) around 400 years ago. The craft has
-                    been passed down through generations, with each family developing their unique style. Ajrakh fabrics
-                    were historically worn by pastoral communities and became an integral part of Kutchi identity.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="History">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Technique</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Ajrakh printing is
-                    one of the most complex textile techniques, involving 16 stages of washing, dyeing, and printing.
-                    The fabric undergoes multiple rounds of resist printing using wooden blocks carved with intricate
-                    designs. Natural dyes like indigo, madder root, and iron rust create the characteristic colors. The
-                    entire process can take up to a month for a single piece.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Technique">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Cultural Significance</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Ajrakh represents
-                    the cultural heritage of Kutch</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Cultural Significance">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Traditional Patterns</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    <ul style='list-style: none; padding: 0;'>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Indigo blue base with red and white motifs
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Geometric star patterns (representing
-                            cosmos)</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Floral medallions</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Wave patterns (symbolizing water)</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Tree of Life designs</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Border patterns with intricate details</li>
+            <div class="grid-2 reveal" style="margin-top: 4rem;">
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">Who Should Explore Ajrakh</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Textile Lovers</strong>: Witness one of the world's most complex natural dyeing processes firsthand.</li>
+                        <li><strong>Conscious Shoppers</strong>: Support sustainable fashion with 100% natural dyes and eco-friendly methods.</li>
+                        <li><strong>Culture Seekers</strong>: Meet master artisans preserving a 4,000-year-old tradition.</li>
+                        <li><strong>Artists & Designers</strong>: Draw inspiration from geometric patterns that symbolize the cosmos.</li>
                     </ul>
-                </div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Traditional Patterns">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Colors & Natural Dyes</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">The classic Ajrakh
-                    palette includes deep indigo blue, rich red from madder root, and black from iron rust. Modern
-                    artisans also experiment with natural dyes to create green, yellow, and brown variations, all
-                    derived from plants and minerals.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Colors & Natural Dyes">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">How to Identify Authentic Ajrakh</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    <ul style='list-style: none; padding: 0;'>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Look for precise geometric patterns on both
-                            sides of fabric</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Check for natural dye variations - each
-                            piece is unique</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Authentic Ajrakh has a distinct earthy smell
-                            from natural dyes</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>The fabric should be printed on both sides
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Look for slight irregularities in block
-                            alignment - sign of handwork</li>
+                </section>
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">Where to Experience</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Ajrakhpur Village</strong>: 15km from Bhuj. The heart of Ajrakh printing with workshops open to visitors.</li>
+                        <li><strong>Dr. Ismail Khatri's Workshop</strong>: The most renowned Ajrakh master. Demonstrations available.</li>
+                        <li><strong>Bhujodi & Bhuj Bazaars</strong>: Finished products available, but buy from artisans for authenticity.</li>
+                        <li><strong>Rann Utsav</strong>: Annual festival (Nov-Feb) with Ajrakh exhibitions.</li>
                     </ul>
-                </div>
+                </section>
             </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="How to Identify Authentic Ajrakh">
-            </div>
-        </div>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Buying Tips</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    <ul style='list-style: none; padding: 0;'>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Visit Ajrakhpur village for authentic pieces
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Check if natural dyes were used - ask the
-                            artisan</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Look for GI (Geographical Indication) tags
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Higher thread count fabric commands premium
-                            prices</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Buy directly from artisans when possible
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Be patient - quality Ajrakh is never rushed
-                        </li>
-                    </ul>
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">The Craft Process</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">16 stages of artistry</p>
                 </div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Buying Tips">
-            </div>
-        </div>
+                <div class="grid-2">
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Fabric Preparation">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Fabric Preparation</h3>
+                            <p class="attraction-desc">The fabric is washed multiple times and treated with castor oil and camel dung to soften fibers and prepare them for dye absorption.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/ajrakh/ajrakh3.webp" alt="Block Printing">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Block Printing</h3>
+                            <p class="attraction-desc">Wooden blocks carved with intricate geometric patterns are dipped in resist paste and pressed onto fabric. Each color requires a separate block.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/ajrakh/ajrakh4.webp" alt="Natural Dyeing">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Natural Dyeing</h3>
+                            <p class="attraction-desc">Indigo (blue), madder root (red), and iron rust (black) create the classic Ajrakh palette. Indigo fermentation alone takes several days.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/ajrakh/ajrakh2.webp" alt="Multiple Washes">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Multiple Washes</h3>
+                            <p class="attraction-desc">The fabric is washed up to 14 times during the process to remove resist paste and fix colors permanently.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Price Range</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">₹800 - ₹15,000 per
-                    meter depending on fabric quality, intricacy, and whether natural dyes were used. Authentic
-                    hand-block printed Ajrakh with natural dyes commands premium prices.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Price Range">
-            </div>
-        </div>
+            <section class="guide-section reveal">
+                <div class="editorial-note">
+                    <div class="section-header">
+                        <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Did You Know?</h3>
+                    </div>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <h4>4,000 Years Old</h4>
+                            <p>Ajrakh patterns have been found on cloth fragments from the Indus Valley Civilization.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>16 Stages</h4>
+                            <p>A single piece of Ajrakh goes through 16 different stages of printing and dyeing.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>UNESCO Heritage</h4>
+                            <p>Ajrakh is recognized by UNESCO as an intangible cultural heritage craft.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>Zero Chemicals</h4>
+                            <p>Authentic Ajrakh uses only natural materials — no synthetic dyes or chemicals.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="grid-2">
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Traditional Patterns</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Geometric Stars</strong>: Representing the cosmos and celestial harmony.</li>
+                            <li><strong>Floral Medallions</strong>: Intricate circular designs symbolizing nature.</li>
+                            <li><strong>Wave Patterns</strong>: Symbolizing water and the flow of life.</li>
+                            <li><strong>Tree of Life</strong>: A sacred motif representing eternal growth.</li>
+                            <li><strong>Border Patterns</strong>: Intricate details that frame the main design.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Colors & Their Sources</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Deep Indigo Blue</strong>: From the indigo plant (Indigofera tinctoria).</li>
+                            <li><strong>Rich Crimson Red</strong>: From madder root (Alizarin).</li>
+                            <li><strong>Jet Black</strong>: From iron rust mixed with jaggery.</li>
+                            <li><strong>Mustard Yellow</strong>: From pomegranate rind.</li>
+                            <li><strong>Earthy Brown</strong>: From harda (Terminalia chebula).</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-        <div class="reveal">
-            <div class="facts-grid">
-                <div style="grid-column: 1/-1; text-align: center; margin-bottom: 2rem;">
-                    <h2 class="section-heading" style="font-size: 2rem;">Did You Know?</h2>
+            <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px; margin-top: 4rem;">
+                <div class="section-header">
+                    <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">How to Identify Authentic Ajrakh</h3>
                 </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>A single Ajrakh piece requires at least 16 different stages</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>The craft uses only natural materials - no chemicals</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>Wooden printing blocks can last for generations</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>One meter of fabric is washed up to 14 times during the process</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>The indigo dye fermentation process takes several days</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>UNESCO has recognized Ajrakh as intangible cultural heritage</p>
-                </div>
-            </div>
-        </div>
+                <ul class="styled-list">
+                    <li><strong>Double-Sided Printing</strong>: Authentic Ajrakh is printed on both sides of the fabric.</li>
+                    <li><strong>Earthy Smell</strong>: Natural dyes have a distinct earthy aroma.</li>
+                    <li><strong>Slight Irregularities</strong>: Hand-block alignment shows minor variations — a sign of handwork.</li>
+                    <li><strong>Color Depth</strong>: Natural indigo has a unique depth that synthetic dyes cannot replicate.</li>
+                    <li><strong>GI Tag</strong>: Look for the Geographical Indication tag for certified authenticity.</li>
+                </ul>
+            </section>
 
-        <div class="section reveal">
-            <h2 class="section-heading text-center" style="display: block; text-align: center; margin-bottom: 3rem;">
-                Gallery</h2>
-            <div class="gallery-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div class="reveal"><img src="../assets/images/crafts/ajrakh/ajrakh1.webp"
-                        alt="Traditional Ajrakh Block Print"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/ajrakh/ajrakh2.webp"
-                        alt="Intricate Geometric Patterns"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/ajrakh/ajrakh3.webp" alt="Block Printing Process"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/ajrakh/ajrakh4.webp" alt="Natural Dyeing Vats"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/ajrakh/ajrakh4.webp" alt="Master Artisan at Work"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-            </div>
-        </div>
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="grid-2">
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Buying Tips</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Visit Ajrakhpur</strong>: Buy directly from artisans for authenticity and fair prices.</li>
+                            <li><strong>Ask About Dyes</strong>: Natural dyes command premium prices but are worth it.</li>
+                            <li><strong>Check Thread Count</strong>: Higher thread count fabric means better quality.</li>
+                            <li><strong>Be Patient</strong>: Quality Ajrakh is never rushed — expect higher prices for intricate work.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Price Range</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Stoles & Dupattas</strong>: ₹800 - ₹3,000</li>
+                            <li><strong>Sarees</strong>: ₹3,000 - ₹15,000</li>
+                            <li><strong>Fabric (per meter)</strong>: ₹800 - ₹5,000</li>
+                            <li><strong>Premium Natural Dye Pieces</strong>: ₹10,000 - ₹25,000+</li>
+                        </ul>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">Prices vary based on fabric quality, intricacy of design, and whether natural dyes were used.</p>
+                    </div>
+                </div>
+            </section>
 
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Explore Other Crafts</h2>
+                </div>
+                <div class="grid-2">
+                    <a href="bandhani.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Bandhani</h3>
+                            <p class="attraction-desc">The ancient tie-dye art with thousands of hand-tied dots creating mesmerizing patterns.</p>
+                        </div>
+                    </a>
+                    <a href="rogan-art.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Rogan Art</h3>
+                            <p class="attraction-desc">A rare 400-year-old oil painting technique practiced by only one family in Kutch.</p>
+                        </div>
+                    </a>
+                    <a href="weaving.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Kutch Weaving</h3>
+                            <p class="attraction-desc">Vibrant handloom textiles from Bhujodi village with intricate extra-weft designs.</p>
+                        </div>
+                    </a>
+                    <a href="mirror-work.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Lippan Kaam</h3>
+                            <p class="attraction-desc">Traditional mud and mirror wall art that adorns the Bhungas of Kutch.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Gallery</h2>
+                </div>
+                <div class="gallery-grid">
+                    <img src="../assets/images/crafts/ajrakh/ajrakh1.webp" alt="Traditional Ajrakh Block Print">
+                    <img src="../assets/images/crafts/ajrakh/ajrakh2.webp" alt="Intricate Geometric Patterns">
+                    <img src="../assets/images/crafts/ajrakh/ajrakh3.webp" alt="Block Printing Process">
+                    <img src="../assets/images/crafts/ajrakh/ajrakh4.webp" alt="Natural Dyeing Vats">
+                </div>
+            </section>
+
+        </article>
     </main>
 
     <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
@@ -416,7 +528,6 @@
         </div>
     </div>
 </footer>
-
     <script src="../js/script.js"></script>
 </body>
 

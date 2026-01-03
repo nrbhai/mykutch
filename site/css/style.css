@@ -1281,6 +1281,19 @@ nav.scrolled .nav-logo {
     gap: 2rem;
 }
 
+@media (max-width: 1024px) {
+    .craft-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .craft-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+}
+
 .craft-card {
     text-decoration: none;
     color: inherit;

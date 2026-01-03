@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leather Craft - Traditional Leatherwork | Kutch Travel | Kutch Travel Guide</title>
+    <title>Leather Craft — Traditional Mojari & Leatherwork | MyKutch.org</title>
     <meta name="description"
-        content="Discover the art of Leather Craft - Traditional Leatherwork | Kutch Travel in Kutch. Traditional Leatherwork & Mojari Making.">
+        content="Discover Kutch Leather Craft, the traditional art of making mojari shoes and embroidered leather goods by the Mochi community.">
 
-    <!-- Google Fonts -->
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Kutch leather, Mojari, Jutti, Mochi community, embroidered leather, Gujarat handicrafts">
+    <meta name="author" content="MyKutch.org">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mykutch.org/crafts/leather-craft.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -23,471 +26,246 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-5WQBTM9EPH');
     </script>
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        .logo {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .craft-hero {
-            position: relative;
-            height: 70vh;
-            min-height: 500px;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
-
-        .craft-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.4);
-        }
-
-        .hero-content-inner {
-            position: relative;
-            z-index: 2;
-            padding: 0 1rem;
-            max-width: 900px;
-        }
-
-        .hero-content-inner h1 {
-            font-size: clamp(2.5rem, 6vw, 5rem);
-            margin-bottom: 1rem;
-            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .subtitle {
-            font-size: 1.5rem;
-            opacity: 0.9;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-        }
-
-        .craft-section {
-            padding: 6rem 0;
-            display: flex;
-            align-items: center;
-            gap: 4rem;
-        }
-
-        .craft-section:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        .craft-text {
-            flex: 1;
-        }
-
-        .craft-image {
-            flex: 1;
-        }
-
-        .craft-image img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 1rem;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .section-heading {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--color-heading);
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-heading::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: var(--color-primary);
-            margin-top: 0.5rem;
-        }
-
-        .facts-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            background: #fff;
-            padding: 4rem;
-            border-radius: 2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            margin: 4rem 0;
-        }
-
-        .fact-card {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .fact-icon {
-            font-size: 2rem;
-        }
-
-        @media (max-width: 900px) {
-            .craft-section {
-                flex-direction: column !important;
-                gap: 2rem;
-                padding: 4rem 0;
-            }
-
-            .craft-image img {
-                height: 300px;
-            }
-
-            .facts-grid {
-                padding: 2rem;
-            }
-        }
+        @media (max-width: 768px) { .section-header h2 { font-size: 1.5rem !important; } .lead-text { font-size: 1rem; } }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; text-align: left; }
+        .attraction-card { background: white; border: none; border-radius: 1rem; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); transition: transform 0.3s ease, box-shadow 0.3s ease; height: 100%; display: flex; flex-direction: column; overflow: hidden; text-align: left; }
+        .attraction-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08); }
+        .attraction-img-wrapper { overflow: hidden; aspect-ratio: 4/3; }
+        .attraction-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s ease; }
+        .attraction-card:hover img { transform: scale(1.05); }
+        .attraction-content { padding: 1.5rem; flex-grow: 1; }
+        .attraction-title { font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.5rem; color: #00d26a; font-weight: 600; line-height: 1.3; border-bottom: 2px solid #FBC02D; display: inline-block; }
+        .attraction-desc { font-size: 0.95rem; opacity: 0.8; line-height: 1.6; color: var(--color-text); }
+        .editorial-note { background-color: #f8fafc; border-radius: 1.5rem; padding: 2.5rem; margin: 2rem 0; text-align: left; border: 1px solid rgba(0,0,0,0.03); }
+        .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: left; }
+        .tip-item h4 { font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--color-heading); font-weight: 600; }
+        .tip-item p { font-size: 0.95rem; color: #555; line-height: 1.6; }
+        .styled-list { padding-left: 1.2rem; margin-bottom: 1.5rem; }
+        .styled-list li { font-size: 0.95rem; margin-bottom: 0.75rem; color: #444; line-height: 1.6; }
+        .styled-list li strong { color: #333; border-bottom: 2px solid #E91E63; display: inline-block; line-height: 1.2; margin-right: 0.3rem; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
+        .gallery-grid img { width: 100%; aspect-ratio: 4/3; height: auto; object-fit: cover; border-radius: 0.75rem; transition: opacity 0.3s; }
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue { text-align: left !important; align-items: flex-start !important; }
+        .section-header { margin-bottom: 2.5rem !important; margin-top: 0 !important; }
+        .section-header p { text-align: left !important; margin-left: 0 !important; margin-top: 0.5rem !important; }
+        .section-header h2, .heading-bright-blue { font-size: 1.8rem !important; background-color: #8B0000; color: white !important; padding: 0.5rem 1.5rem; display: inline-block; border-radius: 2px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 0 !important; font-weight: 700 !important; }
+        main { text-align: left; }
+        .shining-blue-text { color: #007bff; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 2.5rem; text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); text-align: center; margin-top: 1.5rem; margin-bottom: 0; display: block; line-height: 1.2; }
+        .destination-hero::before { background: none !important; display: none !important; }
+        @media (max-width: 768px) { .editorial-container { padding: 0 1rem; } .editorial-note { padding: 2rem 1.5rem; } .grid-2 { gap: 1.5rem; padding-bottom: 1rem; } .shining-blue-text { font-size: 1.4rem; margin-top: 1rem; padding: 0 1rem; } }
     </style>
 </head>
 
 <body>
-    <nav class="scrolled">
+    <nav>
         <div class="container nav-content">
-            <a href="../index.html" class="logo">KUTCH TRAVEL</a>
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="MyKutch" class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
             <div class="nav-links">
                 <a href="../index.html">Home</a>
                 <a href="../index.html#destinations">Destinations</a>
-                <a href="../index.html#crafts">Crafts</a>
+                <a href="../hidden-gems.html">Hidden Gems</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../history.html">History</a>
+                <a href="../crafts.html">Crafts</a>
+                <a href="../bookings.html">Bookings</a>
+                <a href="../about.html">About</a>
             </div>
         </div>
     </nav>
 
-    <header class="craft-hero" style="background-image: url('../assets/images/crafts/leather-craft.webp')">
-        <div class="hero-content-inner reveal">
-            <h1>Leather Craft - Traditional Leatherwork | Kutch Travel</h1>
-            <div class="subtitle">Traditional Leatherwork & Mojari Making</div>
-        </div>
+    <header class="destination-hero"
+        style="background-image: url('../assets/images/crafts/leather-craft.webp'); justify-content: center; text-align: center;">
+        <div class="hero-content-inner reveal"></div>
     </header>
 
-    <main class="container">
+    <div class="container reveal">
+        <h1 class="shining-blue-text">Leather Craft — Traditional Mojari Art</h1>
+    </div>
 
+    <main>
+        <article class="editorial-container">
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <p class="lead-text">
+                    Leather craft in Kutch is a centuries-old tradition practiced primarily by the Mochi community for over 400 years. The famous Kutchi mojari (traditional shoes) have become globally recognized for their comfort, durability, and stunning embroidery. These flat, closed-toe shoes feature no left-right distinction and are made entirely by hand, with each pair taking 2-3 days to complete. Beyond footwear, Kutch leather artisans create beautifully embroidered bags, belts, and decorative items that blend utility with exquisite aesthetics.
+                </p>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Overview</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Leather craft in
-                    Kutch is a centuries-old tradition practiced primarily by the Mochi community. From the famous
-                    Kutchi mojari (traditional shoes) to beautifully embroidered bags and decorative items, leather
-                    artisans create functional and artistic pieces that blend utility with aesthetics. Kutch leatherwork
-                    is distinguished by its intricate embroidery, mirror work, and vibrant colors applied to
-                    high-quality leather.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Overview">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">History</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">The Mochi community
-                    has been working with leather in Kutch for over 400 years. Historically, they created essential
-                    items for the pastoral communities - shoes, water bags, horse saddles, and storage containers.
-                    Leather was crucial in the desert environment for its durability and water resistance. The craft
-                    evolved from purely functional items to include decorative elements influenced by the region</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="History">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Kutchi Mojari - The Iconic Shoes</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Kutchi mojari (also
-                    called jutti or mojdi) are traditional handcrafted shoes that have become globally recognized. These
-                    flat, closed-toe shoes feature no left-right distinction and are known for their comfort and
-                    durability. Authentic Kutchi mojaris are made entirely by hand, with each pair taking 2-3 days to
-                    complete. The uppers are made from soft leather or velvet, often embroidered with traditional
-                    patterns and mirror work.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Kutchi Mojari - The Iconic Shoes">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Types of Leather Products</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    <ul style='list-style: none; padding: 0;'>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Mojari/Jutti - Traditional embroidered shoes
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Bags and purses - With mirror work and
-                            embroidery</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Belts - Hand-tooled leather with brass
-                            fittings</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Saddles and horse gear - For the pastoral
-                            community</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Water containers - Traditional leather
-                            mashak</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Wall hangings - Decorative leather panels
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Wallets and accessories - Contemporary
-                            designs</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Footstools and cushions - Leather with
-                            embroidered covers</li>
+            <div class="grid-2 reveal" style="margin-top: 4rem;">
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">Types of Products</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Mojari/Jutti</strong>: Traditional embroidered shoes — the iconic Kutch craft.</li>
+                        <li><strong>Bags & Purses</strong>: With mirror work and traditional embroidery.</li>
+                        <li><strong>Belts</strong>: Hand-tooled leather with brass fittings.</li>
+                        <li><strong>Saddles & Horse Gear</strong>: For the pastoral community.</li>
+                        <li><strong>Wallets & Accessories</strong>: Contemporary designs with traditional touches.</li>
                     </ul>
-                </div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Types of Leather Products">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Traditional Techniques</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">The leather is first
-                    cleaned and softened through a tanning process using natural materials. For mojaris, the artisan
-                    cuts the leather pieces according to patterns passed down through generations. The pieces are
-                    stitched together using strong thread, traditionally made from camel sinew but now often cotton or
-                    nylon. The soles are made from layers of leather stacked and stitched together for durability.
-                    Finally, embroidery, mirror work, or beadwork is applied to the upper surface.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Traditional Techniques">
-            </div>
-        </div>
-
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Embroidery & Decoration</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    <ul style='list-style: none; padding: 0;'>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Thread embroidery in geometric and floral
-                            patterns</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Shisha (mirror work) creating sparkling
-                            effects</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Zari work - metallic thread embroidery</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Beadwork in traditional designs</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Sequins and colored stones</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Hand-painting on leather surfaces</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Cutwork and appliqué techniques</li>
+                </section>
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">Where to Buy</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Bhuj Markets</strong>: Wide selection of leather shops.</li>
+                        <li><strong>Local Villages</strong>: Buy directly from Mochi artisans.</li>
+                        <li><strong>Cooperatives</strong>: Fair-trade organizations supporting craftspeople.</li>
+                        <li><strong>Rann Utsav</strong>: Annual festival with leather craft exhibitions.</li>
                     </ul>
-                </div>
+                </section>
             </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Embroidery & Decoration">
-            </div>
-        </div>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Leather Tanning Process</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Traditional tanning
-                    in Kutch uses vegetable tanning methods with materials like tree bark, roots, and leaves. The raw
-                    hide is cleaned, dehaired, and soaked in tanning solutions for several weeks. This creates soft,
-                    pliable leather with a natural color. Modern artisans also use chrome tanning for certain products.
-                    Natural tanning produces more sustainable, eco-friendly leather compared to industrial chemical
-                    tanning.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Leather Tanning Process">
-            </div>
-        </div>
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Decoration Techniques</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">What makes Kutchi leather unique</p>
+                </div>
+                <div class="grid-2">
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/leather-craft.webp" alt="Thread Embroidery">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Thread Embroidery</h3>
+                            <p class="attraction-desc">Geometric and floral patterns stitched with colorful threads. Each design tells a story of local folklore and tradition.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/leather-craft.webp" alt="Mirror Work">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Mirror Work (Shisha)</h3>
+                            <p class="attraction-desc">Tiny mirrors embedded in leather create sparkling effects. A unique combination found primarily in Kutch.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/leather-craft.webp" alt="Zari Work">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Zari Work</h3>
+                            <p class="attraction-desc">Metallic gold and silver thread embroidery for premium pieces. Often used in bridal and ceremonial footwear.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/crafts/leather-craft.webp" alt="Beadwork">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Beadwork & Sequins</h3>
+                            <p class="attraction-desc">Colored beads and sequins add texture and sparkle. Popular in contemporary fusion designs.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Contemporary Innovations</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">Modern leather
-                    artisans are adapting to contemporary tastes while preserving traditional techniques. They create
-                    fusion designs combining Kutchi embroidery with modern shoe styles. Leather bags with traditional
-                    mirror work are popular globally. Some artisans collaborate with fashion designers to create
-                    contemporary accessories. There</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Contemporary Innovations">
-            </div>
-        </div>
+            <section class="guide-section reveal">
+                <div class="editorial-note">
+                    <div class="section-header">
+                        <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Did You Know?</h3>
+                    </div>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <h4>No Left-Right</h4>
+                            <p>Kutchi mojaris have no left-right distinction — they fit either foot.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>1,000+ Stitches</h4>
+                            <p>A single pair can involve over 1,000 individual hand stitches.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>Camel Leather</h4>
+                            <p>Prized for durability and natural water resistance.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>15+ Generations</h4>
+                            <p>Some artisan families have been making mojaris for 15+ generations.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">How to Identify Quality Leatherwork</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    <ul style='list-style: none; padding: 0;'>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Check the stitching - should be tight and
-                            even</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Quality leather feels supple and has a
-                            natural grain</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Embroidery should be securely attached
-                            without loose threads</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Mirrors should be firmly set and not wobble
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>No chemical smell - good leather has an
-                            earthy aroma</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Soles should be thick and well-constructed
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Colors should be consistent and vibrant</li>
-                    </ul>
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="grid-2">
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Buying Tips</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Try Before Buying</strong>: Mojaris should fit snugly initially — they stretch.</li>
+                            <li><strong>Ask About Leather Type</strong>: Camel, goat, buffalo, or cow.</li>
+                            <li><strong>Check Stitching</strong>: Should be tight and even throughout.</li>
+                            <li><strong>Hand vs Machine</strong>: Handwork has slight variations.</li>
+                            <li><strong>Get Care Instructions</strong>: Proper care extends life significantly.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Price Range</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Basic Mojaris</strong>: ₹500 - ₹1,500</li>
+                            <li><strong>Embroidered with Mirrors</strong>: ₹1,500 - ₹4,000</li>
+                            <li><strong>Premium Designer</strong>: ₹4,000 - ₹8,000</li>
+                            <li><strong>Leather Bags</strong>: ₹800 - ₹5,000</li>
+                            <li><strong>Belts & Accessories</strong>: ₹300 - ₹2,000</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="How to Identify Quality Leatherwork">
-            </div>
-        </div>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Buying Tips</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
-                    <ul style='list-style: none; padding: 0;'>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Visit leather craft shops in Bhuj and local
-                            villages</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Try mojaris before buying - they should fit
-                            snugly initially</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Ask about the leather type (camel, goat,
-                            buffalo, or cow)</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Check if embroidery is hand-done or
-                            machine-made</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Negotiate respectfully - handmade items take
-                            days to create</li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Request care instructions from the artisan
-                        </li>
-                        <li style='margin-bottom:0.5rem; display:flex; gap:0.5rem; align-items:center;'><span
-                                style='color:var(--color-primary);'>•</span>Support cooperatives that ensure fair wages
-                            to craftspeople</li>
-                    </ul>
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Explore Other Crafts</h2>
                 </div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Buying Tips">
-            </div>
-        </div>
+                <div class="grid-2">
+                    <a href="ajrakh.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Ajrakh</h3>
+                            <p class="attraction-desc">Ancient block printing technique using natural dyes like indigo and madder.</p>
+                        </div>
+                    </a>
+                    <a href="bandhani.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Bandhani</h3>
+                            <p class="attraction-desc">Traditional tie-dye art with thousands of hand-tied knots.</p>
+                        </div>
+                    </a>
+                    <a href="pottery.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Kutch Pottery</h3>
+                            <p class="attraction-desc">Ancient terracotta art dating back to the Harappan era.</p>
+                        </div>
+                    </a>
+                    <a href="sudi-chappu.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Sudi Chappu</h3>
+                            <p class="attraction-desc">Traditional knife-making craft of Anjar with forged steel blades.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Care & Maintenance</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">New mojaris may feel
-                    tight but will stretch to fit your feet perfectly within a week. Clean leather items with a soft,
-                    damp cloth. Apply leather conditioner or natural oils periodically to prevent drying. Store in a
-                    cool, dry place away from direct sunlight. For embroidered items, avoid getting the thread work wet.
-                    Resoling services are available in Kutch for worn mojaris.</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Care & Maintenance">
-            </div>
-        </div>
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Gallery</h2>
+                </div>
+                <div class="gallery-grid">
+                    <img src="../assets/images/crafts/leather-craft.webp" alt="Traditional Embroidered Mojari">
+                    <img src="../assets/images/crafts/leather-craft.webp" alt="Artisan at Work">
+                    <img src="../assets/images/crafts/leather-craft.webp" alt="Mirror Work Detail">
+                    <img src="../assets/images/crafts/leather-craft.webp" alt="Leather Bags">
+                </div>
+            </section>
 
-        <div class="craft-section reveal">
-            <div class="craft-text">
-                <h2 class="section-heading">Price Range</h2>
-                <div class="article-text" style="font-size: 1.1rem; line-height: 1.8; color: #555;">₹500 - ₹8,000
-                    depending on materials and craftsmanship. Basic mojaris (₹500-1,500), embroidered mojaris with
-                    mirror work (₹1,500-4,000), premium designer pieces (₹4,000-8,000), leather bags (₹800-5,000), belts
-                    and accessories (₹300-2,000).</div>
-            </div>
-            <div class="craft-image">
-                <img src="../assets/images/crafts/leather-craft.webp" alt="Price Range">
-            </div>
-        </div>
-
-
-        <div class="reveal">
-            <div class="facts-grid">
-                <div style="grid-column: 1/-1; text-align: center; margin-bottom: 2rem;">
-                    <h2 class="section-heading" style="font-size: 2rem;">Did You Know?</h2>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>Kutchi mojaris have no left-right distinction - they fit either foot</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>A single pair of mojaris can involve over 1,000 individual stitches</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>Traditional mojari soles can last for years with proper care</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>Camel leather is prized for its durability and natural water resistance</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>The embroidery patterns often tell stories from local folklore</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>Natural tanning process can take 4-6 weeks for quality leather</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>Some artisan families have been making mojaris for 15+ generations</p>
-                </div>
-                <div class="fact-card"><span class="fact-icon">✨</span>
-                    <p>Kutchi mojaris are exported to fashion markets worldwide</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="section reveal">
-            <h2 class="section-heading text-center" style="display: block; text-align: center; margin-bottom: 3rem;">
-                Gallery</h2>
-            <div class="gallery-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
-                <div class="reveal"><img src="../assets/images/crafts/leather-craft.webp"
-                        alt="Traditional Embroidered Mojari"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/leather-craft-2.webp"
-                        alt="Artisan Stitching Leather"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/leather-craft-3.webp" alt="Mirror Work Detail"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/leather-craft-4.webp"
-                        alt="Leather Bags Collection"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-                <div class="reveal"><img src="../assets/images/crafts/leather-craft-5.webp"
-                        alt="Traditional Leatherworking Tools"
-                        style="width:100%; height:300px; object-fit:cover; border-radius:1rem;"></div>
-            </div>
-        </div>
-
+        </article>
     </main>
 
     <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
@@ -512,7 +290,6 @@
         </div>
     </div>
 </footer>
-
     <script src="../js/script.js"></script>
 </body>
 
