@@ -106,7 +106,19 @@
 </head>
 
 <body>
-    <div class="dev-banner">Website Under Development</div>
+    <div class="dev-banner" style="text-align: center;">Website Under Development</div>
+    <style>
+        .dev-banner {
+            text-align: center !important;
+            font-size: 0.85rem;
+        }
+        @media (max-width: 768px) {
+            .dev-banner {
+                font-size: 0.7rem;
+                padding: 0.4rem 0.5rem;
+            }
+        }
+    </style>
 
     <!-- Dark Mode Toggle -->
     <button class="dark-mode-toggle" id="darkModeToggle" aria-label="Toggle dark mode">
