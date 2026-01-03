@@ -273,13 +273,13 @@ nav.scrolled {
 }
 
 .nav-logo {
-    height: 75px;
+    height: 100px;
     width: auto;
     transition: var(--transition-base);
 }
 
 nav.scrolled .nav-logo {
-    height: 50px;
+    height: 70px;
 }
 
 .nav-content {
@@ -669,6 +669,10 @@ nav.scrolled .nav-logo {
         --spacing-lg: 4rem;
     }
 
+    .container {
+        padding: 0 1.25rem;
+    }
+
     .grid-3 {
         grid-template-columns: 1fr;
     }
@@ -703,17 +707,57 @@ nav.scrolled .nav-logo {
         gap: 3rem;
     }
 
-    .hero h1 {
-        font-size: clamp(2rem, 10vw, 4rem);
+    /* Hero Typography Fixes for Mobile */
+    .hero-title {
+        font-size: clamp(2.5rem, 10vw, 3.5rem) !important; /* Reduced max size */
+        margin-bottom: 0.5rem;
+        white-space: normal; /* Ensure wrapping */
+        word-wrap: break-word; /* distinct fix for overlap */
     }
 
-    /* Make hero subtitle responsive on mobile */
-    .hero p[style*="font-size: 2.2rem"] {
-        font-size: 1.5rem !important;
+    .hero-subtitle {
+        font-size: 1.5rem !important; /* Force smaller size */
+        line-height: 1.3;
+        margin-bottom: 1.5rem; 
+        display: block; /* Ensure it takes full width if needed */
     }
 
-    .hero p[style*="font-size: 1.6rem"] {
-        font-size: 1.1rem !important;
+    .hero p.hero-desc {
+        font-size: 1rem !important;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem; /* Slight side padding */
+    }
+
+    /* General Heading Adjustments */
+    h2 {
+        font-size: clamp(2rem, 6vw, 2.5rem);
+    }
+
+    /* Guide Section Spacing Reduction */
+    .timeline {
+        gap: 0.75rem;
+    }
+    
+    .timeline-item {
+        padding: 1rem;
+    }
+    
+    .route-list {
+        gap: 0.75rem;
+    }
+    
+    .route-item {
+        padding: 1rem;
+    }
+    
+    /* Reduce Header Spacing in Guide */
+    .card-header {
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.75rem !important; /* reduce header size slightly */
     }
 }
 
@@ -1067,6 +1111,12 @@ nav.scrolled .nav-logo {
     color: #991b1b;
 }
 
+.route-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .route-item {
     display: flex;
     gap: 1.5rem;
@@ -1175,7 +1225,7 @@ nav.scrolled .nav-logo {
 
 /* Master Footer */
 .footer-main {
-    padding: 10rem 0 4rem;
+    padding: 4rem 0 2rem;
     background: var(--color-white);
     color: var(--color-text);
     border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -1522,4 +1572,115 @@ nav.scrolled .nav-logo {
     text-align: center;
     margin-bottom: 3rem;
     margin-top: 5rem;
+}
+
+/* About page styles (scoped to avoid affecting other pages) */
+.about-page .about-hero {
+    height: 62vh;
+    background-image: url('../assets/images/about-hero.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.about-page .about-hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(6,21,41,0.35) 0%, rgba(6,21,41,0.6) 60%);
+    z-index: 1;
+}
+
+.about-page .about-hero .hero-inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    text-align: left;
+}
+
+.about-page .about-hero h1 {
+    font-size: clamp(2rem, 4.5vw, 3.2rem);
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+    line-height: 1.05;
+}
+
+.about-page .about-hero p.lead {
+    color: rgba(255,255,255,0.95);
+    font-size: 1.05rem;
+    max-width: 70ch;
+    margin-bottom: 1.25rem;
+    opacity: 0.95;
+}
+
+.about-page {
+    /* offset content to account for fixed nav */
+    padding-top: 5.25rem;
+}
+
+.about-page .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 2.25rem;
+    align-items: start;
+    max-width: 1100px;
+    margin: -1.5rem auto 2.5rem;
+    padding: 0 1.25rem;
+    z-index: 3;
+    position: relative;
+}
+
+.about-page .about-card {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 20px 40px rgba(11,13,18,0.06);
+    color: var(--color-heading);
+}
+
+.about-page .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.about-page .value { padding: 1rem; border-radius: 8px; background: linear-gradient(180deg, rgba(250,250,250,1), rgba(245,247,250,1)); font-weight:700; color:var(--color-primary); text-align:center; }
+
+.about-page .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap:1rem; margin-top:1rem; }
+
+.about-page .team-member { text-align:center; padding:1rem; }
+
+.about-page .team-member img { width:100%; height:180px; object-fit:cover; border-radius:8px; box-shadow: 0 8px 20px rgba(15,23,42,0.06); }
+
+.about-page .stats { display:flex; gap:1rem; justify-content:space-between; margin-top:1rem; }
+
+.about-page .stat { flex:1; min-width:0; background: linear-gradient(180deg, #fff, #fbfbfd); border-radius:8px; padding:1rem; text-align:center; box-shadow:0 8px 20px rgba(11,13,18,0.04); }
+
+.about-page .cta { display:flex; gap:1rem; margin-top:1.25rem; }
+
+.about-page .btn-primary { background: var(--color-primary); color: white; padding: .8rem 1.2rem; border-radius: 999px; font-weight:700; }
+
+.about-page .sidebar-list { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:.75rem; }
+
+.about-page .sidebar-list li { background: linear-gradient(180deg, #fff, #fafafa); padding:.8rem 1rem; border-radius:8px; box-shadow: 0 6px 18px rgba(11,13,18,0.04); }
+
+@media (max-width: 900px) {
+    .about-page { padding-top: 4.5rem; }
+    .about-page .about-grid { grid-template-columns: 1fr; margin-top: 1rem; }
+    .about-page .team-grid { grid-template-columns: repeat(2,1fr); }
+    .about-page .about-card { padding: 1.25rem; }
+}
+
+@media (max-width: 700px) {
+    .about-page .stats { flex-direction: column; gap: .75rem; }
+    .about-page .about-hero .hero-inner { padding: 2.5rem 1rem; }
+    .about-page .team-grid { grid-template-columns: 1fr; }
+    .about-page .about-grid { margin: 0.25rem auto 1.5rem; gap: 1rem; }
+    .about-page .btn-primary { padding: .6rem .9rem; }
 }
