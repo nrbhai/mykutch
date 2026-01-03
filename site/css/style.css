@@ -388,8 +388,7 @@ nav.scrolled .nav-logo {
     color: #ffffff;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     letter-spacing: -0.02em;
-    white-space: nowrap;
-    /* Force one line */
+    /* white-space: nowrap;  Removed to allow wrapping on mobile */
 }
 
 .hero-subtitle {
@@ -800,7 +799,76 @@ nav.scrolled .nav-logo {
     .destination-content {
         padding: 2rem;
     }
+
+    /* Hero Title Adjustment */
+    .hero-title {
+        font-size: clamp(2rem, 5vw, 3rem);
+        /* Smaller base and max size for mobile */
+        margin-top: 1rem;
+        /* Add space from top */
+    }
+
+    /* Destination Content Adjustment */
+    .destination-content {
+        padding: 1rem;
+    }
+
+    .editorial-container {
+        padding: 0 1.25rem;
+        /* Slightly reduced to prevent edge tension */
+    }
+
+    .styled-list {
+        padding-left: 0.5rem;
+        /* Give bullets more room */
+    }
 }
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+
+    .destination-content {
+        padding: 2rem 1.5rem;
+        /* Reduced padding for mobile */
+    }
+
+    .destination-sidebar {
+        position: static;
+        /* Stack sidebar on mobile */
+        margin-top: 2rem;
+    }
+
+    /* Fix Hero Title Overflow on Mobile */
+    .hero-title {
+        white-space: normal;
+        /* Allow wrapping */
+        font-size: clamp(2.5rem, 10vw, 4rem);
+        /* Adjust size */
+        word-wrap: break-word;
+    }
+
+    .destination-hero h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem) !important;
+        padding: 0 1rem;
+    }
+}
+
+/* Global Heading Style for Destinations */
+.section-header h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Ensure Heading Bright Blue is applied if class is added dynamically or statically */
+.heading-bright-blue {
+    display: inline-block;
+    /* Fix for some gradient rendering issues */
+}
+
 
 /* Feature Tabs Section */
 .feature-tabs {
@@ -1441,4 +1509,17 @@ nav.scrolled .nav-logo {
 [data-theme="dark"] .diversity-card:hover {
     border-color: var(--color-secondary);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Common Destination Styles */
+.editorial-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
 }

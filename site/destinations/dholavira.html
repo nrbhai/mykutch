@@ -27,6 +27,7 @@
     </script>
 
     <style>
+        /* Local custom styles removed in favor of global style.css */
         .editorial-container {
             max-width: 900px;
             margin: 0 auto;
@@ -39,139 +40,15 @@
             margin-top: 5rem;
         }
 
-        .section-header h2 {
-            font-size: 2.5rem;
-            color: var(--color-heading);
-            margin-bottom: 1rem;
-            position: relative;
-            display: inline-block;
-        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 2rem;
+            }
 
-        .section-header h2::after {
-            content: '';
-            display: block;
-            width: 40px;
-            height: 2px;
-            background: var(--color-primary);
-            margin: 1rem auto 0;
-        }
-
-        .guide-section {
-            margin-bottom: 4rem;
-        }
-
-        .lead-text {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: #444;
-            font-weight: 300;
-        }
-
-        .lead-text::first-letter {
-            font-size: 3.5rem;
-            float: left;
-            line-height: 0.8;
-            margin-right: 0.5rem;
-            margin-top: 0.2rem;
-            font-family: var(--font-heading);
-            color: var(--color-primary);
-        }
-
-        .styled-list {
-            list-style: none;
-            padding: 0;
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .styled-list li {
-            position: relative;
-            padding-left: 1.5rem;
-            font-size: 1.1rem;
-            color: var(--color-text);
-            border-left: 2px solid rgba(0, 0, 0, 0.1);
-            padding-left: 1.5rem;
-            transition: border-color 0.3s;
-        }
-
-        .styled-list li:hover {
-            border-left-color: var(--color-primary);
-        }
-
-        .styled-list strong,
-        .styled-list b {
-            color: var(--color-heading);
-            font-weight: 600;
-            display: block;
-            margin-bottom: 0.25rem;
-            font-family: var(--font-heading);
-            letter-spacing: 0.02em;
-        }
-
-        .styled-list li:nth-child(4n+1) strong {
-            color: #C2410C;
-        }
-
-        .styled-list li:nth-child(4n+2) strong {
-            color: #059669;
-        }
-
-        .styled-list li:nth-child(4n+3) strong {
-            color: #0891B2;
-        }
-
-        .styled-list li:nth-child(4n+4) strong {
-            color: #B45309;
-        }
-
-        .styled-list li:nth-child(4n+4) strong {
-            color: #B45309;
-        }
-
-        /* Heading Cycle */
-        .editorial-container section:nth-of-type(4n+1) h2,
-        .editorial-container section:nth-of-type(4n+1) h3 {
-            color: #C2410C !important;
-        }
-
-        .editorial-container section:nth-of-type(4n+2) h2,
-        .editorial-container section:nth-of-type(4n+2) h3 {
-            color: #059669 !important;
-        }
-
-        .editorial-container section:nth-of-type(4n+3) h2,
-        .editorial-container section:nth-of-type(4n+3) h3 {
-            color: #0891B2 !important;
-        }
-
-        .editorial-container section:nth-of-type(4n+4) h2,
-        .editorial-container section:nth-of-type(4n+4) h3 {
-            color: #B45309 !important;
-        }
-
-        .section-header h2::after {
-            background: currentColor !important;
-            opacity: 0.5;
-        }
-
-        .day-header {
-            color: inherit !important;
-        }
-
-        .itinerary-box:nth-child(4n+1) .day-header {
-            color: #C2410C !important;
-        }
-
-        .itinerary-box:nth-child(4n+2) .day-header {
-            color: #059669 !important;
-        }
-
-        .itinerary-box:nth-child(4n+3) .day-header {
-            color: #0891B2 !important;
-        }
-
-        .itinerary-box:nth-child(4n+4) .day-header {
-            color: #B45309 !important;
+            .lead-text {
+                font-size: 1.1rem;
+            }
         }
 
         .grid-2 {
@@ -385,7 +262,7 @@
             <div class="grid-2 reveal">
                 <section class="guide-section">
                     <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;">
-                        <h2>Who Should Visit</h2>
+                        <h2 class="heading-bright-blue">Who Should Visit</h2>
                     </div>
                     <ul class="styled-list">
                         <li>Information unavailable</li>
@@ -393,7 +270,7 @@
                 </section>
                 <section class="guide-section">
                     <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;">
-                        <h2>How to Reach</h2>
+                        <h2 class="heading-bright-blue">How to Reach</h2>
                     </div>
                     <ul class="styled-list">
                         <li><strong>By Road</strong>: Connected via the stunning 'Road to Heaven' from Khavda, or via
@@ -475,7 +352,7 @@
 
             <section class="guide-section reveal">
                 <div class="section-header">
-                    <h2>Nearby Places to Visit</h2>
+                    <h2 class="heading-bright-blue">Nearby Places to Visit</h2>
                 </div>
                 <div class="grid-2">
                     <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
@@ -509,7 +386,7 @@
 
             <section class="guide-section reveal">
                 <div class="section-header">
-                    <h2>Location & Gallery</h2>
+                    <h2 class="heading-bright-blue">Location & Gallery</h2>
                 </div>
                 <div
                     style="height: 400px; border-radius: 4px; overflow: hidden; margin-bottom: 2rem; border: 1px solid #eee;">
