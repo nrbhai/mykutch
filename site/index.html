@@ -124,6 +124,7 @@
                 <a href="hidden-gems.html">Hidden Gems</a>
                 <a href="blog.html">Blog</a>
                 <a href="history.html">History</a>
+                <a href="geography.html">Geography</a>
                 <a href="crafts.html">Crafts</a>
                 <a href="landscapes.html">Landscapes</a>
                 <a href="bookings.html">Bookings</a>
@@ -453,7 +454,7 @@
                             </div>
                         </div>
 
-                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="route-list">
                             <div class="route-item reveal" data-delay="100">
                                 <div class="card-icon-circle" style="width: 45px; height: 45px; font-size: 1.2rem;">✈️
                                 </div>
@@ -529,14 +530,14 @@
         <!-- Travel Tips Section -->
         <section class="section reveal" style="background: #fff;">
             <div class="container">
-                <div style="padding: 3rem; background: #fafafa; border-radius: 2rem; border: 1px solid #f1f5f9;">
+                <div style="padding: 2rem 1.5rem; background: #fafafa; border-radius: 1.5rem; border: 1px solid #f1f5f9;">
                     <div class="text-center mb-2">
                         <h2 class="heading-bright-blue" style="font-size: 2rem; margin-bottom: 1rem;">Essential Travel
                             Tips
                         </h2>
                         <p style="color: #64748b;">Make the most of your Kutch adventure</p>
                     </div>
-                    <div class="grid-3" style="margin-top: 2.5rem;">
+                    <div class="grid-3" style="margin-top: 1.5rem; gap: 1.5rem;">
                         <div style="text-align: center;">
                             <span style="font-size: 2.5rem; display: block; margin-bottom: 0.5rem;">🧥</span>
                             <h4 style="color: var(--color-primary);">Pack Smart</h4>
@@ -590,33 +591,28 @@
         </section>
     </main>
 
-    <footer class="footer-main"
-        style="margin-top: 5rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">
-                    About MyKutch.org</h3>
-                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the
-                    vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
-                <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Contact:</span>
-                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91
-                            98250 34580</a>
-                    </div>
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Email:</span>
-                        <a href="mailto:info@mykutch.org"
-                            style="color: white; text-decoration: none; font-weight: 500;">info@mykutch.org</a>
-                    </div>
+    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <img src="assets/images/logo.png" alt="MyKutch Logo" style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
+            <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;">About MyKutch.org</h3>
+            <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Contact:</span>
+                    <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
                 </div>
-                <div
-                    style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
-                    <p>Developed with Love for Kutch by MyKutch.org team</p>
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Email:</span>
+                    <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
                 </div>
             </div>
+            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
+                <p>Developed with Love for Kutch by MyKutch.org team</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
     <script src="js/script.js"></script>
 </body>

@@ -28,48 +28,42 @@
 
     <style>
         /* Local custom styles removed in favor of global style.css */
-        .editorial-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            margin-top: 5rem;
-        }
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .section-header h2 {
-                font-size: 2rem;
+                font-size: 1.5rem !important;
             }
 
             .lead-text {
-                font-size: 1.1rem;
+                font-size: 1rem;
             }
         }
 
         .grid-2 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
+            text-align: left;
         }
 
+        /* Modern Card Design */
         .attraction-card {
             background: white;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
             display: flex;
             flex-direction: column;
+            overflow: hidden;
+            text-align: left;
         }
 
         .attraction-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-            border-color: rgba(0, 0, 0, 0.0);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
         .attraction-img-wrapper {
@@ -89,42 +83,56 @@
         }
 
         .attraction-content {
-            padding: 2rem;
+            padding: 1.5rem;
             flex-grow: 1;
         }
 
         .attraction-title {
             font-family: var(--font-heading);
-            font-size: 1.3rem;
-            margin-bottom: 0.75rem;
-            color: var(--color-heading);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: #00d26a; /* Bright Green */
+            font-weight: 600;
+            line-height: 1.3;
+            border-bottom: 2px solid #FBC02D; /* Pale Yellow Underline */
+            display: inline-block;
         }
 
         .attraction-desc {
             font-size: 0.95rem;
             opacity: 0.8;
             line-height: 1.6;
+            color: var(--color-text);
         }
 
+        /* Itinerary Timeline */
         .itinerary-box {
-            border-left: 1px solid #ddd;
+            border-left: 2px solid #e2e8f0;
             margin-left: 1rem;
-            padding: 0 0 2rem 2.5rem;
+            padding: 0 0 2rem 2rem;
             position: relative;
+            text-align: left;
         }
 
         .itinerary-box:last-child {
             padding-bottom: 0;
             border: none;
-            padding-left: 2.6rem;
+            padding-left: 2.1rem;
+        }
+        
+        .itinerary-box p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin: 0;
         }
 
         .timeline-dot {
             position: absolute;
             left: -6px;
             top: 0;
-            width: 11px;
-            height: 11px;
+            width: 10px;
+            height: 10px;
             background: var(--color-primary);
             border-radius: 50%;
             box-shadow: 0 0 0 4px white;
@@ -132,32 +140,23 @@
 
         .day-header {
             font-family: var(--font-heading);
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--color-heading);
-            margin-bottom: 0.5rem;
+            font-size: 1.15rem; /* Unified Subheading Size */
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
             display: block;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--color-primary);
+            letter-spacing: 0.05em;
         }
 
+        /* Modern Editorial Note */
         .editorial-note {
-            background-color: #F9F9F9;
-            border-top: 1px solid #000;
-            border-bottom: 1px solid #000;
-            padding: 3rem;
+            background-color: #f8fafc;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
             margin: 2rem 0;
-            text-align: center;
-        }
-
-        .editorial-note h3 {
-            font-family: var(--font-heading);
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            font-size: 0.9rem;
-            margin-bottom: 2rem;
-            color: #888;
+            text-align: left; /* Align Left */
+            border: 1px solid rgba(0,0,0,0.03);
         }
 
         .tips-grid {
@@ -168,14 +167,36 @@
         }
 
         .tip-item h4 {
-            font-size: 1rem;
+            font-size: 1.15rem; /* Unified Subheading Size */
             margin-bottom: 0.5rem;
             color: var(--color-heading);
+            font-weight: 600;
         }
 
         .tip-item p {
-            font-size: 0.9rem;
-            color: #666;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .styled-list {
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .styled-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .styled-list li strong {
+            color: #333;
+            border-bottom: 2px solid #E91E63; /* Attractive Rose/Pink Underline */
+            display: inline-block;
+            line-height: 1.2;
+            margin-right: 0.3rem;
         }
 
         .gallery-grid {
@@ -190,11 +211,62 @@
             aspect-ratio: 4/3;
             height: auto;
             object-fit: cover;
+            border-radius: 0.75rem;
             transition: opacity 0.3s;
         }
 
-        .gallery-grid img:hover {
-            opacity: 0.9;
+        /* Specific section header override if needed */
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem !important; /* Uniform Gap globally */
+            margin-top: 0 !important;
+        }
+        
+        /* Ensure paragraph under header aligns left too */
+        .section-header p {
+             text-align: left !important;
+             margin-left: 0 !important;
+             margin-top: 0.5rem !important;
+        }
+
+        .section-header h2, .heading-bright-blue {
+            font-size: 1.8rem !important;
+            background-color: #8B0000; /* Dark Red */
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 2px; /* Slight ease for rectangle */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0 !important; /* Let container handle the big gap */
+            font-weight: 700 !important;
+        }
+        
+        /* Override any centering on body/main just in case (though unlikely) */
+        main {
+            text-align: left;
+        }
+
+        .shining-blue-text {
+            color: #007bff; /* Bright Blue */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Shining Effect */
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .destination-hero::before {
+            background: none !important;
+            display: none !important;
         }
 
         .hero-text-bright {
@@ -203,20 +275,23 @@
         }
 
         @media (max-width: 768px) {
-            .section-header h2 {
-                font-size: 2rem;
-            }
-
-            .lead-text {
-                font-size: 1.1rem;
-            }
-
             .editorial-container {
                 padding: 0 1rem;
             }
 
             .editorial-note {
-                padding: 2rem 1rem;
+                padding: 2rem 1.5rem;
+            }
+            
+            .grid-2 {
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+            }
+
+            .shining-blue-text {
+                font-size: 1.4rem; /* Smaller for mobile */
+                margin-top: 1rem;
+                padding: 0 1rem;
             }
         }
     </style>
@@ -244,52 +319,47 @@
     <header class="destination-hero"
         style="background-image: url('../assets/images/kadia-dhrow/kadia-dhrow1.webp'); justify-content: center; text-align: center;">
         <div class="hero-content-inner reveal">
-            <h1 class="hero-text-bright">Kadia Dhro</h1>
-            <p class="hero-text-bright"
-                style="font-size: 1.2rem; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 500;">The Grand
-                Canyon of India</p>
         </div>
     </header>
+
+    <div class="container reveal">
+         <h1 class="shining-blue-text">Kadia Dhro — The Grand Canyon of India</h1>
+    </div>
 
     <main>
         <article class="editorial-container">
             <section class="guide-section reveal" style="margin-top: 4rem;">
-                <p class="lead-text">
-                    Kadia Dhro (or Kadiya Dhrow) is Kutch's most spectacular hidden gem, often called the 'Grand Canyon
+                <p class="lead-text">Kadia Dhro (or Kadiya Dhrow) is Kutch's most spectacular hidden gem, often called the 'Grand Canyon
                     of India'. This geological marvel features stunning multi-colored rock formations carved by wind and
                     water over centuries. The riverbed displays vibrant bands of red, yellow, and orange sandstone,
                     creating a surreal landscape that looks like a painting come to life. Once an obscure spot, it is
-                    now a must-visit for nature lovers.
-                </p>
+                    now a must-visit for nature lovers.</p>
             </section>
 
-            <div class="grid-2 reveal">
+            <div class="grid-2 reveal" style="margin-top: 4rem;">
                 <section class="guide-section">
-                    <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;">
+                    <div class="section-header">
                         <h2 class="heading-bright-blue">Who Should Visit</h2>
                     </div>
-                    <ul class="styled-list">
-                        <li><strong>Photographers</strong>: For the dramatic colors and rock textures (Best light at
+                    <ul class="styled-list"><li><strong>Photographers</strong>: For the dramatic colors and rock textures (Best light at
                             Sunrise/Sunset).</li>
                         <li><strong>Hikers & Explorers</strong>: Requires a bit of walking on uneven rocky terrain.</li>
                         <li><strong>Geology Enthusiasts</strong>: To study the unique Jurassic-era sedimentary rock
                             layers.</li>
                         <li><strong>Note</strong>: NOT suitable for elderly or those with mobility issues due to rough
-                            terrain.</li>
-                    </ul>
+                            terrain.</li></ul>
                 </section>
                 <section class="guide-section">
-                    <div class="section-header" style="margin-top: 0; margin-bottom: 2rem; text-align: left;">
+                    <div class="section-header">
                         <h2 class="heading-bright-blue">How to Reach</h2>
                     </div>
-                    <ul class="styled-list">
-                        <li><strong>From Bhuj</strong>: 45km | 1 Hr. Take the road towards Kodki village.</li>
-                        <li><strong>The Last Mile</strong>: The final 3-4 km is an unpaved dirt track. High-ground
-                            clearance cars (SUVs) are recommended, though normal cars can make it with careful driving.
-                        </li>
-                        <li><strong>Navigation</strong>: Google Maps is generally accurate, but ask locals in nearby
-                            villages if unsure.</li>
-                    </ul>
+                    <ul class="styled-list"><li><strong>Photographers</strong>: For the dramatic colors and rock textures (Best light at
+                            Sunrise/Sunset).</li>
+                        <li><strong>Hikers & Explorers</strong>: Requires a bit of walking on uneven rocky terrain.</li>
+                        <li><strong>Geology Enthusiasts</strong>: To study the unique Jurassic-era sedimentary rock
+                            layers.</li>
+                        <li><strong>Note</strong>: NOT suitable for elderly or those with mobility issues due to rough
+                            terrain.</li></ul>
                 </section>
             </div>
 
@@ -350,32 +420,68 @@
             </section>
             <section class="guide-section reveal">
                 <div class="editorial-note">
-                    <h3>Curated Local Advice</h3>
-                    <div class="tips-grid">
-                        <div class="tip-item">
+                    <div class="section-header">
+                        <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Curated Local Advice</h3>
+                    </div>
+                    <div class="tips-grid"><div class="tip-item">
                             <h4>No Facilities</h4>
-                            <p>There are ZERO shops, toilets, or water stalls. Carry everything you need.</p>
+                            <p>There are ZERO shops, toilets, or water stalls. Carry everything you need.</p></div>
+                </div>
+            </section>
+
+
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="grid-2">
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">
+                                Shopping & Bazaars</h3>
                         </div>
-                        <div class="tip-item">
-                            <h4>Network</h4>
-                            <p>Mobile signal is very weak or non-existent in the canyon.</p>
+                        <ul class="styled-list"><li>Check local guides for shopping.</li></ul>
+                    </div>
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">
+                                Local Eats</h3>
                         </div>
-                        <div class="tip-item">
-                            <h4>Littering</h4>
-                            <p>Please bring a trash bag. Do not ruin this pristine site with plastic.</p>
-                        </div>
-                        <div class="tip-item">
-                            <h4>Safety</h4>
-                            <p>Do not go too close to the water edge due to crocodiles and slippery moss.</p>
-                        </div>
+                        <ul class="styled-list"><li>Check local guides for food.</li></ul>
                     </div>
                 </div>
             </section>
+
+            <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px; margin-top: 4rem;">
+                <div class="section-header">
+                    <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">When to Visit</h3>
+                </div>
+                <p><strong>November to February:</strong> Best weather for hiking. <br><br><strong>Monsoon
+                        (July-Sept):</strong> The landscape is lush green and the river flows, looking mesmerizing, BUT
+                    the approach road becomes very muddy and difficult.</p>
+            </section>
+
             <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Nearby Places to Visit</h2>
+                </div>
+                <div class="grid-2"><a href="#" class="attraction-card" >
+                        <div class="attraction-content" >
+                            <h3 class="attraction-title" >Bhuj</h3>
+                            <p >(45km) The base city.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="attraction-card" >
+                        <div class="attraction-content" >
+                            <h3 class="attraction-title" >White Rann</h3>
+                            <p >(80km) Can be done on the same day if you start very early.
+                            </p>
+                        </div>
+                    </a></div>
+            </section>
+
+            <section class="guide-section reveal" style="margin-top: 4rem;">
                 <div class="section-header">
                     <h2 class="heading-bright-blue">Suggested Itinerary</h2>
                 </div>
-                <div style="max-width: 600px; margin: 0 auto;">
+                <div style="margin: 0; max-width: 800px;">
                     <div class="itinerary-box">
                         <div class="timeline-dot"></div>
                         <span class="day-header">7</span>
@@ -405,104 +511,47 @@
             </section>
 
             <section class="guide-section reveal">
-                <div class="grid-2">
-                    <div>
-                        <h3
-                            style="font-size: 1.5rem; margin-bottom: 1.5rem; font-family: var(--font-heading); text-decoration: underline;">
-                            Shopping & Bazaars</h3>
-                        <ul class="styled-list">
-                            <li>Check local guides for shopping.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3
-                            style="font-size: 1.5rem; margin-bottom: 1.5rem; font-family: var(--font-heading); text-decoration: underline;">
-                            Local Eats</h3>
-                        <ul class="styled-list">
-                            <li>Check local guides for food.</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px;">
-                <h3 style="font-family: var(--font-heading); font-size: 1.2rem; margin-bottom: 1rem;">When to Visit</h3>
-                <p><strong>November to February:</strong> Best weather for hiking. <br><br><strong>Monsoon
-                        (July-Sept):</strong> The landscape is lush green and the river flows, looking mesmerizing, BUT
-                    the approach road becomes very muddy and difficult.</p>
-            </section>
-
-            <section class="guide-section reveal">
-                <div class="section-header">
-                    <h2 class="heading-bright-blue">Nearby Places to Visit</h2>
-                </div>
-                <div class="grid-2">
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
-                        <div class="attraction-content" style="padding: 1.5rem;">
-                            <h3 class="attraction-title" style="font-size: 1.1rem;">Bhuj</h3>
-                            <p style="font-size: 0.9rem;">(45km) The base city.</p>
-                        </div>
-                    </a>
-                    <a href="#" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
-                        <div class="attraction-content" style="padding: 1.5rem;">
-                            <h3 class="attraction-title" style="font-size: 1.1rem;">White Rann</h3>
-                            <p style="font-size: 0.9rem;">(80km) Can be done on the same day if you start very early.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <section class="guide-section reveal">
                 <div class="section-header">
                     <h2 class="heading-bright-blue">Location & Gallery</h2>
                 </div>
                 <div
                     style="height: 400px; border-radius: 4px; overflow: hidden; margin-bottom: 2rem; border: 1px solid #eee;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14767.123456789!2d69.6697!3d23.2420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950ec6e1e559f19%3A0x2e23b8365f3870e1!2sKadia%20Dhrow!5e0!3m2!1sen!2sin"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14767.123456789!2d69.6697!3d23.2420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950ec6e1e559f19%3A0x2e23b8365f3870e1!2sKadia%20Dhrow!5e0!3m2!1sen!2sin"
                         width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                <div class="gallery-grid">
-                    <img src="../assets/images/kadia-dhrow/kadia-dhrow1.webp" alt="Spectacular Canyon Colors"><img
+                <div class="gallery-grid"><img src="../assets/images/kadia-dhrow/kadia-dhrow1.webp" alt="Spectacular Canyon Colors"><img
                         src="../assets/images/kadia-dhrow/kadia-dhrow2.webp" alt="Natural Rock Sculptures"><img
                         src="../assets/images/kadia-dhrow/kadia-dhrow3.webp" alt="River flowing through canyon"><img
                         src="../assets/images/kadia-dhrow/kadia-dhrow4.webp" alt="Rugged Landscape"><img
                         src="../assets/images/kadia-dhrow/kadia-dhrow5.webp" alt="Aerial View"><img
-                        src="../assets/images/kadia-dhrow/kadia-dhrow6.webp" alt="Crocodile in water pool">
-                </div>
+                        src="../assets/images/kadia-dhrow/kadia-dhrow6.webp" alt="Crocodile in water pool"></div>
             </section>
 
         </article>
     </main>
 
-    <footer class="footer-main"
-        style="margin-top: 4rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">
-                    About MyKutch.org</h3>
-                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the
-                    vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
-                <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Contact:</span>
-                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91
-                            98250 34580</a>
-                    </div>
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Email:</span>
-                        <a href="mailto:rachh.niraj@gmail.com"
-                            style="color: white; text-decoration: none; font-weight: 500;">rachh.niraj@gmail.com</a>
-                    </div>
+    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <img src="../assets/images/logo.png" alt="MyKutch Logo" style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
+            <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;">About MyKutch.org</h3>
+            <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Contact:</span>
+                    <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
                 </div>
-                <div
-                    style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
-                    <p>Developed with Love for Kutch by MyKutch.org team</p>
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Email:</span>
+                    <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
                 </div>
             </div>
+            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
+                <p>Developed with Love for Kutch by MyKutch.org team</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
     <script src="../js/script.js"></script>
 </body>
 

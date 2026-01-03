@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | MyKutch.org - Discover Kutch</title>
+    <meta name="description" content="MyKutch: celebrating the culture, people and landscapes of Kutch — sustainable travel, authentic experiences and local stories." />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- keep analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WQBTM9EPH"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5WQBTM9EPH');</script>
+
+    <!-- About page styles moved to css/style.css (scoped to .about-page) -->
+
+</head>
+
+<body class="about-page">
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="MyKutch" class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="hidden-gems.html">Hidden Gems</a>
+                <a href="blog.html">Blog</a>
+                <a href="history.html">History</a>
+                <a href="crafts.html">Crafts</a>
+                <a href="landscapes.html">Landscapes</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-hero">
+        <div class="hero-inner">
+            <h1 class="heading-bright-blue">We celebrate Kutch — its people, craft and landscape</h1>
+            <p class="lead">MyKutch connects travellers with authentic experiences — community-led tours, artisans, and responsible itineraries that respect local traditions and nature.</p>
+            <div class="cta">
+                <a class="btn-primary" href="bookings.html">Plan a Trip</a>
+                <a class="btn-text" href="contact.html">Get in Touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-grid">
+            <div class="about-card">
+                <h2>Our Mission</h2>
+                <p>To showcase Kutch through stories and journeys that uplift local communities, preserve craft traditions and create memorable, low-impact travel experiences.</p>
+
+                <div class="values-grid">
+                    <div class="value">Community First</div>
+                    <div class="value">Sustainability</div>
+                    <div class="value">Authenticity</div>
+                </div>
+
+                <div class="section" style="padding:1rem 0 0 0;">
+                    <h3>What we do</h3>
+                    <ul style="margin-top:.5rem; line-height:1.7; list-style: none; padding-left:0;">
+                        <li>Curated tours to cultural sites and festivals.</li>
+                        <li>Support and promote local artisans and crafts.</li>
+                        <li>Responsible travel advice and easy bookings.</li>
+                    </ul>
+                </div>
+
+                <div class="stats">
+                    <div class="stat"><strong>250+</strong><div style="opacity:.7">Tours curated</div></div>
+                    <div class="stat"><strong>120+</strong><div style="opacity:.7">Local partners</div></div>
+                    <div class="stat"><strong>10+</strong><div style="opacity:.7">Years of experience</div></div>
+                </div>
+            </div>
+
+            <aside>
+                <div class="about-card">
+                    <h3>Quick Links</h3>
+                    <ul class="sidebar-list">
+                        <li><a href="destinations.html">Explore Destinations</a></li>
+                        <li><a href="crafts.html">Meet the Artisans</a></li>
+                        <li><a href="bookings.html">Group & Private Tours</a></li>
+                        <li><a href="contact.html">Partner With Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="about-card" style="margin-top:1rem;">
+                    <h3>Our Team</h3>
+                    <div class="team-grid">
+                                    <div class="team-member"><img src="assets/images/team-1.svg" alt="Asha Patel"><div style="margin-top:.5rem; font-weight:700;">Asha Patel</div><div style="opacity:.7; font-size:.9rem;">Founder</div></div>
+                                    <div class="team-member"><img src="assets/images/team-2.svg" alt="Nikhil Desai"><div style="margin-top:.5rem; font-weight:700;">Nikhil Desai</div><div style="opacity:.7; font-size:.9rem;">Tours</div></div>
+                                    <div class="team-member"><img src="assets/images/team-3.svg" alt="Meera K"><div style="margin-top:.5rem; font-weight:700;">Meera K</div><div style="opacity:.7; font-size:.9rem;">Community</div></div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section style="margin:3rem 0;">
+            <div class="about-card">
+                <h2>Stories from Kutch</h2>
+                <p style="margin-top:.5rem;">We publish first-hand stories from artisans, guides and travellers — highlighting the cultural richness behind every village, festival and craft.</p>
+                <div style="display:flex; gap:1rem; margin-top:1rem; flex-wrap:wrap;">
+                    <a class="btn-text" href="hidden-gems.html">Read Stories</a>
+                    <a class="btn-text" href="crafts.html">Discover Crafts</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="contact-strip">
+        <h2>Ready to explore with a local touch?</h2>
+        <div class="contact-buttons">
+            <a href="https://wa.me/919825034580" class="contact-btn btn-whatsapp">💬 WhatsApp</a>
+            <a href="tel:+919825034580" class="contact-btn btn-call">📞 +91 98250 34580</a>
+            <a href="mailto:info@mykutch.org" class="contact-btn btn-email">✉️ Email Us</a>
+        </div>
+    </section>
+
+    <footer class="footer-main" style="margin-top: 0; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <img src="assets/images/logo.png" alt="MyKutch Logo" style="height: 100px; margin-bottom: 1rem; opacity: 0.9;">
+                <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;">Showcasing the vibrant culture and heritage of Kutch.</p>
+                <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
+                    <p>Developed with Love for Kutch by MyKutch.org team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

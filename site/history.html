@@ -4,9 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of Kutch | MyKutch.org</title>
+    <title>History of Kutch — 5000 Years of Heritage | MyKutch.org</title>
     <meta name="description"
         content="Explore the 5,000-year history of Kutch, from the ancient Indus Valley Civilization to the legendary Jadeja Dynasty and modern-day resilience.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Kutch history, Jadeja dynasty, Dholavira, Harappan civilization, Gujarat heritage, Samma Rajputs">
+    <meta name="author" content="MyKutch.org">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mykutch.org/history.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mykutch.org/history.html">
+    <meta property="og:title" content="History of Kutch | 5000 Years of Heritage & Culture">
+    <meta property="og:description" content="Explore the rich history of Kutch from Harappan civilization to Jadeja rulers. Discover the cultural heritage spanning 5000 years.">
+    <meta property="og:image" content="https://mykutch.org/assets/images/logo.png">
+    <meta property="og:site_name" content="MyKutch.org">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="History of Kutch | 5000 Years of Heritage & Culture">
+    <meta name="twitter:description" content="Explore the rich history of Kutch from Harappan civilization to Jadeja rulers.">
+    <meta name="twitter:image" content="https://mykutch.org/assets/images/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Google tag (gtag.js) -->
@@ -15,124 +40,218 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-5WQBTM9EPH');
     </script>
 
     <style>
-        .history-hero {
-            height: 70vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('assets/images/history-dholavira.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-
-        .timeline-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            position: relative;
-            padding: 4rem 0;
-        }
-
-        .timeline-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background: linear-gradient(to bottom, transparent, var(--color-primary), transparent);
-            transform: translateX(-50%);
-        }
-
-        .timeline-item {
-            margin-bottom: 8rem;
-            position: relative;
-            width: 50%;
-            padding: 0 4rem;
-        }
-
-        .timeline-item:nth-child(odd) {
-            left: 0;
-            text-align: right;
-        }
-
-        .timeline-item:nth-child(even) {
-            left: 50%;
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
             text-align: left;
         }
 
-        .timeline-dot {
-            position: absolute;
-            top: 20px;
-            width: 20px;
-            height: 20px;
-            background: var(--color-primary);
-            border-radius: 50%;
-            z-index: 10;
+        .attraction-card {
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: left;
         }
 
-        .timeline-item:nth-child(odd) .timeline-dot {
-            right: -10px;
+        .attraction-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
-        .timeline-item:nth-child(even) .timeline-dot {
-            left: -10px;
+        .attraction-img-wrapper {
+            overflow: hidden;
+            aspect-ratio: 16/9;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .attraction-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .attraction-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #00d26a;
+            font-weight: 600;
+            line-height: 1.3;
+            border-bottom: 2px solid #FBC02D;
+            display: inline-block;
+        }
+
+        .attraction-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            color: var(--color-text);
         }
 
         .era-tag {
-            font-family: var(--font-heading);
-            font-weight: 700;
             font-size: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.1em;
             color: var(--color-primary);
-            margin-bottom: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
             display: block;
         }
 
-        .history-card {
-            background: white;
-            padding: 3rem;
-            border-radius: 2rem;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
-            transition: var(--transition-slow);
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+            text-align: left !important;
+            align-items: flex-start !important;
         }
 
-        .history-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.1);
+        .section-header {
+            margin-bottom: 2.5rem !important;
+            margin-top: 0 !important;
         }
 
-        .history-image {
-            width: 100%;
+        .section-header p {
+            text-align: left !important;
+            margin-left: 0 !important;
+            margin-top: 0.5rem !important;
+        }
+
+        .section-header h2, .heading-bright-blue {
+            font-size: 1.8rem !important;
+            background-color: #8B0000;
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0 !important;
+            font-weight: 700 !important;
+        }
+
+        .shining-blue-text {
+            color: #007bff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .destination-hero::before {
+            background: none !important;
+            display: none !important;
+        }
+
+        .lead-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            max-width: 900px;
+        }
+
+        .editorial-note {
+            background-color: #f8fafc;
             border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            text-align: left;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .styled-list {
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .styled-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .styled-list li strong {
+            color: #333;
+            border-bottom: 2px solid #E91E63;
+            display: inline-block;
+            line-height: 1.2;
+            margin-right: 0.3rem;
+        }
+
+        .timeline-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
             margin-bottom: 2rem;
-            aspect-ratio: 16/9;
-            object-fit: cover;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .timeline-card-header {
+            padding: 1.5rem 2rem;
+            background: linear-gradient(135deg, #1e3a5f, #0f172a);
+            color: white;
+        }
+
+        .timeline-card-body {
+            padding: 2rem;
+        }
+
+        .timeline-card-body p {
+            color: #444;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        main {
+            text-align: left;
         }
 
         @media (max-width: 768px) {
-            .timeline-container::before {
-                left: 30px;
+            .editorial-container {
+                padding: 0 1rem;
             }
 
-            .timeline-item {
-                width: 100%;
-                padding: 0 0 0 70px;
-                text-align: left !important;
-                margin-bottom: 4rem;
+            .editorial-note {
+                padding: 2rem 1.5rem;
             }
 
-            .timeline-dot {
-                left: 20px !important;
+            .grid-2 {
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+            }
+
+            .shining-blue-text {
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+
+            .section-header h2, .heading-bright-blue {
+                font-size: 1.5rem !important;
             }
         }
     </style>
@@ -149,6 +268,7 @@
                 <a href="hidden-gems.html">Hidden Gems</a>
                 <a href="blog.html">Blog</a>
                 <a href="history.html">History</a>
+                <a href="geography.html">Geography</a>
                 <a href="crafts.html">Crafts</a>
                 <a href="landscapes.html">Landscapes</a>
                 <a href="bookings.html">Bookings</a>
@@ -157,149 +277,241 @@
         </div>
     </nav>
 
-    <header class="history-hero">
-        <div class="container reveal">
-            <h1 class="metallic-gold">5,000 Years</h1>
-            <p
-                style="color: white; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 600; margin-top: 1rem;">
-                The Epic Journey of Kutch Through Time</p>
+    <header class="destination-hero"
+        style="background-image: url('assets/images/history-map.jpg'); background-size: 115%; background-position: center; justify-content: center; text-align: center;">
+        <div class="hero-content-inner reveal">
         </div>
     </header>
 
-    <main class="container">
-        <!-- New Etymology Section -->
-        <section class="section" style="padding-bottom: 2rem;">
-            <div class="mission-content reveal">
-                <span class="card-category">The Origin</span>
-                <h2 class="metallic-gold" style="font-size: 3rem; margin-bottom: 2rem;">Why 'Kutch'?</h2>
-                <div
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; text-align: left;">
+    <div class="container reveal">
+        <h1 class="shining-blue-text">History of Kutch — 5000 Years of Heritage</h1>
+    </div>
+
+    <main>
+        <article class="editorial-container">
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <p class="lead-text">
+                    The history of Kutch spans over 5,000 years — from the sophisticated cities of the Indus Valley 
+                    Civilization to the legendary Jadeja Dynasty that ruled for 500 years. This land has witnessed 
+                    the rise and fall of empires, the migration of ancient tribes, and the birth of a unique cultural 
+                    identity that has survived earthquakes, invasions, and the test of time.
+                </p>
+            </section>
+
+            <!-- Why Kutch -->
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Why 'Kutch'?</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">The origin of the name</p>
+                </div>
+                <div class="grid-2" style="align-items: center;">
                     <div>
-                        <p style="font-size: 1.1rem; line-height: 1.8;">The name **'Kutch'** is as unique as its
-                            landscape. Derived from the ancient Sanskrit word for a **tortoise**, it perfectly describes
-                            the turtle-like shape of this land as it emerges from the dampen Rann. </p>
-                        <p style="margin-top: 1rem; font-style: italic; opacity: 0.8;">"A land that is damp, low-lying,
-                            and surrounded by water."</p>
-                        <p style="margin-top: 1.5rem;">Centuries before it was called Kutch, the Greeks knew it as
-                            **Aabhir**, named after its original pastoral dwellers—the brave Aabhir tribes.</p>
+                        <p style="line-height: 1.8; color: #444; margin-bottom: 1.5rem;">
+                            The name <strong>'Kutch'</strong> is as unique as its landscape. Derived from the ancient 
+                            Sanskrit word for a <strong>tortoise</strong>, it perfectly describes the turtle-like shape 
+                            of this land as it emerges from the dampened Rann.
+                        </p>
+                        <p style="font-style: italic; opacity: 0.8; color: #666; margin-bottom: 1.5rem;">
+                            "A land that is damp, low-lying, and surrounded by water."
+                        </p>
+                        <p style="line-height: 1.8; color: #444;">
+                            Centuries before it was called Kutch, the Greeks knew it as <strong>Aabhir</strong>, named 
+                            after its original pastoral dwellers — the brave Aabhir tribes who roamed these lands.
+                        </p>
                     </div>
-                    <div style="position: relative;">
-                        <img src="assets/images/history-turtle.png" alt="Tortoise Shape of Kutch"
-                            style="width: 100%; border-radius: 2rem; box-shadow: 0 20px 50px rgba(0,0,0,0.1);">
+                    <div>
+                        <img src="assets/images/history-turtle.png" alt="Tortoise Shape of Kutch" 
+                             style="width: 100%; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1);"
+                             onerror="this.style.display='none'">
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <div class="timeline-container">
-            <!-- 1. Ancient Era -->
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <span class="era-tag">3300 – 1500 BCE</span>
-                <div class="history-card">
-                    <img src="assets/images/history-dholavira.png" alt="Dholavira Ruins" class="history-image">
-                    <h2 class="metallic-gold" style="font-size: 2rem; margin-bottom: 1.5rem;">Cradle of Civilization
-                    </h2>
-                    <p>Before empires rose, Kutch was the heartbeat of the **Indus Valley Civilization**. In the
-                        salt-strewn plains of Khadir Bet, **Dholavira** stood as a marvel of ancient engineering—a
-                        sophisticated city of stone reservoirs and astronomical precision that matched the grandeur of
-                        Mesopotamia.</p>
+            <!-- Timeline -->
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Timeline of Kutch</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">Journey through 5000 years</p>
                 </div>
-            </div>
 
-            <!-- 2. Early Rulers Era -->
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <span class="era-tag">700 – 1320 CE</span>
-                <div class="history-card">
-                    <img src="assets/images/history-warriors.png" alt="Rajput Warriors" class="history-image">
-                    <h2 class="metallic-gold" style="font-size: 2rem; margin-bottom: 1.5rem;">The Rajput Frontier</h2>
-                    <p>During the 8th century, the **Chavda Dynasty** held sway over the region, establishing powerful
-                        strongholds like **Kanthkot**. It was a time of epic resistance, where Kutch served as a
-                        strategic refuge for Rajput kings during the invasions of the Great Dynasties.</p>
+                <!-- Ancient Era -->
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <span class="era-tag" style="color: #fbbf24;">3300 – 1500 BCE</span>
+                        <h3 style="margin: 0; font-size: 1.5rem;">Cradle of Civilization</h3>
+                    </div>
+                    <div class="timeline-card-body">
+                        <div class="grid-2" style="align-items: center;">
+                            <div>
+                                <p>Before empires rose, Kutch was the heartbeat of the <strong>Indus Valley Civilization</strong>. 
+                                In the salt-strewn plains of Khadir Bet, <strong>Dholavira</strong> stood as a marvel of 
+                                ancient engineering — a sophisticated city of stone reservoirs and astronomical precision 
+                                that matched the grandeur of Mesopotamia.</p>
+                                <p style="margin-top: 1rem;">Today, Dholavira is a <strong>UNESCO World Heritage Site</strong>, 
+                                recognized as one of the five largest Harappan cities.</p>
+                            </div>
+                            <div class="attraction-card" style="margin: 0;">
+                                <div class="attraction-img-wrapper">
+                                    <img src="assets/images/dholavira/dholavira1.webp" alt="Dholavira Ruins">
+                                </div>
+                                <div class="attraction-content">
+                                    <h4 class="attraction-title">Visit Dholavira</h4>
+                                    <p class="attraction-desc">Explore the 5000-year-old city with its advanced water harvesting system.</p>
+                                    <a href="destinations/dholavira.html" style="color: #007bff; text-decoration: none; font-weight: 600;">Explore →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- 3. Medieval Era -->
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <span class="era-tag">1320 – 1548 CE</span>
-                <div class="history-card">
-                    <img src="assets/images/history-warriors.png" alt="Samma Rajput Migration" class="history-image">
-                    <h2 class="metallic-gold" style="font-size: 2rem; margin-bottom: 1.5rem;">Migration of the 9 Lakhs
-                    </h2>
-                    <p>In a historic waves of migration, the **Samma Rajputs** crossed the Rann from Sindh. Legend tells
-                        of the **9 Lakh (900,000) Samma** tribesmen who arrived and transformed the social fabric of
-                        Kutch, eventually evolving into the ruling **Jadeja Dynasty** that defines Kutch today.</p>
+                <!-- Rajput Era -->
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <span class="era-tag" style="color: #fbbf24;">700 – 1320 CE</span>
+                        <h3 style="margin: 0; font-size: 1.5rem;">The Rajput Frontier</h3>
+                    </div>
+                    <div class="timeline-card-body">
+                        <p>During the 8th century, the <strong>Chavda Dynasty</strong> held sway over the region, establishing 
+                        powerful strongholds like <strong>Kanthkot</strong>. It was a time of epic resistance, where Kutch 
+                        served as a strategic refuge for Rajput kings during the invasions of the great dynasties.</p>
+                        <p style="margin-top: 1rem;">The Chavda rulers built impressive forts and temples, many of which 
+                        still stand as testaments to their architectural prowess.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- 4. The Golden Age -->
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <span class="era-tag">1548 – 1819 CE</span>
-                <div class="history-card">
-                    <img src="assets/images/history-royalty.png" alt="Royal Court of Kutch" class="history-image">
-                    <h2 class="metallic-gold" style="font-size: 2rem; margin-bottom: 1.5rem;">The Sovereign State</h2>
-                    <p>**Khengarji I** changed history by founding the capital of **Bhuj** and the strategic port of
-                        **Mandvi**. Kutch flourished as an autonomous state, striking its own silver currency (the
-                        **Kutch Kori**) and famously securing exemption from Mughal tribute in exchange for protecting
-                        pilgrims to Mecca.</p>
+                <!-- Samma Migration -->
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <span class="era-tag" style="color: #fbbf24;">1320 – 1548 CE</span>
+                        <h3 style="margin: 0; font-size: 1.5rem;">Migration of the 9 Lakhs</h3>
+                    </div>
+                    <div class="timeline-card-body">
+                        <p>In historic waves of migration, the <strong>Samma Rajputs</strong> crossed the Rann from Sindh. 
+                        Legend tells of the <strong>9 Lakh (900,000)</strong> Samma tribesmen who arrived and transformed the 
+                        social fabric of Kutch.</p>
+                        <p style="margin-top: 1rem;">These migrants eventually evolved into the ruling <strong>Jadeja Dynasty</strong> 
+                        that would define Kutch for the next 500 years.</p>
+                    </div>
                 </div>
-            </div>
 
-            <!-- 4. British & Modernizing Era -->
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <span class="era-tag">1819 – 1947 CE</span>
-                <div class="history-card">
-                    <div class="history-image"
-                        style="background: #f8fafc; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
-                        🏰</div>
-                    <h2 class="metallic-gold" style="font-size: 2rem; margin-bottom: 1.5rem;">A Princely Legacy</h2>
-                    <p>Under British suzerainty, the Maharaos of Kutch became master builders. **Pragmalji II**
-                        commissioned the Gothic Prag Mahal, while **Khengarji III** looked to the future, establishing
-                        the Kutch State Railway and the global gateway of **Kandla Port**.</p>
+                <!-- Golden Age -->
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <span class="era-tag" style="color: #fbbf24;">1548 – 1819 CE</span>
+                        <h3 style="margin: 0; font-size: 1.5rem;">The Sovereign State</h3>
+                    </div>
+                    <div class="timeline-card-body">
+                        <div class="grid-2" style="align-items: center;">
+                            <div>
+                                <p><strong>Khengarji I</strong> changed history by founding the capital of <strong>Bhuj</strong> 
+                                and the strategic port of <strong>Mandvi</strong>. Kutch flourished as an autonomous state, 
+                                striking its own silver currency (the <strong>Kutch Kori</strong>) and famously securing exemption 
+                                from Mughal tribute in exchange for protecting pilgrims to Mecca.</p>
+                                <ul class="styled-list" style="margin-top: 1.5rem;">
+                                    <li><strong>Bhuj</strong>: Founded as the new capital in 1548</li>
+                                    <li><strong>Mandvi Port</strong>: Became a major trade hub</li>
+                                    <li><strong>Kutch Kori</strong>: Own silver currency minted</li>
+                                </ul>
+                            </div>
+                            <div class="attraction-card" style="margin: 0;">
+                                <div class="attraction-img-wrapper">
+                                    <img src="assets/images/bhuj/bhuj1.webp" alt="Bhuj City">
+                                </div>
+                                <div class="attraction-content">
+                                    <h4 class="attraction-title">Explore Bhuj</h4>
+                                    <p class="attraction-desc">Visit the historic palaces and museums of the Jadeja capital.</p>
+                                    <a href="destinations/bhuj.html" style="color: #007bff; text-decoration: none; font-weight: 600;">Explore →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <!-- 5. Modern Era -->
-            <div class="timeline-item reveal">
-                <div class="timeline-dot"></div>
-                <span class="era-tag">1947 – Present</span>
-                <div class="history-card">
-                    <img src="assets/images/history-resilience.png" alt="Resilience of Kutch" class="history-image">
-                    <h2 class="metallic-gold" style="font-size: 2rem; margin-bottom: 1.5rem;">Renewal & Resilience</h2>
-                    <p>From a separate Class-C state in independent India to becoming Gujarat's largest district,
-                        Kutch's modern history is one of incredible resilience. Despite the 2001 earthquake, the region
-                        has seen a miraculous revival, transforming itself into India's cultural crown jewel.</p>
+                <!-- British Era -->
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <span class="era-tag" style="color: #fbbf24;">1819 – 1947 CE</span>
+                        <h3 style="margin: 0; font-size: 1.5rem;">A Princely Legacy</h3>
+                    </div>
+                    <div class="timeline-card-body">
+                        <p>Under British suzerainty, the Maharaos of Kutch became master builders. <strong>Pragmalji II</strong> 
+                        commissioned the Gothic <strong>Prag Mahal</strong>, while <strong>Khengarji III</strong> looked to 
+                        the future, establishing the Kutch State Railway and the global gateway of <strong>Kandla Port</strong>.</p>
+                        <div class="editorial-note" style="margin-top: 1.5rem;">
+                            <h4 style="color: #00d26a; margin-bottom: 0.5rem; border-bottom: 2px solid #FBC02D; display: inline-block;">🏰 Architectural Highlights</h4>
+                            <ul class="styled-list" style="margin-top: 1rem;">
+                                <li><strong>Aina Mahal</strong>: Hall of Mirrors, built with Venetian glass</li>
+                                <li><strong>Prag Mahal</strong>: Gothic palace with Italian marble</li>
+                                <li><strong>Vijay Vilas Palace</strong>: Beach palace at Mandvi</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+
+                <!-- Modern Era -->
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <span class="era-tag" style="color: #fbbf24;">1947 – Present</span>
+                        <h3 style="margin: 0; font-size: 1.5rem;">Renewal & Resilience</h3>
+                    </div>
+                    <div class="timeline-card-body">
+                        <p>From a separate Class-C state in independent India to becoming Gujarat's largest district, 
+                        Kutch's modern history is one of incredible resilience.</p>
+                        <div class="editorial-note" style="margin-top: 1.5rem; background: linear-gradient(135deg, #fef3c7, #fde68a);">
+                            <h4 style="color: #8B0000; margin-bottom: 0.5rem;">⚠️ The 2001 Earthquake</h4>
+                            <p style="color: #555; line-height: 1.6;">On January 26, 2001, a devastating 7.7 magnitude earthquake 
+                            struck Bhuj, killing over 20,000 people and destroying much of the region. But the spirit of Kutch 
+                            proved unbreakable — the region has seen a miraculous revival, rebuilding itself and transforming 
+                            into India's cultural crown jewel.</p>
+                        </div>
+                        <p style="margin-top: 1.5rem;">Today, Kutch is India's largest district, home to Asia's largest 
+                        private port (Mundra), and hosts the famous <strong>Rann Utsav</strong> that attracts millions of 
+                        visitors each year.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Explore More -->
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Explore More</h2>
+                </div>
+                <div class="grid-2">
+                    <a href="geography.html" class="attraction-card" style="text-decoration: none; color: inherit;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Geography of Kutch</h3>
+                            <p class="attraction-desc">Understand the unique landscape that shaped Kutch's history — from the Great Rann to the Banni Grasslands.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/dholavira.html" class="attraction-card" style="text-decoration: none; color: inherit;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Visit Dholavira</h3>
+                            <p class="attraction-desc">Explore the 5000-year-old UNESCO World Heritage Site and walk through ancient Harappan streets.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+        </article>
     </main>
 
-    <footer class="footer-main"
-        style="margin-top: 5rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
+    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
         <div class="container">
             <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">
-                    About MyKutch.org</h3>
-                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the
-                    vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
-                <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Contact:</span>
-                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91
-                            98250 34580</a>
+                <img src="assets/images/logo.png" alt="MyKutch Logo" style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
+                <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;">About MyKutch.org</h3>
+                <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <div style="font-size: 0.85rem;">
+                        <span style="opacity: 0.7; margin-right: 0.3rem;">Contact:</span>
+                        <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
                     </div>
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Email:</span>
-                        <a href="mailto:info@mykutch.org"
-                            style="color: white; text-decoration: none; font-weight: 500;">info@mykutch.org</a>
+                    <div style="font-size: 0.85rem;">
+                        <span style="opacity: 0.7; margin-right: 0.3rem;">Email:</span>
+                        <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
                     </div>
                 </div>
-                <div
-                    style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
+                <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
                     <p>Developed with Love for Kutch by MyKutch.org team</p>
                 </div>
             </div>

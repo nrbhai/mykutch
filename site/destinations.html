@@ -5,8 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Destinations | MyKutch.org</title>
+    <meta name="description" content="Explore every corner of Kutch - from ancient temples to pristine beaches, desert landscapes to artisan villages. Complete guide to all Kutch destinations.">
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Kutch destinations, Bhuj, Mandvi, Dhordo, White Rann, Gandhidham, tourist places Kutch">
+    <meta name="author" content="MyKutch.org">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mykutch.org/destinations.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mykutch.org/destinations.html">
+    <meta property="og:title" content="All Destinations | Explore Every Corner of Kutch">
+    <meta property="og:description" content="Complete guide to all destinations in Kutch - from Bhuj to the White Rann, Mandvi beaches to Dholavira ruins. Plan your perfect Kutch adventure.">
+    <meta property="og:image" content="https://mykutch.org/assets/images/logo.png">
+    <meta property="og:site_name" content="MyKutch.org">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mykutch.org/destinations.html">
+    <meta name="twitter:title" content="All Destinations | Explore Every Corner of Kutch">
+    <meta name="twitter:description" content="Complete guide to all destinations in Kutch - from Bhuj to the White Rann, Mandvi beaches to Dholavira ruins. Plan your perfect Kutch adventure.">
+    <meta name="twitter:image" content="https://mykutch.org/assets/images/logo.png">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WQBTM9EPH"></script>
@@ -14,39 +40,164 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-5WQBTM9EPH');
     </script>
 
     <style>
-        .page-hero {
-            height: 50vh;
-            background-image: url('assets/images/overview.webp');
-            background-size: cover;
-            background-position: center;
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .attraction-card {
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            color: white;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: left;
+            text-decoration: none;
+            color: inherit;
         }
 
-        .page-hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.4);
+        .attraction-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
         }
 
-        .hero-title {
-            position: relative;
-            z-index: 2;
-            text-align: center;
+        .attraction-img-wrapper {
+            overflow: hidden;
+            aspect-ratio: 4/3;
         }
 
-        .hero-title h1 {
-            font-size: 3.5rem;
+        .attraction-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .attraction-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .attraction-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
             margin-bottom: 0.5rem;
+            color: #00d26a;
+            font-weight: 600;
+            line-height: 1.3;
+            border-bottom: 2px solid #FBC02D;
+            display: inline-block;
+        }
+
+        .attraction-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            color: var(--color-text);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem !important;
+            margin-top: 0 !important;
+        }
+
+        .section-header p {
+            text-align: left !important;
+            margin-left: 0 !important;
+            margin-top: 0.5rem !important;
+        }
+
+        .section-header h2, .heading-bright-blue {
+            font-size: 1.8rem !important;
+            background-color: #8B0000;
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 2px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0 !important;
+            font-weight: 700 !important;
+        }
+
+        .shining-blue-text {
+            color: #007bff;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .destination-hero::before {
+            background: none !important;
+            display: none !important;
+        }
+
+        .lead-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            max-width: 900px;
+        }
+
+        main {
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+            .editorial-container {
+                padding: 0 1rem;
+            }
+
+            .grid-2, .grid-3 {
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+            }
+
+            .shining-blue-text {
+                font-size: 1.4rem;
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+
+            .section-header h2, .heading-bright-blue {
+                font-size: 1.5rem !important;
+            }
         }
     </style>
 </head>
@@ -55,12 +206,14 @@
     <nav>
         <div class="container nav-content">
             <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="MyKutch" class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="index.html#destinations">Destinations</a>
+                <a href="destinations.html">Destinations</a>
                 <a href="hidden-gems.html">Hidden Gems</a>
                 <a href="blog.html">Blog</a>
                 <a href="history.html">History</a>
+                <a href="geography.html">Geography</a>
                 <a href="crafts.html">Crafts</a>
                 <a href="landscapes.html">Landscapes</a>
                 <a href="bookings.html">Bookings</a>
@@ -69,392 +222,286 @@
         </div>
     </nav>
 
-    <header class="page-hero">
-        <div class="hero-title reveal">
-            <h1>All Destinations</h1>
-            <p>Explore every corner of Kutch</p>
+    <header class="destination-hero"
+        style="background-image: url('assets/images/overview.webp'); justify-content: center; text-align: center;">
+        <div class="hero-content-inner reveal">
         </div>
     </header>
 
-    <main class="container">
-        <section class="section">
-            <div class="grid-3">
+    <div class="container reveal">
+        <h1 class="shining-blue-text">All Destinations — Explore Every Corner of Kutch</h1>
+    </div>
 
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/adipur/adipur2.webp" alt="Adipur">
-                    </div>
-                    <div class="card-content">
-                        <h3>Adipur</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Explore this beautiful destination in Kutch.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/adipur.html" class="btn-text stretched-link">Explore</a>
+    <main>
+        <article class="editorial-container">
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <p class="lead-text">
+                    From the pristine beaches of Mandvi to the ancient ruins of Dholavira, from the salt flats of the White Rann 
+                    to the spiritual temples of Mata na Madh — Kutch offers a treasure trove of destinations for every traveler. 
+                    Explore our comprehensive guide to plan your perfect Kutch adventure.
+                </p>
+            </section>
+
+            <!-- Major Destinations -->
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Major Destinations</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">The must-visit places in Kutch</p>
+                </div>
+                <div class="grid-3">
+                    <a href="destinations/bhuj.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/bhuj/bhuj1.webp" alt="Bhuj">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/anjar/anjar1.webp" alt="Anjar">
-                    </div>
-                    <div class="card-content">
-                        <h3>Anjar</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Anjar is the oldest capital of Kutch, with a history dating back to 650 AD. It is a town of
-                            legends, most famously that of 'Jesal and Toral', a robber-turned-saint and the queen who
-                            reformed him. Unlike the modern Gandhidham next door, Anjar retains a rustic, old-world
-                            charm with narrow bazaars famous for metalwork and textiles. It is a spiritual center and a
-                            shopper's delight for traditional Kutchi items.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/anjar.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Bhuj</h3>
+                            <p class="attraction-desc">The cultural heart of Kutch with 500 years of royal history. A living museum of palaces, bazaars, and the perfect base for exploring the region.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/bhadreshwar/bhadreshwar1.webp" alt="Bhadreshwar Jain Temple">
-                    </div>
-                    <div class="card-content">
-                        <h3>Bhadreshwar Jain Temple</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Bhadreshwar, also known as Vasai Jain Tirth, is home to one of the oldest Jain temples in
-                            India, with its origins possibly dating back to 516 BCE. The temple complex is a marvel of
-                            the Sekhari school of architecture, featuring intricate carvings and beautiful marble idols.
-                            It was founded by Devchandra and has been renovated multiple times, notably by the wealthy
-                            merchant Jagdusha in the 13th century. The temple stands as a testament to resilience,
-                            having been completely rebuilt after the devastating 2001 earthquake.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/bhadreshwar.html" class="btn-text stretched-link">Explore</a>
+                    </a>
+                    <a href="destinations/dhordo-white-rann.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/dhordo-white-rann/dhordo-main.webp" alt="Dhordo - White Rann">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/bhuj/bhuj1.webp" alt="Bhuj">
-                    </div>
-                    <div class="card-content">
-                        <h3>Bhuj</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Bhuj is the cultural and logistical heart of Kutch, serving as the perfect base for
-                            exploring the region. Blending 500 years of royal history with modern resilience, this city
-                            is a living museum of palaces, bazaars, and narrow winding streets. From here, you can
-                            launch expeditions to the White Rann, the northern craft villages, and the southern beaches.
-                            A typical visit requires 2 days to fully appreciate its museums, palaces, and the nearby
-                            artisan hubs of Bhujodi and Ajrakhpur.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/bhuj.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Dhordo - White Rann</h3>
+                            <p class="attraction-desc">Gateway to the world-famous White Rann of Kutch. Experience the magical salt desert under moonlight at the Rann Utsav (Nov-Feb).</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/dholavira/dholavira1.webp" alt="Dholavira">
-                    </div>
-                    <div class="card-content">
-                        <h3>Dholavira</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Explore this beautiful destination in Kutch.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/dholavira.html" class="btn-text stretched-link">Explore</a>
+                    </a>
+                    <a href="destinations/mandvi.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/mandvi/mandvi1.webp" alt="Mandvi">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/dhordo-white-rann/dhordo-main.webp" alt="Dhordo">
-                    </div>
-                    <div class="card-content">
-                        <h3>Dhordo</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Dhordo is the gateway to the world-famous White Rann of Kutch—a vast salt marsh that
-                            transforms into a shimmering surreal landscape under the moonlight. Once a quiet hamlet, it
-                            is now the epicenter of the Rann Utsav (Nov-Feb), hosting the magnificent Tent City. Whether
-                            you want to witness a sunrise where the salt meets the sky or experience Kutchi culture at
-                            its vibrant best, Dhordo is the place to be. It serves as both a destination and a base for
-                            exploring the northern desert region.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/dhordo-white-rann.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Mandvi</h3>
+                            <p class="attraction-desc">Premier beach destination with pristine shores, Vijay Vilas Palace, and 400-year-old shipbuilding tradition. Perfect for unwinding.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/gandhidham/gandhidham1.webp" alt="Gandhidham">
-                    </div>
-                    <div class="card-content">
-                        <h3>Gandhidham</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Gandhidham is Kutch's most cosmopolitan and modern city, master-planned in 1947 to resettle
-                            Sindhi refugees from Pakistan. Unlike the heritage-heavy Bhuj, Gandhidham is a bustling
-                            commercial engine, serving as the gateway to the massive Kandla Port. With wide avenues,
-                            modern malls, and a vibrant food scene, it offers a comfortable urban base or a perfect
-                            transit pause for travelers arriving by train.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/gandhidham.html" class="btn-text stretched-link">Explore</a>
+                    </a>
+                    <a href="destinations/gandhidham.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/gandhidham/gandhidham1.webp" alt="Gandhidham">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/haji-pir/hajipir1.webp" alt="Haji Pir Dargah">
-                    </div>
-                    <div class="card-content">
-                        <h3>Haji Pir Dargah</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            The Haji Pir Dargah is a revered shrine on the edge of the India-Pakistan border, dedicated
-                            to the soldier-saint Ali Akbar. Known as 'Zinda Pir' (Living Saint), he is worshipped by
-                            both Hindus and Muslims, standing as a powerful symbol of communal harmony in Kutch. Legend
-                            says he died while saving cows from bandits, making him a martyr for a noble cause. The
-                            drive here takes you through the stark, beautiful landscapes of the Banni grasslands.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/haji-pir.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Gandhidham</h3>
+                            <p class="attraction-desc">Kutch's most cosmopolitan city, gateway to Kandla Port. Modern urban base with wide avenues, malls, and vibrant food scene.</p>
                         </div>
-                    </div>
-                </article>
+                    </a>
+                </div>
+            </section>
 
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/jakhau/jakhau1.webp" alt="Jakhau">
-                    </div>
-                    <div class="card-content">
-                        <h3>Jakhau</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Explore this beautiful destination in Kutch.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/jakhau.html" class="btn-text stretched-link">Explore</a>
+            <!-- Heritage & History -->
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Heritage & History</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">Ancient temples and archaeological marvels</p>
+                </div>
+                <div class="grid-3">
+                    <a href="destinations/dholavira.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/dholavira/dholavira1.webp" alt="Dholavira">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/kadia-dhrow/kadia-dhrow1.webp" alt="Kadia Dhro">
-                    </div>
-                    <div class="card-content">
-                        <h3>Kadia Dhro</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Kadia Dhro (or Kadiya Dhrow) is Kutch's most spectacular hidden gem, often called the 'Grand
-                            Canyon of India'. This geological marvel features stunning multi-colored rock formations
-                            carved by wind and water over centuries. The riverbed displays vibrant bands of red, yellow,
-                            and orange sandstone, creating a surreal landscape that looks like a painting come to life.
-                            Once an obscure spot, it is now a must-visit for nature lovers.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/kadia-dhrow.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Dholavira</h3>
+                            <p class="attraction-desc">UNESCO World Heritage Site. One of the largest Harappan civilization sites with 5000-year-old ruins and sophisticated urban planning.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/kalo-dungar/kalo-dungar1.webp" alt="Kalo Dungar">
-                    </div>
-                    <div class="card-content">
-                        <h3>Kalo Dungar</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Rising 462 meters above the salt-white plains, Kalo Dungar (Black Hill) is the highest point
-                            in Kutch. It offers the only place where you can see the panoramic view of the Great Rann of
-                            Kutch. It is also famous for the 400-year-old Dattatreya Temple where priests feed wild
-                            jackals every evening—a phenomenon where these shy animals respond to the beating of a
-                            plate. The hill is a border area, and from the top, you are looking towards the edge of
-                            India.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/kalo-dungar.html" class="btn-text stretched-link">Explore</a>
+                    </a>
+                    <a href="destinations/bhadreshwar.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/bhadreshwar/bhadreshwar1.webp" alt="Bhadreshwar Jain Temple">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/kandla/kandla1.webp" alt="Kandla">
-                    </div>
-                    <div class="card-content">
-                        <h3>Kandla</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Explore this beautiful destination in Kutch.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/kandla.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Bhadreshwar Jain Temple</h3>
+                            <p class="attraction-desc">One of India's oldest Jain temples dating back to 516 BCE. Marvel of Sekhari architecture with intricate carvings.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/lakhpat/lakhpat1.webp" alt="Lakhpat">
-                    </div>
-                    <div class="card-content">
-                        <h3>Lakhpat</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Explore this beautiful destination in Kutch.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/lakhpat.html" class="btn-text stretched-link">Explore</a>
+                    </a>
+                    <a href="destinations/anjar.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/anjar/anjar1.webp" alt="Anjar">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/mandvi/mandvi1.webp" alt="Mandvi">
-                    </div>
-                    <div class="card-content">
-                        <h3>Mandvi</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Mandvi is the only premier beach destination in Kutch, offering a perfect relaxed break from
-                            the arid desert landscape. Once a major port for the spice trade, it is now a popular
-                            day-trip and weekend getaway from Bhuj (1 hour away). Known for its pristine beaches, the
-                            royal Vijay Vilas Palace, and a 400-year-old shipbuilding tradition, Mandvi is where history
-                            meets the Arabian Sea. A typical visit lasts 1 to 2 days, making it ideal for unwinding
-                            after exploring the White Rann.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/mandvi.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Anjar</h3>
+                            <p class="attraction-desc">The oldest capital of Kutch (650 AD). Town of legends, famous for Jesal-Toral story, metalwork, and old-world charm.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/mata-na-madh/mata-na-madh1.webp" alt="Mata na Madh">
-                    </div>
-                    <div class="card-content">
-                        <h3>Mata na Madh</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Mata na Madh is the most significant spiritual destination in Kutch, dedicated to Ashapura
-                            Mata, the Kuldevi (patron goddess) of the Jadeja rulers and the region. It is a place of
-                            immense faith where lakhs of devotees walk on foot during Navratri to pay their obeisance.
-                            The temple, with its soaring shikhara, stands as a symbol of Kutch's resilience and
-                            deep-rooted traditions.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/mata-na-madh.html" class="btn-text stretched-link">Explore</a>
+                    </a>
+                    <a href="destinations/lakhpat.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/lakhpat/lakhpat1.webp" alt="Lakhpat">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/matang-matiya-dev/matang-dev.webp" alt="Mamaidev (Matang Matiya Dev)">
-                    </div>
-                    <div class="card-content">
-                        <h3>Mamaidev (Matang Matiya Dev)</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Mamaidev, also known as Mamai Pat, was a revered saint, philosopher, and the 4th Guru of the
-                            Baarmati Panth. Born in the 11th or 12th century, he is considered an incarnation of Lord
-                            Brahma. He served as the Rajguru (Royal Preceptor) to the Jadeja dynasty rulers of Kutch and
-                            is celebrated for his precise prophecies known as 'Agam Vani'. His teachings emphasized
-                            equality, spiritual purity, and the removal of social barriers.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/matang-matiya-dev.html" class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Lakhpat</h3>
+                            <p class="attraction-desc">Ghost town on the India-Pakistan border. Once a thriving port, now a hauntingly beautiful walled city with Sikh Gurudwara.</p>
                         </div>
-                    </div>
-                </article>
+                    </a>
+                </div>
+            </section>
 
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/mundra/mundra1.webp" alt="Mundra">
-                    </div>
-                    <div class="card-content">
-                        <h3>Mundra</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Mundra offers a fascinating contrast between the old and the new. It is home to India's
-                            largest private port, a behemoth of modern industry, which stands alongside a historic
-                            walled city renowned for its salt and spice trade heritage. While the port area is
-                            restricted, the old town charms visitors with its diverse culture, ancient fortifications,
-                            and proximity to the serene Bhadreshwar Jain Temple.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/mundra.html" class="btn-text stretched-link">Explore</a>
+            <!-- Spiritual Destinations -->
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Spiritual Destinations</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">Sacred sites and pilgrimage centers</p>
+                </div>
+                <div class="grid-3">
+                    <a href="destinations/mata-na-madh.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/mata-na-madh/mata-na-madh1.webp" alt="Mata na Madh">
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/narayan-sarovar-koteshwar/narayan-sarovar1.webp"
-                            alt="Narayan Sarovar & Koteshwar">
-                    </div>
-                    <div class="card-content">
-                        <h3>Narayan Sarovar & Koteshwar</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Narayan Sarovar and Koteshwar are twin spiritual destinations located on the westernmost tip
-                            of India, where the desert meets the Arabian Sea. Narayan Sarovar is one of the five holiest
-                            lakes in Hinduism, while Koteshwar features a stunning Shiva temple perched on a high cliff
-                            overlooking the ocean. The journey here is as mystical as the destination, passing through
-                            vast barren landscapes to reach this sanctuary of peace.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/narayan-sarovar-koteshwar.html"
-                                class="btn-text stretched-link">Explore</a>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Mata na Madh</h3>
+                            <p class="attraction-desc">Most significant spiritual destination dedicated to Ashapura Mata. Lakhs of devotees walk on foot during Navratri.</p>
                         </div>
-                    </div>
-                </article>
-
-                <article class="card reveal">
-                    <div class="card-img-wrapper">
-                        <img src="assets/images/road-to-heaven/road-to-heaven1.webp" alt="Road to Heaven">
-                    </div>
-                    <div class="card-content">
-                        <h3>Road to Heaven</h3>
-                        <p
-                            style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-clamp: 3;">
-                            Explore this beautiful destination in Kutch.</p>
-                        <div style="margin-top: 1.5rem;">
-                            <a href="destinations/road-to-heaven.html" class="btn-text stretched-link">Explore</a>
+                    </a>
+                    <a href="destinations/road-to-heaven.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/narayan-sarovar-koteshwar/narayan-sarovar1.webp" alt="Narayan Sarovar & Koteshwar">
                         </div>
-                    </div>
-                </article>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Narayan Sarovar & Koteshwar</h3>
+                            <p class="attraction-desc">Twin spiritual destinations on India's westernmost tip. One of five holiest Hindu lakes and stunning cliff-side Shiva temple.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/haji-pir.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/haji-pir/hajipir1.webp" alt="Haji Pir Dargah">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Haji Pir Dargah</h3>
+                            <p class="attraction-desc">Revered shrine near India-Pakistan border. Symbol of communal harmony, worshipped by both Hindus and Muslims.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/matang-matiya-dev.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/matang-matiya-dev/matang-dev.webp" alt="Mamaidev">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Mamaidev</h3>
+                            <p class="attraction-desc">Revered saint and philosopher, 4th Guru of Baarmati Panth. Royal Preceptor to Jadeja dynasty with prophetic teachings.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-            </div>
-        </section>
+            <!-- Nature & Adventure -->
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Nature & Adventure</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">Scenic landscapes and wildlife</p>
+                </div>
+                <div class="grid-3">
+                    <a href="destinations/kalo-dungar.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/kalo-dungar/kalo-dungar1.webp" alt="Kalo Dungar">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Kalo Dungar</h3>
+                            <p class="attraction-desc">Highest point in Kutch (462m). Panoramic Great Rann views, Dattatreya Temple, and evening jackal feeding ritual.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/kadia-dhrow.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/kadia-dhrow/kadia-dhrow1.webp" alt="Kadia Dhrow">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Kadia Dhrow</h3>
+                            <p class="attraction-desc">'Grand Canyon of India' - spectacular multi-colored rock formations, vibrant sandstone bands in red, yellow, and orange.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/road-to-heaven.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/road-to-heaven/road-to-heaven1.webp" alt="Road to Heaven">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Road to Heaven</h3>
+                            <p class="attraction-desc">Scenic drive through vast barren landscapes to India's western edge. Mystical journey through desert and sea.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Coastal & Port Towns -->
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Coastal & Port Towns</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">Where the desert meets the sea</p>
+                </div>
+                <div class="grid-3">
+                    <a href="destinations/mundra.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/mundra/mundra1.webp" alt="Mundra">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Mundra</h3>
+                            <p class="attraction-desc">India's largest private port alongside historic walled city. Fascinating contrast of modern industry and spice trade heritage.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/kandla.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/kandla/kandla1.webp" alt="Kandla">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Kandla</h3>
+                            <p class="attraction-desc">Major port city and commercial hub. Gateway for trade and transit point for travelers arriving by sea.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/jakhau.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/jakhau/jakhau1.webp" alt="Jakhau">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Jakhau</h3>
+                            <p class="attraction-desc">Fishing port and salt production center. Off-beat destination with authentic coastal Kutchi life and seafood.</p>
+                        </div>
+                    </a>
+                    <a href="destinations/adipur.html" class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="assets/images/adipur/adipur2.webp" alt="Adipur">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Adipur</h3>
+                            <p class="attraction-desc">Twin city of Gandhidham. Residential hub with local markets and easy access to port areas.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Explore More -->
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div style="background: #f8fafc; padding: 2rem; border-radius: 1rem; text-align: center;">
+                    <h3 style="font-family: var(--font-heading); color: var(--color-heading); margin-bottom: 1rem;">Looking for Hidden Gems?</h3>
+                    <p style="color: #555; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                        Discover the secret treasures of Kutch that only locals know — from bird sanctuaries to ancient ruins off the tourist trail.
+                    </p>
+                    <a href="hidden-gems.html" 
+                       style="display: inline-block; background: #8B0000; color: white; padding: 0.75rem 2rem; border-radius: 0.5rem; text-decoration: none; font-weight: 600;">
+                        Explore Hidden Gems →
+                    </a>
+                </div>
+            </section>
+
+        </article>
     </main>
 
-    <footer class="footer-main"
-        style="margin-top: 5rem; background: linear-gradient(135deg, #C2410C, #B45309, #059669, #0891B2); color: white; padding: 2.5rem 0;">
-        <div class="container">
-            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h3 style="color: white; font-family: var(--font-heading); margin-bottom: 0.75rem; font-size: 1.2rem;">
-                    About MyKutch.org</h3>
-                <p style="opacity: 0.9; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.9rem;">Showcasing the
-                    vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
-                <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Contact:</span>
-                        <a href="tel:9825034580" style="color: white; text-decoration: none; font-weight: 500;">+91
-                            98250 34580</a>
-                    </div>
-                    <div style="font-size: 0.9rem;">
-                        <span style="opacity: 0.8; margin-right: 0.5rem;">Email:</span>
-                        <a href="mailto:info@mykutch.org"
-                            style="color: white; text-decoration: none; font-weight: 500;">info@mykutch.org</a>
-                    </div>
+    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <img src="assets/images/logo.png" alt="MyKutch Logo" style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
+            <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;">About MyKutch.org</h3>
+            <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Contact:</span>
+                    <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
                 </div>
-                <div
-                    style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; font-size: 0.85rem; font-weight: 500;">
-                    <p>Developed with Love for Kutch by MyKutch.org team</p>
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Email:</span>
+                    <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
                 </div>
             </div>
+            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
+                <p>Developed with Love for Kutch by MyKutch.org team</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</footer>
     <script src="js/script.js"></script>
 </body>
 

@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination Title — Subtitle | Kutch Travel</title>
+    <meta name="description"
+        content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- Google tag (gtag.js) -->
@@ -16,64 +25,422 @@
 
         gtag('config', 'G-5WQBTM9EPH');
     </script>
+
+    <style>
+        /* Local custom styles removed in favor of global style.css */
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .lead-text {
+                font-size: 1rem;
+            }
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        /* Modern Card Design */
+        .attraction-card {
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .attraction-img-wrapper {
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .attraction-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .attraction-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: #00d26a; /* Bright Green */
+            font-weight: 600;
+            line-height: 1.3;
+            border-bottom: 2px solid #FBC02D; /* Pale Yellow Underline */
+            display: inline-block;
+        }
+
+        .attraction-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            color: var(--color-text);
+        }
+
+        /* Itinerary Timeline */
+        .itinerary-box {
+            border-left: 2px solid #e2e8f0;
+            margin-left: 1rem;
+            padding: 0 0 2rem 2rem;
+            position: relative;
+            text-align: left;
+        }
+
+        .itinerary-box:last-child {
+            padding-bottom: 0;
+            border: none;
+            padding-left: 2.1rem;
+        }
+        
+        .itinerary-box p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px white;
+        }
+
+        .day-header {
+            font-family: var(--font-heading);
+            font-size: 1.15rem; /* Unified Subheading Size */
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Modern Editorial Note */
+        .editorial-note {
+            background-color: #f8fafc;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            text-align: left; /* Align Left */
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .tip-item h4 {
+            font-size: 1.15rem; /* Unified Subheading Size */
+            margin-bottom: 0.5rem;
+            color: var(--color-heading);
+            font-weight: 600;
+        }
+
+        .tip-item p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .styled-list {
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .styled-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .styled-list li strong {
+            color: #333;
+            border-bottom: 2px solid #E91E63; /* Attractive Rose/Pink Underline */
+            display: inline-block;
+            line-height: 1.2;
+            margin-right: 0.3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            transition: opacity 0.3s;
+        }
+
+        /* Specific section header override if needed */
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem !important; /* Uniform Gap globally */
+            margin-top: 0 !important;
+        }
+        
+        /* Ensure paragraph under header aligns left too */
+        .section-header p {
+             text-align: left !important;
+             margin-left: 0 !important;
+             margin-top: 0.5rem !important;
+        }
+
+        .section-header h2, .heading-bright-blue {
+            font-size: 1.8rem !important;
+            background-color: #8B0000; /* Dark Red */
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 2px; /* Slight ease for rectangle */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0 !important; /* Let container handle the big gap */
+            font-weight: 700 !important;
+        }
+        
+        /* Override any centering on body/main just in case (though unlikely) */
+        main {
+            text-align: left;
+        }
+
+        .shining-blue-text {
+            color: #007bff; /* Bright Blue */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Shining Effect */
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .destination-hero::before {
+            background: none !important;
+            display: none !important;
+        }
+
+        .hero-text-bright {
+            color: #ffffff;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .editorial-container {
+                padding: 0 1rem;
+            }
+
+            .editorial-note {
+                padding: 2rem 1.5rem;
+            }
+            
+            .grid-2 {
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+            }
+
+            .shining-blue-text {
+                font-size: 1.4rem; /* Smaller for mobile */
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="scrolled">
+    <nav>
         <div class="container nav-content">
-            <a href="../index.html" class="logo">KUTCH TRAVEL</a>
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="MyKutch"
+                    class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
             <div class="nav-links">
+                <a href="../index.html">Home</a>
                 <a href="../index.html#destinations">Destinations</a>
-                <a href="../index.html#essentials">Guide</a>
-                <a href="../index.html#contact">Contact</a>
+                <a href="../hidden-gems.html">Hidden Gems</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../history.html">History</a>
+                <a href="../landscapes.html">Landscapes</a>
+                <a href="../bookings.html">Bookings</a>
+                <a href="../about.html">About</a>
             </div>
         </div>
     </nav>
 
-    <header class="destination-hero" style="background-image: url('../assets/images/destination-slug/main.webp')">
-        <div class="container reveal">
-            <span class="card-category" style="color: #fff; opacity: 0.8;"></span>
-            <h1>Destination Title — Subtitle</h1>
+    <header class="destination-hero"
+        style="background-image: url('../assets/images/destination-slug/main.webp'); justify-content: center; text-align: center;">
+        <div class="hero-content-inner reveal">
         </div>
     </header>
 
-    <main class="container">
-        <div class="content-grid">
-            <div class="destination-content reveal">
-                <div class="article-body">
+    <div class="container reveal">
+         <h1 class="shining-blue-text">Destination</h1>
+    </div>
 
+    <main>
+        <article class="editorial-container">
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <p class="lead-text">Explore this beautiful destination in Kutch.</p>
+            </section>
+
+            <div class="grid-2 reveal" style="margin-top: 4rem;">
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">Who Should Visit</h2>
+                    </div>
+                    <ul class="styled-list"><li>Information coming soon...</li></ul>
+                </section>
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">How to Reach</h2>
+                    </div>
+                    <ul class="styled-list"><li>Check local transport options.</li></ul>
+                </section>
+            </div>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Landmarks & Heritage</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">The defining monuments</p>
                 </div>
+                <div class="grid-2"><!-- Landmarks not found --></div>
+            </section>
+            <section class="guide-section reveal">
+                <div class="editorial-note">
+                    <div class="section-header">
+                        <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Curated Local Advice</h3>
+                    </div>
+                    <div class="tips-grid"><!-- Tips not found --></div>
+                </div>
+            </section>
 
-                <div class="gallery-section reveal" style="margin-top: 5rem;">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">Gallery</h2>
-                    <div class="gallery-grid">
 
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="grid-2">
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">
+                                Shopping & Bazaars</h3>
+                        </div>
+                        <ul class="styled-list"><li>Local markets available.</li></ul>
+                    </div>
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">
+                                Local Eats</h3>
+                        </div>
+                        <ul class="styled-list"><li>Local food options available.</li></ul>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <aside class="destination-sidebar reveal" data-delay="200">
-                <div class="sidebar-item">
-                    <h4>Best Time to Visit</h4>
-                    <p>October to March (Ideal)</p>
+            <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px; margin-top: 4rem;">
+                <div class="section-header">
+                    <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">When to Visit</h3>
                 </div>
+                <p>Best time to visit is winter (Oct-Feb).</p>
+            </section>
 
-                <div style="margin-top: 3rem;">
-                    <a href="../index.html#destinations" class="btn" style="width: 100%; text-align: center;">Back to
-                        Wonders</a>
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Nearby Places to Visit</h2>
                 </div>
-            </aside>
-        </div>
+                <div class="grid-2"><!-- No nearby places listed --></div>
+            </section>
+
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Suggested Itinerary</h2>
+                </div>
+                <div style="margin: 0; max-width: 800px;"><!-- Itinerary coming soon --></div>
+            </section>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Location & Gallery</h2>
+                </div>
+                <div
+                    style="height: 400px; border-radius: 4px; overflow: hidden; margin-bottom: 2rem; border: 1px solid #eee;">
+                    <iframe src=""
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="gallery-grid"></div>
+            </section>
+
+        </article>
     </main>
 
-    <footer class="section" style="background: var(--color-heading); color: var(--color-white); margin-top: 10rem;">
-        <div class="container">
-            <div style="text-align: center; opacity: 0.4; font-size: 0.8rem;">
-                <p>&copy; 2026 Kutch Travel. All rights reserved.</p>
+    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <img src="../assets/images/logo.png" alt="MyKutch Logo" style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
+            <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;">About MyKutch.org</h3>
+            <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Contact:</span>
+                    <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
+                </div>
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Email:</span>
+                    <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
+                <p>Developed with Love for Kutch by MyKutch.org team</p>
             </div>
         </div>
-    </footer>
-
+    </div>
+</footer>
     <script src="../js/script.js"></script>
 </body>
 

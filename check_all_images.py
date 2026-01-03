@@ -15,10 +15,10 @@ def check_file(filename):
     images += re.findall(r'url\("([^"]+)"\)', content)
 
     for img in set(images):
-        if img.startswith('http') or img.startswith('//'):
+        # skip external URLs and template placeholders like ${item.src}
+        if img.startswith('http') or img.startswith('//') or '${' in img:
             continue
         if os.path.exists(img):
-            # print(f"EXISTS: {img}")
             pass
         else:
             print(f"MISSING: {img}")
