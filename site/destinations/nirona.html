@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirona Village — Art & Crafts Hub | Kutch Travel Guide</title>
+    <meta name="description"
+        content="Explore Nirona Village, the artisan hub of Kutch. Witness the rare Rogan Art, Copper Bell making, and Lacquer work demonstrations by master craftsmen.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WQBTM9EPH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5WQBTM9EPH');
+    </script>
+
+    <style>
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .lead-text {
+                font-size: 1rem;
+            }
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        /* Modern Card Design */
+        .attraction-card {
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .attraction-img-wrapper {
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .attraction-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .attraction-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: #00d26a; /* Bright Green */
+            font-weight: 600;
+            line-height: 1.3;
+            border-bottom: 2px solid #FBC02D; /* Pale Yellow Underline */
+            display: inline-block;
+        }
+
+        .attraction-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            color: var(--color-text);
+        }
+
+        /* Modern Editorial Note */
+        .editorial-note {
+            background-color: #f8fafc;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            text-align: left; /* Align Left */
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .tip-item h4 {
+            font-size: 1.15rem; /* Unified Subheading Size */
+            margin-bottom: 0.5rem;
+            color: var(--color-heading);
+            font-weight: 600;
+        }
+
+        .tip-item p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .styled-list {
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .styled-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .styled-list li strong {
+            color: #333;
+            border-bottom: 2px solid #E91E63; /* Attractive Rose/Pink Underline */
+            display: inline-block;
+            line-height: 1.2;
+            margin-right: 0.3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            transition: opacity 0.3s;
+        }
+
+        /* Specific section header override if needed */
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem !important; /* Uniform Gap globally */
+            margin-top: 0 !important;
+        }
+        
+        /* Ensure paragraph under header aligns left too */
+        .section-header p {
+             text-align: left !important;
+             margin-left: 0 !important;
+             margin-top: 0.5rem !important;
+        }
+
+        .section-header h2, .heading-bright-blue {
+            font-size: 1.8rem !important;
+            background-color: #8B0000; /* Dark Red */
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 2px; /* Slight ease for rectangle */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0 !important; /* Let container handle the big gap */
+            font-weight: 700 !important;
+        }
+        
+        /* Override any centering on body/main just in case (though unlikely) */
+        main {
+            text-align: left;
+        }
+
+        .shining-blue-text {
+            color: #007bff; /* Bright Blue */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Shining Effect */
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .destination-hero::before {
+            background: none !important;
+            display: none !important;
+        }
+
+        .hero-text-bright {
+            color: #ffffff;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .editorial-container {
+                padding: 0 1rem;
+            }
+
+            .editorial-note {
+                padding: 2rem 1.5rem;
+            }
+            
+            .grid-2 {
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+            }
+
+            .shining-blue-text {
+                font-size: 1.4rem; /* Smaller for mobile */
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="MyKutch"
+                    class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#destinations">Destinations</a>
+                <a href="../hidden-gems.html">Hidden Gems</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../history.html">History</a>
+                <a href="../landscapes.html">Landscapes</a>
+                <a href="../bookings.html">Bookings</a>
+                <a href="../about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="destination-hero"
+        style="background-image: url('../assets/images/nirona/nirona1.webp'); justify-content: center; text-align: center;">
+        <div class="hero-content-inner reveal">
+        </div>
+    </header>
+
+    <div class="container reveal">
+         <h1 class="shining-blue-text">Nirona Village — Art for Generations</h1>
+    </div>
+
+    <main>
+        <article class="editorial-container">
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <p class="lead-text">
+                    Located approximately 40 km from Bhuj, **Nirona Village** is a celebrated hub of traditional art and
+                    craftsmanship in Kutch. This unassuming rural village carries a rich heritage, preserving unique art
+                    forms that have been passed down through generations for centuries. Nirona is one of the few places in
+                    the world where you can witness the rare **Rogan Art**, hear the melodious chimes of handcrafted
+                    **Copper Bells**, and see the vibrant colors of traditional **Lacquer Work**. Set against the arid
+                    beauty of the Kutch landscape, a visit to Nirona offers a direct connection to the region's living
+                    culture and the artisans who keep it alive.
+                </p>
+            </section>
+
+            <div class="grid-2 reveal" style="margin-top: 4rem;">
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">Why Visit</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>Rare Rogan Art</strong>: Witness the only family in the world keeping this 300-year-old Persian oil-painting tradition alive.</li>
+                        <li><strong>Live Demonstrations</strong>: Step into artisan homes to watch them create magic with metal bells, lacquer, and fabric.</li>
+                        <li><strong>Cultural Identity</strong>: Experience the true essence of Kutchi craftsmanship and village life.</li>
+                        <li><strong>Unique Souvenirs</strong>: Buy authentic handicrafts directly from the masters who make them.</li>
+                    </ul>
+                </section>
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">How to Reach</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>From Bhuj (40km)</strong>: A 45-60 minute drive from Bhuj. Ideal for a day trip.</li>
+                        <li><strong>Transport</strong>: Hiring a private taxi is the best option as it allows flexibility to stop at multiple artisan homes.</li>
+                        <li><strong>Route</strong>: Well-connected by road, often visited en route to or from the Great Rann of Kutch or Kala Dungar.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">The Trinity of Crafts</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">The diverse art forms of Nirona</p>
+                </div>
+                <div class="grid-2">
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/nirona/rogan-art.webp" 
+                            onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                            alt="Rogan Art">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Rogan Art</h3>
+                            <p class="attraction-desc">An ancient Persian art form using boiled castor oil and stone pigments. Artisans use a metal stick to paint intricate thread-like patterns on fabric without the stick ever touching the cloth. The 'Tree of Life' is a masterpiece design.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/nirona/copper-bell.webp" 
+                            onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                            alt="Copper Bell Art">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Copper Bell Art</h3>
+                            <p class="attraction-desc">Preserved by the Lohar community, these bells are made from scrap metal strips without welding. The secret lies in the beating process and a special copper coating that gives them their distinct, melodious sound.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/nirona/lacquer-work.webp" 
+                            onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                            alt="Lacquer Work">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Lacquer Work</h3>
+                            <p class="attraction-desc">Practiced by the Wada community, this craft uses natural colored lacquer applied to lathe-turned wooden objects like kitchenware and toys. The vibrant, zigzag patterns are created by hand with incredible dexterity.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="guide-section reveal">
+                <div class="editorial-note">
+                    <h3 style="font-family: var(--font-heading); color: var(--color-heading); margin-bottom: 1rem;">🇺🇸 The White House Connection</h3>
+                    <p style="color: #555; line-height: 1.6;">
+                        Nirona's Rogan Art gained global spotlight when Prime Minister Narendra Modi gifted a handcrafted Rogan painting to 
+                        then-US President Barack Obama during a state visit. This gesture showcased the extraordinary skill of Nirona's 
+                        artisans on the world stage, reviving interest in this dying art form.
+                    </p>
+                </div>
+            </section>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Nearby Places to Visit</h2>
+                </div>
+                <div class="grid-2">
+                    <a href="bhuj.html" class="attraction-card">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Bhuj</h3>
+                            <p class="attraction-desc">40km - The historic capital with Aina Mahal and Prag Mahal.</p>
+                        </div>
+                    </a>
+                    <a href="khavda.html" class="attraction-card">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Khavda</h3>
+                            <p class="attraction-desc">Famous for its pottery and as a gateway to Kalo Dungar.</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Location</h2>
+                </div>
+                <div
+                    style="height: 400px; border-radius: 4px; overflow: hidden; margin-bottom: 2rem; border: 1px solid #eee;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14713.84755866755!2d69.5029456!3d23.5414457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3951a5c660000001%3A0x6c6e76865268600!2sNirona%2C%20Gujarat%20370001!5e0!3m2!1sen!2sin!4v1736170000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+        <div class="footer-grid">
+            <!-- Left Column: Menu -->
+            <div class="footer-col-left">
+                <h4 class="footer-heading">Quick Links</h4>
+                <div class="footer-links-grid">
+                    <a href="../index.html" class="footer-link">Home</a>
+                    <a href="../destinations.html" class="footer-link">Destinations</a>
+                    <a href="../hidden-gems.html" class="footer-link">Hidden Gems</a>
+                    <a href="../blog.html" class="footer-link">Blog</a>
+                    <a href="../history.html" class="footer-link">History</a>
+                    <a href="../crafts.html" class="footer-link">Crafts</a>
+                    <a href="../bookings.html" class="footer-link">Bookings</a>
+                    <a href="../about.html" class="footer-link">About</a>
+                </div>
+            </div>
+
+            <!-- Right Column: Details -->
+            <div class="footer-col-right">
+                <img src="../assets/images/logo.png" alt="MyKutch Logo" class="footer-logo">
+                <p class="footer-desc">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+                
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <span>Contact:</span>
+                        <a href="tel:9825034580">+91 98250 34580</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <span>Email:</span>
+                        <a href="mailto:info@mykutch.org">info@mykutch.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

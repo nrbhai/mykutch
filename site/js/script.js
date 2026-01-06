@@ -108,3 +108,14 @@ function updateDarkModeIcon(theme) {
         darkModeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
     }
 }
+
+// Preloader Logic
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        // rapid fade out once everything (images + content) is ready
+        setTimeout(() => {
+            preloader.classList.add('hidden');
+        }, 100); // small buffer to ensure visual smoothness
+    }
+});
