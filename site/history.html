@@ -109,10 +109,10 @@
         }
 
         .era-tag {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            color: var(--color-primary);
+            color: #d97706; /* Darker Gold/Amber for visibility on light bg */
             font-weight: 700;
             margin-bottom: 0.5rem;
             display: block;
@@ -212,8 +212,9 @@
 
         .timeline-card-header {
             padding: 1.5rem 2rem;
-            background: linear-gradient(135deg, #1e3a5f, #0f172a);
-            color: white;
+            background: #f8fafc; /* Light background */
+            color: var(--color-heading);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
         .timeline-card-body {
@@ -265,7 +266,7 @@
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="destinations.html">Destinations</a>
-                <a href="hidden-gems.html">Hidden Gems</a>
+                <a href="hidden-gems.html">Hidden-Gems</a>
                 <a href="blog.html">Blog</a>
                 <a href="history.html">History</a>
                 <a href="geography.html">Geography</a>
@@ -278,7 +279,7 @@
     </nav>
 
     <header class="destination-hero"
-        style="background-image: url('assets/images/history-map.jpg'); background-size: 115%; background-position: center; justify-content: center; text-align: center;">
+        style="background-image: url('assets/images/hero-history.webp'); background-size: cover; background-position: center; justify-content: center; text-align: center;">
         <div class="hero-content-inner reveal">
         </div>
     </header>
@@ -451,7 +452,7 @@
                 <!-- Modern Era -->
                 <div class="timeline-card">
                     <div class="timeline-card-header">
-                        <span class="era-tag" style="color: #fbbf24;">1947 – Present</span>
+                        <span class="era-tag">1947 – Present</span>
                         <h3 style="margin: 0; font-size: 1.5rem;">Renewal & Resilience</h3>
                     </div>
                     <div class="timeline-card-body">

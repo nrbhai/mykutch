@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/univers-next-pro');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap');
 
 :root {
     /* Color Palette - Refined Luxury Editorial (Light Mode) */
     --color-bg: #FCFAF8;
     /* Ultra-soft Cream */
-    --color-text: #2C2C2C;
+    --color-text: #222;
     /* Soft Charcoal */
     --color-heading: #0F172A;
     /* Slate Black */
@@ -25,7 +24,7 @@
 
     /* Typography */
     --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Univers Next Pro', sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-accent: 'Poppins', sans-serif;
 
     /* Spacing */
@@ -249,7 +248,9 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     font-family: var(--font-body);
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -363,17 +364,17 @@ nav.scrolled .nav-logo {
 }
 
 .nav-links a {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .nav-links a:hover {
     opacity: 1;
-    color: var(--color-accent-1);
+    color: #60a5fa; /* Light Blue */
     transform: translateY(-1px);
 }
 
@@ -473,7 +474,7 @@ nav.scrolled .nav-logo {
 }
 
 .hero p.hero-desc {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.7;
     max-width: 650px;
     margin: 1.5rem auto 3rem;
