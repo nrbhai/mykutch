@@ -1,0 +1,897 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "destinations": "Destinations",
+    "hidden_gems": "Joyaux cachés",
+    "blog": "Blog",
+    "history": "Histoire",
+    "landscapes": "Paysages",
+    "bookings": "Réservations",
+    "about": "À propos"
+  },
+  "footer": {
+    "about_title": "À propos de MyKutch.org",
+    "about_text": "Mise en valeur de la culture vibrante et du patrimoine de Kutch. Fournir des informations authentiques pour chaque voyageur.",
+    "contact_label": "Contact :",
+    "email_label": "Email :",
+    "dev_credit": "Développé avec amour pour Kutch par l'équipe MyKutch.org"
+  },
+  "bhuj": {
+    "meta_title": "Bhuj — Cœur culturel de Kutch | Guide de voyage Kutch",
+    "meta_desc": "Explorez Bhuj — Cœur culturel de Kutch. Guide de voyage complet avec attractions, itinéraire, comment s'y rendre et conseils locaux.",
+    "hero_title": "Bhuj — Le cœur culturel de Kutch",
+    "intro_text": "Bhuj est le cœur culturel et logistique de Kutch, servant de base idéale pour explorer la région. Mêlant 500 ans d'histoire royale à une résilience moderne, cette ville est un musée vivant de palais, de bazars et de ruelles étroites et sinueuses. D'ici, vous pouvez lancer des expéditions vers le Rann Blanc, les villages artisanaux du nord et les plages du sud. Une visite typique nécessite 2 jours pour apprécier pleinement ses musées, ses palais et les centres artisanaux voisins de Bhujodi et <a href=\"../crafts/ajrakh.html\">Ajrakhpur</a>.",
+    "sections": {
+      "who_should_visit": {
+        "title": "Qui devrait visiter",
+        "history_buffs": "<strong>Passionnés d'histoire</strong> : Explorez l'Aina Mahal et le Prag Mahal pour voir l'héritage royal de Kutch.",
+        "shoppers": "<strong>Acheteurs</strong> : Le meilleur endroit pour acheter des broderies authentiques de Kutch, du <a href=\"../crafts/bandhani.html\">bandhani</a> et de la <a href=\"../crafts/leather-craft.html\">maroquinerie</a>.",
+        "foodies": "<strong>Gourmets</strong> : Les rues de Bhuj offrent les Dabeli, Pakwan et Thalis gujarati les plus authentiques.",
+        "culture_seekers": "<strong>Chercheurs de culture</strong> : Un point central pour visiter les villages d'artisans voisins comme Bhujodi (8 km) et Ajrakhpur (15 km)."
+      },
+      "how_to_reach": {
+        "title": "Comment s'y rendre",
+        "air": "<strong>Par avion</strong> : L'aéroport de Bhuj (BHU) est à seulement 4 km du centre-ville. Vols quotidiens depuis Mumbai et Ahmedabad.",
+        "train": "<strong>Par train</strong> : La gare de Bhuj est bien reliée à Mumbai (Kutch Express), Ahmedabad et Delhi (Ala Hazrat Exp).",
+        "bus": "<strong>Par bus</strong> : Excellente connectivité en bus de luxe GSRTC et privé depuis Ahmedabad (7-8 heures) et Rajkot (5 heures).",
+        "local": "<strong>Transport local</strong> : Les auto-rickshaws sont la bouée de sauvetage de Bhuj. Louer un vélo/scooter est également une excellente option pour les voyageurs en solo."
+      },
+      "landmarks": {
+        "title": "Monuments et patrimoine",
+        "subtitle": "Les monuments déterminants",
+        "aina_mahal_title": "Aina Mahal et Prag Mahal",
+        "aina_mahal_desc": "(2 heures) Visitez ces palais adjacents le matin. Aina Mahal (Palais des miroirs) est une merveille architecturale. Entrée : ₹20-50.",
+        "kutch_museum_title": "Musée de Kutch",
+        "kutch_museum_desc": "(1 heure) Le plus ancien musée du Gujarat. Découvrez l'écriture kutchi éteinte et les artefacts tribaux. Fermé le mercredi.",
+        "swaminarayan_title": "Temple Swaminarayan",
+        "swaminarayan_desc": "(45 min) Un temple en marbre blanc étincelant. À visiter de préférence le soir (17h - 19h) pour l'Aarti.",
+        "bhujodi_title": "Bhujodi (Village des tisserands)",
+        "bhujodi_desc": "(2-3 heures) À seulement 8 km. Rencontrez des tisserands primés au niveau national et achetez des châles directement auprès d'eux. Visitez le parc artisanal Hiralaxmi.",
+        "smritivan_title": "Mémorial du tremblement de terre Smritivan",
+        "smritivan_desc": "(2-3 heures) Un musée de classe mondiale sur la colline de Bhujia dédié aux victimes du tremblement de terre de 2001. Idéal au coucher du soleil pour la vue.",
+        "hamirsar_title": "Lac Hamirsar",
+        "hamirsar_desc": "(Soirée) Le cœur de Bhuj. Promenez-vous autour du lac au coucher du soleil et profitez de la cuisine de rue.",
+        "ashapura_title": "Temple Ashapura Mataji",
+        "ashapura_desc": "(1 heure) Un temple historique important dédié à la divinité protectrice (Kuldevi) des dirigeants Jadeja de Kutch. Majestueux et spirituel.",
+        "trimandir_title": "Temple Trimandir",
+        "trimandir_desc": "(45 min) Situé sur la rocade de l'aéroport. Un grand concept de temple non sectaire fondé par Param Pujya Dada Bhagwan, promouvant l'unité.",
+        "stepwell_title": "Puits à degrés près de Ramdhun",
+        "stepwell_desc": "(30 min) Un puits à degrés historique (Vav) situé près du temple Ramdhun. Un excellent exemple d'architecture ancienne de conservation de l'eau à Kutch."
+      },
+      "tips": {
+        "title": "Conseils locaux",
+        "siesta_title": "Heure de la sieste",
+        "siesta_desc": "De nombreux magasins à Bhuj ferment entre 14h00 et 16h00 pour la sieste de l'après-midi. Prévoyez vos achats pour le soir.",
+        "sundays_title": "Dimanches",
+        "sundays_desc": "Aina Mahal est ouvert, mais le musée de Kutch est fermé le mercredi.",
+        "traffic_title": "Trafic",
+        "traffic_desc": "La vieille ville près des palais a des ruelles très étroites. Évitez d'y entrer avec de grosses voitures ; garez-vous à l'extérieur et marchez ou prenez un auto.",
+        "booking_title": "Réservation",
+        "booking_desc": "Si vous visitez pendant le Rann Utsav (nov-fév), réservez les hôtels 2 mois à l'avance car les prix triplent."
+      },
+      "shopping": {
+        "title": "Shopping et bazars",
+        "shroff": "<strong>Shroff Bazaar</strong> : Le cœur de la scène commerciale de Bhuj. Célèbre pour les saris authentiques <a href=\"../crafts/bandhani.html\">Bandhani</a>, les dupattas et la broderie traditionnelle Kutchi. Meilleur moment : 17h - 21h.",
+        "vaniyawad": "<strong>Vaniyawad</strong> : Spécialisé dans les tissus et l'artisanat traditionnel Kutchi. Le marchandage est attendu et fait partie de l'expérience.",
+        "commerce": "<strong>Commerce College Road</strong> : Il s'agit d'un nouveau bazar développé avec tous les showrooms de marques modernes.",
+        "anam": "<strong>Anam Ring Road</strong> : Zone commerciale moderne avec des magasins de vêtements, des magasins de chaussures et des emporiums d'artisanat. Ouvert jusqu'à tard le soir.",
+        "kansara": "<strong>Kansara Bazar</strong> : Essentiellement un marché de bijoux avec toutes sortes de bijoux en or et en argent disponibles.",
+        "handicraft": "<strong>Emporiums d'artisanat</strong> : Magasins gérés par le gouvernement près d'Aina Mahal proposant de l'artisanat authentique à prix fixe avec certification de qualité."
+      },
+      "eats": {
+        "title": "Manger local",
+        "dabeli": "<strong>Kutchi Dabeli</strong> : Essayez le 'Double Roti' à Mandvi Dabalroti, près de la gare routière ou Mohan's Dabeli sur Hospital Road. C'est la cuisine de rue de base.",
+        "pakwan": "<strong>Pakwan</strong> : Pakwan est une collation ronde salée et sèche qui ressemble à un petit petit pain. Fabriqué avec de la farine raffinée et de l'huile, il a de nombreux plis et couches qui sont délicieusement croustillants. La délicatesse est également connue sous le nom de Kutchi pakwan, car on pense qu'elle est originaire de Kutch.",
+        "puri": "<strong>Puri Sak</strong> : Si vous voulez goûter au meilleur Puri Sak local, visitez Rajubhai près de Bhanushalinagar ou Chaubha près de la porte Vaniyavad.",
+        "sweets": "<strong>Douceurs</strong> : Ne manquez pas 'Adadiya' (douceur d'hiver), 'Mesuk' et 'Gulab Pak'. Ce sont des douceurs célèbres de Kutch."
+      },
+      "when_to_visit": {
+        "title": "Quand visiter",
+        "desc": "<strong>Novembre à février (Hiver) :</strong> La meilleure saison. Les journées sont ensoleillées (25°C) et les nuits fraîches (10°C). Parfait pour le Rann Utsav et les visites touristiques.<br><br><strong>Mars à juin (Été) :</strong> Très chaud (jusqu'à 42°C). Non recommandé sauf si vous supportez une chaleur sèche extrême.<br><br><strong>Juillet à septembre (Mousson) :</strong> Vert et pittoresque. La colline de Bhujia est magnifique et le lac Hamirsar déborde (un événement chanceux !). Bon pour les voyages hors des sentiers battus."
+      },
+      "nearby": {
+        "title": "Lieux à visiter à proximité",
+        "kotay_title": "Kotay Surya Mandir",
+        "kotay_desc": "22 km - Ruines d'un ancien temple du soleil du 10ème siècle avec une importance archéologique",
+        "dhrang_title": "Dhrang - Mekan Dada",
+        "dhrang_desc": "25 km - Sanctuaire sacré et lieu de pèlerinage",
+        "abjibapa_title": "Abjibapa ni Chatardi Baladia",
+        "abjibapa_desc": "20 km - Cénotaphe historique et site patrimonial",
+        "rudramata_title": "Barrage de Rudramata",
+        "rudramata_desc": "15 km - Barrage pittoresque avec réservoir d'eau et environnement paisible",
+        "gangeshwar_title": "Gangeshwar Mahadev",
+        "gangeshwar_desc": "10 km - Temple sur une colline avec de vastes possibilités de randonnée et des vues panoramiques",
+        "hiralaxmi_title": "Mémorial Hira Laxmi",
+        "hiralaxmi_desc": "8 km - Mémorial au village de Bhujodi commémorant la lutte pour la liberté",
+        "jadura_title": "Jadura",
+        "jadura_desc": "5 km - Point de vue pittoresque au coucher du soleil avec vue panoramique",
+        "hanuman_title": "Hanuman Tekri Kodki",
+        "hanuman_desc": "10 km - Temple d'Hanuman et excellent point de vue au coucher du soleil"
+      },
+      "itinerary": {
+        "title": "Itinéraire suggéré",
+        "day1_am": "Commencez par Aina Mahal et Prag Mahal. Promenade historique dans le vieux Bhuj.",
+        "day1_pm": "Déjeuner (Gujarati Thali). Visitez le musée de Kutch.",
+        "day1_eve": "Coucher de soleil au temple Swaminarayan suivi de cuisine de rue au lac Hamirsar.",
+        "day2_am": "Voyage à Bhujodi (8 km) pour les textiles et le parc mémorial Hiralaxmi.",
+        "day2_pm": "Visitez le mémorial du tremblement de terre Smritivan sur la colline de Bhujia (le musée prend 2 heures).",
+        "day2_eve": "Shopping au Shroff Bazaar pour Bandhani et artisanat."
+      }
+    }
+  },
+  "home": {
+    "meta_title": "Guide de voyage Kutch 2026 | White Rann, Bhuj & Gemmes cachées",
+    "meta_desc": "Explorez le désert de sel White Rann de Kutch, l'ancienne Dholavira et l'artisanat dynamique. Guide de voyage complet avec hôtels et conseils. Planifiez votre voyage 2026 !",
+    "hero": {
+      "title": "Kutch Mystique",
+      "subtitle": "Là où le silence parle dans le sel et la pierre",
+      "desc": "\"Au-delà de l'interminable White Rann se trouve une terre de grottes cachées, de rivages immaculés et de collines sacrées. Découvrez les histoires inédites de Kutch.\"",
+      "cta_explore": "Explorer les destinations",
+      "cta_plan": "Planifier votre voyage"
+    },
+    "diversity": {
+      "title": "Plus que juste le désert",
+      "text1": "Kutch est bien plus que le désert de sel. C'est une destination sacrée de pèlerinage, un terrain de jeu pour l'aventure et un sanctuaire de plages isolées immaculées et de jungles sauvages.<br><br>Plongez-vous dans le patrimoine vivant de l'artisanat ancien, où des textiles vibrants et des arts complexes racontent des histoires d'une culture intemporelle.",
+      "text2": "Suivez-nous sur ce site web pour trouver tout ce dont vous avez besoin pour explorer cette terre d'une diversité infinie.",
+      "coast_title": "La Côte",
+      "coast_desc": "Plages isolées",
+      "hills_title": "Les Collines",
+      "hills_desc": "Kalo Dungar",
+      "mystery_title": "Le Mystère",
+      "mystery_desc": "Grottes anciennes",
+      "spirit_title": "L'Esprit",
+      "spirit_desc": "Sites sacrés"
+    },
+    "destinations": {
+      "category": "Merveilles sélectionnées",
+      "title": "Explorez les paysages diversifiés",
+      "desc": "Des plaines de sel blanc aux anciennes villes portuaires, ce sont les paysages émouvants de Kutch.",
+      "view_all": "Voir toutes les destinations",
+      "explore_btn": "En savoir plus",
+      "cards": {
+        "kadia": {
+          "category": "Nature & Mystère",
+          "title": "Kadia Dhrow",
+          "desc": "Le \"Grand Canyon de l'Inde\" – un labyrinthe de formations rocheuses colorées sculptées par le temps lui-même.",
+          "tag1": "✨ Canyon unique",
+          "tag2": "🌤️ Nov - Fév"
+        },
+        "white_rann": {
+          "category": "Nature",
+          "title": "White Rann",
+          "desc": "Un désert de sel sans fin qui brille d'une lumière éthérée sous la pleine lune.",
+          "tag1": "✨ Désert de sel",
+          "tag2": "🌤️ Nov - Fév"
+        },
+        "bhuj": {
+          "category": "Culture",
+          "title": "Ville de Bhuj",
+          "desc": "Le cœur culturel de Kutch, où palais historiques et artisanat ancien racontent des histoires de résilience.",
+          "tag1": "✨ Ville patrimoniale",
+          "tag2": "🌤️ Nov - Fév"
+        },
+        "heaven": {
+          "category": "Pittoresque",
+          "title": "Road to Heaven",
+          "desc": "Une étendue fascinante d'infini coupant à travers le désert de sel blanc vers l'horizon.",
+          "tag1": "✨ Route pittoresque",
+          "tag2": "🌤️ Nov - Fév"
+        },
+        "dholavira": {
+          "category": "Patrimoine",
+          "title": "Dholavira",
+          "desc": "Une métropole harappéenne de 5 000 ans témoignant de l'ingéniosité humaine ancienne.",
+          "tag1": "✨ Site antique",
+          "tag2": "🌤️ Nov - Fév"
+        },
+        "mandvi": {
+          "category": "Côtier",
+          "title": "Plage de Mandvi",
+          "desc": "Des rivages sereins rencontrant le majestueux palais Vijay Vilas au bord de la mer d'Oman.",
+          "tag1": "✨ Plage immaculée",
+          "tag2": "🌤️ Nov - Fév"
+        }
+      }
+    },
+    "booking_cta": {
+      "title": "Planifiez votre voyage parfait",
+      "desc": "Réservez hôtels, vols et expériences avec nos partenaires de voyage de confiance. Meilleurs prix garantis.",
+      "btn": "Commencer la réservation"
+    },
+    "culture": {
+      "category": "Âme de Kutch",
+      "title": "Culture & Artisanat",
+      "desc": "Plongez dans le monde vibrant des traditions Kutchi, où chaque fil raconte une histoire et chaque métier porte des siècles de patrimoine.",
+      "bandhani": { "title": "Bandhani", "desc": "Art tie-dye avec des motifs à pois complexes." },
+      "ajrakh": { "title": "Ajrakh", "desc": "Chefs-d'œuvre géométriques imprimés au bloc." },
+      "rogan": { "title": "Art Rogan", "desc": "Tissu peint avec des couleurs à l'huile de ricin." },
+      "mirror": { "title": "Travail de miroir", "desc": "Broderie Shisha avec de minuscules miroirs." },
+      "weaving": { "title": "Tissage Kutch", "desc": "Métier à bras vibrant avec motifs de trame supplémentaire." },
+      "pottery": { "title": "Poterie Khavda", "desc": "Poterie peinte avec des couleurs naturelles." },
+      "leather": { "title": "Art du cuir", "desc": "Cuir artisanal avec travail de fil." },
+      "sudi": { "title": "Sudi & Chappu", "desc": "Couteaux embellis et travail du métal." }
+    },
+    "guide": {
+      "when_title": "Quand visiter",
+      "when_best_badge": "★ LE MEILLEUR",
+      "when_best_months": "Nov - Fév",
+      "when_best_title": "Haute saison",
+      "when_best_desc": "Rann Utsav, camping dans le désert, nuits de pleine lune",
+      "when_good_badge": "BON",
+      "when_good_months": "Mar - Avr",
+      "when_good_title": "Saison intermédiaire",
+      "when_good_desc": "Moins de foule, idéal pour explorer les villages",
+      "when_avoid_badge": "ÉVITER",
+      "when_avoid_months": "Mai - Oct",
+      "when_avoid_title": "Basse saison",
+      "when_avoid_desc": "Chaleur extrême, moussons, installations fermées",
+      "transport_title": "S'y rendre",
+      "transport_air_mode": "Par avion",
+      "transport_air_detail": "Aéroport de Bhuj (BHJ)",
+      "transport_air_sub": "Vols quotidiens depuis Mumbai",
+      "transport_train_mode": "Par train",
+      "transport_train_detail": "Gare de Bhuj",
+      "transport_train_sub": "Express depuis Delhi, Mumbai, Ahmedabad",
+      "transport_road_mode": "Par la route",
+      "transport_road_detail": "Autoroute NH8A",
+      "transport_road_sub": "330 km de route panoramique depuis Ahmedabad",
+      "tips_title": "Conseils de voyage essentiels",
+      "tip_pack_title": "Bagages intelligents",
+      "tip_pack_desc": "Couches pour changements de température, protection solaire, chaussures confortables",
+      "tip_water_title": "Restez hydraté",
+      "tip_water_desc": "Emportez de l'eau lors de l'exploration du désert et des plaines de sel",
+      "tip_culture_title": "Respectez la culture",
+      "tip_culture_desc": "Habillez-vous modestement et demandez la permission pour la photographie"
+    },
+    "community": {
+      "category": "Rejoignez le voyage",
+      "title": "Connectez-vous",
+      "desc": "Rejoignez notre communauté d'explorateurs de Kutch ! Obtenez des mises à jour en temps réel sur Rann Utsav, les alertes météo et les lieux cachés directement sur WhatsApp.",
+      "whatsapp_btn": "Rejoindre WhatsApp",
+      "contact_btn": "Me contacter"
+    }
+  },
+  "about": {
+    "meta_title": "À propos | MyKutch — Peuple • Artisanat • Paysage",
+    "meta_desc": "MyKutch — histoires, voyages et artisanat de Kutch. Expériences durables axées sur la communauté et préservation de l'artisanat.",
+    "hero": {
+      "title": "À propos de nous",
+      "subtitle": "MyKutch — célébrer le peuple, l'artisanat et le paysage",
+      "intro": "Nous sommes un projet de voyage et de narration ancré dans la communauté et axé sur Kutch. Nous concevons des voyages à faible impact, soutenons les artisans et publions des histoires qui préservent et partagent les connaissances locales.",
+      "plan_btn": "Planifier un voyage",
+      "contact_btn": "Contacter l'équipe"
+    },
+    "who_we_are": {
+      "title": "Qui sommes-nous",
+      "desc": "Fondé par des habitants et des voyageurs qui aiment Kutch, MyKutch est construit pour célébrer la culture quotidienne — des maisons en boue et de l'artisanat aux plaines de sel et aux festivals. Nous travaillons en partenariat avec des guides villageois et des artisans pour garantir que les bénéfices reviennent aux communautés locales."
+    },
+    "approach": {
+      "title": "Notre approche",
+      "item1_bold": "Dirigé par la communauté :",
+      "item1_text": " Les visites et les expériences sont co-créées avec des hôtes locaux.",
+      "item2_bold": "Préservation de l'artisanat :",
+      "item2_text": " Nous promouvons les créateurs et aidons à les connecter aux marchés.",
+      "item3_bold": "Durabilité :",
+      "item3_text": " Itinéraires à faible impact, approvisionnement local et prix équitables."
+    },
+    "stats": {
+      "tours": "Circuits organisés",
+      "partners": "Partenaires locaux",
+      "years": "Années de travail"
+    },
+    "impact": {
+      "title": "Impact",
+      "desc": "Nous mesurons l'impact non seulement par le nombre de visiteurs, mais aussi par les revenus des artisans, les partenariats villageois et les résultats en matière de conservation. Nos micro-subventions et nos programmes de formation ont aidé les artisans à obtenir des commandes durables et une visibilité."
+    },
+    "stories": {
+      "title": "Histoires en vedette",
+      "desc": "Lisez des récits à la première personne d'artisans, de guides communautaires et de voyageurs. Ces histoires capturent le patrimoine vivant de Kutch.",
+      "btn": "Lire les histoires"
+    },
+    "sidebar": {
+      "quick_links": "Liens rapides",
+      "explore_dest": "Explorer les destinations",
+      "meet_artisans": "Rencontrer les artisans",
+      "tours_bookings": "Visites et réservations",
+      "partner_collab": "Devenir partenaire",
+      "team_title": "L'équipe",
+      "team_founder": "Fondateur",
+      "partner_title": "Devenir partenaire",
+      "partner_desc": "Nous travaillons avec des ONG, des coopératives artisanales et des partenaires de voyage responsables. Contactez-nous pour explorer des collaborations.",
+      "partner_btn": "Prendre contact"
+    },
+    "why_matters": {
+      "title": "Pourquoi Kutch compte",
+      "desc": "Kutch est une mosaïque d'écosystèmes et de cultures — marais salants, déserts, hameaux de pêcheurs et villages textiles. Soutenir les moyens de subsistance et l'artisanat locaux maintient ces traditions en vie et offre des expériences significatives aux visiteurs qui souhaitent apprendre et contribuer."
+    },
+    "footer": {
+        "title": "À propos de MyKutch.org",
+        "desc": "Présentation de la culture dynamique et du patrimoine de Kutch. Fournir des informations authentiques pour chaque voyageur.",
+        "developed_by": "Développé avec amour pour Kutch par l'équipe MyKutch.org"
+    }
+  },
+  "bookings": {
+    "meta_title": "Réservez votre aventure Kutch | MyKutch.org",
+    "meta_desc": "Réservez des expériences, des circuits et des séjours authentiques à Kutch directement auprès d'experts locaux. Planifiez votre voyage avec des guides de confiance et des recommandations organisées.",
+    "hero": {
+      "title": "Réservez votre aventure Kutch",
+      "desc": "Planifiez votre voyage avec des experts locaux, des circuits organisés et des séjours authentiques. Pas de widgets de réservation tiers — juste des recommandations directes et fiables."
+    },
+    "booking_com": {
+        "title": "Trouver des hôtels et hébergements",
+        "desc": "Découvrez les meilleurs hôtels, centres de villégiature et séjours chez l'habitant à Kutch avec notre partenaire de confiance Booking.com",
+        "widget_title": "Trouvez les meilleurs hôtels à Bhuj et Kutch",
+        "widget_desc": "Comparez les prix, lisez les avis et réservez en toute confiance sur Booking.com",
+        "label_hotels": "Hôtels",
+        "label_homestays": "Séjours chez l'habitant",
+        "label_resorts": "Centres de villégiature",
+        "label_camps": "Camps",
+        "btn": "Rechercher des hôtels sur Booking.com →",
+        "footer": "Annulation gratuite sur la plupart des chambres • Meilleur prix garanti"
+    },
+    "trip_com": {
+        "title": "Réserver des hôtels, vols et transports",
+        "desc": "Trouvez les meilleures offres d'hôtels, de vols vers Bhuj et d'options de transport à travers Kutch avec Trip.com",
+        "widget_title": "Réservez des hôtels, vols et plus en Inde",
+        "widget_desc": "Excellentes offres sur les hôtels, les vols et les transports à travers l'Inde",
+        "label_hotels": "Hôtels",
+        "label_flights": "Vols",
+        "label_trains": "Trains",
+        "label_cars": "Voitures",
+        "btn": "Réserver sur Trip.com →",
+        "footer": "Prix en INR • Support client 24/7"
+    },
+    "tours": {
+        "title": "Circuits locaux organisés",
+        "desc": "Explorez Kutch avec des guides qui connaissent chaque joyau caché. Choisissez parmi des safaris dans le désert, des visites de villages artisanaux, des promenades patrimoniales et plus encore. Toutes les visites sont dirigées par la communauté et soutiennent les moyens de subsistance locaux.",
+        "cards": {
+            "rann": {
+                "title": "Safari au clair de lune White Rann",
+                "desc": "Découvrez le désert de sel magique au clair de lune avec des guides locaux."
+            },
+            "artisan": {
+                "title": "Visite du village artisanal",
+                "desc": "Rencontrez des maîtres artisans, apprenez des techniques traditionnelles et achetez de l'artisanat authentique."
+            },
+            "bhuj": {
+                "title": "Promenade patrimoniale de Bhuj",
+                "desc": "Découvrez des palais, des musées et des monuments historiques avec des conteurs experts."
+            },
+            "spiritual": {
+                "title": "Circuit spirituel",
+                "desc": "Visitez des sites sacrés et des temples anciens à travers Kutch."
+            }
+        },
+        "learn_more": "En savoir plus"
+    },
+    "stays": {
+        "title": "Où séjourner",
+        "desc": "Nous recommandons des propriétés patrimoniales, des camps dans le désert et des séjours chez l'habitant dans les villages pour une expérience authentique. Contactez-nous pour une aide à la réservation directe et des tarifs locaux.",
+        "cards": {
+            "heritage": {
+                "title": "Propriétés patrimoniales",
+                "desc": "Séjournez dans des palais et havelis convertis pour une expérience royale."
+            },
+            "camps": {
+                "title": "Camps dans le désert",
+                "desc": "Profitez de tentes de luxe et de l'observation des étoiles dans le White Rann."
+            },
+            "homestays": {
+                "title": "Séjours chez l'habitant",
+                "desc": "Vivez avec des familles locales et découvrez la véritable hospitalité de Kutch."
+            }
+        }
+    },
+    "contact": {
+        "title": "Aide et contact",
+        "desc": "Besoin d'aide pour planifier votre voyage ou réserver un séjour ? Contactez notre équipe pour des conseils gratuits et des connexions directes avec des hôtes locaux de confiance.",
+        "whatsapp_btn": "WhatsApp Nous",
+        "email_btn": "Email Nous"
+    }
+  },
+  "destinations_page": {
+    "meta_title": "Toutes les destinations | MyKutch.org",
+    "meta_desc": "Explorez chaque coin de Kutch - des anciens temples aux plages immaculées, des paysages désertiques aux villages d'artisans. Guide complet de toutes les destinations de Kutch.",
+    "hero_title": "Toutes les destinations – Explorez chaque coin de Kutch",
+    "intro": "Des plages immaculées de Mandvi aux anciennes ruines de Dholavira, des plaines de sel du White Rann aux temples spirituels de Mata na Madh - Kutch offre un trésor de destinations pour chaque voyageur. Explorez notre guide complet pour planifier votre aventure parfaite à Kutch.",
+    "sections": {
+        "major": { "title": "Destinations majeures", "subtitle": "Les lieux incontournables de Kutch" },
+        "heritage": { "title": "Patrimoine et histoire", "subtitle": "Anciens temples et merveilles archéologiques" },
+        "spiritual": { "title": "Destinations spirituelles", "subtitle": "Sites sacrés et centres de pèlerinage" },
+        "nature": { "title": "Nature et aventure", "subtitle": "Paysages pittoresques et faune" },
+        "coastal": { "title": "Villes côtières et portuaires", "subtitle": "Où le désert rencontre la mer" },
+        "other": { "title": "Autres villes importantes", "subtitle": "Centres urbains et zones résidentielles importants" }
+    },
+    "cards": {
+        "bhuj": {
+            "title": "Bhuj",
+            "desc": "Le cœur culturel de Kutch avec 500 ans d'histoire royale. Un musée vivant de palais, de bazars et la base idéale pour explorer la région."
+        },
+        "dhordo": {
+            "title": "Dhordo - White Rann",
+            "desc": "Porte d'entrée du célèbre White Rann de Kutch. Découvrez le désert de sel magique au clair de lune lors du Rann Utsav (nov-fév)."
+        },
+        "mandvi": {
+            "title": "Mandvi",
+            "desc": "Première destination balnéaire avec des rivages immaculés, le palais Vijay Vilas et une tradition de construction navale vieille de 400 ans. Parfait pour se détendre."
+        },
+        "gandhidham": {
+            "title": "Gandhidham",
+            "desc": "La ville la plus cosmopolite de Kutch, porte d'entrée du port de Kandla. Base urbaine moderne avec de larges avenues, des centres commerciaux et une scène culinaire dynamique."
+        },
+        "dholavira": {
+            "title": "Dholavira",
+            "desc": "Site du patrimoine mondial de l'UNESCO. L'un des plus grands sites de la civilisation harappéenne avec des ruines vieilles de 5000 ans et un urbanisme sophistiqué."
+        },
+        "bhadreshwar": {
+            "title": "Temple Jain de Bhadreshwar",
+            "desc": "L'un des plus anciens temples jaïns de l'Inde datant de 516 avant notre ère. Merveille de l'architecture Sekhari avec des sculptures complexes."
+        },
+        "anjar": {
+            "title": "Anjar",
+            "desc": "La plus ancienne capitale de Kutch (650 après JC). Ville de légendes, célèbre pour l'histoire de Jesal-Toral, le travail du métal et le charme d'antan."
+        },
+        "lakhpat": {
+            "title": "Lakhpat",
+            "desc": "Ville fantôme à la frontière indo-pakistanaise. Autrefois un port florissant, c'est aujourd'hui une ville fortifiée d'une beauté obsédante avec un gurudwara sikh."
+        },
+        "mata_na_madh": {
+            "title": "Mata na Madh",
+            "desc": "Destination spirituelle la plus importante dédiée à Ashapura Mata. Des milliers de fidèles marchent à pied pendant Navratri."
+        },
+        "narayan_sarovar": {
+            "title": "Narayan Sarovar et Koteshwar",
+            "desc": "Deux destinations spirituelles à l'extrémité ouest de l'Inde. L'un des cinq lacs hindous les plus sacrés et un magnifique temple de Shiva à flanc de falaise."
+        },
+        "haji_pir": {
+            "title": "Haji Pir Dargah",
+            "desc": "Sanctuaire vénéré près de la frontière indo-pakistanaise. Symbole de l'harmonie communautaire, vénéré par les hindous et les musulmans."
+        },
+        "mamaidev": {
+            "title": "Mamaidev",
+            "desc": "Saint et philosophe vénéré, 4e gourou de Baarmati Panth. Précepteur royal de la dynastie Jadeja avec des enseignements prophétiques."
+        },
+        "kalo_dungar": {
+            "title": "Kalo Dungar",
+            "desc": "Point culminant de Kutch (462 m). Vues panoramiques sur le Grand Rann, temple Dattatreya et rituel de nourrissage des chacals le soir."
+        },
+        "kadia_dhrow": {
+            "title": "Kadia Dhrow",
+            "desc": "'Grand Canyon de l'Inde' - formations rocheuses multicolores spectaculaires, bandes de grès vibrantes en rouge, jaune et orange."
+        },
+        "road_to_heaven": {
+            "title": "Route vers le paradis",
+            "desc": "Route panoramique à travers de vastes paysages arides jusqu'au bord ouest de l'Inde. Voyage mystique à travers le désert et la mer."
+        },
+        "mundra": {
+            "title": "Mundra",
+            "desc": "Le plus grand port privé de l'Inde aux côtés d'une ville fortifiée historique. Contraste fascinant entre l'industrie moderne et le patrimoine du commerce des épices."
+        },
+        "kandla": {
+            "title": "Kandla",
+            "desc": "Ville portuaire majeure et centre commercial. Porte d'entrée pour le commerce et point de transit pour les voyageurs arrivant par la mer."
+        },
+        "jakhau": {
+            "title": "Jakhau",
+            "desc": "Port de pêche et centre de production de sel. Destination hors des sentiers battus avec une vie côtière Kutchi authentique et des fruits de mer."
+        },
+        "adipur": {
+            "title": "Adipur",
+            "desc": "Ville jumelle de Gandhidham. Centre résidentiel avec des marchés locaux et un accès facile aux zones portuaires."
+        },
+        "madhapar": {
+            "title": "Madhapar",
+            "desc": "Reconnu comme le village le plus riche de l'Inde avec des dépôts massifs de NRI. Une ville prospère connue pour ses grands bungalows et ses fortes racines communautaires."
+        },
+        "nirona": {
+            "title": "Village de Nirona",
+            "desc": "Un centre dynamique du patrimoine culturel réputé pour son artisanat unique comme la peinture Rogan, l'art de la cloche en cuivre et la laque."
+        }
+    },
+    "explore_more": {
+        "title": "Vous cherchez des joyaux cachés ?",
+        "desc": "Découvrez les trésors secrets de Kutch que seuls les habitants connaissent - des sanctuaires d'oiseaux aux anciennes ruines hors des sentiers battus.",
+        "btn": "Explorer les joyaux cachés →"
+    }
+  },
+  "hidden_gems_page": {
+    "meta_title": "Joyaux cachés de Kutch | Découvrez des trésors secrets",
+    "meta_desc": "Explorez les joyaux cachés de Kutch - des zones humides sereines aux anciens temples. Découvrez les trésors secrets au-delà des sentiers touristiques.",
+    "hero_title": "Joyaux cachés — Au-delà des sentiers touristiques",
+    "intro": "Découvrez les trésors secrets de Kutch que seuls les habitants connaissent. Des zones humides sereines aux anciens temples, ces joyaux cachés offrent des expériences authentiques loin de la foule. Chaque lieu raconte une histoire unique du riche patrimoine, de la beauté naturelle et de la signification spirituelle de Kutch.",
+    "sections": {
+        "nature": { "title": "Nature et faune", "subtitle": "Merveilles naturelles intactes" },
+        "heritage": { "title": "Patrimoine et histoire", "subtitle": "Temples anciens et sites archéologiques" },
+        "tips": { "title": "Conseils pour explorer les joyaux cachés" },
+        "bring": { "title": "Ce qu'il faut apporter" },
+        "time": { "title": "Meilleur moment pour visiter" },
+        "more": { "title": "Plus de trésors cachés", "subtitle": "En attente d'être découvert" },
+        "share": { 
+            "title": "Partagez votre découverte",
+            "text": "Connaissez-vous un joyau caché à Kutch ? Partagez vos découvertes avec notre communauté et aidez d'autres voyageurs à explorer l'inexploré.",
+            "whatsapp_btn": "Partager sur WhatsApp",
+            "contact_btn": "Contactez-nous"
+        },
+        "map": { "title": "Explorer la carte de Kutch" }
+    },
+    "cards": {
+        "chaari_dhand": {
+            "title": "Chaari Dhand",
+            "desc": "Un sanctuaire de zones humides saisonnier qui se transforme en un havre pour les oiseaux migrateurs en hiver. Observez des milliers de flamants roses, de grues et d'autres espèces exotiques. À 60 km de Bhuj. Meilleur moment de visite oct-mars."
+        },
+        "flamingo": {
+            "title": "Colonie de flamants roses",
+            "desc": "Pendant la haute saison de migration, observez des colonies spectaculaires de flamants roses à Chaari Dhand. Les visites tôt le matin offrent les meilleures opportunités de photographie avec une lumière dorée."
+        },
+        "kotay": {
+            "title": "Temple du Soleil de Kotay",
+            "desc": "Ruines d'anciens temples datant de la dynastie Solanki du 12ème siècle. Présente des sculptures en pierre exquises et des merveilles architecturales. À 35 km de Bhuj. Mieux au lever ou au coucher du soleil."
+        },
+        "kadia_dhrow": {
+            "title": "Kadia Dhrow",
+            "desc": "Une forteresse cachée au sommet d'une colline avec vue panoramique. Les ruines d'une ancienne tour de guet offrent des vues imprenables sur le coucher du soleil à travers le paysage de Kutch. Parfait pour les passionnés d'histoire."
+        },
+        "dhrang": {
+            "title": "Dhrang - Mekan Dada",
+            "desc": "À 25 km de Bhuj - Sanctuaire sacré et lieu de pèlerinage avec une signification spirituelle"
+        },
+        "rudramata": {
+            "title": "Barrage de Rudramata",
+            "desc": "À 15 km de Bhuj - Barrage pittoresque avec un cadre paisible, parfait pour les pique-niques"
+        },
+        "gangeshwar": {
+            "title": "Gangeshwar Mahadev",
+            "desc": "À 10 km de Bhuj - Temple sur une colline avec des possibilités de trekking et des vues panoramiques"
+        },
+        "jadura": {
+            "title": "Jadura Sunset Point",
+            "desc": "À 5 km de Bhuj - Point de vue pittoresque sur le coucher de soleil avec une vue panoramique imprenable sur la ville"
+        }
+    },
+    "tips": {
+        "guide": { "title": "Engagez un guide local", "desc": "Les guides locaux connaissent les meilleurs itinéraires, les endroits cachés et peuvent partager des histoires fascinantes sur chaque lieu." },
+        "morning": { "title": "Visites tôt le matin", "desc": "Meilleure lumière pour la photographie, températures plus fraîches et moins de foule. De nombreux oiseaux sont actifs à l'aube." },
+        "essentials": { "title": "Emportez l'essentiel", "desc": "Eau, collations, protection solaire et premiers soins de base. Les zones reculées peuvent avoir des installations limitées." },
+        "maps": { "title": "Cartes hors ligne", "desc": "Téléchargez les cartes à l'avance. La connectivité réseau peut être inégale dans les zones reculées de Kutch." }
+    },
+    "bring_list": {
+        "binoculars": { "strong": "Jumelles", "text": "Indispensable pour l'observation des oiseaux à Chaari Dhand et dans d'autres zones humides." },
+        "camera": { "strong": "Appareil photo avec objectif zoom", "text": "La faune peut être éloignée ; un téléobjectif est inestimable." },
+        "footwear": { "strong": "Chaussures confortables", "text": "De nombreux sites nécessitent de marcher sur un terrain accidenté." },
+        "sun": { "strong": "Protection solaire", "text": "Chapeau, lunettes de soleil et crème solaire sont indispensables." },
+        "layers": { "strong": "Couches légères", "text": "Le matin peut être frais, surtout pendant les mois d'hiver." }
+    },
+    "time_list": {
+        "oct_mar": { "strong": "Octobre à mars", "text": "Haute saison pour les oiseaux migrateurs et temps agréable." },
+        "morning": { "strong": "Tôt le matin", "text": "Idéal pour la faune et pour éviter la chaleur de l'après-midi." },
+        "moon": { "strong": "Nuits de pleine lune", "text": "Expérience magique au White Rann et dans les paysages ouverts." },
+        "monsoon": { "strong": "Évitez la mousson", "text": "Juillet-septembre, les routes peuvent être difficiles et les zones humides inondées." }
+    }
+  },
+  "history_page": {
+    "meta_title": "Histoire de Kutch - 5000 ans de patrimoine | MyKutch.org",
+    "meta_desc": "Explorez les 5 000 ans d'histoire de Kutch, de l'ancienne civilisation de la vallée de l'Indus à la légendaire dynastie Jadeja et à la résilience moderne.",
+    "hero_title": "Histoire de Kutch — 5000 ans de patrimoine",
+    "intro": "L'histoire de Kutch s'étend sur plus de 5 000 ans, des villes sophistiquées de la civilisation de la vallée de l'Indus à la légendaire dynastie Jadeja qui a régné pendant 500 ans. Cette terre a été témoin de l'essor et de la chute d'empires, de la migration de tribus anciennes et de la naissance d'une identité culturelle unique qui a survécu aux tremblements de terre, aux invasions et à l'épreuve du temps.",
+    "why_kutch": {
+        "title": "Pourquoi 'Kutch' ?",
+        "subtitle": "L'origine du nom",
+        "text1": "Le nom <strong style='color:#333;border-bottom:2px solid #E91E63;display:inline-block;line-height:1.2;margin-right:0.3rem;'>'Kutch'</strong> est aussi unique que son paysage. Dérivé de l'ancien mot sanskrit désignant une <strong style='color:#333;border-bottom:2px solid #E91E63;display:inline-block;line-height:1.2;margin-right:0.3rem;'>tortue</strong>, il décrit parfaitement la forme de tortue de cette terre lorsqu'elle émerge du Rann humide.",
+        "text2": "\"Une terre humide, basse et entourée d'eau.\"",
+        "text3": "Des siècles avant qu'on ne l'appelle Kutch, les Grecs la connaissaient sous le nom de <strong style='color:#333;border-bottom:2px solid #E91E63;display:inline-block;line-height:1.2;margin-right:0.3rem;'>Aabhir</strong>, du nom de ses premiers habitants pastoraux — les braves tribus Aabhir qui parcouraient ces terres."
+    },
+    "timeline": {
+        "title": "Chronologie de Kutch",
+        "subtitle": "Voyage à travers 5000 ans",
+        "ancient": {
+            "era": "3300 – 1500 av. J.-C.",
+            "title": "Berceau de la civilisation",
+            "text1": "Avant la naissance des empires, Kutch était le cœur de la <strong>civilisation de la vallée de l'Indus</strong>. Dans les plaines salées de Khadir Bet, <strong>Dholavira</strong> se dressait comme une merveille d'ingénierie ancienne : une ville sophistiquée avec des réservoirs en pierre et une précision astronomique qui égalait la grandeur de la Mésopotamie.",
+            "text2": "Aujourd'hui, Dholavira est un <strong>site du patrimoine mondial de l'UNESCO</strong>, reconnu comme l'une des cinq plus grandes villes harappéennes.",
+            "card": { "title": "Visitez Dholavira", "desc": "Explorez la cité vieille de 5 000 ans avec son système avancé de récupération des eaux.", "btn": "Explorer →" }
+        },
+        "rajput": {
+            "era": "700 – 1320 ap. J.-C.",
+            "title": "La frontière rajput",
+            "text1": "Au VIIIe siècle, la <strong>dynastie Chavda</strong> dominait la région, établissant de puissantes forteresses comme <strong>Kanthkot</strong>. Ce fut une époque de résistance épique, où Kutch servit de refuge stratégique aux rois rajputs lors des invasions des grandes dynasties.",
+            "text2": "Les dirigeants Chavda ont construit des forts et des temples impressionnants, dont beaucoup témoignent encore de leurs prouesses architecturales."
+        },
+        "samma": {
+            "era": "1320 – 1548 ap. J.-C.",
+            "title": "Migration des 9 Lakhs",
+            "text1": "Lors de vagues migratoires historiques, les <strong>Samma Rajputs</strong> ont traversé le Rann depuis le Sind. La légende raconte que les <strong>9 Lakh (900 000)</strong> membres de la tribu Samma sont arrivés et ont transformé le tissu social de Kutch.",
+            "text2": "Ces migrants ont fini par devenir la <strong>dynastie Jadeja</strong> au pouvoir, qui allait définir Kutch pour les 500 années suivantes."
+        },
+        "golden": {
+            "era": "1548 – 1819 ap. J.-C.",
+            "title": "L'État souverain",
+            "text1": "<strong>Khengarji I</strong> a changé l'histoire en fondant la capitale de <strong>Bhuj</strong> et le port stratégique de <strong>Mandvi</strong>. Kutch a prospéré en tant qu'État autonome, frappant sa propre monnaie d'argent (le <strong>Kutch Kori</strong>) et obtenant la célèbre exemption du tribut moghol en échange de la protection des pèlerins vers la Mecque.",
+            "list": {
+                "bhuj": { "strong": "Bhuj", "text": "Fondée comme nouvelle capitale en 1548" },
+                "mandvi": { "strong": "Port de Mandvi", "text": "Devenu un centre commercial majeur" },
+                "kori": { "strong": "Kutch Kori", "text": "Propre monnaie d'argent frappée" }
+            },
+            "card": { "title": "Explorez Bhuj", "desc": "Visitez les palais et musées historiques de la capitale Jadeja.", "btn": "Explorer →" }
+        },
+        "british": {
+            "era": "1819 – 1947 ap. J.-C.",
+            "title": "Un héritage princier",
+            "text1": "Sous la suzeraineté britannique, les Maharaos de Kutch devinrent des bâtisseurs de premier plan. <strong>Pragmalji II</strong> commanda le palais gothique <strong>Prag Mahal</strong>, tandis que <strong>Khengarji III</strong> regardait vers l'avenir, établissant le chemin de fer de l'État de Kutch et la porte mondiale du <strong>port de Kandla</strong>.",
+            "highlights_title": "🏰 Points forts architecturaux",
+            "list": {
+                "aina": { "strong": "Aina Mahal", "text": "Galerie des Glaces, construite avec du verre vénitien" },
+                "prag": { "strong": "Prag Mahal", "text": "Palais gothique avec marbre italien" },
+                "vijay": { "strong": "Palais Vijay Vilas", "text": "Palais de plage à Mandvi" }
+            }
+        },
+        "modern": {
+            "era": "1947 – Présent",
+            "title": "Renouveau et résilience",
+            "text1": "D'un État de classe C distinct dans l'Inde indépendante au plus grand district du Gujarat, l'histoire moderne de Kutch est celle d'une incroyable résilience.",
+            "quake_title": "⚠️ Le tremblement de terre de 2001",
+            "quake_text": "Le 26 janvier 2001, un tremblement de terre dévastateur de magnitude 7,7 a frappé Bhuj, tuant plus de 20 000 personnes et détruisant une grande partie de la région. Mais l'esprit de Kutch s'est avéré inébranlable : la région a connu une renaissance miraculeuse, se reconstruisant et se transformant en joyau culturel de l'Inde.",
+            "text2": "Aujourd'hui, Kutch est le plus grand district de l'Inde, abritant le plus grand port privé d'Asie (Mundra) et accueille le célèbre <strong>Rann Utsav</strong> qui attire des millions de visiteurs chaque année."
+        }
+    },
+    "explore": {
+        "title": "Explorer plus",
+        "cards": {
+            "geography": { "title": "Géographie de Kutch", "desc": "Comprenez le paysage unique qui a façonné l'histoire de Kutch - du Grand Rann aux Prairies de Banni." },
+            "dholavira": { "title": "Visitez Dholavira", "desc": "Explorez le site du patrimoine mondial de l'UNESCO vieux de 5 000 ans et promenez-vous dans les anciennes rues harappéennes." }
+        }
+    }
+  },
+  "geography_page": {
+    "meta_title": "Géographie de Kutch – Le plus grand district de l'Inde | MyKutch.org",
+    "meta_desc": "Explorez la géographie de Kutch - le plus grand district de l'Inde. Découvrez le Grand Rann, le Petit Rann, les prairies de Banni, le climat et le terrain.",
+    "hero_title": "Géographie de Kutch — Le plus grand district de l'Inde",
+    "intro": "Kutch est pratiquement une île — entourée par la mer d'Oman à l'ouest, le golfe de Kutch au sud et les vastes marais salants du Rann au nord et à l'est. Avec une superficie de 45 674 km², c'est le <strong>plus grand district de l'Inde</strong>, comprenant 23,27 % de la superficie totale du Gujarat. Le paysage est une étude de contrastes : des déserts de sel blanc comme neige aux prairies luxuriantes, des collines rocheuses aux plages immaculées, Kutch offre certaines des caractéristiques géographiques les plus uniques sur Terre.",
+    "stats": {
+        "title": "En un coup d'œil",
+        "subtitle": "Faits géographiques clés sur Kutch",
+        "area": { "num": "45 674", "label": "Kilomètres carrés<br>(Superficie totale)" },
+        "desert": { "num": "23 310", "label": "Kilomètres carrés<br>(Zone désertique)" },
+        "height": { "num": "462m", "label": "Kalo Dungar<br>(Point culminant)" },
+        "villages": { "num": "924", "label": "Villages<br>(10 Talukas)" },
+        "rainfall": { "num": "356mm", "label": "Précipitations annuelles<br>moyennes" },
+        "temp": { "num": "2°C - 50°C", "label": "Plage de<br>température" }
+    },
+    "location": {
+        "title": "Emplacement et limites",
+        "text": "Kutch est situé à la frontière ouest de l'Inde, entre <strong>22°44' et 24°41' de latitude nord</strong> et <strong>68°09' et 71°54' de longitude est</strong>. Il se trouve juste au nord du tropique du Cancer.",
+        "list": {
+            "n": "<strong>Nord et Nord-Ouest</strong> : Pakistan (province du Sind)",
+            "e": "<strong>Est</strong> : Districts de Banaskantha et Mehsana",
+            "se": "<strong>Sud-Est</strong> : District de Surendranagar",
+            "s": "<strong>Sud</strong> : Golfe de Kutch et district de Rajkot",
+            "sw": "<strong>Sud-Ouest et Ouest</strong> : Mer d'Oman"
+        }
+    },
+    "geology": {
+        "title": "Histoire géologique",
+        "subtitle": "Comment Kutch s'est formé sur des millions d'années",
+        "text1": "Selon les géologues, <strong>il y a des milliers d'années, la terre de Kutch était au fond de la mer</strong>. En raison des activités tectoniques de la croûte terrestre, cette terre a progressivement émergé au-dessus de la mer. La région montre des preuves de ses origines marines dans les fossiles trouvés dans toute la zone et dans les dépôts de sel qui caractérisent le Rann.",
+        "text2": "Il y a environ 100 ans, lorsque les rivières Hakra et Sindhu (Indus) coulaient à travers cette région, c'était une terre fertile. Mais en raison de changements géologiques, notamment des tremblements de terre qui ont modifié les cours d'eau, le débit de ces rivières a changé et la région est devenue sèche et stérile. Le célèbre <strong>'Allah Bandh'</strong> (barrage de Dieu) au milieu du fleuve Sindhu a été créé par le tremblement de terre dévastateur de 1819, qui a littéralement arrêté le débit de la rivière.",
+        "note": {
+            "title": "🌍 Région sujette aux séismes",
+            "text": "Kutch se trouve sur une zone sismique active et a connu plusieurs tremblements de terre dévastateurs au cours de l'histoire. Le plus récent a été le tremblement de terre de Bhuj en 2001 (magnitude 7,7) qui a tué plus de 20 000 personnes. Le tremblement de terre du Rann de Kutch de 1819 a créé l'Allah Bandh, un barrage naturel d'environ 80 km de long. Ces événements tectoniques façonnent continuellement la géographie, affectant l'atmosphère, la terre et les gisements minéraux."
+        }
+    },
+    "regions": {
+        "intro": {
+            "title": "Cinq régions distinctes",
+            "subtitle": "Les paysages uniques de Kutch",
+            "text": "Le paysage de Kutch est remarquablement diversifié, comprenant cinq régions géographiques distinctes, chacune avec son propre caractère unique, son écosystème et sa beauté."
+        },
+        "great_rann": {
+            "title": "1. Le Grand Rann de Kutch",
+            "text": "Le Grand Rann de Kutch est l'un des <strong>plus grands déserts de sel au monde</strong>, couvrant environ 7 500 kilomètres carrés dans la partie nord du district. Le mot hindi \"Rann\" signifie \"désert\".",
+            "list": {
+                "unique": "<strong>Désert unique</strong> : Contrairement aux déserts de sable typiques, il s'agit d'un désert de sel au sol lisse et dur recouvert de couches de sel cristallisé.",
+                "seasonal": "<strong>Transformation saisonnière</strong> : Pendant la mousson (juin-octobre), il devient une zone humide peu profonde. Au fur et à mesure que l'eau s'évapore, elle se transforme en un désert de sel blanc comme neige.",
+                "white": "<strong>Rann Blanc</strong> : À Dhordo, la plaine de sel est si pure et blanche qu'elle semble surréaliste, surtout au clair de lune.",
+                "mirage": "<strong>Effet de mirage</strong> : En été, les rayons du soleil frappant la surface salée blanche créent des mirages spectaculaires."
+            },
+            "card": { "title": "Vivez le Rann Blanc", "desc": "Visitez pendant le Rann Utsav (nov-fév) pour assister au désert de sel magique. La ville de tentes à Dhordo propose des hébergements haut de gamme avec des spectacles culturels.", "btn": "Explorez Dhordo →" }
+        },
+        "little_rann": {
+            "title": "2. Le Petit Rann de Kutch",
+            "card": { "title": "Sanctuaire de l'âne sauvage", "desc": "Le Petit Rann est le seul habitat naturel de l'âne sauvage indien (Ghudkhur) en voie de disparition. Safaris disponibles depuis Dhrangadhra." },
+            "text": "Situé au sud-est du Grand Rann, le Petit Rann couvre environ <strong>4 950 à 5 000 kilomètres carrés</strong>. C'est un écosystème de marais salants saisonnier et un désert salin hyperaride.",
+            "list": {
+                "bets": "<strong>Bets (îles)</strong> : Des îles surélevées appelées \"bets\" ou \"medaks\" s'élèvent à 2-3 mètres au-dessus du niveau de crue, soutenant la végétation et offrant un refuge à la faune.",
+                "ass": "<strong>Sanctuaire de l'âne sauvage</strong> : Foyer de l'âne sauvage indien en voie de disparition (Equus hemionus khur), qu'on ne trouve nulle part ailleurs dans le monde.",
+                "wildlife": "<strong>Faune riche</strong> : Soutient également chinkara, nilgaut, antilope cervicapre, loup indien, flamants roses, pélicans et diverses espèces d'oiseaux.",
+                "salt": "<strong>Production de sel</strong> : Les Agariyas traditionnels (travailleurs du sel) produisent du sel en utilisant des techniques centenaires."
+            }
+        },
+        "banni": {
+            "title": "3. Les prairies de Banni",
+            "text": "Le Banni est la <strong>plus grande prairie tropicale d'Asie</strong>, couvrant environ 2 500 à 3 847 kilomètres carrés le long de la bordure sud du Grand Rann. Cet écosystème de prairies arides a émergé de la mer en raison d'activités tectoniques et a reçu des sols fertiles d'anciennes rivières.",
+            "list": {
+                "bio": "<strong>Hotspot de biodiversité</strong> : Plus de 250 espèces d'oiseaux (résidents et migrateurs), 37 espèces d'herbes et une faune diversifiée, y compris des flamants roses à Chhari Dhand.",
+                "maldhari": "<strong>Communauté Maldhari</strong> : Foyer du peuple pastoral Maldhari qui vit ici depuis des siècles, connu pour ses maisons rondes en boue distinctives (bhungas).",
+                "reserves": "<strong>Réserves de conservation</strong> : Comprend le sanctuaire de la faune du désert de Kutch et la réserve de conservation de Chhari Dhand.",
+                "artisan": "<strong>Villages d'artisans</strong> : Célèbre pour la broderie, le travail du cuir et l'artisanat traditionnel."
+            },
+            "card": { "title": "Zone humide de Chhari Dhand", "desc": "Une zone humide saisonnière dans le Banni qui attire des milliers d'oiseaux migrateurs, dont des flamants roses, des grues et des pélicans en hiver.", "btn": "Explorez Chhari Dhand →" }
+        },
+        "mainland": {
+            "title": "4. La partie continentale de Kutch",
+            "text": "La partie continentale de Kutch est une région de hautes terres rocheuses qui comprend des plaines, des collines et des lits de rivières asséchés. Bien que généralement plat, il présente plusieurs chaînes de collines et des collines isolées, le <strong>Kalo Dungar (colline noire)</strong> étant le point culminant à 462 mètres (1 516 pieds).",
+            "card1": { "title": "Chaîne de collines du Nord", "desc": "Les plus hautes collines gardent la région de Kutch, située à environ 12 km du village de Khavda. Couvertes de différentes sortes d'arbres et d'herbes hautes, ces collines offrent une vue panoramique sur le Grand Rann." },
+            "card2": { "title": "Plaines côtières", "desc": "Le sud du continent se transforme en plaines côtières menant au golfe de Kutch, avec d'anciennes villes portuaires comme Mandvi et Mundra." }
+        },
+        "coast": {
+            "title": "5. Littoral de la mer d'Oman et mangroves",
+            "text": "Kutch possède un vaste littoral le long de la mer d'Oman à l'ouest et du golfe de Kutch au sud. La côte ouest présente des criques et des écosystèmes de mangroves qui abritent une riche vie marine.",
+            "list": {
+                "ports": "<strong>Principaux ports</strong> : Port de Kandla (l'un des plus grands de l'Inde), Port de Mundra (le plus grand port privé de l'Inde) et ports traditionnels à Mandvi.",
+                "beaches": "<strong>Plages</strong> : La plage de Mandvi est la première destination balnéaire, connue pour ses rivages immaculés et le palais royal Vijay Vilas.",
+                "ships": "<strong>Construction navale</strong> : Mandvi a une tradition de construction de navires en bois (boutres) vieille de 400 ans qui se poursuit à ce jour.",
+                "mangroves": "<strong>Mangroves</strong> : Les criques occidentales abritent des forêts de mangroves qui servent de pépinières à la vie marine et protègent contre l'érosion côtière."
+            },
+            "card": { "title": "Mandvi", "desc": "Destination balnéaire de premier plan où l'histoire rencontre la mer d'Oman. Visitez le palais, regardez la construction navale et détendez-vous sur des plages immaculées.", "btn": "Explorez Mandvi →" }
+        }
+    },
+    "climate": {
+        "title": "Climat",
+        "subtitle": "Températures extrêmes et trois saisons distinctes",
+        "text": "Kutch connaît un <strong>climat extrême</strong> avec des variations de température importantes. Les températures peuvent varier de 2°C les nuits d'hiver à 45-50°C en plein été. Les précipitations annuelles moyennes sont très faibles, environ 356 mm (historiquement), concentrées pendant la saison de la mousson.",
+        "summer": { "title": "☀️ Été", "months": "Février - Juin", "desc": "Extrêmement chaud avec des températures atteignant 40-50°C. Conditions sèches et arides. Non recommandé pour les visites sauf si vous pouvez supporter une chaleur extrême." },
+        "monsoon": { "title": "🌧️ Mousson", "months": "Juillet - Septembre", "desc": "Un certain soulagement de la chaleur avec des précipitations éparses. Le Rann inonde pendant cette période. Le paysage devient vert. Les routes vers les zones reculées peuvent être difficiles." },
+        "winter": { "title": "❄️ Hiver", "months": "Octobre - Janvier", "desc": "Journées agréables (22-28°C) et nuits fraîches (2-10°C). Meilleur moment pour visiter. Saison du Rann Utsav. Les oiseaux migrateurs arrivent." }
+    },
+    "water": {
+        "title": "Ressources en eau",
+        "text": "L'eau est la ressource la plus précieuse à Kutch. La région n'a pas de rivières pérennes — tous les cours d'eau sont saisonniers, ne coulant que pendant la mousson. L'hydrologie unique du Rann joue un rôle crucial :",
+        "list": {
+            "salt": "<strong>Formation de sel</strong> : L'eau de pluie dans le Rann ne s'infiltre pas rapidement dans le sol. Au lieu de cela, l'eau de mer du golfe de Kutch se mélange à l'eau de pluie. Lorsqu'elle s'évapore, le sel reste, créant les couches de sel blanc caractéristiques.",
+            "moisture": "<strong>Rétention d'humidité</strong> : Le sel de la terre attire l'humidité de l'atmosphère, gardant la surface lisse et humide même pendant les dures journées d'été.",
+            "dams": "<strong>Principaux barrages</strong> : Barrage de Rudramata (près de Bhuj), barrage de Tappar et divers barrages de contrôle fournissent de l'eau pour l'agriculture et la boisson.",
+            "narmada": "<strong>Canal de Narmada</strong> : Le canal Sardar Sarovar Narmada a apporté de l'eau dans certaines parties de Kutch, transformant l'agriculture dans certaines régions."
+        }
+    },
+    "centres": {
+        "title": "Principaux centres",
+        "subtitle": "Villes et cités de Kutch",
+        "text": "Kutch compte 10 villes principales réparties sur son vaste paysage. Chaque ville a son propre caractère unique, des centres du patrimoine ancien aux centres commerciaux modernes.",
+        "bhuj": { "title": "Bhuj", "desc": "Le chef-lieu du district et le cœur culturel de Kutch. Abrite des palais, des musées et des bazars traditionnels. Base idéale pour explorer la région." },
+        "gandhidham": { "title": "Gandhidham", "desc": "La ville la plus grande et la plus moderne de Kutch. Centre commercial et porte d'entrée du port de Kandla. Bien desservi par le rail et la route." },
+        "kandla": { "title": "Kandla", "desc": "L'un des plus grands ports de l'Inde sur le golfe de Kutch. Grand centre commercial et d'exportation traitant des marchandises de tout le pays." },
+        "nakhatrana": { "title": "Nakhatrana", "desc": "Ville agricole du centre de Kutch connue pour son industrie laitière. Porte d'entrée des villages artisanaux du nord de Kutch et des prairies de Banni." },
+        "mandvi": { "title": "Mandvi", "desc": "Ville portuaire historique et première destination balnéaire. Célèbre pour le palais Vijay Vilas et la tradition de construction navale vieille de 400 ans." },
+        "bhachau": { "title": "Bhachau", "desc": "Siège de Taluka dans l'est de Kutch, dévasté par le tremblement de terre de 2001 et reconstruit. Connu pour les villages artisanaux textiles à proximité." },
+        "mundra": { "title": "Mundra", "desc": "Abrite le plus grand port privé de l'Inde. Mélange fascinant d'industrie moderne et de ville fortifiée historique avec un héritage de commerce d'épices." },
+        "naliya": { "title": "Naliya", "desc": "Porte d'entrée des destinations spirituelles de l'ouest de Kutch. Ville la plus proche de Narayan Sarovar, Koteshwar et Lakhpat." },
+        "khavda": { "title": "Khavda", "desc": "Ville la plus septentrionale près de la frontière indo-pakistanaise. Porte d'entrée de Kalo Dungar et du Grand Rann. Connue pour l'artisanat traditionnel." }
+    },
+    "explore": {
+        "title": "Explorer plus",
+        "history": { "title": "Histoire de Kutch", "desc": "De l'ancienne civilisation de la vallée de l'Indus aux dirigeants Jadeja — découvrez la riche histoire qui a façonné cette terre." },
+        "landscapes": { "title": "Paysages", "desc": "Explorez l'étonnante diversité visuelle de Kutch — des déserts de sel aux plages, des collines rocheuses aux prairies." },
+        "kalo": { "title": "Kalo Dungar", "desc": "Visitez le point culminant de Kutch (458 m) pour une vue panoramique sur le Grand Rann et le rituel du soir de nourrissage des chacals." },
+        "hidden": { "title": "Hidden-Gems", "desc": "Découvrez les merveilles naturelles secrètes de Kutch au-delà des sentiers touristiques — zones humides, sites anciens et points de vue panoramiques." }
+    }
+  },
+  "landscapes_page": {
+    "meta_title": "Paysages de Kutch — Voyage visuel à travers les sables mystiques | MyKutch.org",
+    "meta_desc": "Voyage visuel à travers les paysages mystiques de Kutch. Galerie haute résolution du Rann blanc, du patrimoine ancien et des joyaux cachés.",
+    "hero_title": "Paysages de Kutch — Un voyage visuel",
+    "intro": "Kutch est une terre de contrastes spectaculaires — où les déserts de sel sans fin rencontrent des plages immaculées, où les ruines antiques se dressent contre des collines rocheuses, et où une culture dynamique s'épanouit dans l'un des paysages les plus extrêmes de l'Inde. Explorez cette collection visuelle des paysages les plus époustouflants de la région.",
+    "filters": {
+        "all": "Toutes les photos",
+        "nature": "Nature",
+        "heritage": "Patrimoine",
+        "culture": "Culture"
+    },
+    "sections": {
+        "salt_deserts": {
+            "title": "Les déserts de sel",
+            "subtitle": "Où le sel rencontre le ciel",
+            "cards": {
+                "white_rann": {
+                    "tag": "Nature",
+                    "title": "Rann blanc",
+                    "desc": "L'étendue infinie de sel blanc brillant sous la pleine lune."
+                },
+                "road_heaven": {
+                    "tag": "Route panoramique",
+                    "title": "Route vers le paradis",
+                    "desc": "La route la plus pittoresque d'Inde traversant le désert de sel."
+                },
+                "sunset": {
+                    "tag": "Heure dorée",
+                    "title": "Coucher de soleil sur le Rann",
+                    "desc": "Le ciel s'embrase de couleurs alors que le soleil se couche sur les plaines salées."
+                }
+            }
+        },
+        "canyons": {
+            "title": "Canyons et collines",
+            "subtitle": "Merveilles géologiques vieilles de millions d'années",
+            "cards": {
+                "kadia": {
+                    "tag": "Aventure",
+                    "title": "Kadia Dhrow",
+                    "desc": "Le « Grand Canyon de l'Inde » — formations rocheuses colorées sculptées par le temps."
+                },
+                "golden": {
+                    "tag": "Désert",
+                    "title": "Sables d'or",
+                    "desc": "Les dunes de sable ondoyantes du paysage intérieur de Kutch."
+                }
+            }
+        },
+        "heritage": {
+            "title": "Patrimoine et architecture",
+            "subtitle": "5000 ans d'histoire dans la pierre",
+            "cards": {
+                "bhuj": {
+                    "tag": "Patrimoine",
+                    "title": "Ville de Bhuj",
+                    "desc": "Le cœur culturel de Kutch avec ses palais royaux et ses anciens bazars."
+                },
+                "palace": {
+                    "tag": "Royauté",
+                    "title": "Palais Vijay Vilas",
+                    "desc": "Le palais de plage de Mandvi surplombant la mer d'Arabie."
+                },
+                "dholavira": {
+                    "tag": "UNESCO",
+                    "title": "Dholavira",
+                    "desc": "La ville harappéenne vieille de 5000 ans figée dans le temps."
+                },
+                "aina": {
+                    "tag": "Musée",
+                    "title": "Aina Mahal",
+                    "desc": "Le palais des miroirs — le chef-d'œuvre vénitien de Kutch."
+                },
+                "night": {
+                    "tag": "Nuit",
+                    "title": "Palais la nuit",
+                    "desc": "La grandeur illuminée de l'héritage royal de Kutch."
+                }
+            }
+        },
+        "culture": {
+            "title": "Culture et artisanat",
+            "subtitle": "Traditions vivantes de Kutch",
+            "cards": {
+                "bandhani": {
+                    "tag": "Textile",
+                    "title": "Bandhani",
+                    "desc": "Motifs tie-dye complexes créés avec des milliers de nœuds faits à la main."
+                },
+                "ajrakh": {
+                    "tag": "Impression au bloc",
+                    "title": "Ajrakh",
+                    "desc": "Impression au bloc géométrique vieille de 4000 ans avec des teintures naturelles."
+                },
+                "artisan": {
+                    "tag": "Gens",
+                    "title": "Artisan Kutchi",
+                    "desc": "Les mains habiles qui maintiennent les traditions anciennes en vie."
+                },
+                "attire": {
+                    "tag": "Tradition",
+                    "title": "Tenue traditionnelle",
+                    "desc": "Des vêtements brodés vibrants qui définissent l'identité Kutchi."
+                },
+                "caravan": {
+                    "tag": "Vie",
+                    "title": "Caravane du désert",
+                    "desc": "Mode de vie traditionnel dans les prairies de Banni."
+                }
+            }
+        }
+    },
+    "explore": {
+        "title": "Explorer plus",
+        "cards": {
+            "destinations": { "title": "Toutes les destinations", "desc": "Découvrez tous les lieux à visiter à Kutch — des déserts de sel aux plages, des ruines aux temples." },
+            "hidden": { "title": "Joyaux cachés", "desc": "Explorez les trésors secrets de Kutch que la plupart des touristes ne découvrent jamais." }
+        }
+    }
+  }
+}
