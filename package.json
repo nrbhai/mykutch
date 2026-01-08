@@ -1,12 +1,13 @@
 {
   "name": "mykutch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MyKutch Travel Website",
   "scripts": {
     "dev": "wrangler pages dev site",
-    "deploy": "wrangler pages deploy site"
+    "deploy": "wrangler pages deploy site",
+    "build": "echo 'No build step required for static site'"
   },
-  "dependencies": {
-    "wrangler": "^3.0.0"
+  "devDependencies": {
+    "wrangler": "^3.114.16"
   }
 }
