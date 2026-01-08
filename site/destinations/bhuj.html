@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="bhuj.meta_title"></title>
-    <meta name="description"
-        content="" data-i18n="bhuj.meta_desc">
+    <meta name="description" content="" data-i18n="bhuj.meta_desc">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,10 +90,12 @@
             font-family: var(--font-heading);
             font-size: 1.15rem;
             margin-bottom: 0.5rem;
-            color: #00d26a; /* Bright Green */
+            color: #00d26a;
+            /* Bright Green */
             font-weight: 600;
             line-height: 1.3;
-            border-bottom: 2px solid #FBC02D; /* Pale Yellow Underline */
+            border-bottom: 2px solid #FBC02D;
+            /* Pale Yellow Underline */
             display: inline-block;
         }
 
@@ -105,21 +106,30 @@
             color: var(--color-text);
         }
 
-        /* Itinerary Timeline */
-        .itinerary-box {
-            border-left: 2px solid #e2e8f0;
-            margin-left: 1rem;
-            padding: 0 0 2rem 2rem;
-            position: relative;
-            text-align: left;
+        /* Itinerary Grid */
+        .itinerary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
         }
 
-        .itinerary-box:last-child {
-            padding-bottom: 0;
-            border: none;
-            padding-left: 2.1rem;
+        .itinerary-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            text-align: left;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        
+
+        .itinerary-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            border-color: var(--color-primary);
+        }
+
         .itinerary-box p {
             font-size: 0.95rem;
             line-height: 1.6;
@@ -127,20 +137,10 @@
             margin: 0;
         }
 
-        .timeline-dot {
-            position: absolute;
-            left: -6px;
-            top: 0;
-            width: 10px;
-            height: 10px;
-            background: var(--color-primary);
-            border-radius: 50%;
-            box-shadow: 0 0 0 4px white;
-        }
-
         .day-header {
             font-family: var(--font-heading);
-            font-size: 1.15rem; /* Unified Subheading Size */
+            font-size: 1.15rem;
+            /* Unified Subheading Size */
             font-weight: 600;
             color: var(--color-primary);
             margin-bottom: 0.25rem;
@@ -155,8 +155,9 @@
             border-radius: 1.5rem;
             padding: 2.5rem;
             margin: 2rem 0;
-            text-align: left; /* Align Left */
-            border: 1px solid rgba(0,0,0,0.03);
+            text-align: left;
+            /* Align Left */
+            border: 1px solid rgba(0, 0, 0, 0.03);
         }
 
         .tips-grid {
@@ -167,7 +168,8 @@
         }
 
         .tip-item h4 {
-            font-size: 1.15rem; /* Unified Subheading Size */
+            font-size: 1.15rem;
+            /* Unified Subheading Size */
             margin-bottom: 0.5rem;
             color: var(--color-heading);
             font-weight: 600;
@@ -178,12 +180,12 @@
             color: #555;
             line-height: 1.6;
         }
-        
+
         .styled-list {
             padding-left: 1.2rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .styled-list li {
             font-size: 0.95rem;
             margin-bottom: 0.75rem;
@@ -193,7 +195,8 @@
 
         .styled-list li strong {
             color: #333;
-            border-bottom: 2px solid #E91E63; /* Attractive Rose/Pink Underline */
+            border-bottom: 2px solid #E91E63;
+            /* Attractive Rose/Pink Underline */
             display: inline-block;
             line-height: 1.2;
             margin-right: 0.3rem;
@@ -216,47 +219,58 @@
         }
 
         /* Specific section header override if needed */
-        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+        .guide-section,
+        .editorial-container,
+        .section-header,
+        .section-header h2,
+        .heading-bright-blue {
             text-align: left !important;
             align-items: flex-start !important;
         }
 
         .section-header {
-            margin-bottom: 2.5rem !important; /* Uniform Gap globally */
+            margin-bottom: 2.5rem !important;
+            /* Uniform Gap globally */
             margin-top: 0 !important;
         }
-        
+
         /* Ensure paragraph under header aligns left too */
         .section-header p {
-             text-align: left !important;
-             margin-left: 0 !important;
-             margin-top: 0.5rem !important;
+            text-align: left !important;
+            margin-left: 0 !important;
+            margin-top: 0.5rem !important;
         }
 
-        .section-header h2, .heading-bright-blue {
+        .section-header h2,
+        .heading-bright-blue {
             font-size: 1.8rem !important;
-            background-color: #8B0000; /* Dark Red */
+            background-color: #8B0000;
+            /* Dark Red */
             color: white !important;
             padding: 0.5rem 1.5rem;
             display: inline-block;
-            border-radius: 2px; /* Slight ease for rectangle */
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 0 !important; /* Let container handle the big gap */
+            border-radius: 2px;
+            /* Slight ease for rectangle */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0 !important;
+            /* Let container handle the big gap */
             font-weight: 700 !important;
         }
-        
+
         /* Override any centering on body/main just in case (though unlikely) */
         main {
             text-align: left;
         }
 
         .shining-blue-text {
-            color: #007bff; /* Bright Blue */
+            color: #007bff;
+            /* Bright Blue */
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
             font-size: 2.5rem;
-            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Shining Effect */
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            /* Shining Effect */
             text-align: center;
             margin-top: 1.5rem;
             margin-bottom: 0;
@@ -282,14 +296,15 @@
             .editorial-note {
                 padding: 2rem 1.5rem;
             }
-            
+
             .grid-2 {
                 gap: 1.5rem;
                 padding-bottom: 1rem;
             }
 
             .shining-blue-text {
-                font-size: 1.4rem; /* Smaller for mobile */
+                font-size: 1.4rem;
+                /* Smaller for mobile */
                 margin-top: 1rem;
                 padding: 0 1rem;
             }
@@ -323,7 +338,7 @@
     </header>
 
     <div class="container reveal">
-         <h1 class="shining-blue-text" data-i18n="bhuj.hero_title"></h1>
+        <h1 class="shining-blue-text" data-i18n="bhuj.hero_title"></h1>
     </div>
 
     <main>
@@ -468,7 +483,8 @@
             <section class="guide-section reveal">
                 <div class="editorial-note">
                     <div class="section-header">
-                        <h3 class="heading-bright-blue" style="font-family: var(--font-heading);" data-i18n="bhuj.sections.tips.title"></h3>
+                        <h3 class="heading-bright-blue" style="font-family: var(--font-heading);"
+                            data-i18n="bhuj.sections.tips.title"></h3>
                     </div>
                     <div class="tips-grid">
                         <div class="tip-item">
@@ -496,8 +512,9 @@
                 <div class="grid-2">
                     <div>
                         <div class="section-header">
-                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);" data-i18n="bhuj.sections.shopping.title">
-                                </h3>
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);"
+                                data-i18n="bhuj.sections.shopping.title">
+                            </h3>
                         </div>
                         <ul class="styled-list">
                             <li data-i18n="bhuj.sections.shopping.shroff">
@@ -511,8 +528,9 @@
                     </div>
                     <div>
                         <div class="section-header">
-                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);" data-i18n="bhuj.sections.eats.title">
-                                </h3>
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);"
+                                data-i18n="bhuj.sections.eats.title">
+                            </h3>
                         </div>
                         <ul class="styled-list">
                             <li data-i18n="bhuj.sections.eats.dabeli"></li>
@@ -524,9 +542,11 @@
                 </div>
             </section>
 
-            <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px; margin-top: 4rem;">
+            <section class="guide-section reveal"
+                style="background: #fafafa; padding: 2rem; border-radius: 8px; margin-top: 4rem;">
                 <div class="section-header">
-                    <h3 class="heading-bright-blue" style="font-family: var(--font-heading);" data-i18n="bhuj.sections.when_to_visit.title"></h3>
+                    <h3 class="heading-bright-blue" style="font-family: var(--font-heading);"
+                        data-i18n="bhuj.sections.when_to_visit.title"></h3>
                 </div>
                 <p data-i18n="bhuj.sections.when_to_visit.desc"></p>
             </section>
@@ -536,52 +556,92 @@
                     <h2 class="heading-bright-blue" data-i18n="bhuj.sections.nearby.title"></h2>
                 </div>
                 <div class="grid-2">
-                    <a href="kotay-surya-mandir.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="kotay-surya-mandir.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.kotay_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.kotay_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
-                    <a href="dhrang-mekan-dada.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="dhrang-mekan-dada.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.dhrang_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.dhrang_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
-                    <a href="abjibapa-chatardi.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="abjibapa-chatardi.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.abjibapa_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.abjibapa_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
-                    <a href="rudramata-dam.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="rudramata-dam.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.rudramata_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.rudramata_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
-                    <a href="gangeshwar-mahadev.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="gangeshwar-mahadev.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.gangeshwar_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.gangeshwar_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
-                    <a href="hiralaxmi-memorial-park.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="hiralaxmi-memorial-park.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.hiralaxmi_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.hiralaxmi_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
-                    <a href="jadura.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="jadura.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.jadura_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.jadura_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
-                    <a href="hanuman-tekri-kodki.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                    <a href="hanuman-tekri-kodki.html" class="attraction-card"
+                        style="text-decoration: none; color: inherit; height: auto;">
                         <div class="attraction-content">
                             <h3 class="attraction-title" data-i18n="bhuj.sections.nearby.hanuman_title"></h3>
                             <p class="attraction-desc" data-i18n="bhuj.sections.nearby.hanuman_desc"></p>
+                            <div style="margin-top: 1rem;">
+                                <span class="btn-text" style="font-size: 0.85rem; color: var(--color-primary);">View
+                                    Details →</span>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -591,36 +651,74 @@
                 <div class="section-header">
                     <h2 class="heading-bright-blue" data-i18n="bhuj.sections.itinerary.title"></h2>
                 </div>
-                <div style="margin: 0; max-width: 800px;">
-                    <div class="itinerary-box">
-                        <div class="timeline-dot"></div>
-                        <span class="day-header">Day 1 Morning</span>
-                        <p data-i18n="bhuj.sections.itinerary.day1_am"></p>
+                <div class="itinerary-grid">
+                    <div class="day-column">
+                        <div class="itinerary-box">
+                            <span class="day-header"
+                                style="color: var(--color-primary); font-weight: bold; margin-bottom: 0.5rem; display: block;">Day
+                                1: Heritage Walk</span>
+                            <div style="margin-bottom: 1rem;">
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Morning</span>
+                                <p data-i18n="bhuj.sections.itinerary.day1_am"></p>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Afternoon</span>
+                                <p data-i18n="bhuj.sections.itinerary.day1_pm"></p>
+                            </div>
+                            <div>
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Evening</span>
+                                <p data-i18n="bhuj.sections.itinerary.day1_eve"></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="itinerary-box">
-                        <div class="timeline-dot"></div>
-                        <span class="day-header">Day 1 Afternoon</span>
-                        <p data-i18n="bhuj.sections.itinerary.day1_pm"></p>
+
+                    <div class="day-column">
+                        <div class="itinerary-box">
+                            <span class="day-header"
+                                style="color: var(--color-primary); font-weight: bold; margin-bottom: 0.5rem; display: block;">Day
+                                2: White Rann</span>
+                            <div style="margin-bottom: 1rem;">
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Morning</span>
+                                <p data-i18n="bhuj.sections.itinerary.day2_am"></p>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Afternoon</span>
+                                <p data-i18n="bhuj.sections.itinerary.day2_pm"></p>
+                            </div>
+                            <div>
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Evening</span>
+                                <p data-i18n="bhuj.sections.itinerary.day2_eve"></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="itinerary-box">
-                        <div class="timeline-dot"></div>
-                        <span class="day-header">Day 1 Evening</span>
-                        <p data-i18n="bhuj.sections.itinerary.day1_eve"></p>
-                    </div>
-                    <div class="itinerary-box">
-                        <div class="timeline-dot"></div>
-                        <span class="day-header">Day 2 Morning</span>
-                        <p data-i18n="bhuj.sections.itinerary.day2_am"></p>
-                    </div>
-                    <div class="itinerary-box">
-                        <div class="timeline-dot"></div>
-                        <span class="day-header">Day 2 Afternoon</span>
-                        <p data-i18n="bhuj.sections.itinerary.day2_pm"></p>
-                    </div>
-                    <div class="itinerary-box">
-                        <div class="timeline-dot"></div>
-                        <span class="day-header">Day 2 Evening</span>
-                        <p data-i18n="bhuj.sections.itinerary.day2_eve"></p>
+
+                    <div class="day-column">
+                        <div class="itinerary-box">
+                            <span class="day-header"
+                                style="color: var(--color-primary); font-weight: bold; margin-bottom: 0.5rem; display: block;">Day
+                                3: Crafts & Culture</span>
+                            <div style="margin-bottom: 1rem;">
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Morning</span>
+                                <p data-i18n="bhuj.sections.itinerary.day3_am"></p>
+                            </div>
+                            <div style="margin-bottom: 1rem;">
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Afternoon</span>
+                                <p data-i18n="bhuj.sections.itinerary.day3_pm"></p>
+                            </div>
+                            <div>
+                                <span class="time-label"
+                                    style="font-size: 0.85rem; font-weight: 600; color: #777;">Evening</span>
+                                <p data-i18n="bhuj.sections.itinerary.day3_eve"></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -648,28 +746,37 @@
         </article>
     </main>
 
-    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
-    <div class="container">
-        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-            <img src="../assets/images/logo.png" alt="MyKutch Logo" style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
-            <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;" data-i18n="footer.about_title"></h3>
-            <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="footer.about_text"></p>
-            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                <div style="font-size: 0.85rem;">
-                    <span style="opacity: 0.7; margin-right: 0.3rem;" data-i18n="footer.contact_label"></span>
-                    <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
+    <footer class="footer-main"
+        style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <img src="../assets/images/logo.png" alt="MyKutch Logo"
+                    style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
+                <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;"
+                    data-i18n="footer.about_title"></h3>
+                <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;"
+                    data-i18n="footer.about_text"></p>
+                <div
+                    style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <div style="font-size: 0.85rem;">
+                        <span style="opacity: 0.7; margin-right: 0.3rem;" data-i18n="footer.contact_label"></span>
+                        <a href="tel:9825034580"
+                            style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250
+                            34580</a>
+                    </div>
+                    <div style="font-size: 0.85rem;">
+                        <span style="opacity: 0.7; margin-right: 0.3rem;" data-i18n="footer.email_label"></span>
+                        <a href="mailto:info@mykutch.org"
+                            style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
+                    </div>
                 </div>
-                <div style="font-size: 0.85rem;">
-                    <span style="opacity: 0.7; margin-right: 0.3rem;" data-i18n="footer.email_label"></span>
-                    <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
+                <div
+                    style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
+                    <p data-i18n="footer.dev_credit"></p>
                 </div>
-            </div>
-            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
-                <p data-i18n="footer.dev_credit"></p>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
     <script src="../js/i18n.js"></script>
     <script src="../js/script.js"></script>
 </body>
