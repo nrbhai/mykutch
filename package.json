@@ -3,11 +3,6 @@
   "version": "1.0.1",
   "description": "MyKutch Travel Website",
   "scripts": {
-    "dev": "wrangler pages dev site",
-    "deploy": "wrangler pages deploy site",
     "build": "echo 'No build step required for static site'"
-  },
-  "devDependencies": {
-    "wrangler": "^3.114.16"
   }
 }
