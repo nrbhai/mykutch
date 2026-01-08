@@ -1,0 +1,1168 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "hidden_gems": "Hidden-Gems",
+    "blog": "Blog",
+    "history": "History",
+    "landscapes": "Landscapes",
+    "bookings": "Bookings",
+    "about": "About"
+  },
+  "footer": {
+    "about_title": "About MyKutch.org",
+    "about_text": "Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.",
+    "contact_label": "Contact:",
+    "email_label": "Email:",
+    "dev_credit": "Developed with Love for Kutch by MyKutch.org team"
+  },
+  "bhuj": {
+    "meta_title": "Bhuj — Cultural Heart of Kutch | Kutch Travel Guide",
+    "meta_desc": "Bhuj को एक्सप्लोर करें — कच्छ का सांस्कृतिक दिल। आकर्षण, यात्रा कार्यक्रम, कैसे पहुंचें और स्थानीय सुझावों के साथ पूरा गाइड।",
+    "hero_title": "Bhuj — The Cultural Heart of Kutch",
+    "intro_text": "Bhuj कच्छ का सांस्कृतिक और लॉजिस्टिक दिल है, जो इस क्षेत्र को घूमने के लिए एक परफेक्ट बेस है। 500 वर्षों के शाही इतिहास और आधुनिकता के इस मिश्रण को देखते हुए, यह शहर महलों, बाज़ारों और संकरी गलियों का एक जीता-जागता संग्रहालय है। यहाँ से आप व्हाइट रण, उत्तरी शिल्प गांवों (craft villages) और दक्षिणी समुद्र तटों की यात्रा शुरू कर सकते हैं। इसके संग्रहालयों, महलों और पास के कारीगरों के केंद्रों जैसे Bhujodi और <a href=\"../crafts/ajrakh.html\">Ajrakhpur</a> को पूरी तरह से समझने के लिए आमतौर पर 2 दिन का समय लगता है।",
+    "sections": {
+      "who_should_visit": {
+        "title": "Who Should Visit",
+        "history_buffs": "<strong>History Buffs</strong>: कच्छ की शाही विरासत को देखने के लिए Aina Mahal और Prag Mahal घूमें।",
+        "shoppers": "<strong>Shoppers</strong>: असली कच्छी कढ़ाई, <a href=\"../crafts/bandhani.html\">बांधनी</a> और <a href=\"../crafts/leather-craft.html\">लेदर वर्क</a> खरीदने के लिए सबसे अच्छी जगह।",
+        "foodies": "<strong>Foodies</strong>: Bhuj की गलियों में सबसे असली दाबेली, पकवान और गुजराती थाली का स्वाद लें।",
+        "culture_seekers": "<strong>Culture Seekers</strong>: पास के कारीगर गांवों जैसे Bhujodi (8km) और Ajrakhpur (15km) जाने के लिए एक केंद्रीय केंद्र।"
+      },
+      "how_to_reach": {
+        "title": "How to Reach",
+        "air": "<strong>By Air</strong>: Bhuj Airport (BHU) शहर के केंद्र से सिर्फ 4km दूर है। मुंबई और अहमदाबाद से रोज़ाना फ्लाइट्स।",
+        "train": "<strong>By Train</strong>: Bhuj Railway Station मुंबई (Kutch Express), अहमदाबाद और दिल्ली (Ala Hazrat Exp) से अच्छी तरह जुड़ा हुआ है।",
+        "bus": "<strong>By Bus</strong>: अहमदाबाद (7-8 घंटे) और राजकोट (5 घंटे) से बेहतरीन GSRTC और प्राइवेट लग्जरी बस कनेक्टिविटी।",
+        "local": "<strong>Local Transport</strong>: ऑटो-रिक्शा Bhuj की लाइफलाइन हैं। अकेले यात्रियों के लिए बाइक/स्कूटर किराए पर लेना भी एक शानदार विकल्प है।"
+      },
+      "landmarks": {
+        "title": "Landmarks & Heritage",
+        "subtitle": "The defining monuments",
+        "aina_mahal_title": "Aina Mahal & Prag Mahal",
+        "aina_mahal_desc": "(2 घंटे) सुबह इन दोनों महलों को देखें। Aina Mahal (आईना महल) वास्तुकला का एक चमत्कार है। प्रवेश: ₹20-50.",
+        "kutch_museum_title": "Kutch Museum",
+        "kutch_museum_desc": "(1 घंटा) गुजरात का सबसे पुराना संग्रहालय। विलुप्त कच्छी लिपि और जनजातीय कलाकृतियों को देखें। बुधवार को बंद रहता है।",
+        "swaminarayan_title": "Swaminarayan Temple",
+        "swaminarayan_desc": "(45 मिनट) एक चमकता हुआ सफेद संगमरमर का मंदिर। आरती के लिए शाम (5 PM - 7 PM) को जाना सबसे अच्छा है।",
+        "bhujodi_title": "Bhujodi (Weaver's Village)",
+        "bhujodi_desc": "(2-3 घंटे) सिर्फ 8km दूर। राष्ट्रीय पुरस्कार विजेता बुनकरों से मिलें और सीधे उनसे शॉल खरीदें। Hiralaxmi Craft Park भी जाएँ।",
+        "smritivan_title": "Smritivan Earthquake Memorial",
+        "smritivan_desc": "(2-3 घंटे) भुजिया पहाड़ी पर स्थित 2001 के भूकंप पीड़ितों को समर्पित एक विश्व स्तरीय संग्रहालय। सूर्यास्त के समय यहाँ का नज़ारा सबसे अच्छा होता है।",
+        "hamirsar_title": "Hamirsar Lake",
+        "hamirsar_desc": "(शाम) Bhuj का दिल। सूर्यास्त के समय झील के चारों ओर टहलें और स्ट्रीट फूड का आनंद लें।",
+        "ashapura_title": "Ashapura Mataji Temple",
+        "ashapura_desc": "(1 घंटा) कच्छ के जडेजा शासकों की कुलदेवी को समर्पित एक महत्वपूर्ण ऐतिहासिक मंदिर।",
+        "trimandir_title": "Trimandir Temple",
+        "trimandir_desc": "(45 मिनट) एयरपोर्ट रिंग रोड पर स्थित। परम पूज्य दादा भगवान द्वारा स्थापित एक भव्य गैर-सांप्रदायिक मंदिर, जो एकता को बढ़ावा देता है।",
+        "stepwell_title": "Stepwell near Ramdhun",
+        "stepwell_desc": "(30 मिनट) रामधुन मंदिर के पास स्थित एक ऐतिहासिक बावड़ी (Vav)। कच्छ में प्राचीन जल संरक्षण वास्तुकला का एक उत्कृष्ट उदाहरण।"
+      },
+      "tips": {
+        "title": "Curated Local Advice",
+        "siesta_title": "Siesta Time",
+        "siesta_desc": "दोपहर की नींद के लिए Bhuj की कई दुकानें दोपहर 2:00 बजे से 4:00 बजे तक बंद रहती हैं। खरीदारी शाम के लिए प्लान करें।",
+        "sundays_title": "Sundays",
+        "sundays_desc": "Aina Mahal खुला रहता है, लेकिन Kutch Museum बुधवार को बंद रहता है।",
+        "traffic_title": "Traffic",
+        "traffic_desc": "महलों के पास पुराने शहर के इलाके में बहुत संकरी गलियां हैं। बड़ी गाड़ियां अंदर ले जाने से बचें; बाहर पार्क करें और पैदल या ऑटो लें।",
+        "booking_title": "Booking",
+        "booking_desc": "यदि रण उत्सव (नवं-फर) के दौरान आ रहे हैं, तो होटल 2 महीने पहले बुक करें क्योंकि कीमतें तीन गुना हो जाती हैं।"
+      },
+      "shopping": {
+        "title": "Shopping & Bazaars",
+        "shroff": "<strong>Shroff Bazaar</strong>: Bhuj की खरीदारी का मुख्य केंद्र। असली <a href=\"../crafts/bandhani.html\">बांधनी</a> साड़ियों, दुपट्टों और पारंपरिक कच्छी कढ़ाई के लिए प्रसिद्ध। सबसे अच्छा समय: 5 PM - 9 PM.",
+        "vaniyawad": "<strong>Vaniyawad</strong>: कपड़ों और पारंपरिक कच्छी हस्तशिल्प में विशेष। यहाँ मोलभाव (bargaining) की उम्मीद की जाती है।",
+        "commerce": "<strong>Commerce College Road</strong>: यह एक नया बाज़ार है जहाँ सभी आधुनिक ब्रांडेड शोरूम हैं।",
+        "anam": "<strong>Anam Ring Road</strong>: कपड़ों की दुकानों, जूतों की दुकानों और हस्तशिल्प एम्पोरियम वाला आधुनिक शॉपिंग क्षेत्र। देर शाम तक खुला रहता है।",
+        "kansara": "<strong>Kansara Bazar</strong>: मूल रूप से ज्वैलरी मार्केट जहाँ सभी प्रकार के सोने और चांदी के आभूषण उपलब्ध हैं।",
+        "handicraft": "<strong>Handicraft Emporiums</strong>: Aina Mahal के पास सरकारी स्टोर जो गुणवत्ता प्रमाणन के साथ फिक्स्ड प्राइस पर असली हस्तशिल्प प्रदान करते हैं।"
+      },
+      "eats": {
+        "title": "Local Eats",
+        "dabeli": "<strong>Kutchi Dabeli</strong>: बस स्टैंड के पास Mandvi Dabalroti या हॉस्पिटल रोड पर Mohan's Dabeli पर 'डबल रोटी' ज़रूर आज़माएँ। यह यहाँ का मुख्य स्ट्रीट फूड है।",
+        "pakwan": "<strong>Pakwan</strong>: पकवान एक सूखा नमकीन गोल नाश्ता है जो छोटी पूरी जैसा दिखता है। मैदे और तेल से बना, इसमें कई परतें होती हैं जो इसे कुरकुरा बनाती हैं।",
+        "puri": "<strong>Puri Sak</strong>: यदि आप स्थानीय बेस्ट पूरी शाक का स्वाद लेना चाहते हैं, तो भानुशाली नगर के पास Rajubhai या वणियावाड गेट के पास Chaubha पर जाएँ।",
+        "sweets": "<strong>Sweets</strong>: 'अड़दिया' (winter sweet), 'मेसुक' और 'गुलाब पाक' को मिस न करें। ये प्रसिद्ध कच्छी मिठाइयाँ हैं।"
+      },
+      "when_to_visit": {
+        "title": "When to Visit",
+        "desc": "<strong>November to February (Winter):</strong> सबसे अच्छा मौसम। दिन सुहावने (25°C) और रातें ठंडी (10°C) होती हैं। रण उत्सव और घूमने के लिए एकदम सही।<br><br><strong>March to June (Summer):</strong> बहुत गर्म (42°C तक)। जब तक आप अत्यधिक गर्मी बर्दाश्त नहीं कर सकते, तब तक अनुशंसित नहीं है।<br><br><strong>July to September (Monsoon):</strong> हरा-भरा और सुंदर। भुजिया पहाड़ी खूबसूरत दिखती है, और हमीरसर झील ओवरफ्लो हो जाती है (एक लकी इवेंट!)। ऑफबीट यात्रा के लिए अच्छा है।"
+      },
+      "nearby": {
+        "title": "Nearby Places to Visit",
+        "kotay_title": "Kotay Surya Mandir",
+        "kotay_desc": "22km - पुरातात्विक महत्व वाला प्राचीन 10वीं सदी का सूर्य मंदिर खंडहर",
+        "dhrang_title": "Dhrang - Mekan Dada",
+        "dhrang_desc": "25km - पवित्र मंदिर और तीर्थ स्थल",
+        "abjibapa_title": "Abjibapa ni Chatardi Baladia",
+        "abjibapa_desc": "20km - ऐतिहासिक छतरी और विरासत स्थल",
+        "rudramata_title": "Rudramata Dam",
+        "rudramata_desc": "15km - जलाशय और शांतिपूर्ण परिवेश वाला सुंदर बांध",
+        "gangeshwar_title": "Gangeshwar Mahadev",
+        "gangeshwar_desc": "10km - पहाड़ी पर स्थित मंदिर जहाँ ट्रेकिंग और मनोरम दृश्य देखे जा सकते हैं",
+        "hiralaxmi_title": "Hira Laxmi Memorial",
+        "hiralaxmi_desc": "8km - स्वतंत्रता संग्राम की याद में भुजोड़ी गांव में स्मारक",
+        "jadura_title": "Jadura",
+        "jadura_desc": "5km - पैनोरमिक दृश्यों वाला सुंदर सनसेट पॉइंट",
+        "hanuman_title": "Hanuman Tekri Kodki",
+        "hanuman_desc": "10km - हनुमान मंदिर और बेहतरीन सनसेट व्यू पॉइंट"
+      },
+      "itinerary": {
+        "title": "Suggested Itinerary",
+        "day1_am": "Aina Mahal और Prag Mahal से शुरुआत करें। पुराने Bhuj में ऐतिहासिक वॉक।",
+        "day1_pm": "दोपहर का भोजन (गुजराती थाली)। Kutch Museum देखें।",
+        "day1_eve": "Swaminarayan Temple में सूर्यास्त, उसके बाद Hamirsar Lake पर स्ट्रीट फूड।",
+        "day2_am": "Dhordo (85km) के लिए ड्राइव करें। रास्ते में प्रसिद्ध मिठाई 'मावा' के लिए Bhirandiyara गांव में रुकें।",
+        "day2_pm": "Dhordo Tent City या पास के रिसॉर्ट्स में चेक-इन करें। लंच और आराम।",
+        "day2_eve": "सूर्यास्त के लिए White Rann जाएँ। रण उत्सव में सांस्कृतिक कार्यक्रमों और डिनर का आनंद लें।",
+        "day3_am": "टेक्सटाइल्स और Hiralaxmi Memorial Park के लिए Bhujodi (8km) की यात्रा करें।",
+        "day3_pm": "भुजिया पहाड़ी पर Smritivan Earthquake Memorial देखें (म्यूजियम में 2 घंटे लगते हैं)।",
+        "day3_eve": "बांधनी और हस्तशिल्प के लिए Shroff Bazaar में खरीदारी करें।"
+      }
+    }
+  },
+  "home": {
+    "meta_title": "Kutch Travel Guide 2026 | White Rann, Bhuj & Hidden Gems | MyKutch.org",
+    "meta_desc": "कच्छ के व्हाइट रण, प्राचीन धोलावीरा और जीवंत शिल्पकला को एक्स्प्लोर करें। होटल्स, टूर्स और लोकल टिप्स के साथ पूरी जानकारी। अपनी 2026 की यात्रा आज ही प्लान करें!",
+    "hero": {
+      "title": "Mystical Kutch",
+      "subtitle": "Where Silence Speaks in Salt & Stone",
+      "desc": "\"अनंत व्हाइट रण के उस पार छिपी है एक अलग दुनिया - रहस्यमयी गुफाएं, शांत समुद्र तट और पवित्र पहाड़। आइये, कच्छ की इन अनकही कहानियों को जानें।\"",
+      "cta_explore": "जगहें देखें",
+      "cta_plan": "ट्रिप प्लान करें"
+    },
+    "diversity": {
+      "title": "More Than Just The Rann",
+      "text1": "कच्छ केवल नमक के रेगिस्तान तक सीमित नहीं है। यह आस्था का केंद्र है, रोमांच का मैदान है, और यहाँ एकांत समुद्र तटों (beaches) से लेकर जंगली जंगलों तक सब कुछ है।",
+      "text2": "हमारी वेबसाइट पर आपको इस विविधतापूर्ण भूमि को घूमने के लिए हर ज़रूरी जानकारी मिलेगी।",
+      "coast_title": "The Coast",
+      "coast_desc": "एकांत और शांति",
+      "hills_title": "The Hills",
+      "hills_desc": "कालो डूंगर की ऊंचाई",
+      "mystery_title": "The Mystery",
+      "mystery_desc": "प्राचीन गुफाएं",
+      "spirit_title": "The Spirit",
+      "spirit_desc": "पवित्र स्थल"
+    },
+    "destinations": {
+      "category": "Curated Wonders",
+      "title": "Explore the Diverse Landscapes",
+      "desc": "सफेद नमक के मैदानों से लेकर प्राचीन बंदरगाहों तक, कच्छ के हर कोने में कुदरत का जादू है।",
+      "view_all": "सभी स्थान देखें",
+      "explore_btn": "और जानें",
+      "cards": {
+        "kadia": {
+          "category": "Nature & Mystery",
+          "title": "Kadia Dhrow",
+          "desc": "भारत का \"ग्रैंड कैनियन\" – रंग-बिरंगी चट्टानें जिन्हें वक्त और कुदरत ने तराशा है।",
+          "tag1": "✨ Unique Canyon",
+          "tag2": "🌤️ Nov - Feb"
+        },
+        "white_rann": {
+          "category": "Nature",
+          "title": "White Rann",
+          "desc": "नमक का एक अंतहीन रेगिस्तान जो चांदनी रात में किसी सपने जैसा चमकता है।",
+          "tag1": "✨ Salt Desert",
+          "tag2": "🌤️ Nov - Feb"
+        },
+        "bhuj": {
+          "category": "Culture",
+          "title": "Bhuj City",
+          "desc": "कच्छ का सांस्कृतिक दिल। यहाँ के ऐतिहासिक महल और कला आपको पुराने समय में ले जाएंगे।",
+          "tag1": "✨ Heritage City",
+          "tag2": "🌤️ Nov - Feb"
+        },
+        "heaven": {
+          "category": "Scenic",
+          "title": "Road to Heaven",
+          "desc": "सफेद रेगिस्तान के बीच से गुजरती एक सड़क जो सीधे क्षितिज (horizon) तक जाती है।",
+          "tag1": "✨ Scenic Drive",
+          "tag2": "🌤️ Nov - Feb"
+        },
+        "dholavira": {
+          "category": "Heritage",
+          "title": "Dholavira",
+          "desc": "5,000 साल पुराना हड़प्पा सभ्यता का शहर। प्राचीन इंजीनियरिंग का एक बेजोड़ नमूना।",
+          "tag1": "✨ Ancient Site",
+          "tag2": "🌤️ Nov - Feb"
+        },
+        "mandvi": {
+          "category": "Coastal",
+          "title": "Mandvi Beach",
+          "desc": "शांत समुद्र किनारा और भव्य विजय विलास पैलेस का संगम।",
+          "tag1": "✨ Pristine Beach",
+          "tag2": "🌤️ Nov - Feb"
+        }
+      }
+    },
+    "booking_cta": {
+      "title": "Plan Your Perfect Journey",
+      "desc": "हमारे भरोसेमंद पार्टनर्स के साथ होटल्स, फ्लाइट्स और अनुभवों को बुक करें। सबसे अच्छी कीमतों की गारंटी।",
+      "btn": "बुकिंग शुरू करें"
+    },
+    "culture": {
+      "category": "Soul of Kutch",
+      "title": "Culture & Crafts",
+      "desc": "कच्छ की जीवंत परंपराओं में खो जाएं। यहाँ का हर धागा एक कहानी कहता है और हर कला सदियों पुरानी है।",
+      "bandhani": {
+        "title": "Bandhani",
+        "desc": "टाई-डाई कला जिसमें बारीक डॉट्स के डिज़ाइन्स होते हैं।"
+      },
+      "ajrakh": {
+        "title": "Ajrakh",
+        "desc": "प्राकृतिक रंगों से बना 4000 साल पुराना ब्लॉक प्रिंट।"
+      },
+      "rogan": {
+        "title": "Rogan Art",
+        "desc": "कैस्टर ऑयल (अरंडी के तेल) के रंगों से कपड़े पर की गई पेंटिंग।"
+      },
+      "mirror": {
+        "title": "Mirror Work",
+        "desc": "छोटे शीशों के साथ की गई बारीक कढ़ाई।"
+      },
+      "weaving": {
+        "title": "Kutch Weaving",
+        "desc": "रंग-बिरंगे हैंडलूम डिज़ाइन्स जो कच्छ की पहचान हैं।"
+      },
+      "pottery": {
+        "title": "Khavda Pottery",
+        "desc": "मिट्टी के बर्तन जिन्हें प्राकृतिक रंगों से रंगा जाता है।"
+      },
+      "leather": {
+        "title": "Leather Art",
+        "desc": "हाथ से बना चमड़े का सामान जिसमें धागों का काम होता है।"
+      },
+      "sudi": {
+        "title": "Sudi & Chappu",
+        "desc": "सजावटी चाकू और धातु (metal) का काम।"
+      }
+    },
+    "guide": {
+      "when_title": "When to Visit",
+      "when_best_badge": "★ BEST",
+      "when_best_months": "नवं - फर",
+      "when_best_title": "Peak Season",
+      "when_best_desc": "रण उत्सव, डेजर्ट कैंपिंग और पूर्णिमा की रातें।",
+      "when_good_badge": "GOOD",
+      "when_good_months": "मार्च - अप्रैल",
+      "when_good_title": "Shoulder Season",
+      "when_good_desc": "भीड़ कम होती है, गांवों को घूमने के लिए अच्छा समय।",
+      "when_avoid_badge": "AVOID",
+      "when_avoid_months": "मई - अक्टू",
+      "when_avoid_title": "Off-Season",
+      "when_avoid_desc": "बेहद गर्मी और मॉनसून। सुविधाएं बंद हो सकती हैं।",
+      "transport_title": "Getting There",
+      "transport_air_mode": "By Air",
+      "transport_air_detail": "भुज एयरपोर्ट (BHJ)",
+      "transport_air_sub": "मुंबई से रोज़ाना फ्लाइट्स उपलब्ध हैं।",
+      "transport_train_mode": "By Train",
+      "transport_train_detail": "भुज रेलवे स्टेशन",
+      "transport_train_sub": "दिल्ली, मुंबई, अहमदाबाद से ट्रेनें आती हैं।",
+      "transport_road_mode": "By Road",
+      "transport_road_detail": "NH8A हाईवे",
+      "transport_road_sub": "अहमदाबाद से 330 किमी का सुंदर सफर।",
+      "tips_title": "Essential Travel Tips",
+      "tip_pack_title": "Pack Smart",
+      "tip_pack_desc": "मौसम के हिसाब से कपड़े रखें। धूप से बचाव और आरामदायक जूते ज़रूरी हैं।",
+      "tip_water_title": "Stay Hydrated",
+      "tip_water_desc": "रेगिस्तान और रण में घूमते समय पानी साथ रखें।",
+      "tip_culture_title": "Respect Culture",
+      "tip_culture_desc": "मर्यादित कपड़े पहनें और फोटो लेने से पहले अनुमति लें।"
+    },
+    "community": {
+      "category": "Join the Journey",
+      "title": "Get Connected",
+      "desc": "कच्छ एक्सप्लोरर्स की कम्यूनिटी से जुड़ें! रण उत्सव अपडेट्स, मौसम की जानकारी और छिपे हुए स्थानों के बारे में सीधे व्हाट्सएप पर जानें।",
+      "whatsapp_btn": "व्हाट्सएप पर जुड़ें",
+      "contact_btn": "संपर्क करें"
+    }
+  },
+  "about": {
+    "meta_title": "About | MyKutch — People • Craft • Landscape",
+    "meta_desc": "MyKutch — कच्छ से कहानियां, यात्रा और शिल्प। समुदाय-प्रथम, टिकाऊ अनुभव और शिल्प संरक्षण।",
+    "hero": {
+      "title": "About Us",
+      "subtitle": "MyKutch — लोग, शिल्प और परिदृश्य का जश्न",
+      "intro": "हम एक समुदाय-आधारित यात्रा और कहानी कहने (storytelling) का प्रोजेक्ट हैं जो कच्छ पर केंद्रित है। हम कम-प्रभाव वाली यात्राओं (low-impact journeys) को डिजाइन करते हैं, कारीगरों का समर्थन करते हैं, और स्थानीय ज्ञान को संरक्षित और साझा करने वाली कहानियां प्रकाशित करते हैं।",
+      "plan_btn": "Plan a trip",
+      "contact_btn": "Contact the team"
+    },
+    "who_we_are": {
+      "title": "Who we are",
+      "desc": "स्थानीय लोगों और यात्रियों द्वारा स्थापित जो कच्छ से प्यार करते हैं, MyKutch रोजमर्रा की संस्कृति का जश्न मनाने के लिए बनाया गया है — मिट्टी के घरों और शिल्पकला से लेकर नमक के मैदानों और त्योहारों तक। हम यह सुनिश्चित करने के लिए ग्राम गाइड और कारीगरों के साथ साझेदारी करते हैं कि लाभ स्थानीय समुदायों को मिले।"
+    },
+    "approach": {
+      "title": "Our approach",
+      "item1_bold": "Community-led:",
+      "item1_text": " टूर्स और अनुभव स्थानीय मेजबानों के साथ मिलकर बनाए जाते हैं।",
+      "item2_bold": "Craft preservation:",
+      "item2_text": " हम निर्माताओं को बढ़ावा देते हैं और उन्हें बाजारों से जोड़ने में मदद करते हैं।",
+      "item3_bold": "Sustainability:",
+      "item3_text": " कम प्रभाव वाले यात्रा कार्यक्रम, स्थानीय खरीद और उचित मूल्य निर्धारण।"
+    },
+    "stats": {
+      "tours": "Tours curated",
+      "partners": "Local partners",
+      "years": "Years of work"
+    },
+    "impact": {
+      "title": "Impact",
+      "desc": "हम प्रभाव को कारीगरों की कमाई, ग्राम साझेदारी और संरक्षण परिणामों से मापते हैं — केवल आगंतुक संख्या से नहीं। हमारे माइक्रो-ग्रांट और प्रशिक्षण कार्यक्रमों ने कारीगरों को टिकाऊ ऑर्डर और दृश्यता प्राप्त करने में मदद की है।"
+    },
+    "stories": {
+      "title": "Featured stories",
+      "desc": "कारीगरों, सामुदायिक गाइड और यात्रियों के अनुभव पढ़ें। ये कहानियां कच्छ की जीवित विरासत को पकड़ती हैं।",
+      "btn": "Read stories"
+    },
+    "sidebar": {
+      "quick_links": "Quick links",
+      "explore_dest": "Explore destinations",
+      "meet_artisans": "Meet the artisans",
+      "tours_bookings": "Tours & bookings",
+      "partner_collab": "Partner with us",
+      "team_title": "The Team",
+      "team_founder": "Founder",
+      "partner_title": "Partner with us",
+      "partner_desc": "हम गैर सरकारी संगठनों (NGOs), शिल्प सहकारी समितियों और जिम्मेदार यात्रा भागीदारों के साथ काम करते हैं। सहयोग का पता लगाने के लिए संपर्क करें।",
+      "partner_btn": "Get in touch"
+    },
+    "why_matters": {
+      "title": "Why Kutch matters",
+      "desc": "कच्छ पारिस्थितिक तंत्र और संस्कृतियों का एक मोज़ेक है — नमक दलदल, रेगिस्तान, मछली पकड़ने के गांव और कपड़ा गांव। स्थानीय आजीविका और शिल्पकला का समर्थन करना इन परंपराओं को जीवित रखता है और उन आगंतुकों के लिए सार्थक अनुभव प्रदान करता है जो सीखना और योगदान करना चाहते हैं।"
+    },
+    "footer": {
+      "title": "About MyKutch.org",
+      "desc": "कच्छ की जीवंत संस्कृति और विरासत को प्रदर्शित करना। हर यात्री के लिए प्रामाणिक अंतर्दृष्टि प्रदान करना।",
+      "developed_by": "Developed with Love for Kutch by MyKutch.org team"
+    }
+  },
+  "bookings": {
+    "meta_title": "Book Your Kutch Adventure | MyKutch.org",
+    "meta_desc": "स्थानीय विशेषज्ञों के साथ प्रामाणिक कच्छ अनुभव, टूर्स और ठहरने की जगह बुक करें। विश्वसनीय गाइड और क्यूरेटेड सिफारिशों के साथ अपनी यात्रा की योजना बनाएं।",
+    "hero": {
+      "title": "Book Your Kutch Adventure",
+      "desc": "स्थानीय विशेषज्ञों, क्यूरेटेड टूर्स और प्रामाणिक ठहरने के साथ अपनी यात्रा की योजना बनाएं। कोई थर्ड-पार्टी बुकिंग विजेट नहीं — बस सीधे, विश्वसनीय सिफारिशें।"
+    },
+    "booking_com": {
+      "title": "Find Hotels & Accommodations",
+      "desc": "हमारे विश्वसनीय साझीदार Booking.com के साथ कच्छ में सबसे अच्छे होटल, रिसॉर्ट और होमस्टे खोजें",
+      "widget_title": "Find the Best Hotels in Bhuj & Kutch",
+      "widget_desc": "कीमतों की तुलना करें, समीक्षाएं पढ़ें, और Booking.com पर विश्वास के साथ बुक करें",
+      "label_hotels": "Hotels",
+      "label_homestays": "Homestays",
+      "label_resorts": "Resorts",
+      "label_camps": "Camps",
+      "btn": "Search Hotels on Booking.com →",
+      "footer": "Free cancellation on most rooms • Best price guarantee"
+    },
+    "trip_com": {
+      "title": "Book Hotels, Flights & Transportation",
+      "desc": "Trip.com के साथ सबसे अच्छे होटल, भुज के लिए उड़ान सौदे, और कच्छ भर में परिवहन विकल्प खोजें",
+      "widget_title": "Book Hotels, Flights & More in India",
+      "widget_desc": "भारत भर में होटल, उड़ानें और परिवहन पर शानदार सौदे",
+      "label_hotels": "Hotels",
+      "label_flights": "Flights",
+      "label_trains": "Trains",
+      "label_cars": "Cars",
+      "btn": "Book on Trip.com →",
+      "footer": "Prices in INR • 24/7 Customer Support"
+    },
+    "tours": {
+      "title": "Curated Local Tours",
+      "desc": "उन गाइडों के साथ कच्छ को एक्सप्लोर करें जो हर छिपे हुए खजाने को जानते हैं। डेजर्ट सफारी, क्राफ्ट विलेज विज़िट, हेरिटेज वॉक और बहुत कुछ से चुनें। सभी टूर्स समुदाय के नेतृत्व में हैं और स्थानीय आजीविका का समर्थन करते हैं।",
+      "cards": {
+        "rann": {
+          "title": "White Rann Full Moon Safari",
+          "desc": "स्थानीय गाइडों के साथ चांदनी के तहत जादुई नमक के रेगिस्तान का अनुभव करें।"
+        },
+        "artisan": {
+          "title": "Artisan Village Tour",
+          "desc": "मास्टर कारीगरों से मिलें, पारंपरिक तकनीकें सीखें, और असली हस्तशिल्प खरीदें।"
+        },
+        "bhuj": {
+          "title": "Bhuj Heritage Walk",
+          "desc": "विशेषज्ञ कहानीकारों के साथ महलों, संग्रहालयों और ऐतिहासिक स्थलों की खोज करें।"
+        },
+        "spiritual": {
+          "title": "Spiritual Circuit",
+          "desc": "पूरे कच्छ में पवित्र स्थलों और प्राचीन मंदिरों पर जाएँ।"
+        }
+      },
+      "learn_more": "Learn More"
+    },
+    "stays": {
+      "title": "Where to Stay",
+      "desc": "हम प्रामाणिक अनुभव के लिए हेरिटेज संपत्तियों, डेजर्ट कैंप्स और विलेज होमस्टे की सलाह देते हैं। सीधी बुकिंग मदद और स्थानीय दरों के लिए हमसे संपर्क करें।",
+      "cards": {
+        "heritage": {
+          "title": "Heritage Properties",
+          "desc": "शाही अनुभव के लिए परिवर्तित महलों और हवेलियों में रहें।"
+        },
+        "camps": {
+          "title": "Desert Camps",
+          "desc": "व्हाइट रण में लग्जरी टेंट और स्टारगेज़िंग का आनंद लें।"
+        },
+        "homestays": {
+          "title": "Village Homestays",
+          "desc": "स्थानीय परिवारों के साथ रहें और असली कच्छी आतिथ्य का अनुभव करें।"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact & Booking Help",
+      "desc": "अपनी यात्रा की योजना बनाने या ठहरने की बुकिंग करने में मदद चाहिए? मुफ्त सलाह और विश्वसनीय स्थानीय मेजबानों से सीधे कनेक्शन के लिए हमारी टीम से संपर्क करें।",
+      "whatsapp_btn": "WhatsApp Us",
+      "email_btn": "Email Us"
+    }
+  },
+  "destinations_page": {
+    "meta_title": "All Destinations | MyKutch.org",
+    "meta_desc": "कच्छ के हर कोने को एक्सप्लोर करें - प्राचीन मंदिरों से लेकर सुंदर बीचों तक, रेगिस्तानी नज़ारों से लेकर कारीगर गांवों तक। सभी कच्छी पर्यटन स्थलों (destinations) की पूरी गाइड।",
+    "hero_title": "All Destinations — Explore Every Corner of Kutch",
+    "intro": "मांडवी के साफ समुद्र तटों (beaches) से लेकर धोलावीरा के प्राचीन खंडहरों तक, व्हाइट रण के नमक के मैदानों से लेकर माता का मढ़ के आध्यात्मिक मंदिरों तक — कच्छ हर यात्री के लिए खजानों से भरा है। अपनी परफेक्ट कच्छ यात्रा प्लान करने के लिए हमारी विस्तृत गाइड देखें।",
+    "sections": {
+      "major": {
+        "title": "Major Destinations",
+        "subtitle": "कच्छ की सबसे ज़रूरी जगहें"
+      },
+      "heritage": {
+        "title": "Heritage & History",
+        "subtitle": "प्राचीन मंदिर और पुरातात्विक चमत्कार"
+      },
+      "spiritual": {
+        "title": "Spiritual Destinations",
+        "subtitle": "पवित्र स्थल और तीर्थ केंद्र"
+      },
+      "nature": {
+        "title": "Nature & Adventure",
+        "subtitle": "सुंदर नज़ारे और वन्य जीवन"
+      },
+      "coastal": {
+        "title": "Coastal & Port Towns",
+        "subtitle": "जहाँ रेगिस्तान समुद्र से मिलता है"
+      },
+      "other": {
+        "title": "Other Significant Towns",
+        "subtitle": "महत्वपूर्ण शहरी केंद्र और आवासीय हब"
+      }
+    },
+    "cards": {
+      "bhuj": {
+        "title": "Bhuj",
+        "desc": "कच्छ का सांस्कृतिक दिल जिसका 500 वर्षों का शाही इतिहास है। महलों, बाज़ारों का एक जीता-जागता संग्रहालय और पूरे क्षेत्र को घूमने के लिए सही बेस।"
+      },
+      "dhordo": {
+        "title": "Dhordo - White Rann",
+        "desc": "विश्व प्रसिद्ध कच्छ के व्हाइट रण का प्रवेश द्वार। रण उत्सव (नवं-फर) के दौरान चांदनी रात में जादुई नमक के रेगिस्तान का अनुभव करें।"
+      },
+      "mandvi": {
+        "title": "Mandvi",
+        "desc": "प्रीमियर बीच डेस्टिनेशन जहाँ साफ किनारे, विजय विलास पैलेस और 400 साल पुरानी जहाज बनाने की परंपरा है। आराम करने के लिए एकदम सही।"
+      },
+      "gandhidham": {
+        "title": "Gandhidham",
+        "desc": "कच्छ का सबसे आधुनिक (cosmopolitan) शहर, कांडला पोर्ट का प्रवेश द्वार। चौड़ी सड़कों, मॉल और जीवंत फूड सीन वाला आधुनिक शहरी बेस।"
+      },
+      "dholavira": {
+        "title": "Dholavira",
+        "desc": "UNESCO विश्व धरोहर स्थल। 5000 साल पुराने खंडहरों और बेहतरीन शहरी नियोजन (urban planning) के साथ सबसे बड़े हड़प्पा सभ्यता स्थलों में से एक।"
+      },
+      "bhadreshwar": {
+        "title": "Bhadreshwar Jain Temple",
+        "desc": "516 ईसा पूर्व का भारत के सबसे पुराने जैन मंदिरों में से एक। जटिल नक्काशी के साथ सेखरी वास्तुकला का चमत्कार।"
+      },
+      "anjar": {
+        "title": "Anjar",
+        "desc": "कच्छ की सबसे पुरानी राजधानी (650 ईस्वी)। किंवदंतियों का शहर, जो जैसल-तोरल कहानी, धातु के काम (metalwork) और पुरानी दुनिया के आकर्षण के लिए प्रसिद्ध है।"
+      },
+      "lakhpat": {
+        "title": "Lakhpat",
+        "desc": "भारत-पाकिस्तान सीमा पर एक 'Ghost Town'। कभी एक समृद्ध बंदरगाह, अब सिख गुरुद्वारा के साथ एक भयानक रूप से सुंदर चारदीवारी वाला शहर।"
+      },
+      "mata_na_madh": {
+        "title": "Mata na Madh",
+        "desc": "आशापुरा माता को समर्पित सबसे महत्वपूर्ण आध्यात्मिक स्थल। नवरात्रि के दौरान लाखों भक्त पैदल यहाँ आते हैं।"
+      },
+      "narayan_sarovar": {
+        "title": "Narayan Sarovar & Koteshwar",
+        "desc": "भारत के पश्चिमी छोर पर जुड़वां आध्यात्मिक स्थल। पांच सबसे पवित्र हिंदू झीलों में से एक और शानदार चट्टान के किनारे स्थित शिव मंदिर।"
+      },
+      "haji_pir": {
+        "title": "Haji Pir Dargah",
+        "desc": "भारत-पाकिस्तान सीमा के पास प्रतिष्ठित दरगाह। सांप्रदायिक सद्भाव का प्रतीक, जिसकी पूजा हिंदू और मुसलमान दोनों करते हैं।"
+      },
+      "mamaidev": {
+        "title": "Mamaidev",
+        "desc": "प्रतिष्ठित संत और दार्शनिक, बारमती पंथ के चौथे गुरु। भविष्यवाणियों (prophetic teachings) के साथ जडेजा वंश के शाही गुरु।"
+      },
+      "kalo_dungar": {
+        "title": "Kalo Dungar",
+        "desc": "कच्छ का सबसे ऊंचा बिंदु (462m)। ग्रेट रण के मनोरम दृश्य, दत्तात्रेय मंदिर और शाम को सियार को खाना खिलाने की रस्म।"
+      },
+      "kadia_dhrow": {
+        "title": "Kadia Dhrow",
+        "desc": "'भारत का ग्रैंड कैनियन' - शानदार बहु-रंगीन चट्टानें, लाल, पीले और नारंगी रंग में जीवंत बलुआ पत्थर की परतें।"
+      },
+      "road_to_heaven": {
+        "title": "Road to Heaven",
+        "desc": "विशाल बंजर परिदृश्यों से होकर भारत के पश्चिमी किनारे तक जाने वाली सुंदर ड्राइव। रेगिस्तान और समुद्र के माध्यम से रहस्यमयी यात्रा।"
+      },
+      "mundra": {
+        "title": "Mundra",
+        "desc": "ऐतिहासिक चारदीवारी वाले शहर के साथ भारत का सबसे बड़ा निजी बंदरगाह। आधुनिक उद्योग और मसाला व्यापार विरासत का आकर्षक विरोधाभास।"
+      },
+      "kandla": {
+        "title": "Kandla",
+        "desc": "प्रमुख बंदरगाह शहर और वाणिज्यिक केंद्र। व्यापार के लिए प्रवेश द्वार और समुद्र के रास्ते आने वाले यात्रियों के लिए पारगमन बिंदु (transit point)।"
+      },
+      "jakhau": {
+        "title": "Jakhau",
+        "desc": "मछली पकड़ने का बंदरगाह और नमक उत्पादन केंद्र। असली तटीय कच्छी जीवन और समुद्री भोजन (seafood) के साथ एक ऑफ-बीट डेस्टिनेशन।"
+      },
+      "adipur": {
+        "title": "Adipur",
+        "desc": "गांधीधाम का जुड़वां शहर। स्थानीय बाजारों और बंदरगाह क्षेत्रों तक आसान पहुंच वाला आवासीय केंद्र।"
+      },
+      "madhapar": {
+        "title": "Madhapar",
+        "desc": "भारी एनआरआई डिपॉजिट के साथ भारत के सबसे अमीर गांव के रूप में मान्यता प्राप्त। अपने भव्य बंगलों और मजबूत सामुदायिक जड़ों (community roots) के लिए जाना जाने वाला एक समृद्ध शहर।"
+      },
+      "nirona": {
+        "title": "Nirona Village",
+        "desc": "रोगन पेंटिंग, कॉपर बेल आर्ट और लैकर वर्क जैसी अनूठी शिल्पकलाओं के लिए प्रसिद्ध सांस्कृतिक विरासत का एक जीवंत केंद्र।"
+      }
+    },
+    "explore_more": {
+      "title": "Looking for Hidden Gems?",
+      "desc": "कच्छ के उन गुप्त खजानों को खोजें जो केवल स्थानीय लोग जानते हैं - पक्षी अभयारण्यों से लेकर पर्यटक रास्ते से दूर प्राचीन खंडहरों तक।",
+      "btn": "Explore Hidden Gems →"
+    }
+  },
+  "history_page": {
+    "meta_title": "History of Kutch — 5000 Years of Heritage | MyKutch.org",
+    "meta_desc": "कच्छ के 5,000 साल के इतिहास को जानें, प्राचीन सिंधु घाटी सभ्यता से लेकर महान जडेजा राजवंश और आज के आधुनिक दौर तक।",
+    "hero_title": "History of Kutch — 5000 Years of Heritage",
+    "intro": "कच्छ का इतिहास 5,000 वर्षों से अधिक पुराना है — सिंधु घाटी सभ्यता के उन्नत शहरों से लेकर महान जडेजा राजवंश तक जिसने 500 वर्षों तक शासन किया। इस भूमि ने साम्राज्यों का उदय और पतन, प्राचीन जनजातियों का प्रवास, और एक ऐसी अनूठी सांस्कृतिक पहचान का जन्म देखा है जो भूकंपों, आक्रमणों और समय की कसौटी पर भी जीवित रही है।",
+    "why_kutch": {
+      "title": "Why 'Kutch'?",
+      "subtitle": "नाम की उत्पत्ति",
+      "text1": "<strong style='color:#333;border-bottom:2px solid #E91E63;display:inline-block;line-height:1.2;margin-right:0.3rem;'>'Kutch'</strong> नाम इसके परिदृश्य (landscape) की तरह ही अनूठा है। प्राचीन संस्कृत शब्द <strong style='color:#333;border-bottom:2px solid #E91E63;display:inline-block;line-height:1.2;margin-right:0.3rem;'>कछुआ (Tortoise)</strong> से व्युत्पन्न, यह इस भूमि के कछुए जैसे आकार का वर्णन करता है जब यह भीगे हुए रण से उभरता है।",
+      "text2": "\"एक ऐसी भूमि जो गीली है, निचली है और पानी से घिरी हुई है।\"",
+      "text3": "इसे कच्छ कहे जाने से सदियों पहले, यूनानी (Greeks) इसे <strong style='color:#333;border-bottom:2px solid #E91E63;display:inline-block;line-height:1.2;margin-right:0.3rem;'>आभीर (Aabhir)</strong> के नाम से जानते थे, जो इसके मूल देहाती निवासियों — बहादुर आभीर जनजातियों — के नाम पर रखा गया था जो इन ज़मीनों पर घूमते थे।"
+    },
+    "timeline": {
+      "title": "Timeline of Kutch",
+      "subtitle": "5000 वर्षों की यात्रा",
+      "ancient": {
+        "era": "3300 – 1500 BCE",
+        "title": "Cradle of Civilization",
+        "text1": "साम्राज्यों के उदय से पहले, कच्छ <strong>Indus Valley Civilization</strong> का दिल था। खदिर बेट के नमक भरे मैदानों में, <strong>Dholavira</strong> प्राचीन इंजीनियरिंग के चमत्कार के रूप में खड़ा था — पत्थर के जलाशयों और खगोलीय सटीकता का एक परिष्कृत शहर जो मेसोपोटामिया की भव्यता से मेल खाता था।",
+        "text2": "आज, धोलावीरा एक <strong>UNESCO World Heritage Site</strong> है, जिसे पांच सबसे बड़े हड़प्पा शहरों में से एक के रूप में मान्यता प्राप्त है।",
+        "card": {
+          "title": "Visit Dholavira",
+          "desc": "5000 साल पुराने शहर और इसके उन्नत जल संचयन प्रणाली (water harvesting system) को देखें।",
+          "btn": "Explore →"
+        }
+      },
+      "rajput": {
+        "era": "700 – 1320 CE",
+        "title": "The Rajput Frontier",
+        "text1": "8वीं शताब्दी के दौरान, <strong>Chavda Dynasty</strong> का इस क्षेत्र पर अधिकार था, जिसने <strong>Kanthkot</strong> जैसे शक्तिशाली किले स्थापित किए। यह महाकाव्य प्रतिरोध (epic resistance) का समय था, जहाँ कच्छ ने महान राजवंशों के आक्रमणों के दौरान राजपूत राजाओं के लिए एक रणनीतिक शरणस्थली के रूप में कार्य किया।",
+        "text2": "चावड़ा शासकों ने प्रभावशाली किले और मंदिर बनाए, जिनमें से कई आज भी उनकी वास्तुकला कौशल के गवाह हैं।"
+      },
+      "samma": {
+        "era": "1320 – 1548 CE",
+        "title": "Migration of the 9 Lakhs",
+        "text1": "ऐतिहासिक प्रवास की लहरों में, <strong>Samma Rajputs</strong> ने सिंध से रण को पार किया। किंवदंती है कि <strong>9 लाख (900,000)</strong> सम्मा आदिवासी आए और उन्होंने कच्छ के सामाजिक ताने-बाने को बदल दिया।",
+        "text2": "ये प्रवासी अंततः शासक <strong>Jadeja Dynasty</strong> में विकसित हुए जिसने अगले 500 वर्षों तक कच्छ को परिभाषित किया।"
+      },
+      "golden": {
+        "era": "1548 – 1819 CE",
+        "title": "The Sovereign State",
+        "text1": "<strong>Khengarji I</strong> ने <strong>Bhuj</strong> की राजधानी और <strong>Mandvi</strong> के रणनीतिक बंदरगाह की स्थापना करके इतिहास बदल दिया। कच्छ एक स्वायत्त राज्य के रूप में फला-फूला, अपनी खुद की चांदी की मुद्रा (<strong>Kutch Kori</strong>) चलाई और मक्का जाने वाले तीर्थयात्रियों की रक्षा के बदले मुगलों को कर (tribute) देने से छूट प्राप्त की।",
+        "list": {
+          "bhuj": {
+            "strong": "Bhuj",
+            "text": "1548 में नई राजधानी के रूप में स्थापित"
+          },
+          "mandvi": {
+            "strong": "Mandvi Port",
+            "text": "प्रमुख व्यापार केंद्र बन गया"
+          },
+          "kori": {
+            "strong": "Kutch Kori",
+            "text": "अपनी खुद की चांदी की मुद्रा ढाली गई"
+          }
+        },
+        "card": {
+          "title": "Explore Bhuj",
+          "desc": "जडेजा राजधानी के ऐतिहासिक महलों और संग्रहालयों को देखें।",
+          "btn": "Explore →"
+        }
+      },
+      "british": {
+        "era": "1819 – 1947 CE",
+        "title": "A Princely Legacy",
+        "text1": "ब्रिटिश आधिपत्य के तहत, कच्छ के महाराव महान निर्माता बन गए। <strong>Pragmalji II</strong> ने गोथिक शैली का <strong>Prag Mahal</strong> बनवाया, जबकि <strong>Khengarji III</strong> ने भविष्य की ओर देखा, कच्छ राज्य रेलवे और <strong>Kandla Port</strong> के वैश्विक प्रवेश द्वार की स्थापना की।",
+        "highlights_title": "🏰 Architectural Highlights",
+        "list": {
+          "aina": {
+            "strong": "Aina Mahal",
+            "text": "आईना महल, वेनिस के कांच से बना"
+          },
+          "prag": {
+            "strong": "Prag Mahal",
+            "text": "इतालवी संगमरमर वाला गोथिक महल"
+          },
+          "vijay": {
+            "strong": "Vijay Vilas Palace",
+            "text": "मांडवी में बीच पैलेस"
+          }
+        }
+      },
+      "modern": {
+        "era": "1947 – Present",
+        "title": "Renewal & Resilience",
+        "text1": "स्वतंत्र भारत में एक अलग क्लास-सी राज्य से लेकर गुजरात का सबसे बड़ा जिला बनने तक, कच्छ का आधुनिक इतिहास अविश्वसनीय लचीलेपन (resilience) का है।",
+        "quake_title": "⚠️ The 2001 Earthquake",
+        "quake_text": "26 जनवरी 2001 को, भुज में 7.7 तीव्रता का विनाशकारी भूकंप आया, जिसमें 20,000 से अधिक लोग मारे गए और क्षेत्र का बहुत कुछ नष्ट हो गया। लेकिन कच्छ की भावना अटूट साबित हुई — इस क्षेत्र ने चमत्कारिक पुनरुद्धार देखा, खुद को फिर से बनाया और भारत के सांस्कृतिक मुकुट में बदल दिया।",
+        "text2": "आज, कच्छ भारत का सबसे बड़ा जिला है, जो एशिया के सबसे बड़े निजी बंदरगाह (मुंद्रा) का घर है, और प्रसिद्ध <strong>Rann Utsav</strong> की मेजबानी करता है जो हर साल लाखों पर्यटकों को आकर्षित करता है।"
+      }
+    },
+    "explore": {
+      "title": "Explore More",
+      "cards": {
+        "geography": {
+          "title": "Geography of Kutch",
+          "desc": "उस अनोखे परिदृश्य को समझें जिसने कच्छ के इतिहास को आकार दिया — ग्रेट रण से लेकर बन्नी घास के मैदानों तक।"
+        },
+        "dholavira": {
+          "title": "Visit Dholavira",
+          "desc": "5000 साल पुराने यूनेस्को विश्व धरोहर स्थल को देखें और प्राचीन हड़प्पा की गलियों में चलें।"
+        }
+      }
+    }
+  },
+  "geography_page": {
+    "meta_title": "Geography of Kutch — India's Largest District | MyKutch.org",
+    "meta_desc": "कच्छ के भूगोल को जानें - भारत का सबसे बड़ा जिला। ग्रेट रण, लिटिल रण, बन्नी घास के मैदान, जलवायु और अनोखी भौगोलिक विशेषताओं के बारे में जानें।",
+    "hero_title": "Geography of Kutch — India's Largest District",
+    "intro": "कच्छ वास्तव में एक द्वीप (island) जैसा है — पश्चिम में अरब सागर, दक्षिण में कच्छ की खाड़ी, और उत्तर और पूर्व में रण के विशाल नमक के दलदल से घिरा हुआ है। 45,674 वर्ग किमी क्षेत्र के साथ, यह <strong>भारत का सबसे बड़ा जिला</strong> है, जो गुजरात के कुल क्षेत्रफल का 23.27% है। परिदृश्य विरोधाभासों का एक अध्ययन है: बर्फ जैसे सफेद नमक के रेगिस्तान से लेकर हरे-भरे घास के मैदानों तक, पथरीली पहाड़ियों से लेकर साफ समुद्र तटों तक, कच्छ पृथ्वी पर सबसे अनोखी भौगोलिक विशेषताओं में से कुछ प्रदान करता है।",
+    "stats": {
+      "title": "At a Glance",
+      "subtitle": "मुख्य भौगोलिक तथ्य",
+      "area": {
+        "num": "45,674",
+        "label": "वर्ग किलोमीटर<br>(कुल क्षेत्रफल)"
+      },
+      "desert": {
+        "num": "23,310",
+        "label": "वर्ग किलोमीटर<br>(रेगिस्तानी क्षेत्र)"
+      },
+      "height": {
+        "num": "462m",
+        "label": "कालो डूंगर<br>(सबसे ऊंचा बिंदु)"
+      },
+      "villages": {
+        "num": "924",
+        "label": "गांव<br>(10 तालुका)"
+      },
+      "rainfall": {
+        "num": "356mm",
+        "label": "औसत वार्षिक<br>वर्षा"
+      },
+      "temp": {
+        "num": "2°C - 50°C",
+        "label": "तापमान<br>रेंज"
+      }
+    },
+    "location": {
+      "title": "Location & Boundaries",
+      "text": "कच्छ भारत की पश्चिमी सीमा पर स्थित है, जो <strong>22°44' से 24°41' उत्तर अक्षांश</strong> और <strong>68°09' से 71°54' पूर्व देशांतर</strong> के बीच है। यह कर्क रेखा (Tropic of Cancer) के ठीक उत्तर में स्थित है।",
+      "list": {
+        "n": "<strong>North & Northwest</strong>: पाकिस्तान (सिंध प्रांत)",
+        "e": "<strong>East</strong>: बनासकांठा और मेहसाणा जिले",
+        "se": "<strong>Southeast</strong>: सुरेंद्रनगर जिला",
+        "s": "<strong>South</strong>: कच्छ की खाड़ी और राजकोट जिला",
+        "sw": "<strong>Southwest & West</strong>: अरब सागर"
+      }
+    },
+    "geology": {
+      "title": "Geological History",
+      "subtitle": "कच्छ लाखों सालों में कैसे बना",
+      "text1": "भूगर्भशास्त्रियों के अनुसार, <strong>हजारों साल पहले कच्छ की ज़मीन समुद्र की तलहटी (sea bed) में थी</strong>। पृथ्वी की पपड़ी (crust) में टेक्टोनिक गतिविधियों के कारण यह भूमि धीरे-धीरे समुद्र के ऊपर उभरी। यह क्षेत्र पूरे इलाके में पाए जाने वाले जीवाश्मों और रण की विशेषता वाले नमक के भंडार में अपनी समुद्री उत्पत्ति के प्रमाण दिखाता है।",
+      "text2": "लगभग 100 साल पहले, जब हाकरा और सिंधु (Indus) नदियाँ इस क्षेत्र से होकर बहती थीं, तो यह उपजाऊ भूमि थी। लेकिन भूकंपों सहित भूवैज्ञानिक परिवर्तनों के कारण जिन्होंने जलमार्गों को बदल दिया, इन नदियों का प्रवाह बदल गया और यह क्षेत्र सूखा और बंजर हो गया। सिंधु नदी के बीच में प्रसिद्ध <strong>'Allah Bandh'</strong> (अल्लाह का बांध) 1819 के विनाशकारी भूकंप से बना था, जिसने सचमुच नदी के प्रवाह को रोक दिया था।",
+      "note": {
+        "title": "🌍 Earthquake-Prone Region",
+        "text": "कच्छ एक सक्रिय भूकंपीय क्षेत्र (seismic zone) में स्थित है और पूरे इतिहास में कई विनाशकारी भूकंपों का अनुभव किया है। सबसे हालिया 2001 का भुज भूकंप (7.7 तीव्रता) था जिसमें 20,000 से अधिक लोग मारे गए थे। 1819 के रण ऑफ कच्छ भूकंप ने अल्लाह बांध बनाया, जो लगभग 80 किमी लंबा एक प्राकृतिक बांध है। ये टेक्टोनिक घटनाएं लगातार भूगोल को आकार देती हैं, वातावरण, भूमि और खनिज भंडारों को प्रभावित करती हैं।"
+      }
+    },
+    "regions": {
+      "intro": {
+        "title": "Five Distinct Regions",
+        "subtitle": "कच्छ के अनोखे परिदृश्य",
+        "text": "कच्छ का परिदृश्य (landscape) उल्लेखनीय रूप से विविध है, जिसमें पांच अलग-अलग भौगोलिक क्षेत्र शामिल हैं, जिनमें से प्रत्येक का अपना अनूठा चरित्र, पारिस्थितिकी तंत्र और सुंदरता है।"
+      },
+      "great_rann": {
+        "title": "1. The Great Rann of Kutch",
+        "text": "ग्रेट रण ऑफ कच्छ दुनिया के <strong>सबसे बड़े नमक के रेगिस्तानों</strong> में से एक है, जो जिले के उत्तरी भाग में लगभग 7,500 वर्ग किलोमीटर में फैला हुआ है। हिंदी शब्द \"रण\" का अर्थ है \"रेगिस्तान\"।",
+        "list": {
+          "unique": "<strong>Unique Desert</strong>: सामान्य रेत के रेगिस्तानों के विपरीत, यह एक नमक का रेगिस्तान है जिसमें चिकनी, कठोर ज़मीन क्रिस्टलीकृत नमक की परतों से ढकी हुई है।",
+          "seasonal": "<strong>Seasonal Transformation</strong>: मानसून (जून-अक्टूबर) के दौरान, यह उथला दलदल (wetland) बन जाता है। जैसे ही पानी वाष्पित होता है, यह बर्फ जैसे सफेद नमक के रेगिस्तान में बदल जाता है।",
+          "white": "<strong>White Rann</strong>: धोर्दो में, नमक का मैदान इतना शुद्ध और सफेद है कि यह अवास्तविक (surreal) लगता है, खासकर चांदनी के तहत।",
+          "mirage": "<strong>Mirage Effect</strong>: गर्मियों में, सफेद नमकीन सतह पर पड़ने वाली सूरज की किरणें शानदार मृगतृष्णा (mirages) बनाती हैं।"
+        },
+        "card": {
+          "title": "Experience the White Rann",
+          "desc": "जादुई नमक के रेगिस्तान को देखने के लिए रण उत्सव (नवं-फर) के दौरान जाएँ। धोर्दो में टेंट सिटी सांस्कृतिक कार्यक्रमों के साथ प्रीमियम आवास प्रदान करती है।",
+          "btn": "Explore Dhordo →"
+        }
+      },
+      "little_rann": {
+        "title": "2. The Little Rann of Kutch",
+        "card": {
+          "title": "Wild Ass Sanctuary",
+          "desc": "लिटिल रण लुप्तप्राय भारतीय जंगली गधे (Ghudkhur) का एकमात्र प्राकृतिक आवास है। ध्रांगध्रा से सफारी टूर्स उपलब्ध हैं।"
+        },
+        "text": "ग्रेट रण के दक्षिण-पूर्व में स्थित, लिटिल रण लगभग <strong>4,950 से 5,000 वर्ग किलोमीटर</strong> को कवर करता है। यह एक मौसमी नमक दलदल पारिस्थितिकी तंत्र और एक हाइपर-एरिड खारा रेगिस्तान है।",
+        "list": {
+          "bets": "<strong>Bets (Islands)</strong>: \"बेट\" या \"मेडक\" कहलाने वाले ऊंचे द्वीप बाढ़ के स्तर से 2-3 मीटर ऊपर खड़े होते हैं, जो वनस्पति का समर्थन करते हैं और वन्यजीवों को आश्रय देते हैं।",
+          "ass": "<strong>Wild Ass Sanctuary</strong>: लुप्तप्राय भारतीय जंगली गधे (Equus hemionus khur) का घर, जो दुनिया में कहीं और नहीं पाया जाता है।",
+          "wildlife": "<strong>Rich Wildlife</strong>: चिंकारा, नीलगाय, ब्लैकबक, भारतीय भेड़िया, फ्लेमिंगो, पेलिकन और विभिन्न पक्षी प्रजातियों का भी समर्थन करता है।",
+          "salt": "<strong>Salt Production</strong>: पारंपरिक अगरिया (नमक मजदूर) सदियों पुरानी तकनीकों का उपयोग करके नमक का उत्पादन करते हैं।"
+        }
+      },
+      "banni": {
+        "title": "3. The Banni Grasslands",
+        "text": "बन्नी <strong>एशिया का सबसे बड़ा उष्णकटिबंधीय घास का मैदान</strong> है, जो ग्रेट रण के दक्षिणी किनारे पर लगभग 2,500 से 3,847 वर्ग किलोमीटर में फैला हुआ है। यह शुष्क घास का मैदान पारिस्थितिकी तंत्र टेक्टोनिक गतिविधियों के कारण समुद्र से उभरा और प्राचीन नदियों से उपजाऊ मिट्टी प्राप्त की।",
+        "list": {
+          "bio": "<strong>Biodiversity Hotspot</strong>: 250 से अधिक पक्षी प्रजातियां (निवासी और प्रवासी), 37 घास प्रजातियां, और छारी धांड में फ्लेमिंगो सहित विविध वन्यजीव।",
+          "maldhari": "<strong>Maldhari Community</strong>: देहाती मालधारी लोगों का घर जो सदियों से यहाँ रह रहे हैं, अपने विशिष्ट गोल मिट्टी के घरों (भुंगा) के लिए जाने जाते हैं।",
+          "reserves": "<strong>Conservation Reserves</strong>: इसमें कच्छ डेजर्ट वाइल्डलाइफ सैंक्चुअरी और छारी धांड कंजर्वेशन रिजर्व शामिल हैं।",
+          "artisan": "<strong>Artisan Villages</strong>: कढ़ाई, चमड़े के काम और पारंपरिक शिल्पकला के लिए प्रसिद्ध।"
+        },
+        "card": {
+          "title": "Chhari Dhand Wetland",
+          "desc": "बन्नी में एक मौसमी आर्द्रभूमि जो सर्दियों के दौरान फ्लेमिंगो, सारस और पेलिकन सहित हजारों प्रवासी पक्षियों को आकर्षित करती है।",
+          "btn": "Explore Chaari Dhand →"
+        }
+      },
+      "mainland": {
+        "title": "4. The Kutch Mainland",
+        "text": "कच्छ की मुख्य भूमि एक पथरीला ऊपरी क्षेत्र है जिसमें मैदानी इलाके, पहाड़ियाँ और सूखी नदी के तल शामिल हैं। जबकि आमतौर पर समतल है, इसमें कई पहाड़ी श्रृंखलाएं और अलग-थलग पहाड़ियाँ हैं, जिनमें <strong>Kalo Dungar (Black Hill)</strong> 462 मीटर (1,516 फीट) पर सबसे ऊंचा बिंदु है।",
+        "card1": {
+          "title": "Northern Hill Range",
+          "desc": "सबसे ऊंची पहाड़ियाँ कच्छ क्षेत्र की रक्षा करती हैं, जो खावड़ा गांव से लगभग 12 किमी दूर स्थित हैं। विभिन्न प्रकार के पेड़ों और लंबी घास से ढकी ये पहाड़ियाँ ग्रेट रण के मनोरम दृश्य प्रदान करती हैं।"
+        },
+        "card2": {
+          "title": "Coastal Plains",
+          "desc": "दक्षिणी मुख्य भूमि तटीय मैदानों में बदल जाती है जो कच्छ की खाड़ी की ओर ले जाती है, जिसमें मांडवी और मुंद्रा जैसे प्राचीन बंदरगाह शहर हैं।"
+        }
+      },
+      "coast": {
+        "title": "5. Arabian Sea Coastline & Mangroves",
+        "text": "कच्छ में पश्चिम में अरब सागर और दक्षिण में कच्छ की खाड़ी के साथ एक विस्तृत तटरेखा है। पश्चिमी तट में खाड़ियाँ (creeks) और मैंग्रोव पारिस्थितिकी तंत्र हैं जो समृद्ध समुद्री जीवन का समर्थन करते हैं।",
+        "list": {
+          "ports": "<strong>Major Ports</strong>: कांडला पोर्ट (भारत के सबसे बड़े में से एक), मुंद्रा पोर्ट (भारत का सबसे बड़ा निजी बंदरगाह), और मांडवी में पारंपरिक बंदरगाह।",
+          "beaches": "<strong>Beaches</strong>: मांडवी बीच प्रमुख बीच गंतव्य है, जो प्राचीन किनारों और रॉयल विजय विलास पैलेस के लिए जाना जाता है।",
+          "ships": "<strong>Shipbuilding</strong>: मांडवी में लकड़ी के जहाज बनाने (ढो) की 400 साल पुरानी परंपरा है जो आज भी जारी है।",
+          "mangroves": "<strong>Mangroves</strong>: पश्चिमी खाड़ियाँ मैंग्रोव वनों का समर्थन करती हैं जो समुद्री जीवन के लिए नर्सरी के रूप में कार्य करते हैं और तटीय कटाव से रक्षा करते हैं।"
+        },
+        "card": {
+          "title": "Mandvi",
+          "desc": "प्रमुख बीच डेस्टिनेशन जहाँ इतिहास अरब सागर से मिलता है। महल देखें, जहाज बनाना देखें, और साफ समुद्र तटों पर आराम करें।",
+          "btn": "Explore Mandvi →"
+        }
+      }
+    },
+    "climate": {
+      "title": "Climate",
+      "subtitle": "अत्यधिक तापमान और तीन अलग मौसम",
+      "text": "कच्छ महत्वपूर्ण तापमान भिन्नताओं के साथ एक <strong>चरम जलवायु (extreme climate)</strong> का अनुभव करता है। तापमान सर्दियों की रातों में 2°C से लेकर गर्मियों में चिलचिलाती 45-50°C तक हो सकता है। औसत वार्षिक वर्षा बहुत कम है, लगभग 356 मिमी (ऐतिहासिक रूप से), जो मानसून के मौसम के दौरान केंद्रित होती है।",
+      "summer": {
+        "title": "☀️ Summer",
+        "months": "February - June",
+        "desc": "40-50°C तक तापमान के साथ बेहद गर्म। शुष्क और बंजर स्थिति। जब तक आप अत्यधिक गर्मी नहीं संभाल सकते, तब तक यात्रा के लिए अनुशंसित नहीं है।"
+      },
+      "monsoon": {
+        "title": "🌧️ Monsoon",
+        "months": "July - September",
+        "desc": "कम वर्षा के साथ गर्मी से कुछ राहत। इस अवधि के दौरान रण में बाढ़ आ जाती है। परिदृश्य हरा हो जाता है। दूरदराज के इलाकों की सड़कें कठिन हो सकती हैं।"
+      },
+      "winter": {
+        "title": "❄️ Winter",
+        "months": "October - January",
+        "desc": "सुहावने दिन (22-28°C) और ठंडी रातें (2-10°C)। घूमने के लिए सबसे अच्छा समय। रण उत्सव का मौसम। प्रवासी पक्षी आते हैं।"
+      }
+    },
+    "water": {
+      "title": "Water Resources",
+      "text": "कच्छ में पानी सबसे कीमती संसाधन है। इस क्षेत्र में कोई बारहमासी नदियाँ नहीं हैं — सभी धाराएँ मौसमी हैं, जो केवल मानसून के दौरान बहती हैं। रण का अनूठा जल विज्ञान (hydrology) एक महत्वपूर्ण भूमिका निभाता है:",
+      "list": {
+        "salt": "<strong>Salt Formation</strong>: रण में वर्षा का पानी जल्दी ज़मीन में नहीं रिसता। इसके बजाय, कच्छ की खाड़ी का समुद्री पानी बारिश के पानी के साथ मिल जाता है। जब यह वाष्पित होता है, तो नमक पीछे रह जाता है, जो विशिष्ट सफेद नमक की परतें बनाता है।",
+        "moisture": "<strong>Moisture Retention</strong>: भूमि में नमक वायुमंडल से नमी को आकर्षित करता है, जिससे कठोर गर्मी के दिनों में भी सतह चिकनी और नम रहती है।",
+        "dams": "<strong>Major Dams</strong>: रुद्रमाता बांध (भुज के पास), टप्पर बांध, और विभिन्न चेक बांध कृषि और पीने के लिए पानी प्रदान करते हैं।",
+        "narmada": "<strong>Narmada Canal</strong>: सरदार सरोवर नर्मदा नहर ने कच्छ के कुछ हिस्सों में पानी पहुंचाया है, जिससे कुछ क्षेत्रों में कृषि बदल गई है।"
+      }
+    },
+    "centres": {
+      "title": "Major Centres",
+      "subtitle": "कच्छ के कस्बे और शहर",
+      "text": "कच्छ के विशाल परिदृश्य में 10 प्रमुख शहर फैले हुए हैं। हर शहर का अपना अनूठा चरित्र है, प्राचीन विरासत केंद्रों से लेकर आधुनिक वाणिज्यिक केंद्रों तक।",
+      "bhuj": {
+        "title": "Bhuj",
+        "desc": "जिला मुख्यालय और कच्छ का सांस्कृतिक दिल। महलों, संग्रहालयों और पारंपरिक बाज़ारों का घर। क्षेत्र को घूमने के लिए सही बेस।"
+      },
+      "gandhidham": {
+        "title": "Gandhidham",
+        "desc": "कच्छ का सबसे बड़ा और सबसे आधुनिक शहर। वाणिज्यिक केंद्र और कांडला पोर्ट का प्रवेश द्वार। रेल और सड़क मार्ग से अच्छी तरह जुड़ा हुआ है।"
+      },
+      "kandla": {
+        "title": "Kandla",
+        "desc": "कच्छ की खाड़ी पर भारत के सबसे बड़े बंदरगाहों में से एक। देश भर से कार्गो संभालने वाला प्रमुख व्यापार और निर्यात केंद्र।"
+      },
+      "nakhatrana": {
+        "title": "Nakhatrana",
+        "desc": "मध्य कच्छ का कृषि शहर जो अपनी डेयरी उद्योग के लिए जाना जाता है। उत्तरी कच्छ के शिल्प गांवों और बन्नी घास के मैदानों का प्रवेश द्वार।"
+      },
+      "mandvi": {
+        "title": "Mandvi",
+        "desc": "ऐतिहासिक बंदरगाह शहर और प्रमुख बीच डेस्टिनेशन। विजय विलास पैलेस और 400 साल पुरानी जहाज बनाने की परंपरा के लिए प्रसिद्ध।"
+      },
+      "bhachau": {
+        "title": "Bhachau",
+        "desc": "पूर्वी कच्छ में तालुका मुख्यालय, 2001 के भूकंप में तबाह हो गया था और फिर से बनाया गया। पास के टेक्सटाइल क्राफ्ट गांवों के लिए जाना जाता है।"
+      },
+      "mundra": {
+        "title": "Mundra",
+        "desc": "भारत के सबसे बड़े निजी बंदरगाह का घर। आधुनिक उद्योग और मसाला व्यापार विरासत वाले ऐतिहासिक चारदीवारी वाले शहर का आकर्षक मिश्रण।"
+      },
+      "naliya": {
+        "title": "Naliya",
+        "desc": "पश्चिमी कच्छ के आध्यात्मिक स्थलों का प्रवेश द्वार। नारायण सरोवर, कोटेश्वर और लखपत का निकटतम शहर।"
+      },
+      "khavda": {
+        "title": "Khavda",
+        "desc": "भारत-पाकिस्तान सीमा के पास सबसे उत्तरी शहर। कालो डूंगर और ग्रेट रण का प्रवेश द्वार। पारंपरिक शिल्प के लिए जाना जाता है।"
+      }
+    },
+    "explore": {
+      "title": "Explore More",
+      "history": {
+        "title": "History of Kutch",
+        "desc": "प्राचीन सिंधु सभ्यता से लेकर जडेजा शासकों तक — उस समृद्ध इतिहास को जानें जिसने इस भूमि को आकार दिया।"
+      },
+      "landscapes": {
+        "title": "Landscapes",
+        "desc": "कच्छ की अद्भुत दृश्य विविधता को एक्सप्लोर करें — नमक के रेगिस्तान से लेकर समुद्र तटों तक, पथरीली पहाड़ियों से लेकर घास के मैदानों तक।"
+      },
+      "kalo": {
+        "title": "Kalo Dungar",
+        "desc": "ग्रेट रण के मनोरम दृश्यों और शाम को सियार को खाना खिलाने की रस्म के लिए कच्छ (458m) के सबसे ऊंचे बिंदु पर जाएँ।"
+      },
+      "hidden": {
+        "title": "Hidden-Gems",
+        "desc": "पर्यटक रास्ते से परे कच्छ के गुप्त प्राकृतिक अजूबों को खोजें — आर्द्रभूमि, प्राचीन स्थल और सुंदर नज़ारे।"
+      }
+    }
+  },
+  "landscapes_page": {
+    "meta_title": "Landscapes of Kutch — Visual Journey Through Mystical Sands | MyKutch.org",
+    "meta_desc": "कच्छ के रहस्यमयी परिदृश्यों की दृश्य यात्रा। व्हाइट रण, प्राचीन विरासत और छिपे हुए खजानों की हाई-रिज़ॉल्यूशन गैलरी।",
+    "hero_title": "Landscapes of Kutch — A Visual Journey",
+    "intro": "कच्छ नाटकीय विरोधाभासों (dramatic contrasts) की भूमि है — जहाँ अंतहीन नमक के रेगिस्तान प्राचीन समुद्र तटों से मिलते हैं, जहाँ प्राचीन खंडहर पथरीली पहाड़ियों के खिलाफ खड़े हैं, और जहाँ भारत के सबसे चरम परिदृश्यों में से एक में जीवंत संस्कृति पनपती है। क्षेत्र के सबसे सुंदर नज़ारों के इस दृश्य संग्रह को एक्सप्लोर करें।",
+    "filters": {
+      "all": "All Photos",
+      "nature": "Nature",
+      "heritage": "Heritage",
+      "culture": "Culture"
+    },
+    "sections": {
+      "salt_deserts": {
+        "title": "The Salt Deserts",
+        "subtitle": "जहाँ नमक आसमान से मिलता है",
+        "cards": {
+          "white_rann": {
+            "tag": "Nature",
+            "title": "White Rann",
+            "desc": "चांदनी के नीचे चमकता हुआ सफेद नमक का अंतहीन विस्तार।"
+          },
+          "road_heaven": {
+            "tag": "Scenic Drive",
+            "title": "Road to Heaven",
+            "desc": "नमक के रेगिस्तान को चीरती हुई भारत की सबसे सुंदर सड़क।"
+          },
+          "sunset": {
+            "tag": "Golden Hour",
+            "title": "Sunset over Rann",
+            "desc": "जैसे ही सूरज नमक के मैदानों पर डूबता है, आसमान रंगों से भर जाता है।"
+          }
+        }
+      },
+      "canyons": {
+        "title": "Canyons & Hills",
+        "subtitle": "लाखों साल पुराने भूवैज्ञानिक चमत्कार",
+        "cards": {
+          "kadia": {
+            "tag": "Adventure",
+            "title": "Kadia Dhrow",
+            "desc": "भारत का \"ग्रैंड कैनियन\" — रंग-बिरंगी चट्टानें जिन्हें समय ने तराशा है।"
+          },
+          "golden": {
+            "tag": "Desert",
+            "title": "Golden Sands",
+            "desc": "कच्छ के आंतरिक परिदृश्य के घूमते हुए रेत के टीले।"
+          }
+        }
+      },
+      "heritage": {
+        "title": "Heritage & Architecture",
+        "subtitle": "पत्थरों में 5000 साल का इतिहास",
+        "cards": {
+          "bhuj": {
+            "tag": "Heritage",
+            "title": "Bhuj City",
+            "desc": "शाही महलों और प्राचीन बाज़ारों के साथ कच्छ का सांस्कृतिक दिल।"
+          },
+          "palace": {
+            "tag": "Royalty",
+            "title": "Vijay Vilas Palace",
+            "desc": "अरब सागर की ओर देखता हुआ मांडवी का बीच पैलेस।"
+          },
+          "dholavira": {
+            "tag": "UNESCO",
+            "title": "Dholavira",
+            "desc": "समय में जमा हुआ 5000 साल पुराना हड़प्पा शहर।"
+          },
+          "aina": {
+            "tag": "Museum",
+            "title": "Aina Mahal",
+            "desc": "दर्पणों का हॉल (Hall of Mirrors) — कच्छ की वेनिस कृति।"
+          },
+          "night": {
+            "tag": "Night",
+            "title": "Palace at Night",
+            "desc": "कच्छ की शाही विरासत की जगमगाती भव्यता।"
+          }
+        }
+      },
+      "culture": {
+        "title": "Culture & Crafts",
+        "subtitle": "कच्छ की जीवित परंपराएं",
+        "cards": {
+          "bandhani": {
+            "tag": "Textile",
+            "title": "Bandhani",
+            "desc": "हजारों हाथ से बंधी गांठों से बनाए गए जटिल टाई-डाई पैटर्न।"
+          },
+          "ajrakh": {
+            "tag": "Block Print",
+            "title": "Ajrakh",
+            "desc": "प्राकृतिक रंगों के साथ 4000 साल पुरानी ज्यामितीय ब्लॉक प्रिंटिंग।"
+          },
+          "artisan": {
+            "tag": "Craft",
+            "title": "Artisan at Work",
+            "desc": "पीढ़ियों से चला आ रहा कौशल और समर्पण।"
+          }
+        }
+      }
+    }
+  },
+  "hidden_gems_page": {
+    "meta_title": "Hidden Gems of Kutch | Discover Secret Treasures",
+    "meta_desc": "Explore the hidden gems of Kutch - from serene wetlands to ancient temples. Discover the secret treasures beyond the tourist trail.",
+    "hero_title": "Hidden Gems — Beyond the Tourist Trail",
+    "intro": "Discover the secret treasures of Kutch that only the locals know. From serene wetlands to ancient temples, these hidden gems offer authentic experiences beyond the crowds. Each location tells a unique story of Kutch's rich heritage, natural beauty, and spiritual significance.",
+    "sections": {
+      "nature": {
+        "title": "Nature & Wildlife",
+        "subtitle": "Untouched natural wonders"
+      },
+      "heritage": {
+        "title": "Heritage & History",
+        "subtitle": "Ancient temples and archaeological sites"
+      },
+      "tips": {
+        "title": "Tips for Exploring Hidden Gems"
+      },
+      "bring": {
+        "title": "What to Bring"
+      },
+      "time": {
+        "title": "Best Time to Visit"
+      },
+      "more": {
+        "title": "More Hidden Treasures",
+        "subtitle": "Waiting to be discovered"
+      },
+      "share": {
+        "title": "Share Your Discovery",
+        "text": "Know a hidden gem in Kutch? Share your discoveries with our community and help fellow travelers explore the unexplored.",
+        "whatsapp_btn": "Share on WhatsApp",
+        "contact_btn": "Contact Us"
+      },
+      "map": {
+        "title": "Explore Kutch Map"
+      }
+    },
+    "cards": {
+      "chaari_dhand": {
+        "title": "Chaari Dhand",
+        "desc": "A seasonal wetland sanctuary that transforms into a haven for migratory birds during winter. Witness thousands of flamingos, cranes, and other exotic species. 60km from Bhuj. Best visited Oct-Mar."
+      },
+      "flamingo": {
+        "title": "Flamingo Colony",
+        "desc": "During peak migration season, witness spectacular flamingo colonies at Chaari Dhand. Early morning visits offer the best photography opportunities with golden light."
+      },
+      "kotay": {
+        "title": "Kotay Sun Temple",
+        "desc": "Ancient temple ruins dating back to the 12th century Solanki dynasty. Features exquisite stone carvings and architectural marvels. 35km from Bhuj. Best at sunrise or sunset."
+      },
+      "kadia_dhrow": {
+        "title": "Kadia Dhrow",
+        "desc": "A hidden hill fortress with panoramic views. Ancient watchtower ruins offer stunning sunset vistas across the Kutch landscape. Perfect for history enthusiasts."
+      },
+      "dhrang": {
+        "title": "Dhrang - Mekan Dada",
+        "desc": "25km from Bhuj - Sacred shrine and pilgrimage site with spiritual significance"
+      },
+      "rudramata": {
+        "title": "Rudramata Dam",
+        "desc": "15km from Bhuj - Scenic dam with peaceful surroundings, perfect for picnics"
+      },
+      "gangeshwar": {
+        "title": "Gangeshwar Mahadev",
+        "desc": "10km from Bhuj - Temple on hill with trekking opportunities and panoramic views"
+      },
+      "jadura": {
+        "title": "Jadura Sunset Point",
+        "desc": "5km from Bhuj - Scenic sunset point with stunning panoramic views of the city"
+      }
+    },
+    "tips": {
+      "guide": {
+        "title": "Hire a Local Guide",
+        "desc": "Local guides know the best routes, hidden spots, and can share fascinating stories about each location."
+      },
+      "morning": {
+        "title": "Early Morning Visits",
+        "desc": "Best light for photography, cooler temperatures, and fewer crowds. Many birds are active at dawn."
+      },
+      "essentials": {
+        "title": "Carry Essentials",
+        "desc": "Water, snacks, sun protection, and basic first aid. Remote areas may have limited facilities."
+      },
+      "maps": {
+        "title": "Offline Maps",
+        "desc": "Download maps in advance. Network connectivity can be spotty in remote areas of Kutch."
+      }
+    },
+    "bring_list": {
+      "binoculars": {
+        "strong": "Binoculars",
+        "text": "Essential for birdwatching at Chaari Dhand and other wetlands."
+      },
+      "camera": {
+        "strong": "Camera with Zoom Lens",
+        "text": "Wildlife can be distant; a telephoto lens is invaluable."
+      },
+      "footwear": {
+        "strong": "Comfortable Footwear",
+        "text": "Many sites require walking on uneven terrain."
+      },
+      "sun": {
+        "strong": "Sun Protection",
+        "text": "Hat, sunglasses, and sunscreen are must-haves."
+      },
+      "layers": {
+        "strong": "Light Layers",
+        "text": "Morning can be cool, especially in winter months."
+      }
+    },
+    "time_list": {
+      "oct_mar": {
+        "strong": "October to March",
+        "text": "Peak season for migratory birds and pleasant weather."
+      },
+      "morning": {
+        "strong": "Early Morning",
+        "text": "Best for wildlife and avoiding the afternoon heat."
+      },
+      "moon": {
+        "strong": "Full Moon Nights",
+        "text": "Magical experience at the White Rann and open landscapes."
+      },
+      "monsoon": {
+        "strong": "Avoid Monsoon",
+        "text": "July-September roads can be difficult and wetlands flood."
+      }
+    }
+  },
+  "destinations": {
+    "kadia_dhrow": {
+      "hero_title": "Kadia Dhro — The Grand Canyon of India",
+      "lead_text": "कड़िया ध्रो (या कड़िया ध्रोव) कच्छ का सबसे शानदार छिपा हुआ रत्न है, जिसे अक्सर 'भारत का ग्रैंड कैनियन' कहा जाता है। इस भूवैज्ञानिक चमत्कार में सदियों से हवा और पानी द्वारा तराशी गई शानदार बहुरंगी चट्टानें हैं। नदी के तल में लाल, पीले और नारंगी बलुआ पत्थर के जीवंत बैंड दिखाई देते हैं, जो एक अतिरेक परिदृश्य (surreal landscape) बनाते हैं जो एक पेंटिंग के जीवन में आने जैसा दिखता है।",
+      "who_title": "Who Should Visit",
+      "who_photographers": "<strong>Photographers</strong>: नाटकीय रंगों और रॉक टेक्सचर के लिए (सूर्योदय/सूर्यास्त पर सबसे अच्छी रोशनी)।",
+      "who_hikers": "<strong>Hikers & Explorers</strong>: असमान पथरीले इलाके में थोड़ा चलने की आवश्यकता है।",
+      "landmark_title": "Landmarks & Heritage",
+      "canyon_hike_title": "Canyon Hike",
+      "canyon_hike_desc": "(1-2 घंटे) नीचे से विशाल रॉक स्तंभों को देखने के लिए नदी के तल में चलें (यदि सूखा हो)।",
+      "photo_title": "Photography",
+      "photo_desc": "रंगीन बैंड के मनोरम टॉप-डाउन शॉट के लिए छोटी चट्टानों पर चढ़ें।",
+      "croc_title": "Crocodile Spotting",
+      "croc_desc": "सावधान रहें! नदी के गहरे पानी के कुंडों में मीठे पानी के मगरमच्छ रहते हैं।",
+      "sunset_title": "Sunset View",
+      "sunset_desc": "शाम के सुनहरे समय (golden hour) के दौरान चट्टानें सुनहरी-लाल चमकती हैं।",
+      "tips_title": "Curated Local Advice",
+      "tip_facilities_title": "No Facilities",
+      "tip_facilities_desc": "यहाँ कोई दुकानें, शौचालय या पानी के स्टॉल नहीं हैं। अपनी ज़रूरत का सब कुछ साथ ले जाएँ।",
+      "when_title": "When to Visit",
+      "when_desc": "<strong>November to February:</strong> लंबी पैदल यात्रा के लिए सबसे अच्छा मौसम। <br><br><strong>Monsoon (July-Sept):</strong> परिदृश्य हरा-भरा होता है और नदी बहती है, लेकिन एप्रोच रोड बहुत कीचड़युक्त हो जाती है।",
+      "itinerary_title": "Suggested Itinerary",
+      "day_7am": "00 AM: पैक्ड नाश्ते के साथ भुज से प्रस्थान करें।",
+      "day_8am": "00 AM: कड़िया ध्रो पहुँचें। सुरक्षित पार्क करें।",
+      "day_815am": "15 AM - 10:30 AM: हाइक, एक्सप्लोर और फोटोग्राफी।",
+      "day_11am": "00 AM: यदि समय मिले तो पास के रखाल वन (आरक्षित वन) जाएँ।",
+      "day_1230pm": "30 PM: दोपहर के भोजन के लिए भुज वापस लौटना।",
+      "who_geology": "<strong>Geology Enthusiasts</strong>: अद्वितीय जुरासिक-युग की तलछटी चट्टान परतों (sedimentary rock layers) का अध्ययन करने के लिए।",
+      "who_note": "<strong>Note</strong>: ऊबड़-खाबड़ इलाका होने के कारण बुजुर्गों या चलने-फिरने में असमर्थ लोगों के लिए उपयुक्त नहीं है।",
+      "how_to_reach_title": "How to Reach",
+      "reach_bhuj": "<strong>From Bhuj</strong>: लगभग 45 किमी। निजी टैक्सी या किराए की बाइक से सबसे अच्छा पहुँचा जा सकता है।",
+      "reach_road": "<strong>Road Condition</strong>: आखिरी कुछ किलोमीटर ऑफ-रोड हैं। सावधानी से गाड़ी चलाएं।",
+      "landmark_subtitle": "परिभाषित स्मारक",
+      "shopping_title": "Shopping & Bazaars",
+      "shopping_check": "खरीदारी-विवरण (shopping info) जल्द ही अपडेट किया जाएगा।",
+      "eats_title": "Local Eats",
+      "eats_check": "भोजन-विवरण (food info) जल्द ही अपडेट किया जाएगा।",
+      "nearby_title": "Nearby Places to Visit",
+      "nearby_bhuj_desc": "(45km) मुख्य शहर (The base city)।",
+      "nearby_rann_desc": "(80km) यदि आप बहुत जल्दी शुरुआत करें तो उसी दिन किया जा सकता है।"
+    },
+    "mandvi": {
+      "hero_title": "Mandvi — Where the Desert Meets the Sea",
+      "lead_text": "मांडवी कच्छ का एकमात्र प्रमुख बीच डेस्टिनेशन है, जो शुष्क रेगिस्तानी परिदृश्य से एक आदर्श आरामदायक ब्रेक प्रदान करता है। कभी मसाला व्यापार के लिए एक प्रमुख बंदरगाह, अब यह भुज (1 घंटे दूर) से एक लोकप्रिय डे-ट्रिप और वीकेंड गेटअवे है। अपने साफ समुद्र तटों, शाही विजय विलास पैलेस और 400 साल पुरानी जहाज निर्माण परंपरा के लिए जाना जाने वाला, मांडवी वह जगह है जहाँ इतिहास अरब सागर से मिलता है। एक सामान्य यात्रा 1 से 2 दिनों तक चलती है, जो इसे व्हाइट रण की खोज के बाद आराम करने के लिए आदर्श बनाती है।",
+      "landmark_title": "Landmarks & Heritage",
+      "palace_title": "Vijay Vilas Palace",
+      "palace_desc": "(1-2 घंटे) शाही भव्यता देखने के लिए दोपहर (3 PM - 5 PM) में जाएँ। 'हम दिल दे चुके सनम' की शूटिंग के लिए प्रसिद्ध। प्रवेश: ₹50. फोन कैमरे की अनुमति है।",
+      "beach_title": "Mandvi Wind Farm Beach",
+      "beach_desc": "(शाम) सबसे अच्छा सनसेट पॉइंट। ऊंट की सवारी, घुड़सवारी और स्ट्रीट फूड का आनंद लें। सप्ताहांत (weekends) पर भीड़ होती है, इसलिए शांति के लिए थोड़ा आगे जाएँ।",
+      "ship_title": "Shipbuilding Yard",
+      "ship_desc": "(30-45 मिनट) सुबह जाएँ। कारीगरों को रुक्मावती नदी के किनारे हाथ से विशाल लकड़ी के जहाज बनाते हुए देखें। पुल से देखने के लिए नि:शुल्क।",
+      "72_title": "72 Jinalaya",
+      "72_desc": "(45 मिनट) शहर से 10 किमी दूर एक शानदार जैन मंदिर परिसर। मुंद्रा जाने/आने के रास्ते में जाना सबसे अच्छा है। शांतिपूर्ण और फोटोजेनिक वास्तुकला।",
+      "memorial_title": "Shyamji Krishna Varma Memorial",
+      "memorial_desc": "(1 घंटा) स्वतंत्रता सेनानी को समर्पित इंटरैक्टिव संग्रहालय। इतिहास प्रेमियों के लिए बहुत अच्छा है। गुरुवार को बंद रहता है।",
+      "tips_title": "Curated Local Advice",
+      "tip_timing_title": "Timing",
+      "tip_timing_desc": "दोपहर (12-3 PM) में बीच पर न जाएँ; बहुत गर्मी होती है। सुबह और शाम सबसे अच्छे हैं।",
+      "when_title": "When to Visit",
+      "when_desc": "<strong>October to March (Winter):</strong> सबसे अच्छा समय। दिन सुहावने (20-30°C) होते हैं और शामें ठंडी होती हैं। बीच गतिविधियों के लिए उत्तम।<br><br><strong>April to June (Summer):</strong> गर्म और उमस भरा। दिन का तापमान 35-40°C तक पहुँच जाता है। शाम की सैर के लिए अच्छा है लेकिन दिन में घूमने से बचें।<br><br><strong>July to September (Monsoon):</strong> मांडवी हरे-भरे परिवेश और नाटकीय बादलों के साथ सुंदर दिखता है, लेकिन समुद्र के खराब होने के कारण तैरना प्रतिबंधित है।",
+      "shopping_title": "Shopping & Bazaars",
+      "eats_title": "Local Eats",
+      "itinerary_title": "Suggested Itinerary"
+    }
+  }
+}
