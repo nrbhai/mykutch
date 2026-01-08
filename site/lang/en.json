@@ -1167,24 +1167,56 @@
     "mandvi": {
       "hero_title": "Mandvi — Where the Desert Meets the Sea",
       "lead_text": "Mandvi is the only premier beach destination in Kutch, offering a perfect relaxed break from the arid desert landscape. Once a major port for the spice trade, it is now a popular day-trip and weekend getaway from Bhuj (1 hour away). Known for its pristine beaches, the royal Vijay Vilas Palace, and a 400-year-old shipbuilding tradition, Mandvi is where history meets the Arabian Sea. A typical visit lasts 1 to 2 days, making it ideal for unwinding after exploring the White Rann.",
+      "who_should_visit": {
+        "title": "Who Should Visit",
+        "families": "<strong>Families</strong>: Safe beaches with camel rides and water sports keep kids entertained.",
+        "couples": "<strong>Couples</strong>: Romantic sunsets at the Wind Farm Beach and royal palace vibes.",
+        "history_buffs": "<strong>History Buffs</strong>: The living heritage of the Dhow shipbuilding yard is fascinating.",
+        "relaxed_travelers": "<strong>Relaxed Travelers</strong>: Anyone looking to escape the desert heat and chill by the ocean."
+      },
+      "how_to_reach": {
+        "title": "How to Reach",
+        "air": "<strong>By Air</strong>: Nearest airport is Bhuj (60km). Taxis available from airport to Mandvi (1 hour).",
+        "train": "<strong>By Train</strong>: Bhuj Railway Station (BHUJ) is the nearest major station, well connected to Mumbai and Ahmedabad.",
+        "bus": "<strong>By Bus</strong>: Frequent GSRTC and private buses run from Bhuj (1 hour) and Gandhidham (1.5 hours).",
+        "road": "<strong>By Road</strong>: Excellent road connectivity from Bhuj. A scenic 1-hour drive through the countryside."
+      },
       "landmark_title": "Landmarks & Heritage",
+      "landmark_subtitle": "The defining monuments",
       "palace_title": "Vijay Vilas Palace",
-      "palace_desc": "(1-2 Hours) Visit in the afternoon",
+      "palace_desc": "(1-2 Hours) Visit in the afternoon (3 PM - 5 PM) to see the royal grandeur. Famous for 'Hum Dil De Chuke Sanam' shoot. Entry: ₹50. Phone cameras allowed.",
       "beach_title": "Mandvi Wind Farm Beach",
-      "beach_desc": "(Evening) The best sunset point",
+      "beach_desc": "(Evening) The best sunset point. Enjoy camel rides, horse rides, and street food. It gets crowded on weekends, so go a bit further down for peace.",
       "ship_title": "Shipbuilding Yard",
-      "ship_desc": "(30-45 Mins) Visit in the morning",
+      "ship_desc": "(30-45 Mins) Visit in the morning. Watch craftsmen build massive wooden ships by hand on the banks of Rukmavati River. Free to watch from the bridge.",
       "72_title": "72 Jinalaya",
-      "72_desc": "(45 Mins) A stunning Jain temple complex",
+      "72_desc": "(45 Mins) A stunning Jain temple complex 10km from town. Best visited on the way to/from Mundra. Peaceful and photogenic architecture.",
       "memorial_title": "Shyamji Krishna Varma Memorial",
-      "memorial_desc": "(1 Hour) Interactive museum dedicated to the freedom fighter",
+      "memorial_desc": "(1 Hour) Interactive museum dedicated to the freedom fighter. Great for history lovers. Closed on Thursdays.",
       "tips_title": "Curated Local Advice",
       "tip_timing_title": "Timing",
-      "tip_timing_desc": "Don't visit the beach at noon",
-      "when_title": "When to Visit",
-      "when_desc": "<strong>October to March (Winter):</strong> Best time",
+      "tip_timing_desc": "Don't visit the beach at noon (12-3 PM); it's too hot. Mornings and evenings are perfect.",
       "shopping_title": "Shopping & Bazaars",
+      "shopping": {
+        "main_market": "<strong>Main Market (Bazaar Road)</strong>: The heart of Mandvi's shopping. Find authentic Bandhani textiles, local handicrafts, and traditional Kutchi embroidery at lower prices than Bhuj.",
+        "ship_market": "<strong>Ship Building Area Market</strong>: Small shops selling nautical items, ship models, and maritime souvenirs. Unique to Mandvi's shipbuilding heritage.",
+        "beach_road": "<strong>Beach Road Stalls</strong>: Evening market near Wind Farm Beach selling local snacks, Dabeli, beachwear, and colorful kites.",
+        "textile_shops": "<strong>Textile Shops</strong>: Several family-run shops specializing in Bandhani and block-printed fabrics. Ask for factory-direct prices.",
+        "handicraft": "<strong>Handicraft Emporiums</strong>: Government-certified stores near the palace offering authentic Kutchi crafts with fixed prices."
+      },
       "eats_title": "Local Eats",
+      "eats": {
+        "dabeli": "<strong>Dabeli</strong>: Mandvi is the BIRTHPLACE of Dabeli. Try the authentic version which is less sweet and more spicy than elsewhere.",
+        "thali": "<strong>Kutchi Thali</strong>: Unlimited vegetarian meal. Try 'Rotla' (millet bread) with 'Olo' (roasted eggplant) at Osho Dining Hall.",
+        "gola": "<strong>Ice Gola</strong>: Enjoy dry-fruit and malai Gola (ice shaved dessert) at the beach in the evening. A perfect summer treat."
+      },
+      "when_title": "When to Visit",
+      "when_visit_desc": "<strong>October to March (Winter):</strong> Best time. Days are pleasant (20-30°C) and evenings are cool. Perfect for beach activities.<br><br><strong>April to June (Summer):</strong> Hot and humid. Day temps hit 35-40°C. Good for evening beach walks but avoid day sightseeing.<br><br><strong>July to September (Monsoon):</strong> Mandvi looks beautiful with green surroundings and dramatic clouds, but swimming is restricted due to rough seas.",
+      "nearby_title": "Nearby Places to Visit",
+      "nearby": {
+        "kashi_title": "Kashi Vishwanath Temple & Beach",
+        "kashi_desc": "5km - Serene secluded beach with Shiv temple nearby"
+      },
       "itinerary_title": "Suggested Itinerary"
     }
   }

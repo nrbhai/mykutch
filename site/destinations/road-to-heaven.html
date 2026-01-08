@@ -575,68 +575,23 @@
         </article>
     </main>
 
-    <footer class="footer-main"
-        style="background: linear-gradient(135deg, #1e3a8a 0%, #172554 100%); color: white; padding: 4rem 1rem; margin-top: 4rem; position: relative; overflow: hidden;">
-        <div class="footer-blob"
-            style="position: absolute; width: 500px; height: 500px; background: rgba(30, 58, 138, 0.4); border-radius: 50%; top: -100px; right: -100px; filter: blur(80px); z-index: 1;">
-        </div>
-        <div class="container"
-            style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 5; text-align: left;">
-            <div class="footer-grid"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; align-items: start;">
-
-                <!-- Bio / Brand -->
-                <div class="footer-brand">
-                    <img src="../assets/images/logo.png" alt="MyKutch Logo"
-                        style="height: 60px; margin-bottom: 1.5rem; filter: brightness(100); opacity: 0.9;">
-                    <p style="font-size: 0.95rem; opacity: 0.8; line-height: 1.6; margin-bottom: 1.5rem; color: #cbd5e1;"
-                        data-i18n="footer.bio"></p>
-                    <a href="mailto:contact@mykutch.org"
-                        style="color: #60a5fa; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(96, 165, 250, 0.3); padding-bottom: 2px;">contact@mykutch.org</a>
+                <footer class="footer-main" style="margin-top: 0; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 1.5rem 0 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <img src="../assets/images/logo.png" alt="MyKutch Logo" style="height: 165px; margin-bottom: 1rem; opacity: 0.9;">
+                <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;" data-i18n="footer.about_title"></h3>
+                <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="footer.about_text"></p>
+                <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                    <div style="font-size: 0.85rem;">
+                        <span style="opacity: 0.7; margin-right: 0.3rem;" data-i18n="footer.contact_label"></span>
+                        <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
+                    </div>
+                    <div style="font-size: 0.85rem;">
+                        <span style="opacity: 0.7; margin-right: 0.3rem;" data-i18n="footer.email_label"></span>
+                        <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
+                    </div>
                 </div>
-
-                <!-- Quick Links -->
-                <div class="footer-links">
-                    <h4
-                        style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 1.5rem; color: #f1f5f9;">
-                        Explore</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.8rem;"><a href="../index.html" class="footer-link"
-                                style="color: #cbd5e1; text-decoration: none; transition: 0.3s;"
-                                data-i18n="nav.home"></a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="../index.html#destinations" class="footer-link"
-                                style="color: #cbd5e1; text-decoration: none; transition: 0.3s;"
-                                data-i18n="nav.destinations"></a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="../hidden-gems.html" class="footer-link"
-                                style="color: #cbd5e1; text-decoration: none; transition: 0.3s;"
-                                data-i18n="nav.hidden_gems"></a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="../blog.html" class="footer-link"
-                                style="color: #cbd5e1; text-decoration: none; transition: 0.3s;"
-                                data-i18n="nav.blog"></a></li>
-                    </ul>
-                </div>
-
-                <!-- Legal / Credits -->
-                <div class="footer-legal">
-                    <h4
-                        style="font-family: var(--font-heading); font-size: 1.1rem; margin-bottom: 1.5rem; color: #f1f5f9;">
-                        Legal</h4>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 0.8rem;"><a href="#"
-                                style="color: #cbd5e1; text-decoration: none; opacity: 0.7;">Privacy Policy</a></li>
-                        <li style="margin-bottom: 0.8rem;"><a href="#"
-                                style="color: #cbd5e1; text-decoration: none; opacity: 0.7;">Terms of Use</a></li>
-                    </ul>
-                    <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.5;">&copy; 2026 MyKutch.org</p>
-                </div>
-            </div>
-
-            <!-- Developer Credit -->
-            <div class="footer-credit" style="margin-top: 4rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center;">
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; opacity: 0.7; font-size: 0.9rem;">
-                    <span>Created by</span>
-                    <strong style="color: #93c5fd; font-weight: 600;">Niraj</strong>
-                    <span style="font-size: 1.2rem;">👨‍💻</span>
+                <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
                     <p data-i18n="footer.dev_credit"></p>
                 </div>
             </div>
