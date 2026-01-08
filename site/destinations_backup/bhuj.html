@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuj — Cultural Heart of Kutch | Kutch Travel Guide</title>
+    <meta name="description"
+        content="Explore Bhuj — Cultural Heart of Kutch. Complete travel guide with attractions, itinerary, how to reach, and local tips.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WQBTM9EPH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5WQBTM9EPH');
+    </script>
+
+    <style>
+        /* Local custom styles removed in favor of global style.css */
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .section-header h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .lead-text {
+                font-size: 1rem;
+            }
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        /* Modern Card Design */
+        .attraction-card {
+            background: white;
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .attraction-img-wrapper {
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .attraction-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1.2s ease;
+        }
+
+        .attraction-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .attraction-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .attraction-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: #00d26a; /* Bright Green */
+            font-weight: 600;
+            line-height: 1.3;
+            border-bottom: 2px solid #FBC02D; /* Pale Yellow Underline */
+            display: inline-block;
+        }
+
+        .attraction-desc {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+            color: var(--color-text);
+        }
+
+        /* Itinerary Timeline */
+        .itinerary-box {
+            border-left: 2px solid #e2e8f0;
+            margin-left: 1rem;
+            padding: 0 0 2rem 2rem;
+            position: relative;
+            text-align: left;
+        }
+
+        .itinerary-box:last-child {
+            padding-bottom: 0;
+            border: none;
+            padding-left: 2.1rem;
+        }
+        
+        .itinerary-box p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #555;
+            margin: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px white;
+        }
+
+        .day-header {
+            font-family: var(--font-heading);
+            font-size: 1.15rem; /* Unified Subheading Size */
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Modern Editorial Note */
+        .editorial-note {
+            background-color: #f8fafc;
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            text-align: left; /* Align Left */
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .tip-item h4 {
+            font-size: 1.15rem; /* Unified Subheading Size */
+            margin-bottom: 0.5rem;
+            color: var(--color-heading);
+            font-weight: 600;
+        }
+
+        .tip-item p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .styled-list {
+            padding-left: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .styled-list li {
+            font-size: 0.95rem;
+            margin-bottom: 0.75rem;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .styled-list li strong {
+            color: #333;
+            border-bottom: 2px solid #E91E63; /* Attractive Rose/Pink Underline */
+            display: inline-block;
+            line-height: 1.2;
+            margin-right: 0.3rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            height: auto;
+            object-fit: cover;
+            border-radius: 0.75rem;
+            transition: opacity 0.3s;
+        }
+
+        /* Specific section header override if needed */
+        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
+            text-align: left !important;
+            align-items: flex-start !important;
+        }
+
+        .section-header {
+            margin-bottom: 2.5rem !important; /* Uniform Gap globally */
+            margin-top: 0 !important;
+        }
+        
+        /* Ensure paragraph under header aligns left too */
+        .section-header p {
+             text-align: left !important;
+             margin-left: 0 !important;
+             margin-top: 0.5rem !important;
+        }
+
+        .section-header h2, .heading-bright-blue {
+            font-size: 1.8rem !important;
+            background-color: #8B0000; /* Dark Red */
+            color: white !important;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 2px; /* Slight ease for rectangle */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 0 !important; /* Let container handle the big gap */
+            font-weight: 700 !important;
+        }
+        
+        /* Override any centering on body/main just in case (though unlikely) */
+        main {
+            text-align: left;
+        }
+
+        .shining-blue-text {
+            color: #007bff; /* Bright Blue */
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Shining Effect */
+            text-align: center;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .destination-hero::before {
+            background: none !important;
+            display: none !important;
+        }
+
+        .hero-text-bright {
+            color: #ffffff;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            .editorial-container {
+                padding: 0 1rem;
+            }
+
+            .editorial-note {
+                padding: 2rem 1.5rem;
+            }
+            
+            .grid-2 {
+                gap: 1.5rem;
+                padding-bottom: 1rem;
+            }
+
+            .shining-blue-text {
+                font-size: 1.4rem; /* Smaller for mobile */
+                margin-top: 1rem;
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-content">
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="MyKutch"
+                    class="nav-logo"></a>
+            <button class="mobile-toggle">☰</button>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#destinations">Destinations</a>
+                <a href="../hidden-gems.html">Hidden-Gems</a>
+                <a href="../blog.html">Blog</a>
+                <a href="../history.html">History</a>
+                <a href="../landscapes.html">Landscapes</a>
+                <a href="../bookings.html">Bookings</a>
+                <a href="../about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="destination-hero"
+        style="background-image: url('../assets/images/bhuj/bhuj1.webp'); justify-content: center; text-align: center;">
+        <div class="hero-content-inner reveal">
+        </div>
+    </header>
+
+    <div class="container reveal">
+         <h1 class="shining-blue-text">Bhuj — The Cultural Heart of Kutch</h1>
+    </div>
+
+    <main>
+        <article class="editorial-container">
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <p class="lead-text">
+                    Bhuj is the cultural and logistical heart of Kutch, serving as the perfect base for exploring the
+                    region. Blending 500 years of royal history with modern resilience, this city is a living museum of
+                    palaces, bazaars, and narrow winding streets. From here, you can launch expeditions to the White
+                    Rann, the northern craft villages, and the southern beaches. A typical visit requires 2 days to
+                    fully appreciate its museums, palaces, and the nearby artisan hubs of Bhujodi and <a
+                        href="../crafts/ajrakh.html">Ajrakhpur</a>.
+                </p>
+            </section>
+
+            <div class="grid-2 reveal" style="margin-top: 4rem;">
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">Who Should Visit</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>History Buffs</strong>: Explore the Aina Mahal and Prag Mahal to see Kutch's royal
+                            legacy.</li>
+                        <li><strong>Shoppers</strong>: The absolute best place to buy authentic Kutchi embroidery, <a
+                                href="../crafts/bandhani.html">bandhani</a>, and <a
+                                href="../crafts/leather-craft.html">leatherwork</a>.</li>
+                        <li><strong>Foodies</strong>: The streets of Bhuj offer the most authentic Dabeli, Pakwan, and
+                            Gujarati Thalis.</li>
+                        <li><strong>Culture Seekers</strong>: A central hub to visit nearby artisan villages like
+                            Bhujodi (8km) and Ajrakhpur (15km).</li>
+                    </ul>
+                </section>
+                <section class="guide-section">
+                    <div class="section-header">
+                        <h2 class="heading-bright-blue">How to Reach</h2>
+                    </div>
+                    <ul class="styled-list">
+                        <li><strong>By Air</strong>: Bhuj Airport (BHU) is just 4km from the city center. Daily flights
+                            from Mumbai and Ahmedabad.</li>
+                        <li><strong>By Train</strong>: Bhuj Railway Station is well-connected to Mumbai (Kutch Express),
+                            Ahmedabad, and Delhi (Ala Hazrat Exp).</li>
+                        <li><strong>By Bus</strong>: Excellent GSRTC and private luxury bus connectivity from Ahmedabad
+                            (7-8 hours) and Rajkot (5 hours).</li>
+                        <li><strong>Local Transport</strong>: Auto-rickshaws are the lifeline of Bhuj. Renting a
+                            bike/scooter is also a great option for solo travelers.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Landmarks & Heritage</h2>
+                    <p style="opacity: 0.6; margin-top: 0.5rem;">The defining monuments</p>
+                </div>
+                <div class="grid-2">
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/bhuj/bhuj1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Aina Mahal & Prag Mahal">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Aina Mahal & Prag Mahal</h3>
+                            <p class="attraction-desc">(2 Hours) Visit these adjacent palaces in the morning. Aina Mahal
+                                (Hall of Mirrors) is an architectural marvel. Entry: ₹20-50.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/bhuj/bhuj1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Kutch Museum">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Kutch Museum</h3>
+                            <p class="attraction-desc">(1 Hour) Gujarat's oldest museum. See the extinct Kutchi script
+                                and tribal artifacts. Closed Wednesdays.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/bhuj/bhuj1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Swaminarayan Temple">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Swaminarayan Temple</h3>
+                            <p class="attraction-desc">(45 Mins) A gleaming white marble temple. Best visited in the
+                                evening (5 PM - 7 PM) for the आरती (Aarti).</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/bhuj/bhuj1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Bhujodi (Weaver's Village)">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Bhujodi (Weaver's Village)</h3>
+                            <p class="attraction-desc">(2-3 Hours) Just 8km away. Meet national award-winning weavers
+                                and buy shawls directly from them. Visit Hiralaxmi Craft Park.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/bhuj/bhuj1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Smritivan Earthquake Memorial">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Smritivan Earthquake Memorial</h3>
+                            <p class="attraction-desc">(2-3 Hours) A world-class museum on Bhujia Hill dedicated to the
+                                2001 earthquake victims. Best at sunset for the view.</p>
+                        </div>
+                    </div>
+                    <div class="attraction-card">
+                        <div class="attraction-img-wrapper">
+                            <img src="../assets/images/bhuj/bhuj1.webp"
+                                onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'>Image</div>'"
+                                alt="Hamirsar Lake">
+                        </div>
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Hamirsar Lake</h3>
+                            <p class="attraction-desc">(Evening) The heart of Bhuj. Walk around the lake at sunset and
+                                enjoy street food.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="guide-section reveal">
+                <div class="editorial-note">
+                    <div class="section-header">
+                        <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">Curated Local Advice</h3>
+                    </div>
+                    <div class="tips-grid">
+                        <div class="tip-item">
+                            <h4>Siesta Time</h4>
+                            <p>Many shops in Bhuj close between 2:00 PM and 4:00 PM for afternoon nap. Plan shopping for
+                                evenings.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>Sundays</h4>
+                            <p>Aina Mahal is open, but the Kutch Museum is closed on Wednesdays.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>Traffic</h4>
+                            <p>The old city area near the palaces has very narrow lanes. Avoid taking large cars inside;
+                                park outside and walk or take an auto.</p>
+                        </div>
+                        <div class="tip-item">
+                            <h4>Booking</h4>
+                            <p>If visiting during Rann Utsav (Nov-Feb), book hotels 2 months in advance as prices
+                                triple.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="grid-2">
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">
+                                Shopping & Bazaars</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Shroff Bazaar</strong>: The heart of Bhuj's shopping scene. Famous for authentic
+                                <a href="../crafts/bandhani.html">Bandhani</a> sarees, dupattas, and traditional Kutchi
+                                embroidery. Best time: 5 PM - 9 PM.
+                            </li>
+                            <li><strong>Vaniyawad </strong>: Specialized in cloths and traditonal Kutchi handicrafts.
+                                Bargaining is expected and part of the experience.</li>
+                            <li><strong>Commerce College Road </strong>: This is a new bazar developed with all modern
+                                branded showrooms.</li>
+                            <li><strong>Anam Ring Road</strong>: Modern shopping area with clothing stores, footwear
+                                shops, and handicraft emporiums. Open till late evening.</li>
+                            <li><strong>Kansara Bazar </strong>: Basically Jewellery market with all kinds of Gold &
+                                Silver Jewellery available</li>
+                            <li><strong>Handicraft Emporiums</strong>: Government-run stores near Aina Mahal offering
+                                fixed-price authentic handicrafts with quality certification.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="section-header">
+                            <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">
+                                Local Eats</h3>
+                        </div>
+                        <ul class="styled-list">
+                            <li><strong>Kutchi Dabeli</strong>: Try the 'Double Roti' at Mandvi Dabalroti, near Bus
+                                Stand or Mohan's Dabeli on Hospital Road . It's the staple street food.</li>
+                            <li><strong>Pakwan</strong>:Pakwan is a dry salty round snack which resembles a small roll.
+                                Made with refined flour and oil, it has many folds and layers which are delightfully
+                                crunchy. The delicacy is also known as Kutchi pakwan, as it is believed to have
+                                originated in Kutch.</li>
+                            <li><strong>Puri Sak</strong>: If you want to taste local Best Puri Sak, visit Rajubhai near
+                                Bhanushalinagar or Chaubha near Vaniyavad Gate</li>
+                            <li><strong>Sweets</strong>: Don't miss 'Adadiya' (winter sweet), 'Mesuk' and 'Gulab Pak'.
+                                This are famous Kutchi Sweets</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="guide-section reveal" style="background: #fafafa; padding: 2rem; border-radius: 8px; margin-top: 4rem;">
+                <div class="section-header">
+                    <h3 class="heading-bright-blue" style="font-family: var(--font-heading);">When to Visit</h3>
+                </div>
+                <p><strong>November to February (Winter):</strong> Best season. Days are sunny (25°C) and nights cool
+                    (10°C). Perfect for Rann Utsav and sightseeing.<br><br><strong>March to June (Summer):</strong> Very
+                    hot (up to 42°C). Not recommended unless you can handle extreme dry heat.<br><br><strong>July to
+                        September (Monsoon):</strong> Green and scenic. Bhujia Hill looks beautiful, and Hamirsar Lake
+                    overflows (a lucky event!). Good for offbeat travel.</p>
+            </section>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Nearby Places to Visit</h2>
+                </div>
+                <div class="grid-2">
+                    <a href="kotay-surya-mandir.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Kotay Surya Mandir</h3>
+                            <p class="attraction-desc">22km - Ancient 10th century Sun temple ruins with
+                                archaeological significance</p>
+                        </div>
+                    </a>
+                    <a href="dhrang-mekan-dada.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Dhrang - Mekan Dada</h3>
+                            <p class="attraction-desc">25km - Sacred shrine and pilgrimage site</p>
+                        </div>
+                    </a>
+                    <a href="abjibapa-chatardi.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Abjibapa ni Chatardi Baladia</h3>
+                            <p class="attraction-desc">20km - Historical cenotaph and heritage site</p>
+                        </div>
+                    </a>
+                    <a href="rudramata-dam.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Rudramata Dam</h3>
+                            <p class="attraction-desc">15km - Scenic dam with water reservoir and peaceful
+                                surroundings</p>
+                        </div>
+                    </a>
+                    <a href="gangeshwar-mahadev.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Gangeshwar Mahadev</h3>
+                            <p class="attraction-desc">10km - Temple on hill with vast trekking opportunities and
+                                panoramic views</p>
+                        </div>
+                    </a>
+                    <a href="vande-mataram-memorial.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Vande Mataram Memorial</h3>
+                            <p class="attraction-desc">8km - Memorial at Bhujodi village commemorating freedom
+                                struggle</p>
+                        </div>
+                    </a>
+                    <a href="jadura.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Jadura</h3>
+                            <p class="attraction-desc">5km - Scenic sunset point with panoramic views</p>
+                        </div>
+                    </a>
+                    <a href="hanuman-tekri-kodki.html" class="attraction-card" style="text-decoration: none; color: inherit; height: auto;">
+                        <div class="attraction-content">
+                            <h3 class="attraction-title">Hanuman Tekri Kodki</h3>
+                            <p class="attraction-desc">10km - Hanuman temple and excellent sunset viewpoint</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="guide-section reveal" style="margin-top: 4rem;">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Suggested Itinerary</h2>
+                </div>
+                <div style="margin: 0; max-width: 800px;">
+                    <div class="itinerary-box">
+                        <div class="timeline-dot"></div>
+                        <span class="day-header">Day 1 Morning</span>
+                        <p>Start with Aina Mahal & Prag Mahal. Historic walk in Old Bhuj.</p>
+                    </div>
+                    <div class="itinerary-box">
+                        <div class="timeline-dot"></div>
+                        <span class="day-header">Day 1 Afternoon</span>
+                        <p>Lunch (Gujarati Thali). Visit Kutch Museum.</p>
+                    </div>
+                    <div class="itinerary-box">
+                        <div class="timeline-dot"></div>
+                        <span class="day-header">Day 1 Evening</span>
+                        <p>Sunset at Swaminarayan Temple followed by street food at Hamirsar Lake.</p>
+                    </div>
+                    <div class="itinerary-box">
+                        <div class="timeline-dot"></div>
+                        <span class="day-header">Day 2 Morning</span>
+                        <p>Trip to Bhujodi (8km) for textiles and Hiralaxmi Memorial Park.</p>
+                    </div>
+                    <div class="itinerary-box">
+                        <div class="timeline-dot"></div>
+                        <span class="day-header">Day 2 Afternoon</span>
+                        <p>Visit the Smritivan Earthquake Memorial on Bhujia Hill (Museum takes 2 hrs).</p>
+                    </div>
+                    <div class="itinerary-box">
+                        <div class="timeline-dot"></div>
+                        <span class="day-header">Day 2 Evening</span>
+                        <p>Shopping at Shroff Bazaar for Bandhani and handicrafts.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="guide-section reveal">
+                <div class="section-header">
+                    <h2 class="heading-bright-blue">Location & Gallery</h2>
+                </div>
+                <div
+                    style="height: 400px; border-radius: 4px; overflow: hidden; margin-bottom: 2rem; border: 1px solid #eee;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14767.123456789!2d69.6697!3d23.2420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950ec6e1e559f19%3A0x2e23b8365f3870e1!2sBhuj%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1234567890!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="gallery-grid">
+                    <img src="../assets/images/bhuj/bhuj1.webp" alt="Aina Mahal - Palace of Mirrors"><img
+                        src="../assets/images/bhuj/bhuj2.webp" alt="Prag Mahal - Italian Gothic Architecture"><img
+                        src="../assets/images/bhuj/bhuj3.webp" alt="Swaminarayan Temple"><img
+                        src="../assets/images/bhuj/bhuj4.webp" alt="Bhujodi Village Weaving"><img
+                        src="../assets/images/bhuj/bhuj5.webp" alt="Hamirsar Lake"><img
+                        src="../assets/images/bhuj/bhuj8.webp" alt="Traditional Bandhani Work">
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="footer-main" style="margin-top: 2rem; background: linear-gradient(135deg, #F8FAFC, #E0F2FE, #BAE6FD); color: var(--color-heading); padding: 2.5rem 0; border-top: 1px solid rgba(0,0,0,0.05);">
+    <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <img src="../assets/images/logo.png" alt="MyKutch Logo" style="height: 130px; margin-bottom: 1rem; opacity: 0.9;">
+            <h3 style="color: var(--color-heading); font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.1rem; letter-spacing: 0.05em;">About MyKutch.org</h3>
+            <p style="opacity: 0.8; line-height: 1.4; margin-bottom: 1rem; font-size: 0.9rem; max-width: 600px; margin-left: auto; margin-right: auto;">Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Contact:</span>
+                    <a href="tel:9825034580" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">+91 98250 34580</a>
+                </div>
+                <div style="font-size: 0.85rem;">
+                    <span style="opacity: 0.7; margin-right: 0.3rem;">Email:</span>
+                    <a href="mailto:info@mykutch.org" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">info@mykutch.org</a>
+                </div>
+            </div>
+            <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 1rem; font-size: 0.8rem; font-weight: 500; opacity: 0.6;">
+                <p>Developed with Love for Kutch by MyKutch.org team</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
