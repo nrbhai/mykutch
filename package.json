@@ -1,0 +1,12 @@
+{
+  "name": "mykutch",
+  "version": "1.0.0",
+  "description": "MyKutch Travel Website",
+  "scripts": {
+    "dev": "wrangler pages dev site",
+    "deploy": "wrangler pages deploy site"
+  },
+  "dependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
