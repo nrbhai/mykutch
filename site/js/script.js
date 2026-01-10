@@ -119,3 +119,17 @@ window.addEventListener('load', () => {
         }, 100); // small buffer to ensure visual smoothness
     }
 });
+
+// Hero Parallax Effect
+const heroImage = document.querySelector('.hero-image');
+if (heroImage) {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        // Only apply if hero is visible to save resources
+        if (scrolled < window.innerHeight) {
+            // Move image at half speed of scroll
+            const speed = 0.5;
+            heroImage.style.transform = `translateY(${scrolled * speed}px) scale(1.02)`;
+        }
+    });
+}

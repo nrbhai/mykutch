@@ -139,6 +139,7 @@
                 <a href="history.html" data-i18n="nav.history"></a>
                 <a href="geography.html" data-i18n="nav.geography">Geography</a>
                 <a href="crafts.html" data-i18n="nav.crafts">Crafts</a>
+                <a href="distance-matrix.html" style="color: var(--color-primary); font-weight: 600;">Distance Matrix</a>
                 <a href="landscapes.html" data-i18n="nav.landscapes"></a>
                 <a href="bookings.html" data-i18n="nav.bookings"></a>
                 <a href="about.html" data-i18n="nav.about"></a>
@@ -436,367 +437,358 @@
         </section>
 
         <section id="guide" class="section reveal"
-            style="background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);">
+            style="background: linear-gradient(180deg, #ffffff 0%, #fff7ed 100%);">
             <div class="container">
-                <!-- Compact Rectangular Travel Info Cards -->
-                <div class="travel-info-compact reveal">
-                    <!-- When to Visit Section -->
-                    <div class="info-section-header">
-                        <span class="info-icon">🗓️</span>
-                        <h3 data-i18n="home.guide.when_title"></h3>
-                    </div>
-                    <div class="season-cards-row">
-                        <div class="season-card season-best">
-                            <div class="season-badge" data-i18n="home.guide.when_best_badge"></div>
-                            <div class="season-months" data-i18n="home.guide.when_best_months"></div>
-                            <div class="season-title" data-i18n="home.guide.when_best_title"></div>
-                            <div class="season-temp">10-25°C</div>
-                            <div class="season-desc" data-i18n="home.guide.when_best_desc"></div>
+                <!-- Travel Essentials Dashboard -->
+                <div class="travel-dashboard reveal">
+                    <!-- Seasons Panel (Left) -->
+                    <div class="dashboard-panel">
+                        <div class="panel-header">
+                            <h3 data-i18n="home.guide.when_title"></h3>
+                            <span class="panel-icon">🗓️</span>
                         </div>
-                        <div class="season-card season-good">
-                            <div class="season-badge" data-i18n="home.guide.when_good_badge"></div>
-                            <div class="season-months" data-i18n="home.guide.when_good_months"></div>
-                            <div class="season-title" data-i18n="home.guide.when_good_title"></div>
-                            <div class="season-temp">25-35°C</div>
-                            <div class="season-desc" data-i18n="home.guide.when_good_desc"></div>
-                        </div>
-                        <div class="season-card season-avoid">
-                            <div class="season-badge" data-i18n="home.guide.when_avoid_badge"></div>
-                            <div class="season-months" data-i18n="home.guide.when_avoid_months"></div>
-                            <div class="season-title" data-i18n="home.guide.when_avoid_title"></div>
-                            <div class="season-temp">40-48°C</div>
-                            <div class="season-desc" data-i18n="home.guide.when_avoid_desc"></div>
+                        <div class="panel-body">
+                            <!-- Best Season -->
+                            <div class="season-row best">
+                                <div class="season-meta">
+                                    <span class="season-month" data-i18n="home.guide.when_best_months"></span>
+                                    <span class="status-badge status-best" data-i18n="home.guide.when_best_badge"></span>
+                                </div>
+                                <div class="season-info">
+                                    <h4 data-i18n="home.guide.when_best_title"></h4>
+                                    <p data-i18n="home.guide.when_best_desc"></p>
+                                    <div class="season-temp">10-25°C</div>
+                                </div>
+                            </div>
+                            <!-- Good Season -->
+                            <div class="season-row good">
+                                <div class="season-meta">
+                                    <span class="season-month" data-i18n="home.guide.when_good_months"></span>
+                                    <span class="status-badge status-good" data-i18n="home.guide.when_good_badge"></span>
+                                </div>
+                                <div class="season-info">
+                                    <h4 data-i18n="home.guide.when_good_title"></h4>
+                                    <p data-i18n="home.guide.when_good_desc"></p>
+                                    <div class="season-temp">25-35°C</div>
+                                </div>
+                            </div>
+                            <!-- Avoid Season -->
+                            <div class="season-row avoid">
+                                <div class="season-meta">
+                                    <span class="season-month" data-i18n="home.guide.when_avoid_months"></span>
+                                    <span class="status-badge status-avoid" data-i18n="home.guide.when_avoid_badge"></span>
+                                </div>
+                                <div class="season-info">
+                                    <h4 data-i18n="home.guide.when_avoid_title"></h4>
+                                    <p data-i18n="home.guide.when_avoid_desc"></p>
+                                    <div class="season-temp">40-48°C</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Getting There Section -->
-                    <div class="info-section-header" style="margin-top: 2rem;">
-                        <span class="info-icon">✈️</span>
-                        <h3 data-i18n="home.guide.transport_title"></h3>
+                    <!-- Transport Panel (Right) -->
+                    <div class="dashboard-panel">
+                        <div class="panel-header">
+                            <h3 data-i18n="home.guide.transport_title"></h3>
+                            <span class="panel-icon">✈️</span>
+                        </div>
+                        <div class="panel-body">
+                            <!-- By Air -->
+                            <div class="transport-row">
+                                <div class="transport-icon-box">✈️</div>
+                                <div class="transport-info">
+                                    <h4 data-i18n="home.guide.transport_air_mode"></h4>
+                                    <p class="highlight" data-i18n="home.guide.transport_air_detail"></p>
+                                    <span class="sub" data-i18n="home.guide.transport_air_sub"></span>
+                                </div>
+                            </div>
+                            <!-- By Train -->
+                            <div class="transport-row">
+                                <div class="transport-icon-box">🚂</div>
+                                <div class="transport-info">
+                                    <h4 data-i18n="home.guide.transport_train_mode"></h4>
+                                    <p class="highlight" data-i18n="home.guide.transport_train_detail"></p>
+                                    <span class="sub" data-i18n="home.guide.transport_train_sub"></span>
+                                </div>
+                            </div>
+                            <!-- By Road -->
+                            <div class="transport-row">
+                                <div class="transport-icon-box">🚗</div>
+                                <div class="transport-info">
+                                    <h4 data-i18n="home.guide.transport_road_mode"></h4>
+                                    <p class="highlight" data-i18n="home.guide.transport_road_detail"></p>
+                                    <span class="sub" data-i18n="home.guide.transport_road_sub"></span>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="transport-cards-row">
-                        <div class="transport-card">
-                            <div class="transport-icon">✈️</div>
-                            <div class="transport-mode" data-i18n="home.guide.transport_air_mode"></div>
-                            <div class="transport-detail" data-i18n="home.guide.transport_air_detail"></div>
-                            <div class="transport-sub" data-i18n="home.guide.transport_air_sub"></div>
+
+                    <!-- Travel Tips Panel (Full Width) -->
+                    <div class="dashboard-panel full-width">
+                        <div class="panel-header">
+                            <h3 data-i18n="home.guide.tips_title"></h3>
+                            <span class="panel-icon">💡</span>
                         </div>
-                        <div class="transport-card">
-                            <div class="transport-icon">🚂</div>
-                            <div class="transport-mode" data-i18n="home.guide.transport_train_mode"></div>
-                            <div class="transport-detail" data-i18n="home.guide.transport_train_detail"></div>
-                            <div class="transport-sub" data-i18n="home.guide.transport_train_sub"></div>
-                        </div>
-                        <div class="transport-card">
-                            <div class="transport-icon">🚗</div>
-                            <div class="transport-mode" data-i18n="home.guide.transport_road_mode"></div>
-                            <div class="transport-detail" data-i18n="home.guide.transport_road_detail"></div>
-                            <div class="transport-sub" data-i18n="home.guide.transport_road_sub"></div>
+                        <div class="tips-grid">
+                            <!-- Tip: Pack -->
+                            <div class="tip-item">
+                                <span class="tip-icon">🧥</span>
+                                <div class="tip-content">
+                                    <h4 data-i18n="home.guide.tip_pack_title"></h4>
+                                    <p data-i18n="home.guide.tip_pack_desc"></p>
+                                </div>
+                            </div>
+                            <!-- Tip: Water -->
+                            <div class="tip-item">
+                                <span class="tip-icon">💧</span>
+                                <div class="tip-content">
+                                    <h4 data-i18n="home.guide.tip_water_title"></h4>
+                                    <p data-i18n="home.guide.tip_water_desc"></p>
+                                </div>
+                            </div>
+                            <!-- Tip: Culture -->
+                            <div class="tip-item">
+                                <span class="tip-icon">🙏</span>
+                                <div class="tip-content">
+                                    <h4 data-i18n="home.guide.tip_culture_title"></h4>
+                                    <p data-i18n="home.guide.tip_culture_desc"></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <style>
-                    .travel-info-compact {
-                        max-width: 900px;
+                    /* Dashboard Layout */
+                    .travel-dashboard {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                        gap: 2rem;
+                        max-width: 1000px;
                         margin: 0 auto;
                     }
 
-                    .info-section-header {
+                    .dashboard-panel {
+                        background: #ffffff;
+                        border-radius: 1.5rem;
+                        padding: 2rem;
+                        box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+                        border: 1px solid rgba(0, 0, 0, 0.03);
+                        transition: transform 0.3s ease;
+                    }
+
+                    .dashboard-panel:hover {
+                        transform: translateY(-5px);
+                    }
+
+                    .panel-header {
                         display: flex;
+                        justify-content: space-between;
                         align-items: center;
-                        gap: 0.75rem;
-                        margin-bottom: 1rem;
+                        margin-bottom: 2rem;
+                        border-bottom: 2px solid #f8fafc;
+                        padding-bottom: 1rem;
                     }
 
-                    .info-section-header .info-icon {
-                        font-size: 1.5rem;
-                    }
-
-                    .info-section-header h3 {
+                    .panel-header h3 {
+                        margin: 0;
                         font-family: var(--font-heading);
                         font-size: 1.5rem;
                         font-weight: 700;
                         color: var(--color-heading);
-                        margin: 0;
                     }
 
-                    .season-cards-row,
-                    .transport-cards-row {
-                        display: grid;
-                        grid-template-columns: repeat(3, 1fr);
-                        gap: 1rem;
+                    .panel-icon {
+                        font-size: 1.5rem;
+                        background: #f8fafc;
+                        padding: 0.75rem;
+                        border-radius: 50%;
                     }
 
-                    .season-card {
-                        background: white;
-                        border-radius: 12px;
-                        padding: 1.25rem;
-                        text-align: center;
-                        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-                        border: 1px solid rgba(0, 0, 0, 0.05);
+                    /* Season Rows */
+                    .season-row {
+                        display: flex;
+                        gap: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        margin-bottom: 1.5rem;
+                        border-bottom: 1px solid #f1f5f9;
                         position: relative;
-                        transition: transform 0.2s ease, box-shadow 0.2s ease;
                     }
 
-                    .season-card:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+                    .season-row:last-child {
+                        border-bottom: none;
+                        margin-bottom: 0;
+                        padding-bottom: 0;
                     }
 
-                    .season-best {
-                        border-top: 4px solid #22c55e;
+                    .season-meta {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        min-width: 90px;
+                        gap: 0.5rem;
                     }
 
-                    .season-good {
-                        border-top: 4px solid #f59e0b;
-                    }
-
-                    .season-avoid {
-                        border-top: 4px solid #ef4444;
-                    }
-
-                    .season-badge {
-                        font-size: 0.65rem;
+                    .season-month {
+                        font-family: var(--font-heading);
                         font-weight: 700;
+                        font-size: 1rem;
+                        color: var(--color-heading);
+                    }
+
+                    .status-badge {
+                        font-size: 0.65rem;
+                        font-weight: 800;
+                        padding: 0.25rem 0.6rem;
+                        border-radius: 20px;
+                        text-transform: uppercase;
                         letter-spacing: 0.05em;
-                        padding: 0.2rem 0.5rem;
-                        border-radius: 4px;
-                        display: inline-block;
-                        margin-bottom: 0.5rem;
                     }
 
-                    .season-best .season-badge {
-                        background: #dcfce7;
-                        color: #166534;
+                    .status-best {
+                        background: #ecfccb;
+                        color: #3f6212;
                     }
 
-                    .season-good .season-badge {
-                        background: #fef3c7;
-                        color: #92400e;
+                    .status-good {
+                        background: #fff7ed;
+                        color: #9a3412;
                     }
 
-                    .season-avoid .season-badge {
-                        background: #fecaca;
+                    .status-avoid {
+                        background: #fef2f2;
                         color: #991b1b;
                     }
 
-                    .season-months {
-                        font-size: 1.1rem;
-                        font-weight: 700;
-                        color: var(--color-heading);
-                        margin-bottom: 0.25rem;
+                    .season-info h4 {
+                        margin: 0 0 0.25rem 0;
+                        font-size: 0.95rem;
+                        color: #1e293b;
                     }
 
-                    .season-title {
-                        font-size: 0.8rem;
+                    .season-info p {
+                        font-size: 0.85rem;
                         color: #64748b;
-                        margin-bottom: 0.5rem;
+                        margin: 0 0 0.5rem 0;
+                        line-height: 1.4;
                     }
 
                     .season-temp {
-                        font-size: 1.5rem;
+                        display: inline-block;
+                        font-size: 0.8rem;
                         font-weight: 600;
                         color: var(--color-primary);
-                        margin-bottom: 0.5rem;
+                        background: #fff7ed;
+                        padding: 0.15rem 0.6rem;
+                        border-radius: 4px;
                     }
 
-                    .season-desc {
-                        font-size: 0.75rem;
-                        color: #64748b;
-                        line-height: 1.4;
+                    /* Transport Rows */
+                    .transport-row {
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 1.25rem;
+                        margin-bottom: 1.5rem;
                     }
 
-                    .transport-card {
-                        background: white;
+                    .transport-row:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .transport-icon-box {
+                        font-size: 1.25rem;
+                        background: #f1f5f9;
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         border-radius: 12px;
-                        padding: 1.25rem;
-                        text-align: center;
-                        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-                        border: 1px solid rgba(0, 0, 0, 0.05);
-                        transition: transform 0.2s ease, box-shadow 0.2s ease;
+                        flex-shrink: 0;
                     }
 
-                    .transport-card:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-                    }
-
-                    .transport-icon {
-                        font-size: 2rem;
-                        margin-bottom: 0.5rem;
-                    }
-
-                    .transport-mode {
+                    .transport-info h4 {
+                        margin: 0;
                         font-size: 1rem;
                         font-weight: 700;
                         color: var(--color-heading);
-                        margin-bottom: 0.25rem;
                     }
 
-                    .transport-detail {
-                        font-size: 0.85rem;
+                    .transport-info .highlight {
+                        margin: 0.2rem 0;
                         font-weight: 600;
                         color: var(--color-primary);
-                        margin-bottom: 0.25rem;
+                        font-size: 0.9rem;
                     }
 
-                    .transport-sub {
-                        font-size: 0.75rem;
+                    .transport-info .sub {
+                        font-size: 0.8rem;
                         color: #64748b;
                     }
 
-                    @media (max-width: 768px) {
-
-                        .season-cards-row,
-                        .transport-cards-row {
+                    @media (max-width: 640px) {
+                        .travel-dashboard {
                             grid-template-columns: 1fr;
-                            gap: 0.75rem;
                         }
 
-                        .season-card,
-                        .transport-card {
-                            display: grid;
-                            grid-template-columns: auto 1fr;
-                            text-align: left;
-                            gap: 0.5rem 1rem;
-                            padding: 1rem;
+                        .season-row {
+                            gap: 1rem;
                         }
 
-                        .season-badge {
-                            grid-column: 1 / -1;
-                            justify-self: start;
+                        .season-meta {
+                            min-width: 70px;
                         }
 
-                        .season-months {
-                            font-size: 1rem;
-                        }
-
-                        .season-temp {
-                            font-size: 1.2rem;
-                            margin: 0;
-                        }
-
-                        .season-desc {
-                            grid-column: 1 / -1;
-                        }
-
-                        .transport-icon {
-                            font-size: 1.5rem;
-                            grid-row: span 2;
-                            align-self: center;
-                        }
-
-                        .transport-mode {
-                            align-self: end;
-                        }
-
-                        .transport-detail,
-                        .transport-sub {
-                            margin: 0;
+                        .tips-grid {
+                            grid-template-columns: 1fr;
                         }
                     }
-                </style>
-            </div>
-        </section>
 
+                    /* Utility for Full Width */
+                    .full-width {
+                        grid-column: 1 / -1;
+                        margin-top: 3rem;
+                    }
 
-
-        <!-- Travel Tips Section - Compact -->
-        <section class="section reveal" style="background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);">
-            <div class="container">
-                <div class="travel-info-compact">
-                    <div class="info-section-header" style="justify-content: center;">
-                        <span class="info-icon">💡</span>
-                        <h3 data-i18n="home.guide.tips_title"></h3>
-                    </div>
-                    <div class="tips-cards-row">
-                        <div class="tip-card">
-                            <div class="tip-icon">🧥</div>
-                            <div class="tip-title" data-i18n="home.guide.tip_pack_title"></div>
-                            <div class="tip-desc" data-i18n="home.guide.tip_pack_desc"></div>
-                        </div>
-                        <div class="tip-card">
-                            <div class="tip-icon">💧</div>
-                            <div class="tip-title" data-i18n="home.guide.tip_water_title"></div>
-                            <div class="tip-desc" data-i18n="home.guide.tip_water_desc"></div>
-                        </div>
-                        <div class="tip-card">
-                            <div class="tip-icon">🙏</div>
-                            <div class="tip-title" data-i18n="home.guide.tip_culture_title"></div>
-                            <div class="tip-desc" data-i18n="home.guide.tip_culture_desc"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <style>
-                    .tips-cards-row {
+                    /* Tips Grid */
+                    .tips-grid {
                         display: grid;
                         grid-template-columns: repeat(3, 1fr);
+                        gap: 1.5rem;
+                    }
+
+                    .tip-item {
+                        display: flex;
+                        align-items: flex-start;
                         gap: 1rem;
-                    }
-
-                    .tip-card {
-                        background: white;
-                        border-radius: 12px;
-                        padding: 1.25rem;
-                        text-align: center;
-                        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
-                        border: 1px solid rgba(0, 0, 0, 0.05);
-                        transition: transform 0.2s ease, box-shadow 0.2s ease;
-                    }
-
-                    .tip-card:hover {
-                        transform: translateY(-2px);
-                        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+                        background: #f8fafc;
+                        padding: 1rem 1.25rem;
+                        border-radius: 1rem;
                     }
 
                     .tip-icon {
-                        font-size: 2rem;
-                        margin-bottom: 0.5rem;
+                        font-size: 1.75rem;
+                        line-height: 1;
                     }
 
-                    .tip-title {
-                        font-size: 1rem;
-                        font-weight: 700;
+                    .tip-content h4 {
+                        margin: 0 0 0.25rem 0;
+                        font-size: 0.95rem;
                         color: var(--color-primary);
-                        margin-bottom: 0.35rem;
+                        font-weight: 700;
                     }
 
-                    .tip-desc {
-                        font-size: 0.75rem;
+                    .tip-content p {
+                        margin: 0;
+                        font-size: 0.8rem;
                         color: #64748b;
                         line-height: 1.4;
-                    }
-
-                    @media (max-width: 768px) {
-                        .tips-cards-row {
-                            grid-template-columns: 1fr;
-                            gap: 0.75rem;
-                        }
-
-                        .tip-card {
-                            display: flex;
-                            align-items: center;
-                            text-align: left;
-                            gap: 1rem;
-                            padding: 1rem;
-                        }
-
-                        .tip-icon {
-                            font-size: 1.5rem;
-                            margin: 0;
-                            flex-shrink: 0;
-                        }
-
-                        .tip-title {
-                            margin-bottom: 0.15rem;
-                        }
                     }
                 </style>
             </div>
         </section>
-
         <!-- Community & Map Section -->
         <section class="section">
             <div class="container">

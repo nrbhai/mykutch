@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
 :root {
     /* Color Palette - Refined Luxury Editorial (Light Mode) */
@@ -421,7 +421,7 @@ nav.scrolled .nav-logo {
 .hero {
     margin-top: 0;
     /* Overlay mode */
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -453,6 +453,7 @@ nav.scrolled .nav-logo {
     filter: brightness(1.1) contrast(1.05);
     transform: scale(1.02);
     /* Very slight zoom for a cleaner edge, adjust as needed */
+    will-change: transform;
 }
 
 .hero-content {
@@ -685,10 +686,10 @@ nav.scrolled .nav-logo {
     padding: 1.25rem 3rem;
     background: var(--color-heading);
     color: var(--color-white);
-    font-family: var(--font-heading);
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     transition: var(--transition-base);
     border: none;
@@ -703,11 +704,11 @@ nav.scrolled .nav-logo {
 }
 
 .btn-text {
-    font-family: var(--font-heading);
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 0.7rem;
+    font-size: 0.95rem;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.05em;
     color: var(--color-heading);
     position: relative;
     display: inline-flex;
@@ -882,7 +883,7 @@ nav.scrolled .nav-logo {
 .destination-hero {
     margin-top: 0;
     /* Overlay mode */
-    height: 85vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     position: relative;

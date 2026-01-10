@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutch Distance Matrix | Travel Planner & Distances from Bhuj</title>
+    <meta name="description" content="Complete distance chart for Kutch tourism. Find distances from Bhuj to White Rann, Dholavira, Mandvi, and 60+ other destinations. Plan your road trip accurately.">
+    <meta name="keywords" content="Kutch distance chart, Bhuj to White Rann distance, Kutch road trip planner, distances from Bhuj, Dholavira distance, Mandvi distance">
+    <link rel="canonical" href="https://www.mykutch.org/distance-matrix.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mykutch.org/distance-matrix.html">
+    <meta property="og:title" content="Kutch Distance Matrix | Travel Planner">
+    <meta property="og:description" content="Plan your Kutch trip with our comprehensive distance chart. 60+ destinations listed with distances from Bhuj.">
+    <meta property="og:image" content="https://www.mykutch.org/assets/images/hero.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.mykutch.org/distance-matrix.html">
+    <meta property="twitter:title" content="Kutch Distance Matrix | Travel Planner">
+    <meta property="twitter:description" content="Plan your Kutch trip with our comprehensive distance chart. 60+ destinations listed with distances from Bhuj.">
+    <meta property="twitter:image" content="https://www.mykutch.org/assets/images/hero.webp">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Kutch Tourist Places Distance Matrix",
+      "description": "A comprehensive list of distances from Bhuj to major tourist destinations in Kutch, Gujarat.",
+      "url": "https://www.mykutch.org/distance-matrix.html",
+      "creator": {
+        "@type": "Organization",
+        "name": "MyKutch.org"
+      },
+      "keywords": ["Kutch Tourism", "Distance Chart", "Bhuj Travel"],
+      "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .page-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-subtitle {
+            font-size: 1.1rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: -2rem auto 2rem;
+            position: relative;
+            z-index: 10;
+            padding: 0 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            font-size: 1rem;
+            font-family: var(--font-body);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.15);
+            border-color: var(--color-primary);
+        }
+
+        .table-container {
+            background: white;
+            border-radius: 1rem;
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 4rem;
+        }
+
+        .distance-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .distance-table th {
+            background: #f8fafc;
+            padding: 1rem;
+            font-weight: 600;
+            color: #475569;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #e2e8f0;
+            white-space: nowrap;
+        }
+        
+        .distance-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+            color: #334155;
+            vertical-align: middle;
+        }
+
+        .distance-table tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #e0f2fe;
+            color: #0369a1;
+        }
+        
+        /* Distances stand out */
+        .dist-cell {
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        /* Responsive Table */
+        .table-responsive {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        @media (max-width: 768px) {
+            .page-header {
+                padding: 6rem 0 3rem;
+            }
+            .page-title {
+                font-size: 2rem;
+            }
+            .distance-table th, .distance-table td {
+                padding: 0.75rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (Simplified for this page or copied from index) -->
+    <nav style="background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px);">
+        <div class="container nav-content">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="MyKutch" class="nav-logo" style="filter: brightness(0) invert(1);"></a>
+            <div class="nav-links">
+                <a href="index.html" style="color: white;">Home</a>
+                <a href="destinations.html" style="color: white;">Destinations</a>
+                <a href="hidden-gems.html" style="color: white;">Hidden Gems</a>
+                <a href="blog.html" style="color: white;">Blog</a>
+                <a href="distance-matrix.html" style="color: var(--color-primary); font-weight: 700;">Distance Matrix</a>
+                <a href="about.html" style="color: white;">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">Distance Matrix</h1>
+            <p class="page-subtitle">Find distances from Bhuj to popular destinations across Kutch.</p>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search by Place, Specialty or Location...">
+    </div>
+
+    <main class="container">
+        <div class="table-responsive table-container">
+            <table class="distance-table" id="matrixTable">
+                <thead>
+                    <tr>
+                        <th width="50">No.</th>
+                        <th>Place Name</th>
+                        <th>Specialty</th>
+                        <th>Distance (from Bhuj)</th>
+                        <th>Location / Via</th>
+                        <th>Contact</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Rows will be populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer-main">
+        <div class="container" style="text-align: center; padding: 2rem 0; opacity: 0.7;">
+            <p>&copy; 2026 MyKutch.org. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/distance_data.js"></script>
+    <script>
+        const tableBody = document.getElementById('tableBody');
+        const searchInput = document.getElementById('searchInput');
+
+        function renderTable(data) {
+            tableBody.innerHTML = '';
+            
+            if (data.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 2rem; color: #64748b;">No matching places found.</td></tr>';
+                return;
+            }
+
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                
+                // Format specialty as badge if needed, or just text
+                const specialtyHtml = `<span class="badge">${item.specialty}</span>`;
+
+                row.innerHTML = `
+                    <td>${item.sr}</td>
+                    <td style="font-weight: 600;">${item.place}</td>
+                    <td>${specialtyHtml}</td>
+                    <td class="dist-cell">${item.distance}</td>
+                    <td>${item.location || '-'}</td>
+                    <td style="font-family: 'Roboto', sans-serif;">${item.contact ? '<a href="tel:' + item.contact + '" style="color:inherit;text-decoration:none;">' + item.contact + '</a>' : '-'}</td>
+                    <td style="font-size: 0.85rem; color: #64748b;">${item.remarks || ''}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Initial Render
+        renderTable(distanceData);
+
+        // Search Function
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = distanceData.filter(item => {
+                return (
+                    item.place.toLowerCase().includes(searchTerm) ||
+                    item.specialty.toLowerCase().includes(searchTerm) ||
+                    item.location.toLowerCase().includes(searchTerm) ||
+                    item.remarks.toLowerCase().includes(searchTerm)
+                );
+            });
+            renderTable(filtered);
+        });
+    </script>
+</body>
+</html>
