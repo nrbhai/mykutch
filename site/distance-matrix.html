@@ -5,27 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kutch Distance Matrix | Travel Planner & Distances from Bhuj</title>
-    <meta name="description" content="Complete distance chart for Kutch tourism. Find distances from Bhuj to White Rann, Dholavira, Mandvi, and 60+ other destinations. Plan your road trip accurately.">
-    <meta name="keywords" content="Kutch distance chart, Bhuj to White Rann distance, Kutch road trip planner, distances from Bhuj, Dholavira distance, Mandvi distance">
+    <meta name="description"
+        content="Complete distance chart for Kutch tourism. Find distances from Bhuj to White Rann, Dholavira, Mandvi, and 60+ other destinations. Plan your road trip accurately.">
+    <meta name="keywords"
+        content="Kutch distance chart, Bhuj to White Rann distance, Kutch road trip planner, distances from Bhuj, Dholavira distance, Mandvi distance">
     <link rel="canonical" href="https://www.mykutch.org/distance-matrix.html">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mykutch.org/distance-matrix.html">
     <meta property="og:title" content="Kutch Distance Matrix | Travel Planner">
-    <meta property="og:description" content="Plan your Kutch trip with our comprehensive distance chart. 60+ destinations listed with distances from Bhuj.">
+    <meta property="og:description"
+        content="Plan your Kutch trip with our comprehensive distance chart. 60+ destinations listed with distances from Bhuj.">
     <meta property="og:image" content="https://www.mykutch.org/assets/images/hero.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.mykutch.org/distance-matrix.html">
     <meta property="twitter:title" content="Kutch Distance Matrix | Travel Planner">
-    <meta property="twitter:description" content="Plan your Kutch trip with our comprehensive distance chart. 60+ destinations listed with distances from Bhuj.">
+    <meta property="twitter:description"
+        content="Plan your Kutch trip with our comprehensive distance chart. 60+ destinations listed with distances from Bhuj.">
     <meta property="twitter:image" content="https://www.mykutch.org/assets/images/hero.webp">
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -46,9 +50,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    
+
     <style>
         .page-header {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -82,7 +88,7 @@
             width: 100%;
             padding: 1rem 1.5rem;
             border-radius: 50px;
-            border: 1px solid rgba(0,0,0,0.1);
+            border: 1px solid rgba(0, 0, 0, 0.1);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
             font-size: 1rem;
             font-family: var(--font-body);
@@ -119,7 +125,7 @@
             border-bottom: 1px solid #e2e8f0;
             white-space: nowrap;
         }
-        
+
         .distance-table td {
             padding: 1rem;
             border-bottom: 1px solid #f1f5f9;
@@ -141,7 +147,7 @@
             background: #e0f2fe;
             color: #0369a1;
         }
-        
+
         /* Distances stand out */
         .dist-cell {
             font-weight: 700;
@@ -158,10 +164,13 @@
             .page-header {
                 padding: 6rem 0 3rem;
             }
+
             .page-title {
                 font-size: 2rem;
             }
-            .distance-table th, .distance-table td {
+
+            .distance-table th,
+            .distance-table td {
                 padding: 0.75rem;
                 font-size: 0.85rem;
             }
@@ -173,13 +182,15 @@
     <!-- Navbar (Simplified for this page or copied from index) -->
     <nav style="background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px);">
         <div class="container nav-content">
-            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="MyKutch" class="nav-logo" style="filter: brightness(0) invert(1);"></a>
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="MyKutch" class="nav-logo"
+                    style="filter: brightness(0) invert(1);"></a>
             <div class="nav-links">
                 <a href="index.html" style="color: white;">Home</a>
                 <a href="destinations.html" style="color: white;">Destinations</a>
                 <a href="hidden-gems.html" style="color: white;">Hidden Gems</a>
                 <a href="blog.html" style="color: white;">Blog</a>
-                <a href="distance-matrix.html" style="color: var(--color-primary); font-weight: 700;">Distance Matrix</a>
+                <a href="distance-matrix.html" style="color: var(--color-primary); font-weight: 700;">Distance
+                    Matrix</a>
                 <a href="about.html" style="color: white;">About</a>
             </div>
         </div>
@@ -192,28 +203,39 @@
         </div>
     </header>
 
-    <div class="search-container">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search by Place, Specialty or Location...">
+    <div class="search-container glass-panel">
+        <div class="controls-bar">
+            <div class="search-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Search destinations...">
+            </div>
+
+            <div class="filters-wrapper">
+                <select id="categoryFilter" class="filter-select">
+                    <option value="">All Categories</option>
+                    <!-- Populated by JS -->
+                </select>
+
+                <select id="sortFilter" class="filter-select">
+                    <option value="default">Sort by: Default</option>
+                    <option value="dist-asc">Distance: Nearest First</option>
+                    <option value="dist-desc">Distance: Farthest First</option>
+                    <option value="name-asc">Name: A to Z</option>
+                </select>
+            </div>
+        </div>
     </div>
 
     <main class="container">
-        <div class="table-responsive table-container">
-            <table class="distance-table" id="matrixTable">
-                <thead>
-                    <tr>
-                        <th width="50">No.</th>
-                        <th>Place Name</th>
-                        <th>Specialty</th>
-                        <th>Distance (from Bhuj)</th>
-                        <th>Location / Via</th>
-                        <th>Contact</th>
-                        <th>Remarks</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <!-- Rows will be populated by JS -->
-                </tbody>
-            </table>
+        <div id="destinationsGrid" class="destinations-grid">
+            <!-- Cards will be populated by JS -->
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <div class="no-results-content">
+                <h3>No destinations found</h3>
+                <p>Try adjusting your search or filters.</p>
+            </div>
         </div>
     </main>
 
@@ -225,53 +247,167 @@
 
     <!-- Scripts -->
     <script src="js/distance_data.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
-        const tableBody = document.getElementById('tableBody');
+        const gridContainer = document.getElementById('destinationsGrid');
         const searchInput = document.getElementById('searchInput');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const sortFilter = document.getElementById('sortFilter');
+        const noResults = document.getElementById('noResults');
 
-        function renderTable(data) {
-            tableBody.innerHTML = '';
-            
-            if (data.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding: 2rem; color: #64748b;">No matching places found.</td></tr>';
-                return;
-            }
+        // Parse distance string to number for sorting
+        function parseDistance(distStr) {
+            if (!distStr) return 9999;
+            // Handle "Bhuj (Local)" or similar text as 0
+            if (distStr.toLowerCase().includes('bhuj') || distStr.toLowerCase().includes('local')) return 0;
 
-            data.forEach(item => {
-                const row = document.createElement('tr');
-                
-                // Format specialty as badge if needed, or just text
-                const specialtyHtml = `<span class="badge">${item.specialty}</span>`;
+            // Extract number
+            const match = distStr.match(/(\d+)/);
+            return match ? parseInt(match[1]) : 9999;
+        }
 
-                row.innerHTML = `
-                    <td>${item.sr}</td>
-                    <td style="font-weight: 600;">${item.place}</td>
-                    <td>${specialtyHtml}</td>
-                    <td class="dist-cell">${item.distance}</td>
-                    <td>${item.location || '-'}</td>
-                    <td style="font-family: 'Roboto', sans-serif;">${item.contact ? '<a href="tel:' + item.contact + '" style="color:inherit;text-decoration:none;">' + item.contact + '</a>' : '-'}</td>
-                    <td style="font-size: 0.85rem; color: #64748b;">${item.remarks || ''}</td>
-                `;
-                tableBody.appendChild(row);
+        // Get unique categories
+        function populateCategories() {
+            const categories = [...new Set(distanceData.map(item => item.specialty))].sort();
+            categories.forEach(cat => {
+                const option = document.createElement('option');
+                option.value = cat;
+                option.textContent = cat;
+                categoryFilter.appendChild(option);
             });
         }
 
-        // Initial Render
-        renderTable(distanceData);
+        function createCard(item) {
+            const distVal = parseDistance(item.distance);
+            const isNear = distVal < 20;
 
-        // Search Function
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filtered = distanceData.filter(item => {
-                return (
+            // Primary Action: Know More (if page exists) OR Get Directions
+            let actionButton = '';
+
+            if (item.page) {
+                actionButton = `
+                    <div class="card-actions" style="display:flex; gap:0.5rem;">
+                        <a href="${item.page}" class="btn-directions" style="flex:1; background:var(--color-heading); color:white;">
+                            <i class="fas fa-arrow-right"></i> Know More
+                        </a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.place + ' Kutch Gujarat')}" 
+                           target="_blank" 
+                           class="btn-directions" style="width: auto; padding: 0.8rem; flex:0;" title="Get Directions">
+                            <i class="fas fa-location-arrow"></i>
+                        </a>
+                    </div>
+                `;
+            } else {
+                actionButton = `
+                    <div class="card-actions">
+                         <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.place + ' Kutch Gujarat')}" 
+                           target="_blank" 
+                           class="btn-directions">
+                            <i class="fas fa-location-arrow"></i> Get Directions
+                        </a>
+                    </div>
+                `;
+            }
+
+            return `
+                <div class="distance-card fade-in">
+                    <div class="card-header">
+                        <span class="category-tag">${item.specialty}</span>
+                        <div class="distance-badge ${isNear ? 'near' : ''}">
+                            <i class="fas fa-road"></i>
+                            <span>${item.distance}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-body">
+                        <h3 class="place-name">${item.place}</h3>
+                        
+                        <div class="info-row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Via: ${item.location || 'Direct'}</span>
+                        </div>
+                        
+                        ${item.remarks ? `
+                        <div class="info-row remark">
+                            <i class="fas fa-info-circle"></i>
+                            <span>${item.remarks}</span>
+                        </div>
+                        ` : ''}
+                        
+                        ${item.contact ? `
+                        <div class="info-row contact">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:${item.contact}">${item.contact}</a>
+                        </div>
+                        ` : ''}
+                    </div>
+                    
+                    <div class="card-footer">
+                        ${actionButton}
+                    </div>
+                </div>
+            `;
+        }
+
+        function filterAndSortData() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const category = categoryFilter.value;
+            const sortMode = sortFilter.value;
+
+            // Filter
+            let filtered = distanceData.filter(item => {
+                const matchesSearch = (
                     item.place.toLowerCase().includes(searchTerm) ||
-                    item.specialty.toLowerCase().includes(searchTerm) ||
                     item.location.toLowerCase().includes(searchTerm) ||
                     item.remarks.toLowerCase().includes(searchTerm)
                 );
+                const matchesCategory = category === '' || item.specialty === category;
+                return matchesSearch && matchesCategory;
             });
-            renderTable(filtered);
-        });
+
+            // Sort
+            filtered.sort((a, b) => {
+                const distA = parseDistance(a.distance);
+                const distB = parseDistance(b.distance);
+
+                switch (sortMode) {
+                    case 'dist-asc':
+                        return distA - distB;
+                    case 'dist-desc':
+                        return distB - distA;
+                    case 'name-asc':
+                        return a.place.localeCompare(b.place);
+                    default:
+                        return a.sr - b.sr;
+                }
+            });
+
+            renderGrid(filtered);
+        }
+
+        function renderGrid(data) {
+            gridContainer.innerHTML = '';
+
+            if (data.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            data.forEach(item => {
+                gridContainer.innerHTML += createCard(item);
+            });
+        }
+
+        // Event Listeners
+        searchInput.addEventListener('input', filterAndSortData);
+        categoryFilter.addEventListener('change', filterAndSortData);
+        sortFilter.addEventListener('change', filterAndSortData);
+
+        // Initialize
+        populateCategories();
+        renderGrid(distanceData);
     </script>
 </body>
+
 </html>
