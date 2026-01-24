@@ -401,6 +401,76 @@
             transform: scale(1.02);
             filter: brightness(1.1);
         }
+
+        .nearby-highlight {
+            margin-top: 4rem;
+            padding: 2.5rem;
+            border-radius: 1.25rem;
+            background: linear-gradient(135deg, rgba(0, 210, 106, 0.08), rgba(2, 136, 209, 0.10));
+            border: 1px solid rgba(2, 136, 209, 0.15);
+            box-shadow: 0 16px 40px rgba(2, 136, 209, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nearby-highlight::after {
+            content: "";
+            position: absolute;
+            top: -80px;
+            right: -80px;
+            width: 220px;
+            height: 220px;
+            background: radial-gradient(circle, rgba(0, 210, 106, 0.18), rgba(0, 210, 106, 0));
+            pointer-events: none;
+        }
+
+        .nearby-highlight .section-header h2,
+        .nearby-highlight .heading-bright-blue {
+            background: linear-gradient(90deg, #0b4f6c, #00a8e8) !important;
+            color: #ffffff !important;
+            border-left: 6px solid #00d26a;
+        }
+
+        .nearby-highlight .attraction-card {
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .nearby-highlight .attraction-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+        }
+
+        .nearby-highlight .attraction-title {
+            color: #0b4f6c;
+            border-bottom-color: #00d26a;
+        }
+
+        .nearby-highlight .attraction-desc {
+            color: #3b4a5a;
+            opacity: 0.95;
+        }
+
+        .nearby-highlight .btn-text {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.4rem 0.9rem;
+            border-radius: 999px;
+            background: #00d26a;
+            color: #ffffff !important;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            box-shadow: 0 8px 18px rgba(0, 210, 106, 0.25);
+        }
+
+        .nearby-highlight .btn-text:after {
+            display: none;
+        }
+
+        .nearby-highlight .btn-text::after {
+            content: "→";
+            font-size: 0.9rem;
+        }
     </style>
 <string text="
     "></string><meta content="index, follow" name="robots"/><string text="
@@ -664,7 +734,7 @@
 </div>
 <p data-i18n="bhuj.sections.when_to_visit.desc"></p>
 </section>
-<section class="guide-section reveal">
+<section class="guide-section reveal nearby-highlight">
 <div class="section-header">
 <h2 class="heading-bright-blue" data-i18n="bhuj.sections.nearby.title"></h2>
 </div>
