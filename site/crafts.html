@@ -16,16 +16,16 @@
 <meta content="https://mykutch.org/crafts.html" property="og:url"/>
 <meta content="Kutch Crafts | Traditional Handicrafts &amp; Artisan Villages" property="og:title"/>
 <meta content="Discover the famous handicrafts of Kutch - Bandhani, Ajrakh, embroidery, and leather work. Visit artisan villages and learn about traditional crafts." property="og:description"/>
-<meta content="https://mykutch.org/assets/images/logo.png" property="og:image"/>
+<meta content="https://mykutch.org/crafts/hero-craft.webp" property="og:image"/>
 <meta content="MyKutch.org" property="og:site_name"/>
 <!-- Twitter -->
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Kutch Crafts | Traditional Handicrafts &amp; Artisan Villages" name="twitter:title"/>
 <meta content="Discover the famous handicrafts of Kutch - Bandhani, Ajrakh, embroidery, and leather work." name="twitter:description"/>
-<meta content="https://mykutch.org/assets/images/logo.png" name="twitter:image"/>
+<meta content="https://mykutch.org/crafts/hero-craft.webp" name="twitter:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Playfair+Display:wght@600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
 <!-- Google tag (gtag.js) -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5WQBTM9EPH"></script>
@@ -35,7 +35,52 @@
         gtag('js', new Date());
         gtag('config', 'G-5WQBTM9EPH');
     </script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Kutch Arts & Crafts",
+      "description": "Explore the vibrant arts and crafts of Kutch, from Ajrakh and Bandhani to Rogan art and Lippan work.",
+      "url": "https://mykutch.org/crafts.html",
+      "image": "https://mykutch.org/crafts/hero-craft.webp",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Ajrakh", "url": "https://mykutch.org/crafts/ajrakh.html" },
+          { "@type": "ListItem", "position": 2, "name": "Bandhani", "url": "https://mykutch.org/crafts/bandhani.html" },
+          { "@type": "ListItem", "position": 3, "name": "Weaving", "url": "https://mykutch.org/crafts/weaving.html" },
+          { "@type": "ListItem", "position": 4, "name": "Rogan Art", "url": "https://mykutch.org/crafts/rogan-art.html" },
+          { "@type": "ListItem", "position": 5, "name": "Leather Craft", "url": "https://mykutch.org/crafts/leather-craft.html" },
+          { "@type": "ListItem", "position": 6, "name": "Pottery", "url": "https://mykutch.org/crafts/pottery.html" },
+          { "@type": "ListItem", "position": 7, "name": "Mirror Work", "url": "https://mykutch.org/crafts/mirror-work.html" },
+          { "@type": "ListItem", "position": 8, "name": "Sudi Chappu", "url": "https://mykutch.org/crafts/sudi-chappu.html" }
+        ]
+      }
+    }
+    </script>
 <style>
+        body {
+            font-family: 'Manrope', 'Inter', sans-serif;
+            background: radial-gradient(circle at top, rgba(255, 255, 255, 0.8), rgba(248, 250, 252, 0.9)), #f8fafc;
+        }
+
+        .destination-hero {
+            position: relative;
+            min-height: 55vh;
+        }
+
+        .destination-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10, 10, 35, 0.2), rgba(10, 10, 35, 0.5));
+        }
+
+        .hero-content-inner {
+            position: relative;
+            z-index: 1;
+        }
+
         .grid-2 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -102,13 +147,13 @@
         }
 
         .attraction-title {
-            font-family: var(--font-heading);
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-            color: #00d26a;
-            font-weight: 600;
+            font-family: 'Playfair Display', var(--font-heading);
+            font-size: 1.35rem;
+            margin-bottom: 0.6rem;
+            color: #1d4ed8;
+            font-weight: 700;
             line-height: 1.3;
-            border-bottom: 2px solid #FBC02D;
+            border-bottom: 2px solid #f97316;
             display: inline-block;
         }
 
@@ -136,29 +181,38 @@
         }
 
         .section-header h2, .heading-bright-blue {
-            font-size: 1.8rem !important;
-            background-color: #8B0000;
-            color: white !important;
-            padding: 0.5rem 1.5rem;
+            font-size: 1.85rem !important;
+            background: #ffffff;
+            color: #0f172a !important;
+            -webkit-text-fill-color: #0f172a;
+            background-clip: border-box;
+            -webkit-background-clip: border-box;
+            padding: 0.55rem 1.6rem;
             display: inline-block;
-            border-radius: 2px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
             margin-bottom: 0 !important;
-            font-weight: 700 !important;
+            font-weight: 800 !important;
+            letter-spacing: 0.02em;
+            text-shadow: none;
+            border: 2px solid rgba(249, 115, 22, 0.6);
         }
 
         .shining-blue-text {
-            color: #007bff;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 2.5rem;
-            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            text-transform: none;
+            letter-spacing: 0.02em;
+            font-size: 2.75rem;
             text-align: center;
-            margin-top: 1.5rem;
+            margin-top: 1.8rem;
             margin-bottom: 0;
             display: block;
-            line-height: 1.2;
+            line-height: 1.15;
+            background: linear-gradient(135deg, #2563eb, #9333ea, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
 
         .destination-hero::before {
@@ -168,18 +222,19 @@
 
         .lead-text {
             font-size: 1.1rem;
-            line-height: 1.8;
-            color: #444;
+            line-height: 1.9;
+            color: #0f172a;
             max-width: 900px;
         }
 
         .editorial-note {
-            background-color: #f8fafc;
+            background-color: #fff7ed;
             border-radius: 1.5rem;
             padding: 2.5rem;
             margin: 2rem 0;
             text-align: left;
-            border: 1px solid rgba(0,0,0,0.03);
+            border: 1px solid rgba(249, 115, 22, 0.2);
+            box-shadow: 0 12px 24px rgba(249, 115, 22, 0.12);
         }
 
         .styled-list {
@@ -251,22 +306,21 @@
 </div>
 </div>
 </nav>
-<header class="destination-hero" style="background-image: url('assets/images/crafts/ajrakh/ajrakh2.webp'); justify-content: center; text-align: center;">
+<header class="destination-hero" style="background-image: url('crafts/hero-craft.webp'); justify-content: center; text-align: center;">
 <div class="hero-content-inner reveal">
 </div>
 </header>
 <div class="container reveal">
-<h1 class="shining-blue-text" data-i18n="crafts_page.hero_title">Arts &amp; Crafts of Kutch — Living Heritage</h1>
+<h1 class="shining-blue-text" data-i18n="crafts_page.hero_title">Kutch Crafts: Color, Culture &amp; Craftsmanship</h1>
 </div>
 <main role="main">
 <article class="editorial-container">
 <section class="guide-section reveal" style="margin-top: 4rem;">
 <p class="lead-text" data-i18n="crafts_page.intro">
-                    Kutch is a living museum of textile and craft art, renowned worldwide for its rich diversity of handicrafts. 
-                    Each community has its own distinct tradition, passed down through generations. From the intricate 
-                    tie-dye patterns of Bandhani to the geometric precision of Ajrakh block printing, from the rare Rogan 
-                    art practiced by a single family to the vibrant embroidery of Rabari women — these crafts tell the 
-                    story of a resilient culture that has thrived in one of India's harshest landscapes.
+                    Kutch is a living museum of color and craft. Every village keeps a unique tradition alive — from the
+                    hypnotic geometry of Ajrakh to the delicate knots of Bandhani, from rare Rogan painting to the bold
+                    embroidery of Rabari artisans. These handmade forms carry stories of resilience, identity, and beauty
+                    shaped across generations in Gujarat's most dramatic landscape.
                 </p>
 </section>
 <!-- Textile Crafts -->
@@ -385,15 +439,15 @@
 <div class="editorial-note">
 <div class="grid-2" style="gap: 2rem;">
 <div>
-<h4 data-i18n="crafts_page.sections.villages.items.bhujodi.title" style="color: #00d26a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #FBC02D; display: inline-block;">🎨 Bhujodi</h4>
+<h4 data-i18n="crafts_page.sections.villages.items.bhujodi.title" style="color: #0f172a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #f97316; display: inline-block;">🎨 Bhujodi</h4>
 <p data-i18n="crafts_page.sections.villages.items.bhujodi.desc" style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Just 8km from Bhuj, this village is the weaving hub of Kutch. Watch artisans at their looms and shop directly from workshops.</p>
-<h4 data-i18n="crafts_page.sections.villages.items.ajrakhpur.title" style="color: #00d26a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #FBC02D; display: inline-block;">🖌️ Ajrakhpur</h4>
+<h4 data-i18n="crafts_page.sections.villages.items.ajrakhpur.title" style="color: #0f172a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #f97316; display: inline-block;">🖌️ Ajrakhpur</h4>
 <p data-i18n="crafts_page.sections.villages.items.ajrakhpur.desc" style="color: #555; font-size: 0.95rem; line-height: 1.6;">Home to the renowned Ismail Khatri family. Witness the 17-step Ajrakh printing process using 100% natural dyes.</p>
 </div>
 <div>
-<h4 data-i18n="crafts_page.sections.villages.items.nirona.title" style="color: #00d26a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #FBC02D; display: inline-block;">✨ Nirona</h4>
+<h4 data-i18n="crafts_page.sections.villages.items.nirona.title" style="color: #0f172a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #f97316; display: inline-block;">✨ Nirona</h4>
 <p data-i18n="crafts_page.sections.villages.items.nirona.desc" style="color: #555; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">The only village in the world where Rogan art is practiced. Visit the Khatri family's workshop to see this rare art.</p>
-<h4 data-i18n="crafts_page.sections.villages.items.khavda.title" style="color: #00d26a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #FBC02D; display: inline-block;">🏺 Khavda</h4>
+<h4 data-i18n="crafts_page.sections.villages.items.khavda.title" style="color: #0f172a; margin-bottom: 0.5rem; font-size: 1.15rem; border-bottom: 2px solid #f97316; display: inline-block;">🏺 Khavda</h4>
 <p data-i18n="crafts_page.sections.villages.items.khavda.desc" style="color: #555; font-size: 0.95rem; line-height: 1.6;">Northern gateway to the Rann, known for distinctive pottery. Also the starting point for the White Rann.</p>
 </div>
 </div>

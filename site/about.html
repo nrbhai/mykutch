@@ -156,37 +156,104 @@
             text-decoration: none;
             color: inherit
         }
+
+        .about-hero {
+            min-height: 55vh;
+        }
+
+        .about-hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.35));
+            pointer-events: none;
+        }
+
+        .about-intro {
+            margin: -3.5rem auto 3rem;
+            padding: 0 1rem;
+        }
+
+        .about-intro .intro-card {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.25rem 2rem;
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+            text-align: center;
+        }
+
+        .about-intro .intro-card h1 {
+            font-family: var(--font-heading);
+            font-size: 2.4rem;
+            margin: 0 0 1rem;
+            color: var(--color-heading);
+        }
+
+        .about-intro .intro-card p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #334155;
+            margin: 0 auto;
+            max-width: 720px;
+        }
+
+        @media (max-width: 900px) {
+            .about-hero {
+                min-height: 40vh;
+            }
+
+            .about-intro {
+                margin-top: -2.5rem;
+            }
+
+            .about-intro .intro-card {
+                padding: 1.75rem 1.5rem;
+            }
+
+            .about-intro .intro-card h1 {
+                font-size: 1.9rem;
+            }
+        }
     </style>
 </head>
 <body>
+<div class="dev-banner">Website Under Development</div>
+<!-- Dark Mode Toggle -->
+<button aria-label="Toggle dark mode" class="dark-mode-toggle" id="darkModeToggle">
+<span id="darkModeIcon">🌙</span>
+</button>
 <nav aria-label="Main navigation" role="navigation">
 <div class="container nav-content">
-<a aria-label="MyKutch Home" class="logo" href="index.html"><img alt="MyKutch" class="nav-logo" src="assets/images/logo.png"/></a>
+<a aria-label="MyKutch Home" class="logo" href="index.html"><img alt="MyKutch Travel Guide Logo" class="nav-logo" src="assets/images/logo.png"/></a>
 <button aria-label="Toggle navigation menu" class="mobile-toggle">☰</button>
 <div class="nav-links">
-<a data-i18n="nav.home" href="index.html">Home</a>
-<a data-i18n="nav.destinations" href="destinations.html">Destinations</a>
-<a data-i18n="nav.hidden_gems" href="hidden-gems.html">Hidden Gems</a>
-<a data-i18n="nav.blog" href="blog.html">Blog</a>
-<a data-i18n="nav.history" href="history.html">History</a>
+<a data-i18n="nav.home" href="index.html"></a>
+<a data-i18n="nav.destinations" href="#destinations"></a>
+<a data-i18n="nav.hidden_gems" href="hidden-gems.html"></a>
+<a data-i18n="nav.blog" href="blog.html"></a>
+<a data-i18n="nav.history" href="history.html"></a>
 <a data-i18n="nav.geography" href="geography.html">Geography</a>
 <a data-i18n="nav.crafts" href="crafts.html">Crafts</a>
-<a data-i18n="nav.landscapes" href="landscapes.html">Landscapes</a>
-<a data-i18n="nav.bookings" href="bookings.html">Bookings</a>
-<a data-i18n="nav.about" href="about.html">About</a>
+<a href="distance-matrix.html" style="color: var(--color-primary); font-weight: 600;">Distance Matrix</a>
+<a data-i18n="nav.landscapes" href="landscapes.html"></a>
+<a data-i18n="nav.bookings" href="bookings.html"></a>
+<a data-i18n="nav.about" href="about.html"></a>
 </div>
 </div>
 </nav>
-<header class="hero" style="background-image: url('assets/images/hero-about.webp'); background-size: cover; background-position: center; position: relative;">
-    <div class="hero-content reveal">
-        <h1 class="hero-title" data-i18n="about.title" style="font-family:var(--font-heading);font-size:2.5rem;margin-bottom:1.5rem;">About MyKutch</h1>
-        <p class="hero-desc" data-i18n="about.intro" style="font-size: 1.1rem; line-height: 1.8; color: #fff; margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto; text-shadow: 0 2px 8px rgba(0,0,0,0.25);">
-            We are a community-rooted travel and storytelling project focused on Kutch. We design
-            low-impact journeys, support artisans, and publish stories that preserve and share local knowledge.
-            Our mission is to celebrate everyday culture  from mud homes and crafts to salt flats and festivals.
-        </p>
-    </div>
-</header>
+<header class="hero about-hero" style="background-image: url('assets/images/hero-about.webp'); background-size: cover; background-position: center; position: relative;" aria-label="About MyKutch hero image"></header>
+<section class="about-intro">
+<div class="intro-card reveal">
+<h1 class="shining-blue-text" data-i18n="about.title">About MyKutch</h1>
+<p data-i18n="about.intro">
+We are a community-rooted travel and storytelling project focused on Kutch. We design
+low-impact journeys, support artisans, and publish stories that preserve and share local knowledge.
+Our mission is to celebrate everyday culture  from mud homes and crafts to salt flats and festivals.
+</p>
+</div>
+</section>
 <main class="container" role="main" style="max-width: 900px; margin: 3rem auto; text-align: center; padding: 0 1rem;">
 <div style="margin-bottom: 4rem;">
 <h2 class="heading-bright-blue" data-i18n="about.team.title" style="font-size: 2rem; margin-bottom: 2rem;">The Team</h2>
