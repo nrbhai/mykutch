@@ -37,7 +37,7 @@
         gtag('config', 'G-5WQBTM9EPH');
     </script>
 <!-- Preload Hero Image -->
-<link as="image" href="assets/images/dhordo-white-rann/dhordo-main.webp" rel="preload"/>
+<link as="image" href="assets/images/kutch-map.webp" rel="preload"/>
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -68,260 +68,9 @@
     ]
 }
 </script>
-<style>
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-            text-align: left;
-        }
-
-
-        .attraction-card {
-            background: white;
-            border: none;
-            border-radius: 1rem;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            text-align: left;
-        }
-
-        .attraction-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-        }
-
-        .attraction-img-wrapper {
-            overflow: hidden;
-            aspect-ratio: 4/3;
-        }
-
-        .attraction-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 1.2s ease;
-        }
-
-        .attraction-card:hover img {
-            transform: scale(1.05);
-        }
-
-        .attraction-content {
-            padding: 1.5rem;
-            flex-grow: 1;
-        }
-
-        .attraction-title {
-            font-family: var(--font-heading);
-            font-size: 1.15rem;
-            margin-bottom: 0.5rem;
-            color: #00d26a;
-            font-weight: 600;
-            line-height: 1.3;
-            border-bottom: 2px solid #FBC02D;
-            display: inline-block;
-        }
-
-        .attraction-desc {
-            font-size: 0.95rem;
-            opacity: 0.8;
-            line-height: 1.6;
-            color: var(--color-text);
-        }
-
-        .guide-section, .editorial-container, .section-header, .section-header h2, .heading-bright-blue {
-            text-align: left !important;
-            align-items: flex-start !important;
-        }
-
-        .section-header {
-            margin-bottom: 2.5rem !important;
-            margin-top: 0 !important;
-        }
-
-        .section-header p {
-            text-align: left !important;
-            margin-left: 0 !important;
-            margin-top: 0.5rem !important;
-        }
-
-        .section-header h2, .heading-bright-blue {
-            font-size: 1.8rem !important;
-            background-color: #8B0000;
-            color: white !important;
-            padding: 0.5rem 1.5rem;
-            display: inline-block;
-            border-radius: 2px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 0 !important;
-            font-weight: 700 !important;
-        }
-
-        .shining-blue-text {
-            color: #007bff;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 2.5rem;
-            text-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-            text-align: center;
-            margin-top: 1.5rem;
-            margin-bottom: 0;
-            display: block;
-            line-height: 1.2;
-        }
-
-        .destination-hero::before {
-            background: none !important;
-            display: none !important;
-        }
-
-        .lead-text {
-            font-size: 1.1rem;
-            line-height: 1.8;
-            color: #444;
-            max-width: 900px;
-        }
-
-        .styled-list {
-            padding-left: 1.2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .styled-list li {
-            font-size: 0.95rem;
-            margin-bottom: 0.75rem;
-            color: #444;
-            line-height: 1.6;
-        }
-
-        .styled-list li strong {
-            color: #333;
-            border-bottom: 2px solid #E91E63;
-            display: inline-block;
-            line-height: 1.2;
-            margin-right: 0.3rem;
-        }
-
-        .editorial-note {
-            background-color: #f8fafc;
-            border-radius: 1.5rem;
-            padding: 2.5rem;
-            margin: 2rem 0;
-            text-align: left;
-            border: 1px solid rgba(0,0,0,0.03);
-        }
-
-        .tips-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: left;
-        }
-
-        .tip-item h4 {
-            font-size: 1.15rem;
-            margin-bottom: 0.5rem;
-            color: var(--color-heading);
-            font-weight: 600;
-        }
-
-        .tip-item p {
-            font-size: 0.95rem;
-            color: #555;
-            line-height: 1.6;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .stat-box {
-            background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
-            padding: 1rem 0.5rem;
-            border-radius: 0.75rem;
-            text-align: center;
-            border: 1px solid rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .stat-number {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #007bff;
-            font-family: var(--font-heading);
-            line-height: 1.2;
-        }
-
-        .stat-label {
-            font-size: 0.75rem;
-            color: #555;
-            margin-top: 0.3rem;
-            line-height: 1.3;
-        }
-
-        main {
-            text-align: left;
-        }
-
-        @media (max-width: 768px) {
-            .editorial-container {
-                padding: 0 1rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .grid-2[style*="repeat(3"] {
-                grid-template-columns: 1fr !important;
-            }
-
-            .editorial-note {
-                padding: 2rem 1.5rem;
-            }
-
-            .grid-2 {
-                gap: 1.5rem;
-                padding-bottom: 1rem;
-            }
-
-            .shining-blue-text {
-                font-size: 1.4rem;
-                margin-top: 1rem;
-                padding: 0 1rem;
-            }
-
-            .section-header h2, .heading-bright-blue {
-                font-size: 1.5rem !important;
-            }
-
-            .stat-number {
-                font-size: 1.5rem;
-            }
-
-            .grid-2[style*="repeat(3"] {
-                grid-template-columns: 1fr !important;
-            }
-        }
-
-        body {
-            background: linear-gradient(180deg, #FFF8E7 0%, #E0F7FA 100%);
-            background-attachment: fixed;
-        }
-    </style>
+<!-- Page-specific styles moved to css/style.css for maintainability -->
 </head>
-<body>
+<body class="geography-page">
 <!-- Preloader -->
 <div id="preloader">
 <span class="loader"></span>
@@ -413,7 +162,7 @@
 </div>
 <div>
 <div style="height: 300px; border-radius: 1rem; overflow: hidden; border: 1px solid #eee;">
-<iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946493.0711048405!2d68.4!3d23.2!2m3!1f0!2f0!3f0!3m2!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950c4976e1d8b25%3A0x76e2f6be5b8c8a86!2sKutch%20District%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1735228800000!5m2!1sen!2sin" style="border:0;" width="100%"></iframe>
+<iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946493.0711048405!2d68.4!3d23.2!2m3!1f0!2f0!3f0!3m2!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3950c4976e1d8b25%3A0x76e2f6be5b8c8a86!2sKutch%20District%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1735228800000!5m2!1sen!2sin" style="border:0;" title="Map of Kutch District, Gujarat" width="100%"></iframe>
 </div>
 </div>
 </div>
@@ -483,7 +232,7 @@
 </div>
 <div class="attraction-card">
 <div class="attraction-img-wrapper">
-<img alt="Great Rann of Kutch" src="assets/images/dhordo-white-rann/dhordo-main.webp"/>
+<img alt="Great Rann of Kutch" loading="lazy" src="assets/images/dhordo-white-rann/dhordo-main.webp"/>
 </div>
 <div class="attraction-content">
 <h4 class="attraction-title" data-i18n="geography_page.regions.great_rann.card.title">Experience the White Rann</h4>
@@ -502,7 +251,7 @@
 <div class="grid-2">
 <div class="attraction-card">
 <div class="attraction-img-wrapper">
-<img alt="Indian Wild Ass in Little Rann" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='&lt;div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'&gt;Image&lt;/div&gt;'" src="assets/images/landscapes/wild-ass.webp"/>
+<img alt="Indian Wild Ass in Little Rann" loading="lazy" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='&lt;div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'&gt;Image&lt;/div&gt;'" src="assets/images/landscapes/wild-ass.webp"/>
 </div>
 <div class="attraction-content">
 <h4 class="attraction-title" data-i18n="geography_page.regions.little_rann.card.title">Wild Ass Sanctuary</h4>
@@ -552,7 +301,7 @@
 </div>
 <div class="attraction-card">
 <div class="attraction-img-wrapper">
-<img alt="Banni Grasslands" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='&lt;div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'&gt;Image&lt;/div&gt;'" src="assets/images/hidden-gems/chaari-dhand.webp"/>
+<img alt="Banni Grasslands" loading="lazy" onerror="this.style.display='none';this.parentElement.style.backgroundColor='#eee';this.parentElement.innerHTML='&lt;div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#888\'&gt;Image&lt;/div&gt;'" src="assets/images/hidden-gems/chaari-dhand.webp"/>
 </div>
 <div class="attraction-content">
 <h4 class="attraction-title" data-i18n="geography_page.regions.banni.card.title">Chhari Dhand Wetland</h4>
@@ -615,7 +364,7 @@
 </div>
 <div class="attraction-card">
 <div class="attraction-img-wrapper">
-<img alt="Mandvi Beach" src="assets/images/mandvi/mandvi1.webp"/>
+<img alt="Mandvi Beach" loading="lazy" src="assets/images/mandvi/mandvi1.webp"/>
 </div>
 <div class="attraction-content">
 <h4 class="attraction-title" data-i18n="geography_page.regions.coast.card.title">Mandvi</h4>
@@ -637,7 +386,8 @@
                     Temperatures can range from as low as 2°C in winter nights to a scorching 45-50°C in peak summer. 
                     The average annual rainfall is very low, around 356 mm (historically), concentrated during the monsoon season.
                 </p>
-<div class="grid-2" style="grid-template-columns: repeat(3, 1fr);">
+<!-- Use class for consistent responsive columns -->
+<div class="grid-2 grid-3-cols">
 <div class="editorial-note" style="margin: 0;">
 <h4 data-i18n="geography_page.climate.summer.title" style="color: #ff6b35; margin-bottom: 0.5rem;">☀️ Summer</h4>
 <p data-i18n="geography_page.climate.summer.months" style="font-weight: 600; color: #333;">February - June</p>

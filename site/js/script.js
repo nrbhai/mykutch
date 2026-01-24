@@ -1,57 +1,82 @@
-// Set slower playback for hero background video
-const heroVideo = document.querySelector('.hero-video');
-if (heroVideo) {
-  heroVideo.playbackRate = 0.5; // half speed
-}
-
 // Mobile Menu Toggle
 const mobileToggle = document.querySelector('.mobile-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-if (mobileToggle) {
+if (mobileToggle && navLinks) {
+    // Ensure nav is addressable by assistive tech
+    if (!navLinks.id) {
+        navLinks.id = 'primary-nav';
+    }
+    mobileToggle.setAttribute('aria-controls', navLinks.id);
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    navLinks.setAttribute('aria-hidden', 'true');
+
+    const updateMenuState = (isOpen) => {
+        mobileToggle.setAttribute('aria-expanded', String(isOpen));
+        navLinks.setAttribute('aria-hidden', String(!isOpen));
+        mobileToggle.innerText = isOpen ? '✕' : '☰';
+    };
+
     mobileToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        mobileToggle.innerText = navLinks.classList.contains('active') ? '✕' : '☰';
+        const isOpen = navLinks.classList.toggle('active');
+        updateMenuState(isOpen);
     });
 
     // Close menu when clicking a link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
-            mobileToggle.innerText = '☰';
+            updateMenuState(false);
         });
+    });
+
+    // Close menu on Escape
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+            navLinks.classList.remove('active');
+            updateMenuState(false);
+            mobileToggle.focus();
+        }
     });
 }
 
 
 // Staggered Reveal Animation
-const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -50px 0px'
-};
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            // Add a small delay for staggered effect if requested
-            const delay = entry.target.dataset.delay || 0;
-            setTimeout(() => {
-                entry.target.classList.add('active');
-            }, delay);
-            observer.unobserve(entry.target);
+if (!prefersReducedMotion) {
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Add a small delay for staggered effect if requested
+                const delay = entry.target.dataset.delay || 0;
+                setTimeout(() => {
+                    entry.target.classList.add('active');
+                }, delay);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Initialize reveals
+    document.querySelectorAll('.reveal, .card, .section-title, .essential-item').forEach((el, index) => {
+        // Auto-stagger cards in a grid
+        if (el.classList.contains('card')) {
+            el.dataset.delay = (index % 3) * 150;
         }
+        el.classList.add('reveal');
+        observer.observe(el);
     });
-}, observerOptions);
-
-// Initialize reveals
-document.querySelectorAll('.reveal, .card, .section-title, .essential-item').forEach((el, index) => {
-    // Auto-stagger cards in a grid
-    if (el.classList.contains('card')) {
-        el.dataset.delay = (index % 3) * 150;
-    }
-    el.classList.add('reveal');
-    observer.observe(el);
-});
+} else {
+    document.querySelectorAll('.reveal, .card, .section-title, .essential-item').forEach((el) => {
+        el.classList.add('active');
+    });
+}
 
 // Smooth Scroll (Native behavior is set in CSS, but this handles edge cases)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -62,23 +87,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
-                    behavior: 'smooth'
+                    behavior: prefersReducedMotion ? 'auto' : 'smooth'
                 });
             }
         }
     });
-});
-
-// Navbar Scroll Effect
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (nav) {
-        if (window.scrollY > 50) {
-            nav.classList.add('scrolled');
-        } else {
-            nav.classList.remove('scrolled');
-        }
-    }
 });
 
 // Dark Mode Toggle
@@ -120,16 +133,28 @@ window.addEventListener('load', () => {
     }
 });
 
-// Hero Parallax Effect
-const heroImage = document.querySelector('.hero-image');
-if (heroImage) {
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        // Only apply if hero is visible to save resources
-        if (scrolled < window.innerHeight) {
-            // Move image at half speed of scroll
-            const speed = 0.5;
-            heroImage.style.transform = `translateY(${scrolled * speed}px) scale(1.02)`;
+// Swap legacy logo assets to new logo in navbar/footer
+document.addEventListener('DOMContentLoaded', () => {
+    const path = window.location.pathname;
+    const isRoot = !path.includes('/destinations/') && !path.includes('/crafts/') && !path.includes('/hidden-gems/');
+    const assetPrefix = isRoot ? 'assets/' : '../assets/';
+    const newLogo = `${assetPrefix}images/newlogo.png`;
+    const absoluteLogo = `${window.location.origin}/assets/images/newlogo.png`;
+
+    document.querySelectorAll('img.nav-logo, img[src*="/logo.png"], img[src*="logo.png"]').forEach((img) => {
+        img.src = newLogo;
+    });
+
+    document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]').forEach((meta) => {
+        if ((meta.content || '').includes('logo.png')) {
+            meta.content = absoluteLogo;
         }
     });
-}
+
+    document.querySelectorAll('link[rel*="icon"]').forEach((link) => {
+        if ((link.href || '').includes('logo.png')) {
+            link.href = absoluteLogo;
+        }
+    });
+});
+
