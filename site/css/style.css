@@ -2285,11 +2285,11 @@ nav {
 .destination-detail-page .hero-title-metallic-red {
     background: linear-gradient(
         to right,
-        #450a0a 0%,
-        #7f1d1d 20%,
+        #7f1d1d 0%,
+        #dc2626 20%,
         #fca5a5 50%,
-        #7f1d1d 80%,
-        #450a0a 100%
+        #dc2626 80%,
+        #7f1d1d 100%
     );
     background-size: 200% auto;
     color: auto;
@@ -2306,6 +2306,7 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.2;
+    text-shadow: none;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 

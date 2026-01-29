@@ -1215,7 +1215,13 @@
       "nearby_title": "Nearby Places to Visit",
       "nearby": {
         "kashi_title": "Kashi Vishwanath Temple & Beach",
-        "kashi_desc": "5km - Serene secluded beach with Shiv temple nearby"
+        "kashi_desc": "5km - Serene secluded beach with Shiv temple nearby",
+        "asar_title": "Asar Mata Temple & Beach",
+        "asar_desc": "10-12km - Serene temple site with peaceful beach",
+        "jinalaya_title": "72 Jinalaya",
+        "jinalaya_desc": "2km - Beautiful Jain temple complex with intricate architecture",
+        "shyamji_title": "Shyamji Krishna Varma Memorial",
+        "shyamji_desc": "3km - Kranti Tirth dedicated to the freedom fighter and scholar"
       },
       "itinerary_title": "Suggested Itinerary"
     }

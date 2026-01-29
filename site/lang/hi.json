@@ -1192,7 +1192,13 @@
       "nearby_title": "आस-पास के दर्शनीय स्थल",
       "nearby": {
         "kashi_title": "काशी विश्वनाथ बीच",
-        "kashi_desc": "5 किमी - पास में शिव मंदिर के साथ शांत एकांत समुद्र तट।"
+        "kashi_desc": "5 किमी - पास में शिव मंदिर के साथ शांत एकांत समुद्र तट।",
+        "asar_title": "Asar Mata Temple & Beach",
+        "asar_desc": "10-12km - Serene temple site with peaceful beach",
+        "jinalaya_title": "72 Jinalaya",
+        "jinalaya_desc": "2km - Beautiful Jain temple complex with intricate architecture",
+        "shyamji_title": "Shyamji Krishna Varma Memorial",
+        "shyamji_desc": "3km - Kranti Tirth dedicated to the freedom fighter and scholar"
       },
       "itinerary_title": "सुझाया गया यात्रा कार्यक्रम"
     }
