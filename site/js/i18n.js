@@ -5,7 +5,7 @@
  * - Updates DOM elements with data-i18n attribute
  */
 
-const supportedLanguages = ['en', 'de', 'fr', 'es', 'ru', 'hi'];
+const supportedLanguages = ['en', 'hi', 'de', 'fr', 'es', 'ru'];
 const defaultLanguage = 'en';
 
 function getInitialLanguage() {

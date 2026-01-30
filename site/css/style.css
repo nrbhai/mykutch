@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
-:root {
-    /* Color Palette - Refined Luxury Editorial (Light Mode) */
-    --color-bg: #FCFAF8;
+    .masonry-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
     /* Ultra-soft Cream */
     --color-text: #222;
     /* Soft Charcoal */
@@ -3456,6 +3458,16 @@ nav {
     .card-header h3 {
         font-size: 1.75rem !important;
         /* reduce header size slightly */
+    }
+
+    /* Crafts hero: show full image on mobile */
+    .crafts-page .destination-hero {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 60vw;
+        height: auto;
+        padding: 4rem 0 2rem;
     }
 }
 

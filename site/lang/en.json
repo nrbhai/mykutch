@@ -5,16 +5,398 @@
     "hidden_gems": "Hidden-Gems",
     "blog": "Blog",
     "history": "History",
+    "geography": "Geography",
     "landscapes": "Landscapes",
     "bookings": "Bookings",
     "about": "About"
   },
   "footer": {
+    "about": "About MyKutch.org",
     "about_title": "About MyKutch.org",
     "about_text": "Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.",
+    "about_desc": "Showcasing the vibrant culture and heritage of Kutch. Providing authentic insights for every traveler.",
     "contact_label": "Contact:",
+    "contact": "Contact:",
     "email_label": "Email:",
-    "dev_credit": "Developed with Love for Kutch by MyKutch.org team"
+    "email": "Email:",
+    "email_value": "info@mykutch.org",
+    "dev_credit": "Developed with Love for Kutch by MyKutch.org team",
+    "developed_by": "Developed with Love for Kutch by MyKutch.org team"
+  },
+  "crafts_page": {
+    "meta_title": "Kutch Arts & Crafts — Living Heritage of Artisans | MyKutch.org",
+    "meta_desc": "Explore the vibrant arts and crafts of Kutch. From Ajrakh block printing to Rogan art, discover the rich cultural heritage of Gujarat's artisan communities.",
+    "hero_title": "Kutch Crafts: Color, Culture & Craftsmanship",
+    "intro": "Kutch is a living museum of color and craft. Every village keeps a unique tradition alive — from the hypnotic geometry of Ajrakh to the delicate knots of Bandhani, from rare Rogan painting to the bold embroidery of Rabari artisans. These handmade forms carry stories of resilience, identity, and beauty shaped across generations in Gujarat's most dramatic landscape.",
+    "sections": {
+      "textile": {
+        "title": "Textile Arts",
+        "subtitle": "The soul of Kutchi craftsmanship",
+        "cards": {
+          "ajrakh": {
+            "tag": "Block Printing",
+            "title": "Ajrakh",
+            "desc": "Ancient geometric block printing using natural dyes like indigo and madder. A 4000-year-old tradition from the Indus Valley."
+          },
+          "bandhani": {
+            "tag": "Tie-Dye",
+            "title": "Bandhani",
+            "desc": "Intricate tie-dye technique creating beautiful dotted patterns. Each dot is hand-tied before dyeing, creating thousands of tiny circles."
+          },
+          "weaving": {
+            "tag": "Handloom",
+            "title": "Kutch Weaving",
+            "desc": "Vibrant handloom weaving known for its intricate extra-weft designs. The village of Bhujodi is famous for this craft."
+          }
+        }
+      },
+      "rare": {
+        "title": "Rare & Unique Arts",
+        "subtitle": "Crafts found nowhere else in the world",
+        "cards": {
+          "rogan": {
+            "tag": "Endangered Art",
+            "title": "Rogan Art",
+            "desc": "A rare 400-year-old oil-based painting on fabric, practiced by only one family in Nirona village. The Khatri family are the last guardians of this dying art."
+          },
+          "lippan": {
+            "tag": "Wall Art",
+            "title": "Lippan Kaam",
+            "desc": "Traditional mud and mirror work that adorns the walls of Bhungas (circular mud houses). Created by Rabari and Ahir women using clay, dung, and mirror pieces."
+          }
+        }
+      },
+      "traditional": {
+        "title": "Traditional Crafts",
+        "subtitle": "Everyday artistry passed through generations",
+        "cards": {
+          "pottery": {
+            "tag": "Ceramics",
+            "title": "Khavda Pottery",
+            "desc": "Distinctive painted pottery from Northern Kutch using local clay and natural colors. Known for its unique red and white geometric patterns."
+          },
+          "leather": {
+            "tag": "Leatherwork",
+            "title": "Leather Art",
+            "desc": "Handcrafted leather goods decorated with threadwork and traditional motifs. The Meghwal community excels in this craft."
+          },
+          "sudi": {
+            "tag": "Metalwork",
+            "title": "Sudi & Chappu",
+            "desc": "The art of crafting sharp, embellished knives and nutcrackers. Made by the Lohana community in villages near Bhuj."
+          }
+        }
+      },
+      "villages": {
+        "title": "Artisan Villages",
+        "subtitle": "Where to experience crafts firsthand",
+        "items": {
+          "bhujodi": {
+            "title": "🎨 Bhujodi",
+            "desc": "Just 8km from Bhuj, this village is the weaving hub of Kutch. Watch artisans at their looms and shop directly from workshops."
+          },
+          "ajrakhpur": {
+            "title": "🖌️ Ajrakhpur",
+            "desc": "Home to the renowned Ismail Khatri family. Witness the 17-step Ajrakh printing process using 100% natural dyes."
+          },
+          "nirona": {
+            "title": "✨ Nirona",
+            "desc": "The only village in the world where Rogan art is practiced. Visit the Khatri family's workshop to see this rare art."
+          },
+          "khavda": {
+            "title": "🏺 Khavda",
+            "desc": "Northern gateway to the Rann, known for distinctive pottery. Also the starting point for the White Rann."
+          }
+        }
+      },
+      "tips": {
+        "title": "Tips for Craft Lovers",
+        "list": {
+          "buy": {
+            "bold": "Buy Direct",
+            "text": "Purchase from artisans in villages to ensure fair prices and authenticity. Middlemen in city shops often mark up significantly."
+          },
+          "ask": {
+            "bold": "Ask Questions",
+            "text": "Artisans love sharing their craft. Ask about techniques, materials, and the stories behind patterns."
+          },
+          "check": {
+            "bold": "Check Materials",
+            "text": "Authentic Ajrakh uses natural dyes (indigo, madder). Chemical dyes have a different smell and feel."
+          },
+          "support": {
+            "bold": "Support Preservation",
+            "text": "Many crafts are endangered. Your purchase helps keep traditions alive for future generations."
+          },
+          "visit": {
+            "bold": "Visit During Festivals",
+            "text": "Rann Utsav (Nov-Feb) features craft exhibitions. Bhujodi holds an annual craft fair."
+          }
+        }
+      }
+    },
+    "explore": {
+      "title": "Explore More",
+      "cards": {
+        "bhuj": {
+          "title": "Bhuj",
+          "desc": "The cultural heart of Kutch and perfect base for exploring artisan villages. Home to craft museums and bustling bazaars."
+        },
+        "destinations": {
+          "title": "All Destinations",
+          "desc": "Discover all the destinations in Kutch — from salt deserts to beaches, ancient ruins to sacred temples."
+        }
+      }
+    }
+  },
+  "bandhani": {
+    "meta_title": "Bandhani — Ancient Tie-Dye Art of Kutch | MyKutch.org",
+    "meta_desc": "Discover Bandhani, the ancient tie-dye art of Kutch. Learn about its history, techniques, patterns, and where to buy authentic pieces.",
+    "og_title": "Bandhani — Ancient Tie-Dye Art of Kutch",
+    "og_desc": "Discover Bandhani, the ancient tie-dye art of Kutch with intricate dot patterns.",
+    "twitter_title": "Bandhani — Ancient Tie-Dye Art of Kutch",
+    "twitter_desc": "Discover Bandhani, the ancient tie-dye art of Kutch.",
+    "hero_title": "Bandhani — Ancient Tie-Dye Art",
+    "intro": "Bandhani, derived from the Sanskrit word \"Bandhan\" meaning \"to tie,\" is one of India's oldest tie-dye traditions, believed to be over 5,000 years old. This exquisite art form involves skilled artisans tying thousands of tiny knots on fabric before dyeing, creating mesmerizing patterns of dots, circles, waves, and geometric designs. The Khatri community has been the custodian of this craft in Kutch for generations, producing some of the finest Bandhani textiles in the world. A single saree can contain over 50,000 hand-tied knots, each one a testament to the artisan's patience and precision.",
+    "sections": {
+      "who": {
+        "title": "Who Should Explore Bandhani",
+        "list": {
+          "fashion": {
+            "bold": "Fashion Enthusiasts",
+            "text": "Own a piece of 5,000-year-old textile heritage."
+          },
+          "brides": {
+            "bold": "Brides & Families",
+            "text": "Traditional Bandhani sarees and dupattas are auspicious for weddings."
+          },
+          "collectors": {
+            "bold": "Art Collectors",
+            "text": "Fine Bandhani with complex patterns is a collector's treasure."
+          },
+          "sustainable": {
+            "bold": "Sustainable Shoppers",
+            "text": "Handmade with natural dyes and eco-friendly methods."
+          }
+        }
+      },
+      "where": {
+        "title": "Where to Experience",
+        "list": {
+          "bhuj": {
+            "bold": "Bhuj Markets",
+            "text": "The main hub for Bandhani shopping with numerous showrooms."
+          },
+          "mandvi": {
+            "bold": "Mandvi",
+            "text": "Traditional Bandhani-making families still practice here."
+          },
+          "anjar": {
+            "bold": "Anjar",
+            "text": "Famous for specific Bandhani patterns and styles."
+          },
+          "rann": {
+            "bold": "Rann Utsav",
+            "text": "Annual festival (Nov-Feb) with Bandhani exhibitions and live demos."
+          }
+        }
+      },
+      "process": {
+        "title": "The Craft Process",
+        "subtitle": "From fabric to masterpiece",
+        "cards": {
+          "knots": {
+            "alt": "Tying the Knots",
+            "title": "Tying the Knots",
+            "desc": "Artisans use their fingernails, often protected with metal caps, to pull and tie tiny portions of fabric with thread. Each knot creates one dot in the final pattern."
+          },
+          "dye": {
+            "alt": "Dyeing Process",
+            "title": "Dyeing Process",
+            "desc": "The tied fabric is dipped in dye baths, starting with lighter colors. Each additional color requires re-tying areas that need protection from the new dye."
+          },
+          "colors": {
+            "alt": "Multiple Colors",
+            "title": "Multiple Colors",
+            "desc": "Multi-colored Bandhani requires the tie-dye process to be repeated for each color, with some pieces going through 5-6 dyeing cycles."
+          },
+          "reveal": {
+            "alt": "Final Reveal",
+            "title": "Final Reveal",
+            "desc": "After final dyeing, knots are opened to reveal the pattern. The tied portions remain undyed, creating the characteristic white or light-colored dots."
+          }
+        }
+      },
+      "didyouknow": {
+        "title": "Did You Know?",
+        "items": {
+          "old": {
+            "title": "5,000 Years Old",
+            "text": "Evidence of Bandhani has been found in Indus Valley Civilization artifacts."
+          },
+          "knots": {
+            "title": "50,000+ Knots",
+            "text": "A fine Bandhani saree can have over 50,000 hand-tied knots."
+          },
+          "auspicious": {
+            "title": "Auspicious Art",
+            "text": "Red Bandhani is considered essential for Gujarati brides."
+          },
+          "gi": {
+            "title": "GI Protected",
+            "text": "Kutch Bandhani has Geographical Indication (GI) tag certification."
+          }
+        }
+      },
+      "patterns": {
+        "title": "Traditional Patterns",
+        "list": {
+          "chandrakala": {
+            "bold": "Chandrakala",
+            "text": "Moon-shaped patterns symbolizing beauty and love."
+          },
+          "bavan": {
+            "bold": "Bavan Baug",
+            "text": "Complex pattern with 52 gardens of designs."
+          },
+          "shikari": {
+            "bold": "Shikari",
+            "text": "Hunting scenes with elephants and horses."
+          },
+          "jaaldar": {
+            "bold": "Jaaldar",
+            "text": "Net-like patterns covering the entire fabric."
+          },
+          "chaubasi": {
+            "bold": "Chaubasi",
+            "text": "Square patterns in a grid formation."
+          }
+        }
+      },
+      "colors": {
+        "title": "Colors & Significance",
+        "list": {
+          "red": {
+            "bold": "Red",
+            "text": "Bridal color, symbolizing prosperity and fertility."
+          },
+          "yellow": {
+            "bold": "Yellow",
+            "text": "Spring color, worn during festivals."
+          },
+          "green": {
+            "bold": "Green",
+            "text": "Symbolizes new beginnings and nature."
+          },
+          "black": {
+            "bold": "Black",
+            "text": "Traditional for married women in some communities."
+          },
+          "multi": {
+            "bold": "Multi-color",
+            "text": "Celebratory and festive occasions."
+          }
+        }
+      },
+      "authentic": {
+        "title": "How to Identify Authentic Bandhani",
+        "list": {
+          "texture": {
+            "bold": "Raised Texture",
+            "text": "Hand-tied Bandhani has a slightly raised texture where knots were tied."
+          },
+          "dots": {
+            "bold": "Irregular Dots",
+            "text": "Machine-made has perfect dots; handmade has charming variations."
+          },
+          "bleeding": {
+            "bold": "Color Bleeding",
+            "text": "Authentic pieces show natural color gradation around dots."
+          },
+          "smell": {
+            "bold": "Smell Test",
+            "text": "Natural dyes have a distinct earthy smell, unlike chemical dyes."
+          },
+          "price": {
+            "bold": "Price Point",
+            "text": "Genuine Bandhani is priced for the hours of skilled labor involved."
+          }
+        }
+      },
+      "buying": {
+        "title": "Buying Tips",
+        "list": {
+          "visit": {
+            "bold": "Visit Bhuj",
+            "text": "Best selection and prices at source."
+          },
+          "dyes": {
+            "bold": "Ask About Dyes",
+            "text": "Natural dyes command premium but are worth it."
+          },
+          "knot": {
+            "bold": "Check Knot Count",
+            "text": "Higher knot density means finer, more expensive work."
+          },
+          "artisans": {
+            "bold": "Buy from Artisans",
+            "text": "Direct purchase ensures fair wages to craftspeople."
+          }
+        }
+      },
+      "price": {
+        "title": "Price Range",
+        "list": {
+          "dupattas": {
+            "bold": "Dupattas",
+            "text": "₹500 - ₹5,000"
+          },
+          "cotton": {
+            "bold": "Sarees (Cotton)",
+            "text": "₹1,500 - ₹8,000"
+          },
+          "silk": {
+            "bold": "Sarees (Silk)",
+            "text": "₹5,000 - ₹25,000"
+          },
+          "premium": {
+            "bold": "Premium Pieces",
+            "text": "₹15,000 - ₹50,000+"
+          }
+        },
+        "note": "Prices vary based on fabric, knot count, and number of colors."
+      },
+      "explore": {
+        "title": "Explore Other Crafts",
+        "cards": {
+          "ajrakh": {
+            "title": "Ajrakh",
+            "desc": "Ancient block printing technique using natural dyes like indigo and madder."
+          },
+          "rogan": {
+            "title": "Rogan Art",
+            "desc": "A rare 400-year-old oil painting technique practiced by only one family."
+          },
+          "weaving": {
+            "title": "Kutch Weaving",
+            "desc": "Vibrant handloom textiles with intricate extra-weft designs."
+          },
+          "mirror": {
+            "title": "Mirror Work",
+            "desc": "Sparkling embroidery with tiny mirrors creating dazzling patterns."
+          }
+        }
+      },
+      "gallery": {
+        "title": "Gallery",
+        "images": {
+          "one": "Traditional Bandhani Pattern",
+          "two": "Bandhani Tying Process",
+          "three": "Vibrant Bandhani Colors",
+          "four": "Bandhani Sarees"
+        }
+      }
+    }
   },
   "bhuj": {
     "meta_title": "Bhuj — Cultural Heart of Kutch | Kutch Travel Guide",
