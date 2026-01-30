@@ -138,8 +138,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const path = window.location.pathname;
     const isRoot = !path.includes('/destinations/') && !path.includes('/crafts/') && !path.includes('/hidden-gems/');
     const assetPrefix = isRoot ? 'assets/' : '../assets/';
+    const pagePrefix = isRoot ? '' : '../';
     const newLogo = `${assetPrefix}images/newlogo.png`;
     const absoluteLogo = `${window.location.origin}/assets/images/newlogo.png`;
+
+    const navLists = Array.from(document.querySelectorAll('.nav-links'));
+    const primaryNav = document.querySelector('nav .nav-links') || navLists[0];
+    navLists.forEach((nav) => {
+        if (nav !== primaryNav) {
+            nav.remove();
+        }
+    });
+
+    const footerBlocks = Array.from(document.querySelectorAll('footer.footer-main'));
+    if (footerBlocks.length > 1) {
+        footerBlocks.forEach((footer, index) => {
+            if (index !== footerBlocks.length - 1) {
+                footer.remove();
+            }
+        });
+    }
 
     document.querySelectorAll('img.nav-logo, img[src*="/logo.png"], img[src*="logo.png"]').forEach((img) => {
         img.src = newLogo;
@@ -156,5 +174,32 @@ document.addEventListener('DOMContentLoaded', () => {
             link.href = absoluteLogo;
         }
     });
+
+    const footer = document.querySelector('footer.footer-main');
+    if (footer) {
+        footer.innerHTML = `
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-brand">
+                        <img alt="MyKutch.org" class="footer-logo" src="${newLogo}"/>
+                        <p class="footer-tagline">Beyond the endless White Rann lies a land of hidden caves, pristine seashores, and sacred hills. Discover the untold stories of Kutch.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <span data-i18n="footer.contact_label">Contact:</span>
+                            <a href="tel:9825034580">+91 98250 34580</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span data-i18n="footer.email_label">Email:</span>
+                            <a href="mailto:info@mykutch.org">info@mykutch.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <span data-i18n="footer.developed_by">Developed with Love for Kutch by MyKutch.org team</span>
+                </div>
+            </div>
+        `;
+    }
 });
 
