@@ -96,13 +96,19 @@
 
 /* Metallic Blue Gradient for Headings */
 .heading-bright-blue {
-    /* Inherit global metallic style */
-    background: inherit;
-    -webkit-background-clip: inherit;
-    background-clip: inherit;
-    -webkit-text-fill-color: inherit;
-    color: inherit;
-    animation: inherit;
+    /* Ensure metallic style is applied even with this class */
+    background: linear-gradient(to right,
+            #1e3a8a 0%,
+            #1e3a8a 40%,
+            #dc2626 50%,
+            #1e3a8a 60%,
+            #1e3a8a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
 }
 
 [data-theme="dark"] .heading-bright-blue {
@@ -253,6 +259,11 @@ html {
     scroll-padding-top: 100px;
 }
 
+/* =========================================
+   GLOBAL TYPOGRAPHY SYSTEM
+   ========================================= */
+
+/* 1. Global Reset & Body Defaults */
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -265,15 +276,15 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Typography Scale */
-h1,
-h2,
-h3,
-h4 {
+/* 2. Headings (H1 - H3): Metallic Blue Gradient */
+h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.2;
     letter-spacing: -0.01em;
+    margin-bottom: 1rem;
+    
+    /* Global Metallic Blue Gradient */
     background: linear-gradient(to right,
             #1e3a8a 0%,
             #1e3a8a 40%,
@@ -288,38 +299,54 @@ h4 {
     animation: metallic 6s linear infinite;
 }
 
-h1 {
-    font-size: clamp(2.5rem, 8vw, 6rem);
-    font-weight: 800;
-}
-
-h2 {
-    font-size: clamp(2.5rem, 7vw, 3.5rem);
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 1.5rem;
+/* 3. Subheadings (H4 - H6): Solid Dark or Accent */
+h4, h5, h6 {
+    font-family: var(--font-heading);
     font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-heading); /* Solid color, no gradient */
+    margin-bottom: 0.75rem;
 }
 
-h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
+h1 { font-size: clamp(2.5rem, 8vw, 6rem); font-weight: 800; line-height: 1.1; }
+h2 { font-size: clamp(2rem, 6vw, 3.5rem); font-weight: 700; }
+h3 { font-size: 1.75rem; font-weight: 700; }
+h4 { font-size: 1.25rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-primary); }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.8; }
 
+/* 4. Body Text & Paragraphs */
 p {
+    margin-bottom: 1.5rem;
     font-size: 1.05rem;
-    opacity: 0.8;
-    letter-spacing: 0.01em;
+    color: var(--color-text);
+    opacity: 0.9;
 }
 
+/* 5. Links */
 a {
     text-decoration: none;
     color: inherit;
     transition: var(--transition-base);
+}
+
+/* Utility: Force Metallic Text */
+.text-metallic,
+.shining-blue-text, 
+.heading-bright-blue {
+    font-family: var(--font-heading);
+    background: linear-gradient(to right,
+            #1e3a8a 0%,
+            #1e3a8a 40%,
+            #dc2626 50%,
+            #1e3a8a 60%,
+            #1e3a8a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
 }
 
 img {
@@ -514,13 +541,19 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.2;
-    /* Inherit global metallic style */
-    color: inherit;
-    text-shadow: none;
-    background: inherit;
-    -webkit-background-clip: inherit;
-    background-clip: inherit;
-    -webkit-text-fill-color: inherit;
+    /* Explicitly apply metallic style */
+    background: linear-gradient(to right,
+            #1e3a8a 0%,
+            #1e3a8a 40%,
+            #dc2626 50%,
+            #1e3a8a 60%,
+            #1e3a8a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
 }
 
 /* Page-specific styles (moved from inline <style> blocks) */
@@ -723,7 +756,7 @@ nav {
     background-image: url('../assets/images/hero-bookings.webp');
     background-size: cover;
     background-position: center;
-    min-height: 60vh;
+    min-height: 40vh; /* Reduced height since content is moved */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -731,37 +764,30 @@ nav {
 }
 
 /* Ensure global header consistency overlay if needed, but hero usually has its own */
+/* Removed overlay for clearer/brighter image */
 .bookings-page .booking-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7));
-    z-index: 1;
+    display: none;
 }
 
-.bookings-page .booking-hero .hero-content {
-    position: relative;
-    z-index: 2;
+.bookings-page .booking-intro {
     text-align: center;
-    max-width: 800px;
-    padding-top: 4rem; /* Spacing for fixed nav */
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
 }
 
-/* Reuse global metallic text if applied to specific classes, but here define clean white for hero */
 .bookings-page .hero-title {
-    font-family: var(--font-heading);
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 800;
-    color: #fff;
+    /* Uses global H1 size now */
     margin-bottom: 1rem;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    /* Global Metallic Style applies via class */
 }
 
 .bookings-page .hero-desc {
     font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.95);
-    line-height: 1.6;
+    color: var(--color-text); /* Dark text on white bg */
+    line-height: 1.8;
     margin-bottom: 2rem;
+    opacity: 0.9;
 }
 
 .bookings-page .hero-actions {
@@ -796,15 +822,17 @@ nav {
 }
 
 .bookings-page .booking-btn.secondary {
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(5px);
-    color: white;
-    border: 1px solid rgba(255,255,255,0.3);
+    background: transparent;
+    color: var(--color-heading);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .bookings-page .booking-btn.secondary:hover {
-    background: rgba(255,255,255,0.25);
+    background: var(--color-heading);
+    color: #fff;
     transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 .bookings-page .booking-btn.whatsapp {
@@ -831,10 +859,8 @@ nav {
 }
 
 .bookings-page .section-header h2 {
-    font-family: var(--font-heading);
     font-size: 2.5rem;
     margin-bottom: 0.75rem;
-    /* Allow global h2 styles (metallic) to shine through if not overridden */
 }
 
 .bookings-page .section-header p {
@@ -864,6 +890,46 @@ nav {
     box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
+/* Booking.com Card - Yellow Override */
+.bookings-page .partner-card.booking {
+    background: #FFD700; /* Yellow */
+    border: none;
+    color: #003580;
+}
+
+.bookings-page .partner-card.booking .partner-brand,
+.bookings-page .partner-card.booking h3 {
+    color: #003580 !important;
+}
+
+.bookings-page .partner-card.booking p {
+    color: #003580;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.bookings-page .partner-card.booking .partner-footer {
+    color: rgba(0, 53, 128, 0.7);
+}
+
+.bookings-page .partner-card.booking .partner-tag {
+    background: rgba(255, 255, 255, 0.5);
+    color: #003580;
+    backdrop-filter: none;
+}
+
+.bookings-page .partner-card.booking .partner-brand span {
+    color: #fff !important; /* Make the '.com' white or dark blue? Kept original or forced. Let's force Blue for contrast if needed, or white if brand allows. standard logo has blue text. HTML has inline style for .com which might conflict. */
+    /* text-shadow: none; */
+}
+
+/* Button for Yellow Card */
+.bookings-page .partner-card.booking .partner-cta {
+    background: #003580;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 53, 128, 0.2);
+}
+
 .bookings-page .partner-brand {
     font-size: 1.8rem;
     font-weight: 800;
@@ -871,8 +937,51 @@ nav {
     color: #003580; /* Booking.com Blue default */
 }
 
+/* Trip.com Card - Light Red Override */
+.bookings-page .partner-card.trip {
+    background: #FFE4E6; /* Light Red / Rose 100 */
+    border: none;
+    color: #881337; /* Dark Red / Rose 900 */
+}
+
 .bookings-page .partner-card.trip .partner-brand {
-    color: #2e66d3; /* Trip.com Blue */
+    color: #be123c !important; /* Rose 700 */
+}
+
+.bookings-page .partner-card.trip h3 {
+    color: #881337 !important;
+}
+
+.bookings-page .partner-card.trip p {
+    color: #9f1239; /* Rose 800 */
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.bookings-page .partner-card.trip .partner-footer {
+    color: rgba(136, 19, 55, 0.7);
+}
+
+.bookings-page .partner-card.trip .partner-brand span {
+    color: #881337 !important; /* Keep brand cohesive */
+}
+
+.bookings-page .partner-card.trip .partner-tag {
+    background: rgba(255, 255, 255, 0.6);
+    color: #881337;
+    backdrop-filter: none;
+}
+
+/* Button for Trip.com Card */
+.bookings-page .partner-card.trip .partner-cta {
+    background: #e11d48; /* Rose 600 */
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+}
+
+.bookings-page .partner-card.trip .partner-cta:hover {
+    background: #be123c;
+    transform: translateY(-2px);
 }
 
 .bookings-page .partner-card h3 {
@@ -1079,22 +1188,8 @@ nav {
 }
 
 .crafts-page .attraction-title {
-    font-family: var(--font-heading);
     font-size: 1.35rem;
     margin-bottom: 0.6rem;
-    /* Apply global metallic style explicitly */
-    background: linear-gradient(to right,
-            #1e3a8a 0%,
-            #1e3a8a 40%,
-            #dc2626 50%,
-            #1e3a8a 60%,
-            #1e3a8a 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 6s linear infinite;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -1115,22 +1210,10 @@ nav {
     border-radius: 0;
 }
 
+/* Removed specific override to allow global metallic style */
 .crafts-page .section-header h2,
 .crafts-page .heading-bright-blue {
-    /* "Blue background & white color embossed style" */
-    background: linear-gradient(135deg, #1e3a8a, #2563eb);
-    color: #ffffff !important;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 0.6rem 1.5rem;
-    border-radius: 8px;
-    display: inline-block;
-    
-    /* Reset global metallic text clip so background shows */
-    -webkit-background-clip: border-box !important;
-    background-clip: border-box !important;
-    -webkit-text-fill-color: #ffffff !important;
-    animation: none;
-    box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
+    display: inline-block; /* Keep layout if needed */
 }
 
 .crafts-page .section-header {
@@ -1145,29 +1228,12 @@ nav {
 /* Removed color !important overrides */
 
 .crafts-page .shining-blue-text {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    text-transform: none;
-    letter-spacing: 0.02em;
     font-size: clamp(2rem, 5vw, 3rem);
     text-align: center;
     margin-top: 1.8rem;
     margin-bottom: 0;
     display: block;
     line-height: 1.15;
-    /* Apply global metallic style explicitly */
-    background: linear-gradient(to right,
-            #1e3a8a 0%,
-            #1e3a8a 40%,
-            #dc2626 50%,
-            #1e3a8a 60%,
-            #1e3a8a 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 6s linear infinite;
 }
 
 .crafts-page .destination-hero::before {
@@ -1304,10 +1370,9 @@ nav {
 }
 
 .destinations-page .attraction-title {
-    font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: var(--color-heading);
+    color: var(--color-heading); /* Keep card title solid */
     font-weight: 600;
     line-height: 1.3;
 }
@@ -1343,13 +1408,7 @@ nav {
     margin-top: 0.5rem !important;
 }
 
-.destinations-page .section-header h2,
-.destinations-page .heading-bright-blue {
-    font-size: 1.8rem !important;
-    color: var(--color-heading) !important;
-    margin-bottom: 0 !important;
-    font-weight: 700 !important;
-}
+/* Removed redundant block */
 
 .destinations-page .destination-hero::before {
     background: none !important;
@@ -1441,10 +1500,9 @@ nav {
 }
 
 .hidden-gems-page .attraction-title {
-    font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: var(--color-heading);
+    color: var(--color-heading); /* Keep card title solid */
     font-weight: 600;
     line-height: 1.3;
 }
@@ -1476,13 +1534,7 @@ nav {
     margin-top: 0.5rem !important;
 }
 
-.hidden-gems-page .section-header h2,
-.hidden-gems-page .heading-bright-blue {
-    font-size: 1.8rem !important;
-    color: var(--color-heading) !important;
-    margin-bottom: 0 !important;
-    font-weight: 700 !important;
-}
+/* Removed redundant block */
 
 .hidden-gems-page .destination-hero::before {
     background: none !important;
@@ -1606,10 +1658,9 @@ nav {
 }
 
 .history-page .attraction-title {
-    font-family: var(--font-heading);
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    color: var(--color-heading);
+    color: var(--color-heading); /* Keep card title solid */
     font-weight: 600;
     line-height: 1.3;
 }
@@ -1651,13 +1702,7 @@ nav {
     margin-top: 0.5rem !important;
 }
 
-.history-page .section-header h2,
-.history-page .heading-bright-blue {
-    font-size: 1.8rem !important;
-    color: var(--color-heading) !important;
-    margin-bottom: 0 !important;
-    font-weight: 700 !important;
-}
+/* Removed redundant block */
 
 .history-page .destination-hero::before {
     background: none !important;
@@ -1755,7 +1800,7 @@ nav {
 .blog-page .blog-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--color-white);
+    color: var(--color-white); /* Keep white for hero overlay */
 }
 
 .blog-page .blog-hero p {
@@ -2141,10 +2186,9 @@ nav {
 }
 
 .destination-detail-page .attraction-title {
-    font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: var(--color-heading);
+    color: var(--color-heading); /* Keep solid */
     font-weight: 600;
     line-height: 1.3;
 }
@@ -2290,33 +2334,13 @@ nav {
     margin-top: 0.5rem !important;
 }
 
-.destination-detail-page .section-header h2,
-.destination-detail-page .heading-bright-blue {
-    /* Inherit global metallic style */
-    background: inherit;
-    -webkit-background-clip: inherit;
-    background-clip: inherit;
-    -webkit-text-fill-color: inherit;
-    color: inherit;
-    animation: inherit;
-    padding: 0.5rem 0; /* Adjusted padding as background is gone */
-    display: inline-block;
-    border-radius: 0;
-    box-shadow: none;
-    margin-bottom: 0 !important;
-    font-weight: 700 !important;
-    border-right: none;
-    border-left: none; /* Removing border as well for consistency */
-    position: relative;
-    z-index: 1;
-}
+/* Removed redundant block that was forcing inheritance */
 
 .destination-detail-page main {
     text-align: left;
 }
 
 .destination-detail-page .hero-title-metallic-red {
-    color: var(--color-heading);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -2326,7 +2350,7 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.2;
-    text-shadow: none;
+    /* Redundant color/shadow removed to fallback to global or use explicit metallic class if needed */
 }
 
 @keyframes metallicRedShine {
@@ -2747,10 +2771,8 @@ nav {
 
 .index-page .panel-header h3 {
     margin: 0;
-    font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-heading);
 }
 
 .index-page .panel-icon {
@@ -3200,9 +3222,6 @@ nav {
 .landscapes-page .landscape-hero h1 {
     font-size: clamp(2.4rem, 4vw, 3.6rem);
     margin-bottom: 1rem;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
 }
 
 .landscapes-page .landscape-hero p {
@@ -4415,37 +4434,9 @@ nav,
     margin-top: 0.5rem !important;
 }
 
-.geography-page .section-header h2,
-.geography-page .heading-bright-blue {
-    font-size: 1.8rem !important;
-    background-color: #8B0000;
-    color: white !important;
-    padding: 0.5rem 1.5rem;
-        padding: 0.8rem 1.4rem;
-        font-size: 0.85rem;
-    border-radius: 2px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 0 !important;
-    font-weight: 700 !important;
-}
+/* Removed geography specific heading overrides to match global style */
 
-.geography-page .shining-blue-text {
-    font-family: var(--font-heading);
-    font-weight: 800;
-    text-transform: none;
-    letter-spacing: 0.02em;
-    font-size: 2.7rem;
-    background: linear-gradient(90deg, #7f1d1d 0%, #dc2626 35%, #f97316 60%, #991b1b 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 6px 18px rgba(127, 29, 29, 0.25);
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-    display: block;
-    line-height: 1.2;
-}
+/* Removed geography specific hero title override */
 
 .geography-page .destination-hero::before {
     background: none !important;

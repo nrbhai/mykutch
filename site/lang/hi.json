@@ -8,6 +8,8 @@
     "geography": "Geography",
     "landscapes": "Landscapes",
     "bookings": "Bookings",
+    "crafts": "Crafts",
+    "distance_matrix": "Distance Matrix",
     "about": "About"
   },
   "footer": {
