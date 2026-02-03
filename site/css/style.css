@@ -257,6 +257,8 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 /* =========================================
@@ -274,6 +276,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     transition: background-color 0.3s ease, color 0.3s ease;
+    max-width: 100%;
 }
 
 /* 2. Headings (H1 - H3): Metallic Blue Gradient */
@@ -352,6 +355,12 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+video,
+iframe,
+table {
+    max-width: 100%;
 }
 
 a:focus-visible,
@@ -5259,6 +5268,25 @@ nav,
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-3-cols,
+    .grid-4,
+    .grid-5,
+    .grid-6 {
+        grid-template-columns: 1fr !important;
+        min-width: 0;
+    }
+
+    .masonry-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
     .controls-bar {
         flex-direction: column;
         align-items: stretch;
