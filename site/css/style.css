@@ -1108,7 +1108,13 @@ nav {
 
 .crafts-page .guide-section,
 .crafts-page .editorial-container,
-.crafts-page .section-header,
+.crafts-page .section-header {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
 .crafts-page .section-header h2,
 .crafts-page .heading-bright-blue {
     /* "Blue background & white color embossed style" */
