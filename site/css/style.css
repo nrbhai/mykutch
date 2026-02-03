@@ -1124,12 +1124,19 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.15;
-    /* Inherit global metallic style */
-    color: inherit;
-    background: inherit;
-    -webkit-background-clip: inherit;
-    background-clip: inherit;
-    -webkit-text-fill-color: inherit;
+    /* Apply global metallic style explicitly */
+    background: linear-gradient(to right,
+            #1e3a8a 0%,
+            #1e3a8a 40%,
+            #dc2626 50%,
+            #1e3a8a 60%,
+            #1e3a8a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
 }
 
 .crafts-page .destination-hero::before {
