@@ -6,6 +6,7 @@
         padding: 1rem 0;
     }
     /* Ultra-soft Cream */
+    :root {
     --color-text: #222;
     /* Soft Charcoal */
     --color-heading: #0F172A;
@@ -95,17 +96,13 @@
 
 /* Metallic Blue Gradient for Headings */
 .heading-bright-blue {
-    background: linear-gradient(to right,
-            #0061ff 0%,
-            /* Bright Electric Blue */
-            #60efff 100%
-            /* Cyan/Aqua */
-        );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
-    animation: metallic 8s linear infinite;
+    /* Inherit global metallic style */
+    background: inherit;
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    -webkit-text-fill-color: inherit;
+    color: inherit;
+    animation: inherit;
 }
 
 [data-theme="dark"] .heading-bright-blue {
@@ -274,10 +271,21 @@ h2,
 h3,
 h4 {
     font-family: var(--font-heading);
-    color: var(--color-heading);
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -0.01em;
+    background: linear-gradient(to right,
+            #1e3a8a 0%,
+            #1e3a8a 40%,
+            #dc2626 50%,
+            #1e3a8a 60%,
+            #1e3a8a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
 }
 
 h1 {
@@ -506,18 +514,20 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.2;
-    background: linear-gradient(90deg, #7f1d1d 0%, #dc2626 35%, #f97316 60%, #991b1b 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    text-shadow: 0 6px 18px rgba(127, 29, 29, 0.25);
+    /* Inherit global metallic style */
+    color: inherit;
+    text-shadow: none;
+    background: inherit;
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    -webkit-text-fill-color: inherit;
 }
 
 /* Page-specific styles (moved from inline <style> blocks) */
 .about-page .mk-hero {
     display: flex;
     align-items: center;
-    background: linear-gradient(180deg, #0f172a 0%, #06202a 60%), url('assets/images/hero-about.jpg') center/cover no-repeat;
+    background: linear-gradient(180deg, #0f172a 0%, #06202a 60%), url('../assets/images/hero-about.jpg') center/cover no-repeat;
     color: #fff;
     padding: 6rem 0;
 }
@@ -702,38 +712,56 @@ nav {
     }
 }
 
+/* Bookings Page Redesign */
 .bookings-page .booking-main {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem 3rem;
+    padding: 3rem 1.5rem;
 }
 
 .bookings-page .booking-hero {
-    background-image: url('assets/images/hero-bookings.webp');
+    background-image: url('../assets/images/hero-bookings.webp');
     background-size: cover;
     background-position: center;
-    min-height: 72vh;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.bookings-page .booking-hero::after {
-    background: linear-gradient(180deg, rgba(2, 6, 23, 0.65), rgba(2, 6, 23, 0.35));
+/* Ensure global header consistency overlay if needed, but hero usually has its own */
+.bookings-page .booking-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.7));
+    z-index: 1;
 }
 
 .bookings-page .booking-hero .hero-content {
-    padding-top: 4rem;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    padding-top: 4rem; /* Spacing for fixed nav */
 }
 
-.bookings-page .booking-hero .hero-title {
-    font-size: clamp(2.2rem, 4vw, 3rem);
-    margin-bottom: 1rem;
+/* Reuse global metallic text if applied to specific classes, but here define clean white for hero */
+.bookings-page .hero-title {
     font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.bookings-page .booking-hero .hero-desc {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.92);
-    max-width: 720px;
-    margin: 0 auto;
+.bookings-page .hero-desc {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+    margin-bottom: 2rem;
 }
 
 .bookings-page .hero-actions {
@@ -741,219 +769,225 @@ nav {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1.75rem;
 }
 
+/* Updated Button Styles */
 .bookings-page .booking-btn {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.4rem;
-    padding: 0.85rem 1.75rem;
-    border-radius: 999px;
-    font-weight: 700;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
     text-decoration: none;
-    border: 1px solid transparent;
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    font-size: 1rem;
 }
 
 .bookings-page .booking-btn.primary {
-    background: #fbbf24;
-    color: #1e293b;
-    box-shadow: 0 10px 24px rgba(251, 191, 36, 0.3);
+    background: var(--color-primary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(194, 65, 12, 0.3);
+}
+
+.bookings-page .booking-btn.primary:hover {
+    background: var(--color-secondary);
+    transform: translateY(-2px);
 }
 
 .bookings-page .booking-btn.secondary {
-    background: rgba(255, 255, 255, 0.12);
-    color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.bookings-page .booking-btn.secondary:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
 }
 
 .bookings-page .booking-btn.whatsapp {
-    background: #22c55e;
-    color: #ffffff;
+    background: #25D366;
+    color: white;
 }
 
 .bookings-page .booking-btn.email {
-    background: #2563eb;
-    color: #ffffff;
+    background: #ea4335; 
+    color: white;
 }
 
-.bookings-page .booking-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.2);
-}
-
+/* Sections */
 .bookings-page .booking-section {
-    background: #ffffff;
-    border-radius: 1.25rem;
-    box-shadow: 0 10px 32px rgba(2, 6, 23, 0.08);
-    margin-bottom: 2.5rem;
-    padding: 2.5rem;
+    margin-bottom: 4rem;
 }
 
 .bookings-page .section-header {
-    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.bookings-page .booking-section h2 {
-    font-size: clamp(1.6rem, 2.6vw, 2.1rem);
-    color: #1d4ed8;
+.bookings-page .section-header h2 {
     font-family: var(--font-heading);
-    margin-bottom: 0.6rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    /* Allow global h2 styles (metallic) to shine through if not overridden */
 }
 
-.bookings-page .booking-section p {
-    color: #334155;
-    font-size: 1.05rem;
-    margin-bottom: 1.25rem;
+.bookings-page .section-header p {
+    color: var(--color-text);
+    opacity: 0.8;
+    font-size: 1.1rem;
 }
 
+/* Partner Cards (Booking.com / Trip.com) */
 .bookings-page .partner-card {
-    background: #0f172a;
-    border-radius: 1rem;
-    padding: 2rem;
-    color: #e2e8f0;
-    position: relative;
-    overflow: hidden;
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08); /* Soft shadow */
+    border: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.bookings-page .partner-card.booking {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-}
-
-.bookings-page .partner-card.trip {
-    background: linear-gradient(135deg, #0b1b3b, #0f172a);
-}
-
-.bookings-page .partner-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at top right, rgba(59, 130, 246, 0.2), transparent 60%);
-    pointer-events: none;
+.bookings-page .partner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 .bookings-page .partner-brand {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #003580; /* Booking.com Blue default */
+}
+
+.bookings-page .partner-card.trip .partner-brand {
+    color: #2e66d3; /* Trip.com Blue */
 }
 
 .bookings-page .partner-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.75rem;
-    font-family: var(--font-heading);
-    color: #f8fafc;
-}
-
-.bookings-page .partner-card p {
-    color: rgba(226, 232, 240, 0.9);
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-heading);
 }
 
 .bookings-page .partner-tags {
     display: flex;
     gap: 0.75rem;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    margin: 1.5rem 0;
 }
 
 .bookings-page .partner-tag {
-    background: rgba(255, 255, 255, 0.12);
-    padding: 0.4rem 0.75rem;
-    border-radius: 999px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.3rem;
+    background: #f1f5f9;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #475569;
+    font-weight: 500;
 }
 
 .bookings-page .partner-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
-    padding: 0.7rem 1.4rem;
-    border-radius: 999px;
-    font-weight: 700;
+    display: inline-block;
+    background: #003580;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
     text-decoration: none;
-    background: #fbbf24;
-    color: #1e293b;
-    box-shadow: 0 10px 24px rgba(251, 191, 36, 0.3);
+    transition: background 0.2s;
+}
+
+.bookings-page .partner-card.trip .partner-cta {
+    background: #2e66d3;
+}
+
+.bookings-page .partner-cta:hover {
+    opacity: 0.9;
 }
 
 .bookings-page .partner-footer {
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     font-size: 0.85rem;
-    color: rgba(226, 232, 240, 0.7);
+    color: #94a3b8;
 }
 
-.bookings-page .contact-grid {
+/* Grid Layout for Tours / Stays */
+.bookings-page .booking-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
-.bookings-page .contact-card {
-    background: #f8fafc;
-    border-radius: 1rem;
+.bookings-page .booking-card {
+    background: #fff;
+    border-radius: 12px;
     padding: 1.5rem;
-    text-align: center;
-    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Lighter shadow */
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.bookings-page .contact-card h4 {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    font-family: var(--font-heading);
+.bookings-page .booking-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-.bookings-page .contact-card p {
-    color: #475569;
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-}
-
-.bookings-page .contact-card a {
-    font-weight: 700;
-    text-decoration: none;
-    color: #2563eb;
+.bookings-page .booking-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-heading);
 }
 
 .bookings-page .booking-card p {
-    color: #475569;
-    font-size: 0.98rem;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
 }
 
 .bookings-page .booking-card a {
-    display: inline-block;
-    margin-top: 1rem;
-    color: #0f766e;
+    color: var(--color-primary);
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 1px solid rgba(15, 118, 110, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
+.bookings-page .booking-card a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
 .bookings-page .contact-actions {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
     justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .bookings-page .booking-main {
         padding: 2rem 1rem;
     }
-
-    .bookings-page .booking-section {
-        padding: 1.6rem;
-    }
-
-    .bookings-page .partner-card {
-        padding: 1.6rem;
+    .bookings-page .hero-title {
+        font-size: 2.2rem;
     }
 }
 
@@ -1045,14 +1079,12 @@ nav {
 }
 
 .crafts-page .attraction-title {
-    font-family: 'Playfair Display', var(--font-heading);
+    font-family: var(--font-heading);
     font-size: 1.35rem;
     margin-bottom: 0.6rem;
-    color: #1d4ed8;
+    color: var(--color-heading);
     font-weight: 700;
     line-height: 1.3;
-    border-bottom: 2px solid #f97316;
-    display: inline-block;
 }
 
 .crafts-page .attraction-desc {
@@ -1085,24 +1117,11 @@ nav {
 .crafts-page .section-header h2,
 .crafts-page .heading-bright-blue {
     font-size: 1.85rem !important;
-    background: #ffffff;
-    color: #0f172a !important;
-    -webkit-text-fill-color: #0f172a;
-    background-clip: border-box;
-    -webkit-background-clip: border-box;
-    padding: 0.55rem 1.6rem;
-    display: inline-block;
-    border-radius: 8px;
-    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
-    margin-bottom: 0 !important;
-    font-weight: 800 !important;
-    letter-spacing: 0.02em;
-    text-shadow: none;
-    border: 2px solid rgba(249, 115, 22, 0.6);
+    color: var(--color-heading) !important;
 }
 
 .crafts-page .shining-blue-text {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-weight: 800;
     text-transform: none;
     letter-spacing: 0.02em;
@@ -1112,10 +1131,7 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.15;
-    background: linear-gradient(135deg, #2563eb, #9333ea, #f97316);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--color-heading);
 }
 
 .crafts-page .destination-hero::before {
@@ -1255,11 +1271,9 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: #00d26a;
+    color: var(--color-heading);
     font-weight: 600;
     line-height: 1.3;
-    border-bottom: 2px solid #FBC02D;
-    display: inline-block;
 }
 
 .destinations-page .attraction-desc {
@@ -1296,12 +1310,7 @@ nav {
 .destinations-page .section-header h2,
 .destinations-page .heading-bright-blue {
     font-size: 1.8rem !important;
-    background-color: #8B0000;
-    color: white !important;
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
-    border-radius: 2px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: var(--color-heading) !important;
     margin-bottom: 0 !important;
     font-weight: 700 !important;
 }
@@ -1399,11 +1408,9 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: #00d26a;
+    color: var(--color-heading);
     font-weight: 600;
     line-height: 1.3;
-    border-bottom: 2px solid #FBC02D;
-    display: inline-block;
 }
 
 .hidden-gems-page .attraction-desc {
@@ -1436,12 +1443,7 @@ nav {
 .hidden-gems-page .section-header h2,
 .hidden-gems-page .heading-bright-blue {
     font-size: 1.8rem !important;
-    background-color: #8B0000;
-    color: white !important;
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
-    border-radius: 2px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: var(--color-heading) !important;
     margin-bottom: 0 !important;
     font-weight: 700 !important;
 }
@@ -1571,11 +1573,9 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    color: #00d26a;
+    color: var(--color-heading);
     font-weight: 600;
     line-height: 1.3;
-    border-bottom: 2px solid #FBC02D;
-    display: inline-block;
 }
 
 .history-page .attraction-desc {
@@ -1618,12 +1618,7 @@ nav {
 .history-page .section-header h2,
 .history-page .heading-bright-blue {
     font-size: 1.8rem !important;
-    background-color: #8B0000;
-    color: white !important;
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
-    border-radius: 2px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: var(--color-heading) !important;
     margin-bottom: 0 !important;
     font-weight: 700 !important;
 }
@@ -1724,10 +1719,7 @@ nav {
 .blog-page .blog-hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #60a5fa, #34d399);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-white);
 }
 
 .blog-page .blog-hero p {
@@ -2116,11 +2108,9 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: #00d26a;
+    color: var(--color-heading);
     font-weight: 600;
     line-height: 1.3;
-    border-bottom: 2px solid #FBC02D;
-    display: inline-block;
 }
 
 .destination-detail-page .attraction-desc {
@@ -2266,23 +2256,23 @@ nav {
 
 .destination-detail-page .section-header h2,
 .destination-detail-page .heading-bright-blue {
-    font-size: 1.8rem !important;
-    background: linear-gradient(to right, #E1F5FE, #B3E5FC) !important;
-    color: #014361 !important;
-    padding: 0.5rem 2rem;
+    /* Inherit global metallic style */
+    background: inherit;
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    -webkit-text-fill-color: inherit;
+    color: inherit;
+    animation: inherit;
+    padding: 0.5rem 0; /* Adjusted padding as background is gone */
     display: inline-block;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    box-shadow: none;
     margin-bottom: 0 !important;
     font-weight: 700 !important;
     border-right: none;
-    border-left: 5px solid #0288D1;
+    border-left: none; /* Removing border as well for consistency */
     position: relative;
     z-index: 1;
-    -webkit-background-clip: border-box !important;
-    background-clip: border-box !important;
-    -webkit-text-fill-color: initial !important;
-    animation: none !important;
 }
 
 .destination-detail-page main {
@@ -2290,20 +2280,7 @@ nav {
 }
 
 .destination-detail-page .hero-title-metallic-red {
-    background: linear-gradient(
-        to right,
-        #7f1d1d 0%,
-        #dc2626 20%,
-        #fca5a5 50%,
-        #dc2626 80%,
-        #7f1d1d 100%
-    );
-    background-size: 200% auto;
-    color: auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: metallicRedShine 4s linear infinite;
+    color: var(--color-heading);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -2314,7 +2291,6 @@ nav {
     display: block;
     line-height: 1.2;
     text-shadow: none;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 @keyframes metallicRedShine {
@@ -2410,8 +2386,10 @@ nav {
 
 .destination-detail-page .nearby-highlight .section-header h2,
 .destination-detail-page .nearby-highlight .heading-bright-blue {
-    background: linear-gradient(90deg, #0b4f6c, #00a8e8) !important;
-    color: #ffffff !important;
+    /* Keeping white for contrast on dark highlighting background if needed, but let's default to global for now unless user complains */
+    /* actually, nearby-highlight seems to have a background color, so maybe white was better. But user wants consistency.
+       Let's stick to global. If it looks bad, we can revert this specific one. */
+     /* Removing !important color override */
     border-left: 6px solid #00d26a;
 }
 
@@ -2532,11 +2510,9 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: #00d26a;
+    color: var(--color-heading);
     font-weight: 600;
     line-height: 1.3;
-    border-bottom: 2px solid #FBC02D;
-    display: inline-block;
 }
 
 .craft-detail-page .attraction-desc {
@@ -2878,9 +2854,9 @@ nav {
 
 /* Card Styling */
 .card {
-    background: var(--color-card-bg);
+    background: linear-gradient(135deg, #ffe4e6 0%, #dbeafe 100%);
     border: 1px solid rgba(0, 0, 0, 0.03);
-    border-radius: 0;
+    border-radius: 1rem;
     overflow: hidden;
     transition: var(--transition-slow);
     display: flex;
