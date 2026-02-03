@@ -1082,7 +1082,19 @@ nav {
     font-family: var(--font-heading);
     font-size: 1.35rem;
     margin-bottom: 0.6rem;
-    color: var(--color-heading);
+    /* Apply global metallic style explicitly */
+    background: linear-gradient(to right,
+            #1e3a8a 0%,
+            #1e3a8a 40%,
+            #dc2626 50%,
+            #1e3a8a 60%,
+            #1e3a8a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
     font-weight: 700;
     line-height: 1.3;
 }
