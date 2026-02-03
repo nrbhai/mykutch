@@ -1111,7 +1111,20 @@ nav {
 .crafts-page .section-header,
 .crafts-page .section-header h2,
 .crafts-page .heading-bright-blue {
-    /* Allow global styles */
+    /* "Blue background & white color embossed style" */
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 0.6rem 1.5rem;
+    border-radius: 8px;
+    display: inline-block;
+    
+    /* Reset global metallic text clip so background shows */
+    -webkit-background-clip: border-box !important;
+    background-clip: border-box !important;
+    -webkit-text-fill-color: #ffffff !important;
+    animation: none;
+    box-shadow: 0 4px 10px rgba(30, 58, 138, 0.3);
 }
 
 .crafts-page .section-header {
