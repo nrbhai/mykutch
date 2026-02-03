@@ -1099,8 +1099,7 @@ nav {
 .crafts-page .section-header,
 .crafts-page .section-header h2,
 .crafts-page .heading-bright-blue {
-    text-align: left !important;
-    align-items: flex-start !important;
+    /* Allow global styles */
 }
 
 .crafts-page .section-header {
@@ -1109,29 +1108,28 @@ nav {
 }
 
 .crafts-page .section-header p {
-    text-align: left !important;
-    margin-left: 0 !important;
     margin-top: 0.5rem !important;
 }
 
-.crafts-page .section-header h2,
-.crafts-page .heading-bright-blue {
-    font-size: 1.85rem !important;
-    color: var(--color-heading) !important;
-}
+/* Removed color !important overrides */
 
 .crafts-page .shining-blue-text {
     font-family: var(--font-heading);
     font-weight: 800;
     text-transform: none;
     letter-spacing: 0.02em;
-    font-size: 2.75rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     text-align: center;
     margin-top: 1.8rem;
     margin-bottom: 0;
     display: block;
     line-height: 1.15;
-    color: var(--color-heading);
+    /* Inherit global metallic style */
+    color: inherit;
+    background: inherit;
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    -webkit-text-fill-color: inherit;
 }
 
 .crafts-page .destination-hero::before {
