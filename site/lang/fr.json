@@ -1030,23 +1030,23 @@
   },
   "geography_page": {
     "meta_title": "Geography of Kutch — India's Largest District | MyKutch.org",
-    "meta_desc": "Explore the geography of Kutch - India's largest district. Learn about the Great Rann, Little Rann, Banni Grasslands, climate, terrain, and unique geological features.",
-    "hero_title": "Geography of Kutch — India's Largest District",
+    "meta_desc": "Explorez la géographie de Kutch, le plus grand district de l'Inde. Découvrez le Great Rann, le Little Rann, les prairies de Banni, le climat, le terrain et les caractéristiques géologiques uniques.",
+    "hero_title": "Géographie de Kutch – le plus grand district de l'Inde",
     "intro": "Kutch is virtually an island — surrounded by the Arabian Sea to the west, the Gulf of Kutch to the south, and the vast salt marshes of the Rann to the north and east. With an area of 45,674 sq km, it is the <strong>largest district in India</strong>, comprising 23.27% of Gujarat's total area. The landscape is a study in contrasts: from snow-white salt deserts to lush grasslands, from rocky hills to pristine beaches, Kutch offers some of the most unique geographical features on Earth.",
     "stats": {
-      "title": "At a Glance",
-      "subtitle": "Key geographical facts about Kutch",
+      "title": "En un coup d'œil",
+      "subtitle": "Faits géographiques clés sur Kutch",
       "area": {
         "num": "45,674",
-        "label": "Square Kilometers<br>(Total Area)"
+        "label": "Kilomètres carrés<br>(superficie totale)"
       },
       "desert": {
         "num": "23,310",
-        "label": "Square Kilometers<br>(Desert Area)"
+        "label": "Kilomètres carrés<br>(Zone désertique)"
       },
       "height": {
         "num": "462m",
-        "label": "Kalo Dungar<br>(Highest Point)"
+        "label": "Kalo Dungar<br>(Point le plus haut)"
       },
       "villages": {
         "num": "924",
@@ -1054,200 +1054,200 @@
       },
       "rainfall": {
         "num": "356mm",
-        "label": "Average Annual<br>Rainfall"
+        "label": "Précipitations annuelles moyennes"
       },
       "temp": {
         "num": "2°C - 50°C",
-        "label": "Temperature<br>Range"
+        "label": "Plage de température<br>"
       }
     },
     "location": {
-      "title": "Location & Boundaries",
-      "text": "Kutch is situated on the western border of India, positioned between <strong>22°44' to 24°41' North latitude</strong> and <strong>68°09' to 71°54' East longitude</strong>. It lies just north of the Tropic of Cancer.",
+      "title": "Emplacement et limites",
+      "text": "Kutch est situé à la frontière occidentale de l'Inde, entre <strong>22°44' et 24°41' de latitude nord</strong> et <strong>68°09' à 71°54' de longitude est</strong>. Il se situe juste au nord du tropique du Cancer.",
       "list": {
-        "n": "<strong>North & Northwest</strong>: Pakistan (Sindh province)",
-        "e": "<strong>East</strong>: Banaskantha and Mehsana districts",
-        "se": "<strong>Southeast</strong>: Surendranagar district",
-        "s": "<strong>South</strong>: Gulf of Kutch and Rajkot district",
-        "sw": "<strong>Southwest & West</strong>: Arabian Sea"
+        "n": "<strong>Nord et Nord-Ouest</strong> : Pakistan (province du Sind)",
+        "e": "<strong>Est</strong> : districts de Banaskantha et Mehsana",
+        "se": "<strong>Sud-Est</strong> : district de Surendranagar",
+        "s": "<strong>Sud</strong> : Golfe de Kutch et district de Rajkot",
+        "sw": "<strong>Sud-Ouest et Ouest</strong> : Mer d'Oman"
       }
     },
     "geology": {
-      "title": "Geological History",
-      "subtitle": "How Kutch was formed over millions of years",
-      "text1": "According to geologists, <strong>thousands of years ago, the land of Kutch was at the sea bed</strong>. Due to tectonic activities in the Earth's crust, this land gradually emerged above the sea. The region shows evidence of its marine origins in the fossils found throughout the area and in the salt deposits that characterize the Rann.",
-      "text2": "About 100 years ago, when the Hakra and Sindhu (Indus) rivers used to flow through this region, it was fertile land. But due to geological changes including earthquakes that altered watercourses, the flow of these rivers changed and the region became dry and barren. The famous <strong>'Allah Bandh'</strong> (God's Dam) in the middle of the Sindhu River was created by the devastating 1819 earthquake, which literally stopped the river's flow.",
+      "title": "Histoire géologique",
+      "subtitle": "Comment Kutch s'est formé sur des millions d'années",
+      "text1": "Selon les géologues, <strong>il y a des milliers d'années, la terre de Kutch se trouvait au fond de la mer</strong>. En raison des activités tectoniques de la croûte terrestre, cette terre a progressivement émergé au-dessus de la mer. La région montre des preuves de ses origines marines dans les fossiles trouvés dans toute la zone et dans les gisements de sel qui caractérisent le Rann.",
+      "text2": "Il y a environ 100 ans, lorsque les rivières Hakra et Sindhu (Indus) traversaient cette région, c'était une terre fertile. Mais en raison de changements géologiques, notamment de tremblements de terre qui ont modifié les cours d'eau, le débit de ces rivières a changé et la région est devenue sèche et stérile. Le célèbre <strong>'Allah Bandh'</strong> (le barrage de Dieu) au milieu de la rivière Sindhu a été créé par le tremblement de terre dévastateur de 1819, qui a littéralement arrêté le débit de la rivière.",
       "note": {
-        "title": "🌍 Earthquake-Prone Region",
-        "text": "Kutch lies on an active seismic zone and has experienced several devastating earthquakes throughout history. The most recent was the 2001 Bhuj Earthquake (7.7 magnitude) that killed over 20,000 people. The 1819 Rann of Kutch Earthquake created the Allah Bandh, a natural dam about 80 km long. These tectonic events continuously shape the geography, affecting the atmosphere, land, and mineral deposits."
+        "title": "🌍 Région sujette aux tremblements de terre",
+        "text": "Kutch se trouve sur une zone sismique active et a connu plusieurs tremblements de terre dévastateurs au cours de son histoire. Le plus récent a été le tremblement de terre de Bhuj en 2001 (magnitude 7,7) qui a tué plus de 20 000 personnes. Le tremblement de terre de Rann of Kutch en 1819 a créé l'Allah Bandh, un barrage naturel d'environ 80 km de long. Ces événements tectoniques façonnent continuellement la géographie, affectant l’atmosphère, les terres et les gisements minéraux."
       }
     },
     "regions": {
       "intro": {
-        "title": "Five Distinct Regions",
-        "subtitle": "The unique landscapes of Kutch",
-        "text": "Kutch's landscape is remarkably diverse, comprising five distinct geographical regions, each with its own unique character, ecosystem, and beauty."
+        "title": "Cinq régions distinctes",
+        "subtitle": "Les paysages uniques de Kutch",
+        "text": "Le paysage de Kutch est remarquablement diversifié, comprenant cinq régions géographiques distinctes, chacune avec son caractère, son écosystème et sa beauté uniques."
       },
       "great_rann": {
-        "title": "1. The Great Rann of Kutch",
-        "text": "The Great Rann of Kutch is one of the <strong>largest salt deserts in the world</strong>, spanning approximately 7,500 square kilometers in the northern part of the district. The Hindi word \"Rann\" means \"desert.\"",
+        "title": "1. Le Grand Rann de Kutch",
+        "text": "Le Grand Rann de Kutch est l'un des <strong>plus grands déserts de sel du monde</strong>, s'étendant sur environ 7 500 kilomètres carrés dans la partie nord du district. Le mot hindi « Rann » signifie « désert ».",
         "list": {
-          "unique": "<strong>Unique Desert</strong>: Unlike typical sand deserts, this is a salt desert with smooth, hard ground covered in layers of crystallized salt.",
-          "seasonal": "<strong>Seasonal Transformation</strong>: During monsoon (June-October), it becomes a shallow wetland. As water evaporates, it transforms into a snow-white salt desert.",
-          "white": "<strong>White Rann</strong>: At Dhordo, the salt flat is so pure and white that it appears surreal, especially under moonlight.",
-          "mirage": "<strong>Mirage Effect</strong>: In summer, sunbeams hitting the white salty surface create spectacular mirages."
+          "unique": "<strong>Désert unique</strong> : contrairement aux déserts de sable typiques, il s'agit d'un désert de sel au sol lisse et dur recouvert de couches de sel cristallisé.",
+          "seasonal": "<strong>Transformation saisonnière</strong> : pendant la mousson (juin-octobre), elle devient une zone humide peu profonde. En s’évaporant, l’eau se transforme en un désert de sel blanc comme neige.",
+          "white": "<strong>White Rann</strong> : à Dhordo, le salar est si pur et blanc qu'il semble surréaliste, surtout au clair de lune.",
+          "mirage": "<strong>Effet Mirage</strong> : En été, les rayons du soleil frappant la surface blanche et salée créent des mirages spectaculaires."
         },
         "card": {
-          "title": "Experience the White Rann",
-          "desc": "Visit during Rann Utsav (Nov-Feb) to witness the magical salt desert. The Tent City at Dhordo offers premium accommodations with cultural performances.",
-          "btn": "Explore Dhordo →"
+          "title": "Découvrez le Rann blanc",
+          "desc": "Visitez pendant Rann Utsav (novembre-février) pour assister au désert de sel magique. Le Tent City at Dhordo propose un hébergement haut de gamme avec des spectacles culturels.",
+          "btn": "Explorer Dhordo →"
         }
       },
       "little_rann": {
-        "title": "2. The Little Rann of Kutch",
+        "title": "2. Le petit Rann de Kutch",
         "card": {
-          "title": "Wild Ass Sanctuary",
-          "desc": "The Little Rann is the only natural habitat of the endangered Indian Wild Ass (Ghudkhur). Safari tours available from Dhrangadhra."
+          "title": "Sanctuaire des Ânes Sauvages",
+          "desc": "Le Little Rann est le seul habitat naturel de l'âne sauvage indien (Ghudkhur), une espèce en voie de disparition. Safaris disponibles depuis Dhrangadhra."
         },
-        "text": "Located southeast of the Great Rann, the Little Rann covers approximately <strong>4,950 to 5,000 square kilometers</strong>. It is a seasonal salt marsh ecosystem and a hyper-arid saline desert.",
+        "text": "Situé au sud-est du Grand Rann, le Petit Rann couvre environ <strong>4 950 à 5 000 kilomètres carrés</strong>. Il s'agit d'un écosystème saisonnier de marais salants et d'un désert salin hyper-aride.",
         "list": {
-          "bets": "<strong>Bets (Islands)</strong>: Elevated islands called \"bets\" or \"medaks\" stand 2-3 meters above the flood level, supporting vegetation and providing wildlife refuge.",
-          "ass": "<strong>Wild Ass Sanctuary</strong>: Home to the endangered Indian Wild Ass (Equus hemionus khur), found nowhere else in the world.",
-          "wildlife": "<strong>Rich Wildlife</strong>: Also supports chinkara, nilgai, blackbuck, Indian wolf, flamingos, pelicans, and various bird species.",
-          "salt": "<strong>Salt Production</strong>: Traditional Agariyas (salt workers) produce salt using centuries-old techniques."
+          "bets": "<strong>Bets (îles)</strong> : des îles surélevées appelées « bets » ou « medaks » se dressent à 2 ou 3 mètres au-dessus du niveau d'inondation, soutenant la végétation et offrant un refuge à la faune.",
+          "ass": "<strong>Sanctuaire de l'âne sauvage</strong> : abrite l'âne sauvage indien (Equus hemionus khur), une espèce en voie de disparition, que l'on ne trouve nulle part ailleurs dans le monde.",
+          "wildlife": "<strong>Faune riche</strong> : soutient également le chinkara, le nilgai, le blackbuck, le loup indien, les flamants roses, les pélicans et diverses espèces d'oiseaux.",
+          "salt": "<strong>Production de sel</strong> : les Agariyas traditionnels (travailleurs du sel) produisent du sel en utilisant des techniques vieilles de plusieurs siècles."
         }
       },
       "banni": {
-        "title": "3. The Banni Grasslands",
-        "text": "The Banni is <strong>Asia's largest tropical grassland</strong>, spanning approximately 2,500 to 3,847 square kilometers along the southern edge of the Great Rann. This arid grassland ecosystem emerged from the sea due to tectonic activities and received fertile soils from ancient rivers.",
+        "title": "3. Les prairies de Banni",
+        "text": "Le Banni est <strong>la plus grande prairie tropicale d'Asie</strong>, s'étendant sur environ 2 500 à 3 847 kilomètres carrés le long de la limite sud du Grand Rann. Cet écosystème de prairies arides a émergé de la mer en raison des activités tectoniques et a reçu des sols fertiles provenant d’anciennes rivières.",
         "list": {
-          "bio": "<strong>Biodiversity Hotspot</strong>: Over 250 bird species (resident and migratory), 37 grass species, and diverse wildlife including flamingos at Chhari Dhand.",
-          "maldhari": "<strong>Maldhari Community</strong>: Home to the pastoral Maldhari people who have lived here for centuries, known for their distinctive round mud houses (bhungas).",
-          "reserves": "<strong>Conservation Reserves</strong>: Includes Kutch Desert Wildlife Sanctuary and Chhari Dhand Conservation Reserve.",
-          "artisan": "<strong>Artisan Villages</strong>: Famous for embroidery, leather work, and traditional crafts."
+          "bio": "<strong>Hotspot de biodiversité</strong> : plus de 250 espèces d'oiseaux (résidents et migrateurs), 37 espèces d'herbes et une faune diversifiée, notamment des flamants roses à Chhari Dhand.",
+          "maldhari": "<strong>Communauté Maldhari</strong> : foyer du peuple pastoral Maldhari qui vit ici depuis des siècles, connu pour ses maisons rondes en terre cuite (bhungas) distinctives.",
+          "reserves": "<strong>Réserves de conservation</strong> : comprend la réserve faunique du désert de Kutch et la réserve de conservation de Chhari Dhand.",
+          "artisan": "<strong>Villages d'artisans</strong> : célèbres pour la broderie, le travail du cuir et l'artisanat traditionnel."
         },
         "card": {
-          "title": "Chhari Dhand Wetland",
-          "desc": "A seasonal wetland in the Banni that attracts thousands of migratory birds including flamingos, cranes, and pelicans during winter.",
-          "btn": "Explore Chaari Dhand →"
+          "title": "Zone humide de Chhari Dhand",
+          "desc": "Une zone humide saisonnière du Banni qui attire des milliers d'oiseaux migrateurs, notamment des flamants roses, des grues et des pélicans en hiver.",
+          "btn": "Explorer Chaari Dhand →"
         }
       },
       "mainland": {
-        "title": "4. The Kutch Mainland",
-        "text": "The mainland of Kutch is a rocky upland region that includes plains, hills, and dry riverbeds. While generally flat, it features several hill ranges and isolated hills, with <strong>Kalo Dungar (Black Hill)</strong> being the highest point at 462 meters (1,516 feet).",
+        "title": "4. Le continent Kutch",
+        "text": "Le continent de Kutch est une région de hautes terres rocheuses qui comprend des plaines, des collines et des lits de rivières asséchés. Bien que généralement plat, il comporte plusieurs chaînes de collines et collines isolées, le <strong>Kalo Dungar (Black Hill)</strong> étant le point culminant à 462 mètres (1 516 pieds).",
         "card1": {
-          "title": "Northern Hill Range",
-          "desc": "The highest hills guard the Kutch region, located about 12km from Khavda village. Covered with different kinds of trees and tall grass, these hills offer panoramic views of the Great Rann."
+          "title": "Chaîne des collines du Nord",
+          "desc": "Les plus hautes collines gardent la région de Kutch, située à environ 12 km du village de Khavda. Couvertes de différentes sortes d'arbres et d'herbes hautes, ces collines offrent des vues panoramiques sur le Grand Rann."
         },
         "card2": {
-          "title": "Coastal Plains",
-          "desc": "The southern mainland transitions into coastal plains leading to the Gulf of Kutch, featuring ancient port towns like Mandvi and Mundra."
+          "title": "Plaines côtières",
+          "desc": "Le sud du continent se transforme en plaines côtières menant au golfe de Kutch, avec d'anciennes villes portuaires comme Mandvi et Mundra."
         }
       },
       "coast": {
-        "title": "5. Arabian Sea Coastline & Mangroves",
-        "text": "Kutch has an extensive coastline along the Arabian Sea to the west and the Gulf of Kutch to the south. The western coast features creeks and mangrove ecosystems that support rich marine life.",
+        "title": "5. Littoral de la mer d'Oman et mangroves",
+        "text": "Kutch possède un vaste littoral le long de la mer d'Oman à l'ouest et du golfe de Kutch au sud. La côte ouest présente des criques et des écosystèmes de mangroves qui abritent une riche vie marine.",
         "list": {
-          "ports": "<strong>Major Ports</strong>: Kandla Port (one of India's largest), Mundra Port (India's largest private port), and traditional ports at Mandvi.",
-          "beaches": "<strong>Beaches</strong>: Mandvi Beach is the premier beach destination, known for pristine shores and the Royal Vijay Vilas Palace.",
-          "ships": "<strong>Shipbuilding</strong>: Mandvi has a 400-year-old tradition of wooden ship building (dhows) that continues to this day.",
-          "mangroves": "<strong>Mangroves</strong>: Western creeks support mangrove forests that serve as nurseries for marine life and protect against coastal erosion."
+          "ports": "<strong>Principaux ports</strong> : le port de Kandla (l'un des plus grands d'Inde), le port de Mundra (le plus grand port privé d'Inde) et les ports traditionnels de Mandvi.",
+          "beaches": "<strong>Plages</strong> : La plage de Mandvi est la première destination balnéaire, connue pour ses rivages immaculés et le palais royal Vijay Vilas.",
+          "ships": "<strong>Construction navale</strong> : Mandvi a une tradition vieille de 400 ans de construction de navires en bois (boutres) qui se poursuit encore aujourd'hui.",
+          "mangroves": "<strong>Mangroves</strong> : les ruisseaux de l'ouest abritent des forêts de mangroves qui servent de pépinières à la vie marine et protègent contre l'érosion côtière."
         },
         "card": {
           "title": "Mandvi",
-          "desc": "Premier beach destination where history meets the Arabian Sea. Visit the palace, watch ship-building, and relax on pristine beaches.",
-          "btn": "Explore Mandvi →"
+          "desc": "Destination balnéaire de premier ordre où l'histoire rencontre la mer d'Oman. Visitez le palais, assistez à la construction navale et détendez-vous sur des plages immaculées.",
+          "btn": "Explorer Mandvi →"
         }
       }
     },
     "climate": {
-      "title": "Climate",
-      "subtitle": "Extreme temperatures and three distinct seasons",
-      "text": "Kutch experiences an <strong>extreme climate</strong> with significant temperature variations. Temperatures can range from as low as 2°C in winter nights to a scorching 45-50°C in peak summer. The average annual rainfall is very low, around 356 mm (historically), concentrated during the monsoon season.",
+      "title": "Climat",
+      "subtitle": "Des températures extrêmes et trois saisons distinctes",
+      "text": "Kutch connaît un <strong>climat extrême</strong> avec des variations de température importantes. Les températures peuvent varier de 2°C pendant les nuits d'hiver à 45-50°C en été. Les précipitations annuelles moyennes sont très faibles, autour de 356 mm (historiquement), concentrées pendant la saison de la mousson.",
       "summer": {
-        "title": "☀️ Summer",
-        "months": "February - June",
-        "desc": "Extremely hot with temperatures reaching 40-50°C. Dry and arid conditions. Not recommended for visits unless you can handle extreme heat."
+        "title": "☀️ Été",
+        "months": "Février - juin",
+        "desc": "Extrêmement chaud avec des températures atteignant 40-50°C. Conditions sèches et arides. Non recommandé pour les visites, sauf si vous pouvez supporter une chaleur extrême."
       },
       "monsoon": {
-        "title": "🌧️ Monsoon",
-        "months": "July - September",
-        "desc": "Some relief from heat with sparse rainfall. The Rann floods during this period. Landscape turns green. Roads to remote areas may be difficult."
+        "title": "🌧️ Mousson",
+        "months": "Juillet - Septembre",
+        "desc": "Un certain soulagement de la chaleur avec des précipitations rares. Le Rann est en crue à cette période. Le paysage devient vert. Les routes vers les zones éloignées peuvent être difficiles."
       },
       "winter": {
-        "title": "❄️ Winter",
-        "months": "October - January",
-        "desc": "Pleasant days (22-28°C) and cool nights (2-10°C). Best time to visit. Rann Utsav season. Migratory birds arrive."
+        "title": "❄️ Hiver",
+        "months": "Octobre - janvier",
+        "desc": "Journées agréables (22-28°C) et nuits fraîches (2-10°C). Meilleur moment pour visiter. Saison Rann Utsav. Les oiseaux migrateurs arrivent."
       }
     },
     "water": {
-      "title": "Water Resources",
-      "text": "Water is the most precious resource in Kutch. The region has no perennial rivers — all streams are seasonal, flowing only during monsoon. The unique hydrology of the Rann plays a crucial role:",
+      "title": "Ressources en eau",
+      "text": "L'eau est la ressource la plus précieuse à Kutch. La région ne possède pas de rivières pérennes : tous les cours d’eau sont saisonniers et ne coulent que pendant la mousson. L’hydrologie unique du Rann joue un rôle crucial :",
       "list": {
-        "salt": "<strong>Salt Formation</strong>: Rainwater in the Rann doesn't seep into the ground quickly. Instead, seawater from the Gulf of Kutch mixes with rainwater. When it evaporates, salt is left behind, creating the characteristic white salt layers.",
-        "moisture": "<strong>Moisture Retention</strong>: The salt in the land attracts moisture from the atmosphere, keeping the surface smooth and moist even during harsh summer days.",
-        "dams": "<strong>Major Dams</strong>: Rudramata Dam (near Bhuj), Tappar Dam, and various check dams provide water for agriculture and drinking.",
-        "narmada": "<strong>Narmada Canal</strong>: The Sardar Sarovar Narmada Canal has brought water to parts of Kutch, transforming agriculture in some regions."
+        "salt": "<strong>Formation de sel</strong> : l'eau de pluie du Rann ne s'infiltre pas rapidement dans le sol. Au lieu de cela, l’eau de mer du golfe de Kutch se mélange à l’eau de pluie. Lorsqu’il s’évapore, le sel reste, créant les couches de sel blanc caractéristiques.",
+        "moisture": "<strong>Rétention d'humidité</strong> : Le sel présent dans la terre attire l'humidité de l'atmosphère, gardant la surface lisse et humide même pendant les dures journées d'été.",
+        "dams": "<strong>Principaux barrages</strong> : le barrage de Rudramata (près de Bhuj), le barrage de Tappar et divers barrages de contrôle fournissent de l'eau pour l'agriculture et la boisson.",
+        "narmada": "<strong>Canal Narmada</strong> : Le canal Sardar Sarovar Narmada a amené l'eau dans certaines parties de Kutch, transformant l'agriculture dans certaines régions."
       }
     },
     "centres": {
-      "title": "Major Centres",
-      "subtitle": "Towns and cities of Kutch",
-      "text": "Kutch has 10 major towns spread across its vast landscape. Each town has its own unique character, from ancient heritage centers to modern commercial hubs.",
+      "title": "Grands centres",
+      "subtitle": "Villes et villages de Kutch",
+      "text": "Kutch compte 10 grandes villes réparties dans son vaste paysage. Chaque ville a son propre caractère, depuis les anciens centres patrimoniaux jusqu'aux centres commerciaux modernes.",
       "bhuj": {
         "title": "Bhuj",
-        "desc": "The district headquarters and cultural heart of Kutch. Home to palaces, museums, and traditional bazaars. Perfect base for exploring the region."
+        "desc": "Le siège du district et le cœur culturel de Kutch. Abritant des palais, des musées et des bazars traditionnels. Base idéale pour découvrir la région."
       },
       "gandhidham": {
         "title": "Gandhidham",
-        "desc": "Kutch's largest and most modern city. Commercial hub and gateway to Kandla Port. Well-connected by rail and road."
+        "desc": "La ville la plus grande et la plus moderne de Kutch. Centre commercial et porte d'entrée vers le port de Kandla. Bien relié par chemin de fer et par route."
       },
       "kandla": {
         "title": "Kandla",
-        "desc": "One of India's largest ports on the Gulf of Kutch. Major trade and export hub handling cargo from across the nation."
+        "desc": "L'un des plus grands ports indiens du golfe de Kutch. Plateforme majeure de commerce et d'exportation, traitant des marchandises provenant de tout le pays."
       },
       "nakhatrana": {
         "title": "Nakhatrana",
-        "desc": "Agricultural town in central Kutch known for its dairy industry. Gateway to northern Kutch's craft villages and Banni grasslands."
+        "desc": "Ville agricole du centre de Kutch connue pour son industrie laitière. Porte d'entrée vers les villages artisanaux du nord de Kutch et les prairies de Banni."
       },
       "mandvi": {
         "title": "Mandvi",
-        "desc": "Historic port town and premier beach destination. Famous for Vijay Vilas Palace and 400-year-old shipbuilding tradition."
+        "desc": "Ville portuaire historique et destination balnéaire de premier ordre. Célèbre pour le palais Vijay Vilas et sa tradition de construction navale vieille de 400 ans."
       },
       "bhachau": {
         "title": "Bhachau",
-        "desc": "Taluka headquarters in eastern Kutch, devastated in 2001 earthquake and rebuilt. Known for nearby textile craft villages."
+        "desc": "Siège social de Taluka dans l'est de Kutch, dévasté par le tremblement de terre de 2001 et reconstruit. Connu pour les villages d'artisanat textile à proximité."
       },
       "mundra": {
         "title": "Mundra",
-        "desc": "Home to India's largest private port. Fascinating mix of modern industry and historic walled city with spice trade heritage."
+        "desc": "Abritant le plus grand port privé d'Inde. Mélange fascinant d'industrie moderne et de ville historique fortifiée avec un héritage commercial d'épices."
       },
       "naliya": {
         "title": "Naliya",
-        "desc": "Gateway to western Kutch's spiritual destinations. Nearest town to Narayan Sarovar, Koteshwar, and Lakhpat."
+        "desc": "Porte d'entrée vers les destinations spirituelles de l'ouest de Kutch. Ville la plus proche de Narayan Sarovar, Koteshwar et Lakhpat."
       },
       "khavda": {
         "title": "Khavda",
-        "desc": "Northernmost town near the India-Pakistan border. Gateway to Kalo Dungar and the Great Rann. Known for traditional crafts."
+        "desc": "Ville la plus au nord, près de la frontière indo-pakistanaise. Porte d'entrée vers Kalo Dungar et le Grand Rann. Connu pour son artisanat traditionnel."
       }
     },
     "explore": {
-      "title": "Explore More",
+      "title": "Explorer davantage",
       "history": {
-        "title": "History of Kutch",
-        "desc": "From ancient Indus civilization to Jadeja rulers — discover the rich history that shaped this land."
+        "title": "Histoire de Kutch",
+        "desc": "De l’ancienne civilisation de l’Indus aux dirigeants Jadeja, découvrez la riche histoire qui a façonné cette terre."
       },
       "landscapes": {
-        "title": "Landscapes",
-        "desc": "Explore the stunning visual diversity of Kutch — from salt deserts to beaches, rocky hills to grasslands."
+        "title": "Paysages",
+        "desc": "Explorez l'étonnante diversité visuelle de Kutch, des déserts de sel aux plages, des collines rocheuses aux prairies."
       },
       "kalo": {
         "title": "Kalo Dungar",
-        "desc": "Visit the highest point in Kutch (458m) for panoramic views of the Great Rann and the evening jackal feeding ritual."
+        "desc": "Visitez le point culminant de Kutch (458 m) pour une vue panoramique sur le Grand Rann et le rituel nocturne de nourrissage des chacals."
       },
       "hidden": {
-        "title": "Hidden-Gems",
-        "desc": "Discover the secret natural wonders of Kutch beyond the tourist trail — wetlands, ancient sites, and scenic viewpoints."
+        "title": "Joyaux cachés",
+        "desc": "Découvrez les merveilles naturelles secrètes de Kutch au-delà du sentier touristique : zones humides, sites antiques et points de vue panoramiques."
       }
     }
   },
