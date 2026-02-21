@@ -2527,6 +2527,14 @@ nav {
         margin-top: 1rem;
         padding: 0 1rem;
     }
+
+    .destination-detail-page .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-detail-page .gallery-grid img {
+        display: block;
+    }
 }
 
 /* Craft detail pages */

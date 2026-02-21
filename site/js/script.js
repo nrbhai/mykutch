@@ -43,8 +43,9 @@ if (mobileToggle && navLinks) {
 
 // Staggered Reveal Animation
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const supportsIntersectionObserver = 'IntersectionObserver' in window;
 
-if (!prefersReducedMotion) {
+if (!prefersReducedMotion && supportsIntersectionObserver) {
     const observerOptions = {
         threshold: 0.15,
         rootMargin: '0px 0px -50px 0px'
@@ -93,6 +94,40 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Gallery Image Fallback (for browsers/devices where some images fail to decode)
+const applyGalleryImageFallbacks = () => {
+    document.querySelectorAll('.gallery-grid img').forEach((img) => {
+        if (img.dataset.galleryFallbackBound === 'true') {
+            return;
+        }
+
+        img.dataset.galleryFallbackBound = 'true';
+        img.addEventListener('error', () => {
+            const wrapper = document.createElement('div');
+            wrapper.style.display = 'flex';
+            wrapper.style.alignItems = 'center';
+            wrapper.style.justifyContent = 'center';
+            wrapper.style.minHeight = '180px';
+            wrapper.style.borderRadius = '0.75rem';
+            wrapper.style.background = '#f3f4f6';
+            wrapper.style.color = '#6b7280';
+            wrapper.style.fontSize = '0.9rem';
+            wrapper.textContent = 'Image unavailable on this device';
+
+            if (img.parentNode) {
+                img.parentNode.insertBefore(wrapper, img);
+                img.remove();
+            }
+        }, { once: true });
+    });
+};
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyGalleryImageFallbacks);
+} else {
+    applyGalleryImageFallbacks();
+}
 
 // Dark Mode Toggle
 const darkModeToggle = document.getElementById('darkModeToggle');

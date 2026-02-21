@@ -276,10 +276,31 @@
              const lightboxImg = document.getElementById('lightbox-img');
              const closeBtn = document.querySelector('.lightbox-close');
 
+       const applyGalleryFallback = (img) => {
+         img.addEventListener('error', () => {
+           const wrapper = document.createElement('div');
+           wrapper.style.display = 'flex';
+           wrapper.style.alignItems = 'center';
+           wrapper.style.justifyContent = 'center';
+           wrapper.style.minHeight = '180px';
+           wrapper.style.borderRadius = '0.75rem';
+           wrapper.style.background = '#f3f4f6';
+           wrapper.style.color = '#6b7280';
+           wrapper.style.fontSize = '0.9rem';
+           wrapper.textContent = 'Image unavailable on this device';
+
+           if (img.parentNode) {
+             img.parentNode.insertBefore(wrapper, img);
+             img.remove();
+           }
+         }, { once: true });
+       };
+
              if(!lightbox || !galleryImages.length) return;
 
              // Open Lightbox
              galleryImages.forEach(img => {
+         applyGalleryFallback(img);
                  img.addEventListener('click', () => {
                      lightboxImg.src = img.src;
                      lightboxImg.alt = img.alt || 'Gallery Image';
