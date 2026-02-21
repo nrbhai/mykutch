@@ -2439,7 +2439,8 @@ nav {
     border: 1px solid rgba(2, 136, 209, 0.15);
     box-shadow: 0 16px 40px rgba(2, 136, 209, 0.08);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    z-index: 10;
 }
 
 .destination-detail-page .nearby-highlight::after {
@@ -3113,7 +3114,8 @@ nav {
     border: 1px solid rgba(2, 136, 209, 0.15);
     box-shadow: 0 16px 40px rgba(2, 136, 209, 0.08);
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    z-index: 10;
 }
 
 .nearby-highlight::after {
