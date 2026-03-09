@@ -5,8 +5,11 @@
         gap: 1.5rem;
         padding: 1rem 0;
     }
-    /* Ultra-soft Cream */
+    /* Light Golden-White Background */
     :root {
+    --color-bg: linear-gradient(160deg, #FFF9E6 0%, #FFFDF7 40%, #ffffff 100%);
+    --color-bg-solid: #FFF9E6;
+    /* Warm Cream (fallback) */
     --color-text: #222;
     /* Soft Charcoal */
     --color-heading: #0F172A;
@@ -18,12 +21,14 @@
     --color-accent-1: #C2410C;
     /* Orange-700 */
     --color-white: #ffffff;
-    --color-shadow-soft: rgba(0, 0, 0, 0.04);
+    --color-shadow-soft: rgba(180, 130, 40, 0.06);
     --color-shadow-heavy: rgba(15, 23, 42, 0.08);
-    --color-glass: rgba(255, 255, 255, 0.7);
-    --color-glass-border: rgba(0, 0, 0, 0.05);
-    --color-card-bg: #ffffff;
-    --color-section-bg: #fafafa;
+    --color-glass: rgba(255, 249, 230, 0.75);
+    --color-glass-border: rgba(180, 130, 40, 0.08);
+    --color-card-bg: #FFFDF5;
+    /* Very warm white for cards */
+    --color-section-bg: #FFF8E1;
+    /* Soft golden cream for sections */
 
     /* Typography */
     --font-heading: 'Playfair Display', 'Poppins', serif;
@@ -94,15 +99,15 @@
     background-size: 200% auto;
 }
 
-/* Metallic Blue Gradient for Headings */
+/* Metallic Black Gradient for Headings */
 .heading-bright-blue {
     /* Ensure metallic style is applied even with this class */
     background: linear-gradient(to right,
-            #1e3a8a 0%,
-            #1e3a8a 40%,
-            #dc2626 50%,
-            #1e3a8a 60%,
-            #1e3a8a 100%);
+            #000000 0%,
+            #000000 40%,
+            #FFD700 50%,
+            #000000 60%,
+            #000000 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -123,19 +128,19 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* Premium Metallic Luster (Deep Blue to Bright Blue) */
+/* Premium Metallic Luster (Black to Bright Gold) */
 .metallic-luster {
     background: linear-gradient(to right,
-            #1e3a8a 0%,
-            /* Dark Blue */
-            #3b82f6 25%,
-            /* Blue 500 */
-            #93c5fd 50%,
-            /* Blue 300 (Highlight) */
-            #2563eb 75%,
-            /* Blue 600 */
-            #1e3a8a 100%
-            /* Dark Blue */
+            #000000 0%,
+            /* Black */
+            #1a1a1a 25%,
+            /* Very Dark Gray */
+            #FFD700 50%,
+            /* Gold (Highlight) */
+            #1a1a1a 75%,
+            /* Very Dark Gray */
+            #000000 100%
+            /* Black */
         );
     background-size: 200% auto;
     -webkit-background-clip: text;
@@ -143,7 +148,7 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
     animation: metallic 6s linear infinite;
-    filter: drop-shadow(0 2px 4px rgba(30, 58, 138, 0.2));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 [data-theme="dark"] .metallic-luster {
@@ -165,27 +170,24 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* Fancy Red Underline */
-.fancy-red-underline {
+/* 2. Section Headings: Fancy Underline Utility */
+.fancy-red-underline,
+.fancy-gold-underline {
     position: relative;
-    padding-bottom: 1rem;
+    display: inline-block;
 }
 
-.fancy-red-underline::after {
+.fancy-red-underline::after,
+.fancy-gold-underline::after {
     content: '';
     position: absolute;
-    bottom: -6px;
+    bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 180px;
-    height: 12px;
-    background-image: url("data:image/svg+xml,%3Csvg width='180' height='12' viewBox='0 0 180 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6 L70 6' stroke='%23dc2626' stroke-width='1' /%3E%3Ccircle cx='76' cy='6' r='2' fill='%23dc2626' /%3E%3Crect x='86' y='2' width='8' height='8' transform='rotate(45 90 6)' fill='%23dc2626' /%3E%3Ccircle cx='104' cy='6' r='2' fill='%23dc2626' /%3E%3Cpath d='M110 6 L180 6' stroke='%23dc2626' stroke-width='1' /%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border-radius: 0;
-    box-shadow: none;
-    background-color: transparent;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #FFD700, transparent);
+    border-radius: 2px;
 }
 
 .fancy-red-underline.align-left::after {
@@ -267,7 +269,9 @@ html {
 
 /* 1. Global Reset & Body Defaults */
 body {
-    background-color: var(--color-bg);
+    background: linear-gradient(160deg, #FFF9E6 0%, #FFFDF7 40%, #ffffff 100%) fixed;
+    background-color: #FFF9E6;
+    /* Fallback for browsers that don't support gradient backgrounds */
     color: var(--color-text);
     font-family: var(--font-body);
     font-size: 16px;
@@ -279,7 +283,7 @@ body {
     max-width: 100%;
 }
 
-/* 2. Headings (H1 - H3): Metallic Blue Gradient */
+/* 2. Headings (H1 - H3): Metallic Black Gradient */
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 700;
@@ -287,13 +291,30 @@ h1, h2, h3 {
     letter-spacing: -0.01em;
     margin-bottom: 1rem;
     
-    /* Global Metallic Blue Gradient */
+    /* Global Metallic Black Gradient with Golden Shine */
     background: linear-gradient(to right,
-            #1e3a8a 0%,
-            #1e3a8a 40%,
-            #dc2626 50%,
-            #1e3a8a 60%,
-            #1e3a8a 100%);
+            #000000 0%,
+            #000000 40%,
+            #FFD700 50%,
+            #000000 60%,
+            #000000 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
+}
+
+.metallic-gold,
+.metallic-luster {
+    font-family: var(--font-heading);
+    background: linear-gradient(to right,
+            #000000 0%,
+            #000000 40%,
+            #FFD700 50%,
+            #000000 60%,
+            #000000 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -339,11 +360,11 @@ a {
 .heading-bright-blue {
     font-family: var(--font-heading);
     background: linear-gradient(to right,
-            #1e3a8a 0%,
-            #1e3a8a 40%,
-            #dc2626 50%,
-            #1e3a8a 60%,
-            #1e3a8a 100%);
+            #000000 0%,
+            #000000 40%,
+            #FFD700 50%,
+            #000000 60%,
+            #000000 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -375,7 +396,7 @@ textarea:focus-visible,
 
 /* Layout */
 .container {
-    max-width: 1440px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
@@ -392,9 +413,9 @@ nav {
     width: 100%;
     z-index: 1000;
     padding: 0.75rem 0;
-    background: #ffffff;
-    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
-    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+    background: linear-gradient(to right, #FFFDF5, #FFF9E0, #FFFDF5);
+    border-bottom: 1px solid rgba(180, 130, 40, 0.15);
+    box-shadow: 0 4px 18px rgba(180, 130, 40, 0.08);
 }
 
 .nav-logo {
@@ -504,7 +525,7 @@ nav {
     text-align: center;
     color: white;
     /* Changed from var(--color-text) for cinematic contrast */
-    max-width: 900px;
+    max-width: 1200px;
     padding: 0 var(--spacing-md);
 }
 
@@ -550,13 +571,13 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.2;
-    /* Explicitly apply metallic style */
+    /* Explicitly apply metallic style with golden shine on black base */
     background: linear-gradient(to right,
-            #1e3a8a 0%,
-            #1e3a8a 40%,
-            #dc2626 50%,
-            #1e3a8a 60%,
-            #1e3a8a 100%);
+            #000000 0%,
+            #000000 40%,
+            #FFD700 50%,
+            #000000 60%,
+            #000000 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -575,7 +596,7 @@ nav {
 }
 
 .about-page .mk-hero .inner {
-    max-width: 1100px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -700,7 +721,7 @@ nav {
 }
 
 .about-page .about-intro .intro-card {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     background: #fff;
     border-radius: 16px;
@@ -721,7 +742,7 @@ nav {
     line-height: 1.9;
     color: #334155;
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 900px;
 }
 
 @media (max-width: 900px) {
@@ -780,7 +801,7 @@ nav {
 
 .bookings-page .booking-intro {
     text-align: center;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto 3rem;
     padding: 0 1rem;
 }
@@ -2349,6 +2370,7 @@ nav {
     text-align: left;
 }
 
+.destination-detail-page .hero-title-metallic-gold,
 .destination-detail-page .hero-title-metallic-red {
     font-weight: 800;
     text-transform: uppercase;
@@ -2359,10 +2381,22 @@ nav {
     margin-bottom: 0;
     display: block;
     line-height: 1.2;
-    /* Redundant color/shadow removed to fallback to global or use explicit metallic class if needed */
+    /* Apply Golden Shine over Blue Base */
+    background: linear-gradient(to right,
+            #1e3a8a 0%,
+            #1e3a8a 40%,
+            #FFD700 50%,
+            #1e3a8a 60%,
+            #1e3a8a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: metallic 6s linear infinite;
 }
 
-@keyframes metallicRedShine {
+@keyframes metallicGoldShine {
     to {
         background-position: 200% center;
     }
@@ -2433,34 +2467,27 @@ nav {
 
 .destination-detail-page .nearby-highlight {
     margin-top: 4rem;
-    padding: 2.5rem;
-    border-radius: 1.25rem;
-    background: linear-gradient(135deg, rgba(0, 210, 106, 0.08), rgba(2, 136, 209, 0.10));
-    border: 1px solid rgba(2, 136, 209, 0.15);
-    box-shadow: 0 16px 40px rgba(2, 136, 209, 0.08);
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: none;
     position: relative;
     overflow: visible;
     z-index: 10;
 }
 
 .destination-detail-page .nearby-highlight::after {
-    content: "";
-    position: absolute;
-    top: -80px;
-    right: -80px;
-    width: 220px;
-    height: 220px;
-    background: radial-gradient(circle, rgba(0, 210, 106, 0.18), rgba(0, 210, 106, 0));
-    pointer-events: none;
+    display: none;
 }
 
 .destination-detail-page .nearby-highlight .section-header h2,
 .destination-detail-page .nearby-highlight .heading-bright-blue {
-    /* Keeping white for contrast on dark highlighting background if needed, but let's default to global for now unless user complains */
-    /* actually, nearby-highlight seems to have a background color, so maybe white was better. But user wants consistency.
-       Let's stick to global. If it looks bad, we can revert this specific one. */
-     /* Removing !important color override */
-    border-left: 6px solid #00d26a;
+    font-size: 1.75rem !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: var(--color-heading) !important;
+    border-left: 6px solid #FFD700;
+    padding-left: 1rem;
 }
 
 .destination-detail-page .nearby-highlight .attraction-card {
@@ -3116,32 +3143,27 @@ nav {
 /* Nearby Places highlight */
 .nearby-highlight {
     margin-top: 4rem;
-    padding: 2.5rem;
-    border-radius: 1.25rem;
-    background: linear-gradient(135deg, rgba(0, 210, 106, 0.08), rgba(2, 136, 209, 0.10));
-    border: 1px solid rgba(2, 136, 209, 0.15);
-    box-shadow: 0 16px 40px rgba(2, 136, 209, 0.08);
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
     position: relative;
     overflow: visible;
     z-index: 10;
 }
 
 .nearby-highlight::after {
-    content: "";
-    position: absolute;
-    top: -80px;
-    right: -80px;
-    width: 220px;
-    height: 220px;
-    background: radial-gradient(circle, rgba(0, 210, 106, 0.18), rgba(0, 210, 106, 0));
-    pointer-events: none;
+    display: none;
 }
 
 .nearby-highlight .section-header h2,
 .nearby-highlight .heading-bright-blue {
-    background: linear-gradient(90deg, #0b4f6c, #00a8e8) !important;
-    color: #ffffff !important;
-    border-left: 6px solid #00d26a;
+    font-size: 1.75rem !important;
+    background: none !important;
+    -webkit-text-fill-color: initial !important;
+    color: var(--color-heading) !important;
+    border-left: 6px solid #FFD700;
+    padding-left: 1rem;
 }
 
 .nearby-highlight .attraction-card {
@@ -4395,7 +4417,7 @@ nav,
 
 /* Common Destination Styles */
 .editorial-container {
-    max-width: 900px;
+    max-width: 1260px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -4879,21 +4901,22 @@ nav,
 /* Footer Redesign */
 .footer-main {
     position: relative;
-    background: linear-gradient(135deg, #ffe4ec 0%, #ffd6e7 50%, #f9d5ff 100%) !important;
-    color: #1f2937 !important;
+    background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 30%, #FBF5B7 50%, #B38728 75%, #AA771C 100%) !important;
+    color: #1a0a00 !important;
     padding: 3.5rem 0 2rem !important;
-    border-top: 1px solid rgba(15, 23, 42, 0.08) !important;
+    border-top: 3px solid #B38728 !important;
     margin-top: 1.5rem !important;
     overflow: hidden;
     font-family: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    box-shadow: 0 -4px 30px rgba(180, 130, 40, 0.25);
 }
 
 .footer-main::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(700px circle at 10% 15%, rgba(236, 72, 153, 0.16), transparent 55%),
-        radial-gradient(700px circle at 90% 10%, rgba(244, 114, 182, 0.16), transparent 55%);
+    background: radial-gradient(800px circle at 20% 50%, rgba(255, 223, 100, 0.35), transparent 60%),
+        radial-gradient(600px circle at 80% 30%, rgba(250, 200, 80, 0.25), transparent 55%);
     pointer-events: none;
 }
 
@@ -4925,14 +4948,15 @@ nav,
     max-width: 240px;
     object-fit: contain;
     display: block;
-    filter: drop-shadow(0 6px 18px rgba(15, 23, 42, 0.15));
+    filter: drop-shadow(0 4px 12px rgba(100, 60, 0, 0.3));
 }
 
 .footer-tagline {
     font-size: 0.98rem;
     line-height: 1.7;
-    color: #374151;
+    color: #3d1f00;
     max-width: 360px;
+    font-weight: 500;
 }
 
 .footer-nav {
@@ -4947,17 +4971,17 @@ nav,
 }
 
 .footer-link {
-    color: #1f2937;
+    color: #2d1500;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.01em;
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .footer-link:hover {
-    color: #db2777;
-    transform: translateY(-1px);
+    color: #C2410C;
+    transform: translateY(-2px);
 }
 
 .footer-contact {
@@ -4970,39 +4994,81 @@ nav,
 
 .footer-contact-item {
     font-size: 0.95rem;
-    color: #1f2937;
+    color: #2d1500;
     font-weight: 500;
 }
 
 .footer-contact-item span {
-    color: rgba(15, 23, 42, 0.7);
+    color: rgba(60, 30, 0, 0.7);
     margin-right: 0.35rem;
 }
 
 .footer-contact-item a {
-    color: #111827;
-    font-weight: 600;
+    color: #1a0800;
+    font-weight: 700;
     margin-left: 0.4rem;
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .footer-contact-item a:hover {
-    color: #db2777;
+    color: #C2410C;
 }
 
 .footer-main a {
     color: inherit;
 }
 
+.footer-heading {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+    color: #1a0800;
+}
+
+.footer-desc {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #3d1f00;
+    max-width: 320px;
+    font-weight: 500;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-col-left,
+.footer-col-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 2rem;
+}
+
 .footer-bottom {
-    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    border-top: 1px solid rgba(100, 60, 0, 0.2);
     padding-top: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     text-align: center;
     font-size: 0.88rem;
-    color: #6b7280;
+    color: #5c3000;
     font-weight: 500;
 }
 
@@ -5028,6 +5094,26 @@ nav,
     .footer-contact {
         text-align: center;
         align-items: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-col-left,
+    .footer-col-right {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links-grid {
+        justify-items: center;
+    }
+
+    .footer-desc {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
