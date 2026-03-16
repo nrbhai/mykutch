@@ -507,8 +507,8 @@
     }
   },
   "home": {
-    "meta_title": "Путеводитель по Каччху 2026 | White Rann, Бхудж и скрытые жемчужины | MyKutch.org",
-    "meta_desc": "Исследуйте соляную пустыню White Rann, древний Дхолавира и живое ремесло Каччха. Полный гид с отелями, турами и советами инсайдеров. Планируйте поездку 2026 уже сегодня!",
+    "meta_title": "Путеводитель по Кач 2026 | Белая Ранн, Бхудж и скрытые сокровища",
+    "meta_desc": "Полный путеводитель по Кач. Исследуйте белую пустыню Ранн, древний Дхолавира, город Бхудж и скрытые сокровища. Отели, экскурсии и советы.",
     "hero": {
       "title": "Мистический Каччх",
       "subtitle": "Где тишина говорит языком соли и камня",
@@ -660,7 +660,8 @@
       "desc": "Вступайте в наше сообщество исследователей Каччха! Получайте в WhatsApp оперативные новости о Rann Utsav, погоде и тайных локациях.",
       "whatsapp_btn": "Вступить в WhatsApp",
       "contact_btn": "Связаться со мной"
-    }
+    },
+    "meta_keywords": "путешествие в Кач, туризм в Кач, Бхудж, Ранн в Кач, Белая Ранн, Дхолавира, Мандви"
   },
   "about": {
     "meta_title": "About | MyKutch — People • Craft • Landscape",
@@ -801,8 +802,8 @@
     }
   },
   "destinations_page": {
-    "meta_title": "All Destinations | MyKutch.org",
-    "meta_desc": "Explore every corner of Kutch - from ancient temples to pristine beaches, desert landscapes to artisan villages. Complete guide to all Kutch destinations.",
+    "meta_title": "Направления и достопримечательности Кач | Путеводитель",
+    "meta_desc": "Откройте лучшие направления Кач - Белую Ранн, Бхудж, Мандви, Дхолавира, Кадия Дхроу и 50+ скрытых сокровищ.",
     "hero_title": "All Destinations — Explore Every Corner of Kutch",
     "intro": "From the pristine beaches of Mandvi to the ancient ruins of Dholavira, from the salt flats of the White Rann to the spiritual temples of Mata na Madh — Kutch offers a treasure trove of destinations for every traveler. Explore our comprehensive guide to plan your perfect Kutch adventure.",
     "sections": {
@@ -921,7 +922,8 @@
       "title": "Looking for Hidden Gems?",
       "desc": "Discover the secret treasures of Kutch that only locals know — from bird sanctuaries to ancient ruins off the tourist trail.",
       "btn": "Explore Hidden Gems →"
-    }
+    },
+    "meta_keywords": "направления Кач, достопримечательности Кач, туризм Кач, Бхудж, Мандви, Дхолавира"
   },
   "history_page": {
     "meta_title": "История Кача — 5000 лет наследия | MyKutch.org",
@@ -3070,5 +3072,9 @@
       "small_text_002": "Расположение",
       "text_span_003": "Мата но Мадх"
     }
+  },
+  "homepage_page": {
+    "meta_title": "Путеводитель по Кач 2026 | Белая Ранн, Бхудж и скрытые сокровища",
+    "meta_desc": "Полный путеводитель по Кач. Исследуйте белую пустыню Ранн, древний Дхолавира, город Бхудж и скрытые сокровища. Отели, экскурсии и советы от местных."
   }
 }

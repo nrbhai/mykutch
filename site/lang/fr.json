@@ -507,8 +507,8 @@
     }
   },
   "home": {
-    "meta_title": "Guide de voyage Kutch 2026 | White Rann, Bhuj & Trésors cachés | MyKutch.org",
-    "meta_desc": "Explorez le White Rann de Kutch, l'antique Dholavira et des artisans vibrants. Guide complet avec hôtels, circuits et conseils d'initiés. Préparez votre voyage 2026 dès aujourd'hui !",
+    "meta_title": "Guide de Voyage Kutch 2026 | Rann Blanc, Bhuj & joyaux cachés",
+    "meta_desc": "Guide complet de voyage à Kutch. Explorez le désert de sel Rann Blanc, l'ancien Dholavira, la ville de Bhuj et les joyaux cachés. Hôtels, visites guidées et conseils.",
     "hero": {
       "title": "Kutch mystique",
       "subtitle": "Quand le silence parle dans le sel et la pierre",
@@ -660,7 +660,8 @@
       "desc": "Rejoignez notre communauté d'explorateurs du Kutch ! Recevez sur WhatsApp des alertes météo, infos Rann Utsav et lieux secrets en temps réel.",
       "whatsapp_btn": "Rejoindre WhatsApp",
       "contact_btn": "Nous contacter"
-    }
+    },
+    "meta_keywords": "voyage Kutch, tourisme Kutch, Bhuj, Rann de Kutch, Rann Blanc, Dholavira, Mandvi"
   },
   "about": {
     "meta_title": "About | MyKutch — People • Craft • Landscape",
@@ -801,8 +802,8 @@
     }
   },
   "destinations_page": {
-    "meta_title": "Toutes les destinations | MyKutch.org",
-    "meta_desc": "Explorez tous les recoins de Kutch, des temples antiques aux plages immaculées, en passant par les paysages désertiques et les villages d'artisans. Guide complet de toutes les destinations Kutch.",
+    "meta_title": "Destinations et attractions de Kutch | Guide de voyage",
+    "meta_desc": "Découvrez les meilleures destinations de Kutch - Rann Blanc, Bhuj, Mandvi, Dholavira, Kadia Dhrow et 50+ joyaux cachés.",
     "hero_title": "Toutes les destinations — Explorez tous les recoins de Kutch",
     "intro": "Des plages immaculées de Mandvi aux ruines antiques de Dholavira, des marais salants du White Rann aux temples spirituels de Mata na Madh, Kutch offre un trésor de destinations pour chaque voyageur. Explorez notre guide complet pour planifier votre aventure Kutch parfaite.",
     "sections": {
@@ -921,7 +922,8 @@
       "title": "Vous cherchez des trésors cachés ?",
       "desc": "Découvrez les trésors secrets de Kutch que seuls les habitants connaissent, des sanctuaires d'oiseaux aux ruines antiques hors des sentiers touristiques.",
       "btn": "Explorez les joyaux cachés →"
-    }
+    },
+    "meta_keywords": "destinations Kutch, attractions Kutch, tourisme Kutch, Bhuj, Mandvi, Dholavira"
   },
   "history_page": {
     "meta_title": "Histoire de Kutch — 5000 ans d'héritage | MyKutch.org",
@@ -3070,5 +3072,9 @@
       "small_text_002": "Emplacement",
       "text_span_003": "Mata pas Madh"
     }
+  },
+  "homepage_page": {
+    "meta_title": "Guide de Voyage Kutch 2026 | Rann Blanc, Bhuj & Joyaux Cachés",
+    "meta_desc": "Guide complet de voyage à Kutch. Explorez le désert de sel blanc de Rann, l'ancien Dholavira, la ville de Bhuj et les joyaux cachés. Hôtels, visites guidées et conseils."
   }
 }

@@ -26,8 +26,8 @@
     "developed_by": "Developed with Love for Kutch by MyKutch.org team"
   },
   "crafts_page": {
-    "meta_title": "Kutch Arts & Crafts — Living Heritage of Artisans | MyKutch.org",
-    "meta_desc": "Explore the vibrant arts and crafts of Kutch. From Ajrakh block printing to Rogan art, discover the rich cultural heritage of Gujarat's artisan communities.",
+    "meta_title": "Kutch Arts & Crafts | Ajrakh, Bandhani, Rogan Art & Heritage",
+    "meta_desc": "Explore the vibrant arts and crafts of Kutch. From Ajrakh block printing to Rogan art, Bandhani tie-dye, mirror work. Meet artisans in craft villages.",
     "hero_title": "Kutch Crafts: Color, Culture & Craftsmanship",
     "intro": "Kutch is a living museum of color and craft. Every village keeps a unique tradition alive — from the hypnotic geometry of Ajrakh to the delicate knots of Bandhani, from rare Rogan painting to the bold embroidery of Rabari artisans. These handmade forms carry stories of resilience, identity, and beauty shaped across generations in Gujarat's most dramatic landscape.",
     "sections": {
@@ -149,7 +149,8 @@
           "desc": "Discover all the destinations in Kutch — from salt deserts to beaches, ancient ruins to sacred temples."
         }
       }
-    }
+    },
+    "meta_keywords": "Kutch crafts, Kutch handicrafts, Ajrakh, Bandhani, Rogan art, mirror work, Kutch artisans, traditional crafts, handloom Kutch"
   },
   "bandhani": {
     "meta_title": "Bandhani — Ancient Tie-Dye Art of Kutch | MyKutch.org",
@@ -508,7 +509,7 @@
   },
   "home": {
     "meta_title": "Kutch Travel Guide 2026 | White Rann, Bhuj & Hidden Gems | MyKutch.org",
-    "meta_desc": "Explore Kutch's White Rann, ancient Dholavira, and vibrant crafts. Complete travel guide with hotels, tours, and insider tips. Plan your 2026 journey today!",
+    "meta_desc": "Complete Kutch travel guide. Explore White Rann desert, ancient Dholavira, Bhuj city, vibrant crafts, and hidden gems. Hotels, tours, and insider tips for visiting Kutch, Gujarat.",
     "hero": {
       "title": "Mystical Kutch",
       "subtitle": "Where Silence Speaks in Salt & Stone",
@@ -660,7 +661,8 @@
       "desc": "Join our community of Kutch explorers! Get real-time updates on Rann Utsav, weather alerts, and hidden gem locations directly on WhatsApp.",
       "whatsapp_btn": "Join WhatsApp",
       "contact_btn": "Contact Me"
-    }
+    },
+    "meta_keywords": "Kutch travel, travel to Kutch, Kutch tourism, Bhuj, Rann of Kutch, White Rann, Dholavira, Mandvi, Kadia Dhrow, road to heaven, Kutch hotels, Kutch attractions, visit Kutch"
   },
   "about": {
     "meta_title": "About | MyKutch — People • Craft • Landscape",
@@ -801,8 +803,8 @@
     }
   },
   "destinations_page": {
-    "meta_title": "All Destinations | MyKutch.org",
-    "meta_desc": "Explore every corner of Kutch - from ancient temples to pristine beaches, desert landscapes to artisan villages. Complete guide to all Kutch destinations.",
+    "meta_title": "Kutch Destinations & Attractions | Travel Guide to Places to Visit",
+    "meta_desc": "Discover all top Kutch destinations - White Rann, Bhuj, Mandvi, Dholavira, Kadia Dhrow, road to heaven, and 50+ hidden gems. Complete tourist guide to Kutch tourism.",
     "hero_title": "All Destinations — Explore Every Corner of Kutch",
     "intro": "From the pristine beaches of Mandvi to the ancient ruins of Dholavira, from the salt flats of the White Rann to the spiritual temples of Mata na Madh — Kutch offers a treasure trove of destinations for every traveler. Explore our comprehensive guide to plan your perfect Kutch adventure.",
     "sections": {
@@ -921,11 +923,12 @@
       "title": "Looking for Hidden Gems?",
       "desc": "Discover the secret treasures of Kutch that only locals know — from bird sanctuaries to ancient ruins off the tourist trail.",
       "btn": "Explore Hidden Gems →"
-    }
+    },
+    "meta_keywords": "Kutch destinations, places to visit in Kutch, Kutch attractions, Kutch tourism, Bhuj, Mandvi, Dholavira, Rann of Kutch"
   },
   "history_page": {
-    "meta_title": "History of Kutch — 5000 Years of Heritage | MyKutch.org",
-    "meta_desc": "Explore the 5,000-year history of Kutch, from the ancient Indus Valley Civilization to the legendary Jadeja Dynasty and modern-day resilience.",
+    "meta_title": "History of Kutch | Heritage, Kingdom & Cultural Timeline",
+    "meta_desc": "Explore the rich history of Kutch - from ancient Harappan civilization to medieval kingdoms. Understand Kutch's cultural heritage and historical significance.",
     "hero_title": "History of Kutch — 5000 Years of Heritage",
     "intro": "The history of Kutch spans over 5,000 years — from the sophisticated cities of the Indus Valley Civilization to the legendary Jadeja Dynasty that ruled for 500 years. This land has witnessed the rise and fall of empires, the migration of ancient tribes, and the birth of a unique cultural identity that has survived earthquakes, invasions, and the test of time.",
     "why_kutch": {
@@ -1026,11 +1029,12 @@
           "desc": "Explore the 5000-year-old UNESCO World Heritage Site and walk through ancient Harappan streets."
         }
       }
-    }
+    },
+    "meta_keywords": "Kutch history, Kutch heritage, Harappan civilization, Kutch kingdom, Kutch culture, Gujarat history"
   },
   "geography_page": {
-    "meta_title": "Geography of Kutch — India's Largest District | MyKutch.org",
-    "meta_desc": "Explore the geography of Kutch - India's largest district. Learn about the Great Rann, Little Rann, Banni Grasslands, climate, terrain, and unique geological features.",
+    "meta_title": "Geography of Kutch | Region, Climate, Terrain & Maps",
+    "meta_desc": "Learn about Kutch's unique geography - the Rann salt desert, Little Rann, diverse terrain, and geographical features that shape this unique region in Gujarat.",
     "hero_title": "Geography of Kutch — India's Largest District",
     "intro": "Kutch is virtually an island — surrounded by the Arabian Sea to the west, the Gulf of Kutch to the south, and the vast salt marshes of the Rann to the north and east. With an area of 45,674 sq km, it is the <strong>largest district in India</strong>, comprising 23.27% of Gujarat's total area. The landscape is a study in contrasts: from snow-white salt deserts to lush grasslands, from rocky hills to pristine beaches, Kutch offers some of the most unique geographical features on Earth.",
     "stats": {
@@ -1249,7 +1253,8 @@
         "title": "Hidden-Gems",
         "desc": "Discover the secret natural wonders of Kutch beyond the tourist trail — wetlands, ancient sites, and scenic viewpoints."
       }
-    }
+    },
+    "meta_keywords": "Kutch geography, Kutch district, Rann desert, Little Rann, Kutch landscape, Kutch terrain, Gujarat geography"
   },
   "landscapes_page": {
     "meta_title": "Landscapes of Kutch — Visual Journey Through Mystical Sands | MyKutch.org",
@@ -1378,8 +1383,8 @@
     }
   },
   "hidden_gems_page": {
-    "meta_title": "Hidden Gems of Kutch | Discover Secret Treasures",
-    "meta_desc": "Explore the hidden gems of Kutch - from serene wetlands to ancient temples. Discover the secret treasures beyond the tourist trail.",
+    "meta_title": "Hidden Gems of Kutch | Offbeat & Unexplored Destinations",
+    "meta_desc": "Discover hidden gems and offbeat places in Kutch away from tourist crowds. Lesser-known attractions, secret beaches, and cultural sites.",
     "hero_title": "Hidden Gems — Beyond the Tourist Trail",
     "intro": "Discover the secret treasures of Kutch that only the locals know. From serene wetlands to ancient temples, these hidden gems offer authentic experiences beyond the crowds. Each location tells a unique story of Kutch's rich heritage, natural beauty, and spiritual significance.",
     "sections": {
@@ -1505,7 +1510,8 @@
         "strong": "Avoid Monsoon",
         "text": "July-September roads can be difficult and wetlands flood."
       }
-    }
+    },
+    "meta_keywords": "hidden gems Kutch, offbeat Kutch, unexplored Kutch, secret places Kutch, lesser known attractions"
   },
   "destinations": {
     "kadia_dhrow": {
@@ -3188,5 +3194,38 @@
       "meta_title": "Zara Hill (Zara no Dungar) | Authentic Kutch Destination",
       "meta_desc": "Visit Zara Hill (Zara no Dungar). Located 115 km from Bhuj. A beautiful destination in Kutch known for Historical Hill."
     }
+  },
+  "homepage_page": {
+    "meta_title": "Kutch Travel Guide 2026 | White Rann, Bhuj & Hidden Gems | MyKutch.org",
+    "meta_desc": "Complete Kutch travel guide. Explore White Rann desert, ancient Dholavira, Bhuj city, vibrant crafts, and hidden gems. Hotels, tours, and insider tips for visiting Kutch, Gujarat."
+  },
+  "bookings_page": {
+    "meta_title": "Kutch Hotels, Resorts & Tour Bookings | Travel Packages",
+    "meta_desc": "Book hotels and resorts in Kutch - Bhuj, White Rann, Mandvi. Find Kutch tour packages, accommodation options, and travel deals.",
+    "meta_keywords": "Kutch hotels, Kutch resorts, hotels in Bhuj, Kutch accommodation, Kutch tour packages, book Kutch tour"
+  },
+  "bhuj_page": {
+    "meta_title": "Bhuj City Guide | Aina Mahal, Prag Mahal & Kutch Capital",
+    "meta_desc": "Explore Bhuj, the cultural capital of Kutch. Visit Aina Mahal, Prag Mahal, museums, bazaars, and vibrant markets. Guide to things to do in Bhuj, Gujarat."
+  },
+  "mandvi_page": {
+    "meta_title": "Mandvi Beach & Vijay Vilas Palace | Kutch Coastal Guide",
+    "meta_desc": "Visit Mandvi beach and Vijay Vilas Palace on the Arabian Sea coast of Kutch. Beach resort, shipbuilding heritage, and beach activities in this coastal gem."
+  },
+  "dholavira_page": {
+    "meta_title": "Dholavira | UNESCO World Heritage Harappan City Site",
+    "meta_desc": "Discover Dholavira - an ancient Harappan (Indus Valley) civilization site. UNESCO World Heritage Site showcasing 5,000-year-old ruins and archaeological significance in Kutch."
+  },
+  "kadia_dhrow_page": {
+    "meta_title": "Kadia Dhrow | Grand Canyon of India in Kutch",
+    "meta_desc": "Experience Kadia Dhrow, often called the Grand Canyon of India. Colorful layered rocks, geological wonder, and scenic beauty in northern Kutch."
+  },
+  "mundra_page": {
+    "meta_title": "Mundra | Port City & Coastal Gem of Kutch",
+    "meta_desc": "Explore Mundra, a historic port city on Kutch's coast. Known for Mundra port, maritime heritage, and coastal attractions. Gateway to northwest Gujarat."
+  },
+  "road_to_heaven_page": {
+    "meta_title": "Road to Heaven | Scenic Route in Kutch",
+    "meta_desc": "Travel the Road to Heaven - a scenic route offering panoramic views of Kutch's desert landscape. Hidden gem and photography hotspot in Kutch."
   }
 }

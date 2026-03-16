@@ -507,8 +507,8 @@
     }
   },
   "home": {
-    "meta_title": "Guía de viaje Kutch 2026 | White Rann, Bhuj y Tesoros ocultos | MyKutch.org",
-    "meta_desc": "Explora el White Rann de Kutch, la antigua Dholavira y su artesanía vibrante. Guía completa con hoteles, tours y consejos internos. ¡Planifica tu viaje 2026 hoy mismo!",
+    "meta_title": "Guía de Viajes a Kutch 2026 | Rann Blanco, Bhuj y gemas ocultas",
+    "meta_desc": "Guía completa de viajes a Kutch. Explora el desierto de sal Rann Blanco, el antiguo Dholavira, la ciudad de Bhuj y gemas ocultas. Hoteles, tours y consejos.",
     "hero": {
       "title": "Kutch místico",
       "subtitle": "Donde el silencio habla en sal y piedra",
@@ -660,7 +660,8 @@
       "desc": "Únete a nuestra comunidad de exploradores de Kutch. Recibe por WhatsApp alertas del Rann Utsav, clima y rincones secretos en tiempo real.",
       "whatsapp_btn": "Unirme a WhatsApp",
       "contact_btn": "Contactarme"
-    }
+    },
+    "meta_keywords": "viajes Kutch, turismo Kutch, Bhuj, Rann de Kutch, Rann Blanco, Dholavira, Mandvi"
   },
   "about": {
     "meta_title": "About | MyKutch — People • Craft • Landscape",
@@ -801,8 +802,8 @@
     }
   },
   "destinations_page": {
-    "meta_title": "All Destinations | MyKutch.org",
-    "meta_desc": "Explore every corner of Kutch - from ancient temples to pristine beaches, desert landscapes to artisan villages. Complete guide to all Kutch destinations.",
+    "meta_title": "Destinos y atracciones de Kutch | Guía de viajes",
+    "meta_desc": "Descubre los mejores destinos de Kutch - Rann Blanco, Bhuj, Mandvi, Dholavira, Kadia Dhrow y 50+ gemas ocultas.",
     "hero_title": "All Destinations — Explore Every Corner of Kutch",
     "intro": "From the pristine beaches of Mandvi to the ancient ruins of Dholavira, from the salt flats of the White Rann to the spiritual temples of Mata na Madh — Kutch offers a treasure trove of destinations for every traveler. Explore our comprehensive guide to plan your perfect Kutch adventure.",
     "sections": {
@@ -921,7 +922,8 @@
       "title": "Looking for Hidden Gems?",
       "desc": "Discover the secret treasures of Kutch that only locals know — from bird sanctuaries to ancient ruins off the tourist trail.",
       "btn": "Explore Hidden Gems →"
-    }
+    },
+    "meta_keywords": "destinos Kutch, atracciones Kutch, turismo Kutch, Bhuj, Mandvi, Dholavira"
   },
   "history_page": {
     "meta_title": "Historia de Kutch: 5000 años de herencia | MiKutch.org",
@@ -3070,5 +3072,9 @@
       "small_text_002": "Ubicación",
       "text_span_003": "Mata no Madh"
     }
+  },
+  "homepage_page": {
+    "meta_title": "Guía de Viajes a Kutch 2026 | Rann Blanco, Bhuj y Gemas Ocultas",
+    "meta_desc": "Guía completa de viajes a Kutch. Explora el desierto de sal Rann Blanco, el antiguo Dholavira, la ciudad de Bhuj y gemas ocultas. Hoteles, tours y consejos locales."
   }
 }

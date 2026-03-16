@@ -507,8 +507,8 @@
     }
   },
   "home": {
-    "meta_title": "Kutch Reiseführer 2026 | White Rann, Bhuj & Verborgene Schätze | MyKutch.org",
-    "meta_desc": "Entdecke den White Rann von Kutch, das antike Dholavira und lebendige Handwerke. Vollständiger Reiseführer mit Hotels, Touren und Insider-Tipps. Plane deine Reise 2026 noch heute!",
+    "meta_title": "Kutch Reiseführer 2026 | Weiße Rann, Bhuj & verborgene Schätze",
+    "meta_desc": "Kompletter Kutch Reiseführer. Erkunden Sie die weiße Rann Salzwüste, das antike Dholavira, die Stadt Bhuj und verborgene Schätze. Hotels, Touren und Insider-Tipps für Kutch.",
     "hero": {
       "title": "Mystisches Kutch",
       "subtitle": "Wo Stille in Salz und Stein spricht",
@@ -660,7 +660,8 @@
       "desc": "Tritt unserer Community von Kutch-Entdeckern bei! Erhalte Echtzeit-Updates zu Rann Utsav, Wetterwarnungen und versteckten Orten direkt per WhatsApp.",
       "whatsapp_btn": "WhatsApp beitreten",
       "contact_btn": "Kontakt aufnehmen"
-    }
+    },
+    "meta_keywords": "Kutch Reisen, Kutch Tourismus, Bhuj, Rann von Kutch, Weiße Rann, Dholavira, Mandvi, Kadia Dhrow, Weg zum Himmel"
   },
   "about": {
     "meta_title": "About | MyKutch — People • Craft • Landscape",
@@ -801,8 +802,8 @@
     }
   },
   "destinations_page": {
-    "meta_title": "Alle Ziele | MyKutch.org",
-    "meta_desc": "Erkunden Sie jeden Winkel von Kutch – von antiken Tempeln über unberührte Strände und Wüstenlandschaften bis hin zu Künstlerdörfern. Vollständiger Reiseführer zu allen Reisezielen in Kutch.",
+    "meta_title": "Kutch Destinationen & Attraktionen | Reiseführer",
+    "meta_desc": "Entdecken Sie alle Top-Destinationen in Kutch - Weiße Rann, Bhuj, Mandvi, Dholavira, Kadia Dhrow und 50+ verborgene Schätze.",
     "hero_title": "Alle Reiseziele – Entdecken Sie jede Ecke von Kutch",
     "intro": "Von den unberührten Stränden von Mandvi bis zu den antiken Ruinen von Dholavira, von den Salinen des White Rann bis zu den spirituellen Tempeln von Mata na Madh – Kutch bietet für jeden Reisenden eine Fundgrube an Reisezielen. Entdecken Sie unseren umfassenden Leitfaden, um Ihr perfektes Kutch-Abenteuer zu planen.",
     "sections": {
@@ -921,7 +922,8 @@
       "title": "Auf der Suche nach versteckten Schätzen?",
       "desc": "Entdecken Sie die geheimen Schätze von Kutch, die nur Einheimische kennen – von Vogelschutzgebieten bis hin zu antiken Ruinen abseits der Touristenpfade.",
       "btn": "Entdecken Sie verborgene Schätze →"
-    }
+    },
+    "meta_keywords": "Kutch Destinationen, Kutch Attraktionen, Kutch Tourismus, Bhuj, Mandvi, Dholavira"
   },
   "history_page": {
     "meta_title": "Geschichte von Kutch – 5000 Jahre Erbe | MyKutch.org",
@@ -3070,5 +3072,9 @@
       "small_text_002": "Standort",
       "text_span_003": "Mata no Madh"
     }
+  },
+  "homepage_page": {
+    "meta_title": "Kutch Reiseführer 2026 | Weiße Rann, Bhuj & Verborgene Schätze",
+    "meta_desc": "Kompletter Kutch Reiseführer. Erkunden Sie die weiße Rann Salzwüste, das antike Dholavira, die Stadt Bhuj und verborgene Schätze. Hotels, Touren und Insider-Tipps für Kutch, Gujarat."
   }
 }

@@ -428,6 +428,20 @@ nav {
     transition: var(--transition-base);
 }
 
+@media (max-width: 1024px) {
+    .nav-logo {
+        max-width: 160px;
+        max-height: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-logo {
+        max-width: 140px;
+        max-height: 48px;
+    }
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -444,10 +458,22 @@ nav {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: 0.05em;
     color: var(--color-heading);
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1rem;
+    }
 }
 
 .nav-links {
@@ -455,8 +481,10 @@ nav {
     gap: 1.6rem;
     flex: 1;
     justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     transition: var(--transition-base);
+    align-items: center;
+    overflow: hidden;
 }
 
 .nav-links a {
@@ -464,13 +492,14 @@ nav {
     /* Changed from Poppins for cleaner look */
     font-weight: 600;
     /* Increased weight for better visibility */
-    font-size: 0.8rem;
-    /* Decreased size */
+    font-size: 0.65rem;
+    /* Smaller size for compact navbar */
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     /* Reduced letter spacing */
     color: var(--color-heading);
     transition: color 0.2s ease, transform 0.2s ease;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -743,6 +772,37 @@ nav {
     color: #334155;
     margin: 0 auto;
     max-width: 900px;
+}
+
+/* Navbar responsive adjustments to prevent menu wrapping */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.6rem;
+    }
+
+    .nav-logo {
+        max-width: 160px;
+        max-height: 56px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 0.8rem;
+    }
+
+    .nav-links a {
+        font-size: 0.55rem;
+        padding: 0.4rem 0.6rem;
+    }
+
+    .nav-content {
+        gap: 0.8rem;
+    }
 }
 
 @media (max-width: 900px) {
