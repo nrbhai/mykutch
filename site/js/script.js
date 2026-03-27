@@ -214,11 +214,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (footer) {
         footer.innerHTML = `
             <div class="container">
+                <!-- Large Transparent Watermark Logo -->
+                <img src="${newLogo}" alt="" class="footer-watermark-bg"/>
                 <div class="footer-inner">
                     <div class="footer-brand">
                         <img alt="MyKutch.org" class="footer-logo" src="${newLogo}"/>
                         <p class="footer-tagline">Beyond the endless White Rann lies a land of hidden caves, pristine seashores, and sacred hills. Discover the untold stories of Kutch.</p>
                     </div>
+                    
+                    <div class="footer-links">
+                        <h4 data-i18n="footer.quick_links">Quick Links</h4>
+                        <ul>
+                            <li><a href="${pagePrefix}geography.html" data-i18n="nav.geography">Geography</a></li>
+                            <li><a href="${pagePrefix}crafts.html" data-i18n="nav.crafts">Crafts</a></li>
+                            <li><a href="${pagePrefix}distance-matrix.html" data-i18n="nav.distance">Distance Matrix</a></li>
+                            <li><a href="${pagePrefix}landscapes.html" data-i18n="nav.landscapes">Landscapes</a></li>
+                            <li><a href="${pagePrefix}bookings.html" data-i18n="nav.bookings">Bookings</a></li>
+                            <li><a href="${pagePrefix}about.html" data-i18n="nav.about">About</a></li>
+                        </ul>
+                    </div>
+
                     <div class="footer-contact">
                         <div class="footer-contact-item">
                             <span data-i18n="footer.contact_label">Contact:</span>

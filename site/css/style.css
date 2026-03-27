@@ -4958,17 +4958,72 @@ nav,
     }
 }
 
-/* Footer Redesign */
+/* Boxed Light Blue Footer Redesign */
 .footer-main {
     position: relative;
-    background: linear-gradient(135deg, #BF953F 0%, #FCF6BA 30%, #FBF5B7 50%, #B38728 75%, #AA771C 100%) !important;
-    color: #1a0a00 !important;
-    padding: 3.5rem 0 2rem !important;
-    border-top: 3px solid #B38728 !important;
-    margin-top: 1.5rem !important;
+    max-width: 1540px; /* Matching container width approx */
+    margin: 6rem auto 2rem !important; /* Boxed version, centered */
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+    color: #0c4a6e !important; /* Deep Blue text */
+    padding: 4rem 2rem 2.5rem !important;
+    border-radius: 2.5rem !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
     overflow: hidden;
-    font-family: "Poppins", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-    box-shadow: 0 -4px 30px rgba(180, 130, 40, 0.25);
+    font-family: var(--font-body);
+    box-shadow: 0 20px 50px -10px rgba(0, 50, 100, 0.06) !important;
+}
+
+.footer-watermark-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: auto;
+    opacity: 0.12 !important;
+    pointer-events: none;
+    z-index: 0;
+    filter: saturate(0.5);
+}
+
+.footer-links h4 {
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    color: var(--color-primary);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+}
+
+.footer-inner {
+    position: relative;
+    z-index: 1; /* Content above watermark */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.footer-main::before, .footer-main::after {
+    display: none !important; /* Clear old metallic overlays */
 }
 
 .footer-main::before {
@@ -5523,3 +5578,91 @@ nav,
 .destination-hero h1 {
     font-family: var(--font-heading);
 }
+
+/* =========================================
+   PROJECT-WIDE BACKGROUND OVERRIDE
+   Light Blue -> Light Red
+   ========================================= */
+
+:root {
+    --mesh-light-blue: #e0f2fe;
+    --mesh-light-red:  #ffe4e6;
+    
+    --vibrant-gradient: linear-gradient(135deg, var(--mesh-light-blue) 0%, var(--mesh-light-red) 100%);
+}
+
+/* 1. Body Background */
+body {
+    background: var(--vibrant-gradient) fixed !important;
+    background-color: #ffffff !important;
+    color: #1e293b !important;
+}
+
+/* 2. Transparency to reveal background */
+main, 
+section, 
+.section,
+.diversity-strip,
+.diversity-card,
+.dashboard-panel,
+.diversity-grid,
+.travel-dashboard,
+.stay-section,
+#culture,
+#destinations,
+#guide {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* 3. Hero Section: Show image while keeping background visible */
+header.hero {
+    background: transparent !important;
+    position: relative;
+    overflow: hidden;
+    min-height: 75vh;
+}
+
+header.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/images/hero.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 1 !important; /* SHOW IMAGE */
+    z-index: -1;
+}
+
+/* Add a soft overlay to the image to blend with background if needed, 
+   but user wants to SEE the image, so we keep it clear. */
+header.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* 4. Glassmorphism for containers */
+.diversity-card, 
+.dashboard-panel, 
+.card-content, 
+.stay-grid > div,
+.highlight-card {
+    background: rgba(255, 255, 255, 0.6) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 1.5rem !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* 5. Navbar */
+nav {
+    background: rgba(255, 255, 255, 0.7) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    backdrop-filter: blur(15px) !important;
+}
+
