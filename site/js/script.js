@@ -253,3 +253,90 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+/**
+ * Lightbox Gallery System (Enhanced)
+ * Enables full-screen view for all gallery-capable images across the site.
+ * Targets: Landscapes, Destinations, Hidden Gems, Crafts, and Featured Cards.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all relevant images that should trigger a full view
+    const galleryItems = document.querySelectorAll(`
+        .photo-card img, 
+        .card-img-wrapper img, 
+        .attraction-img-wrapper img, 
+        .craft-img,
+        .attraction-card img,
+        .card img
+    `);
+    
+    if (galleryItems.length === 0) return;
+
+    // Create Lightbox Overlay Elements
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox-overlay';
+    lightbox.setAttribute('role', 'dialog');
+    lightbox.setAttribute('aria-modal', 'true');
+    lightbox.innerHTML = `
+        <button class="lightbox-close" aria-label="Close Viewer">&times;</button>
+        <img class="lightbox-content" src="" alt="Full size gallery image">
+        <div class="lightbox-caption"></div>
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector('.lightbox-content');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+
+    // Function to open the lightbox
+    const openLightbox = (imgSrc, alt, caption) => {
+        lightboxImg.src = imgSrc;
+        lightboxImg.alt = alt;
+        lightboxCaption.textContent = caption;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    };
+
+    // Close on click or button
+    const closeLightbox = () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+        setTimeout(() => { 
+            if (!lightbox.classList.contains('active')) lightboxImg.src = ''; 
+        }, 300);
+    };
+
+    galleryItems.forEach(img => {
+        // We attach the listener to the image itself
+        img.addEventListener('click', (e) => {
+            // Priority: If user clicks the image, we show the lightbox
+            // Even if the image is inside an <a>, we intercept to show the full photo
+            if (img.closest('a')) {
+                // If the user specifically wanted to navigate, they'd usually click the text/button
+                // but since the image is a main eye-catcher, we prioritize full view here
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            // Determine appropriate caption (from figcaption, H3, or alt text)
+            const parent = img.closest('.photo-card, .card, .attraction-card, .craft-card');
+            const caption = parent?.querySelector('figcaption, h3, .attraction-title, .card-title')?.textContent || img.alt || 'Gallery Image';
+            
+            openLightbox(img.src, img.alt, caption.trim());
+        });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    
+    // Close on overlay click
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    // Close on Escape Key (Accessibility)
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+});
+

@@ -1,6 +1,7 @@
 *.txt
 !22dbd64abddf419280a44b2192b2b20b.txt
 !site/22dbd64abddf419280a44b2192b2b20b.txt
+!security.txt
 __pycache__/
 .DS_Store
 .antigravityignore
