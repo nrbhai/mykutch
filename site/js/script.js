@@ -340,3 +340,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Navigation scroll effect - shrink nav on scroll
+(function() {
+    const nav = document.querySelector('nav');
+    if (!nav) return;
+
+    let ticking = false;
+    const updateNav = () => {
+        const scrolled = window.scrollY > 50;
+        nav.classList.toggle('scrolled', scrolled);
+        ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateNav);
+            ticking = true;
+        }
+    }, { passive: true });
+})();
+
