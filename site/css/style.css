@@ -5938,3 +5938,388 @@ header.hero,
         max-width: 95%;
     }
 }
+
+/* 2026 redesign foundation */
+:root {
+    --color-bg: linear-gradient(180deg, #f8f2e8 0%, #fcf8f2 52%, #ffffff 100%);
+    --color-bg-solid: #f8f2e8;
+    --color-text: #4f4338;
+    --color-heading: #1b2a33;
+    --color-primary: #d26d3d;
+    --color-secondary: #345a76;
+    --color-accent-1: #a44d2d;
+    --color-shadow-soft: rgba(46, 32, 21, 0.08);
+    --color-shadow-heavy: rgba(24, 28, 33, 0.14);
+    --color-glass: rgba(252, 248, 242, 0.82);
+    --color-glass-border: rgba(27, 42, 51, 0.08);
+    --color-card-bg: rgba(255, 252, 247, 0.94);
+    --color-section-bg: #f4eadc;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-accent: 'Poppins', sans-serif;
+}
+
+[data-theme="dark"] {
+    --color-bg: linear-gradient(180deg, #121b22 0%, #17242d 55%, #10171d 100%);
+    --color-bg-solid: #121b22;
+    --color-text: #d6dbe0;
+    --color-heading: #f4efe8;
+    --color-primary: #e18b5d;
+    --color-secondary: #8fb0c7;
+    --color-accent-1: #d97449;
+    --color-shadow-soft: rgba(0, 0, 0, 0.26);
+    --color-shadow-heavy: rgba(0, 0, 0, 0.45);
+    --color-glass: rgba(18, 27, 34, 0.74);
+    --color-glass-border: rgba(255, 255, 255, 0.08);
+    --color-card-bg: rgba(22, 33, 41, 0.9);
+    --color-section-bg: #1a2831;
+}
+
+body {
+    background: var(--color-bg) fixed;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+.metallic-gold,
+.metallic-luster,
+.heading-bright-blue,
+.shining-blue-text,
+.text-metallic,
+.footer-heading {
+    background: none;
+    -webkit-background-clip: border-box;
+    background-clip: border-box;
+    -webkit-text-fill-color: initial;
+    color: var(--color-heading);
+    animation: none;
+    filter: none;
+    text-shadow: none;
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: 0.02em;
+}
+
+p {
+    color: var(--color-text);
+}
+
+nav {
+    background: rgba(248, 242, 232, 0.8);
+    border-bottom: 1px solid rgba(27, 42, 51, 0.08);
+    box-shadow: 0 10px 40px rgba(27, 42, 51, 0.06);
+}
+
+nav.scrolled {
+    background: rgba(250, 245, 238, 0.94);
+}
+
+.nav-links a {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+}
+
+.btn {
+    background: linear-gradient(135deg, var(--color-heading), #314955);
+    border-radius: 999px;
+    box-shadow: 0 14px 28px rgba(27, 42, 51, 0.16);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, var(--color-primary), #ba5733);
+}
+
+.btn.btn-secondary {
+    background: transparent;
+    color: var(--color-heading);
+    border: 1px solid rgba(27, 42, 51, 0.16);
+    box-shadow: none;
+}
+
+.btn.btn-secondary:hover {
+    color: #fff;
+    border-color: var(--color-primary);
+}
+
+.card,
+.dashboard-panel,
+.diversity-card,
+.about-page .about-card,
+.destinations-page .attraction-card,
+.crafts-page .attraction-card,
+.hidden-gems-page .attraction-card,
+.history-page .attraction-card,
+.destination-detail-page .attraction-card,
+.geography-page .attraction-card {
+    background: var(--color-card-bg);
+    border: 1px solid rgba(27, 42, 51, 0.08);
+    box-shadow: 0 20px 40px rgba(27, 42, 51, 0.08);
+}
+
+.card:hover,
+.dashboard-panel:hover,
+.diversity-card:hover {
+    box-shadow: 0 26px 52px rgba(27, 42, 51, 0.12);
+}
+
+.destination-hero,
+.hero,
+.about-page .about-hero {
+    overflow: hidden;
+}
+
+.hero::after,
+.destination-hero::before,
+.about-page .about-hero::after {
+    background: linear-gradient(180deg, rgba(10, 20, 26, 0.18) 0%, rgba(10, 20, 26, 0.48) 100%);
+}
+
+.footer-main {
+    background: linear-gradient(135deg, #efe2cf 0%, #f5ecdf 48%, #efe5d8 100%) !important;
+    color: #2e241d !important;
+    box-shadow: 0 22px 56px rgba(46, 36, 29, 0.10) !important;
+}
+
+.footer-link:hover,
+.footer-contact-item a:hover,
+.footer-links a:hover {
+    color: var(--color-primary);
+}
+
+.index-page .hero-reimagined {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 7rem;
+}
+
+.index-page .hero-layout {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(320px, 0.8fr);
+    gap: 2rem;
+    align-items: end;
+}
+
+.index-page .hero-copy,
+.index-page .hero-visual-card,
+.index-page .story-panel,
+.index-page .microfact-card {
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.index-page .hero-copy {
+    max-width: 760px;
+    padding: 2.5rem 0 3rem;
+}
+
+.index-page .eyebrow,
+.index-page .microfact-kicker,
+.index-page .hero-card-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    font-weight: 700;
+    color: rgba(255, 246, 236, 0.86);
+}
+
+.index-page .hero-title {
+    font-size: clamp(3.8rem, 7vw, 6.4rem) !important;
+    color: #fff;
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+    margin: 0.8rem 0 1rem;
+    text-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+}
+
+.index-page .hero-subtitle {
+    font-size: clamp(1.2rem, 2vw, 1.55rem) !important;
+    color: rgba(255, 248, 241, 0.94);
+    margin-bottom: 1rem;
+    max-width: 28ch;
+}
+
+.index-page .hero-desc {
+    max-width: 62ch;
+    font-size: 1rem !important;
+    line-height: 1.8;
+    color: rgba(255, 246, 236, 0.82);
+    font-style: normal;
+    margin: 0 0 2rem;
+}
+
+.index-page .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.index-page .hero-visual-card {
+    align-self: center;
+    padding: 1.6rem;
+    background: rgba(16, 25, 31, 0.48);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 1.8rem;
+    box-shadow: 0 28px 60px rgba(0, 0, 0, 0.22);
+    color: #fff;
+}
+
+.index-page .hero-visual-card h2 {
+    font-size: 1.9rem !important;
+    color: #fff;
+    margin: 0.35rem 0 0.5rem;
+}
+
+.index-page .hero-visual-card p {
+    color: rgba(255, 246, 236, 0.78);
+    margin-bottom: 0;
+}
+
+.index-page .hero-stat-stack {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.index-page .hero-stat {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.95rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+}
+
+.index-page .hero-stat-number {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: #fff;
+}
+
+.index-page .hero-stat-label {
+    color: rgba(255, 246, 236, 0.78);
+    font-size: 0.92rem;
+    text-align: right;
+}
+
+.index-page .section-title {
+    max-width: 760px;
+}
+
+.index-page .section-title p {
+    max-width: 62ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index-page .story-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 2rem;
+    align-items: start;
+}
+
+.index-page .story-panel {
+    padding: 2rem;
+    border-radius: 1.75rem;
+    background: rgba(255, 252, 247, 0.82);
+    border: 1px solid rgba(27, 42, 51, 0.08);
+    box-shadow: 0 18px 42px rgba(27, 42, 51, 0.08);
+}
+
+.index-page .microfact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.1rem;
+}
+
+.index-page .microfact-card {
+    padding: 1.4rem;
+    border-radius: 1.35rem;
+    background: rgba(255, 251, 245, 0.82);
+    border: 1px solid rgba(27, 42, 51, 0.08);
+    box-shadow: 0 14px 32px rgba(27, 42, 51, 0.07);
+}
+
+.index-page .microfact-card h3 {
+    font-size: 1.35rem !important;
+    margin: 0.45rem 0 0.5rem;
+}
+
+.index-page .microfact-card p {
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.index-page .journey-flow .transport-icon-box,
+.index-page .panel-icon {
+    background: linear-gradient(135deg, rgba(210, 109, 61, 0.15), rgba(52, 90, 118, 0.16));
+    color: var(--color-heading);
+}
+
+.index-page .dashboard-panel .highlight {
+    color: var(--color-primary);
+}
+
+.index-page .season-temp {
+    background: rgba(210, 109, 61, 0.12);
+}
+
+.index-page .craft-card h3,
+.index-page .card h3 {
+    margin-top: 1rem;
+}
+
+[data-theme="dark"] .index-page .story-panel,
+[data-theme="dark"] .index-page .microfact-card,
+[data-theme="dark"] .card,
+[data-theme="dark"] .dashboard-panel,
+[data-theme="dark"] .diversity-card {
+    background: rgba(21, 31, 39, 0.86);
+}
+
+@media (max-width: 1024px) {
+    .index-page .hero-layout,
+    .index-page .story-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .index-page .hero-visual-card {
+        max-width: 34rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .index-page .hero-reimagined {
+        min-height: auto;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .index-page .hero-title {
+        font-size: clamp(2.8rem, 14vw, 4.2rem) !important;
+    }
+
+    .index-page .hero-copy {
+        padding-bottom: 1rem;
+    }
+
+    .index-page .microfact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .index-page .hero-actions {
+        gap: 0.75rem;
+    }
+}

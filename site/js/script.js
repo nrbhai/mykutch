@@ -360,3 +360,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 })();
 
+// Light parallax for redesigned homepage media
+(function() {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion) return;
+
+    const parallaxItems = document.querySelectorAll('.hero-parallax-image');
+    if (!parallaxItems.length) return;
+
+    let ticking = false;
+
+    const updateParallax = () => {
+        const offset = Math.min(window.scrollY * 0.08, 28);
+        parallaxItems.forEach((item) => {
+            item.style.transform = `scale(1.04) translateY(${offset}px)`;
+        });
+        ticking = false;
+    };
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    updateParallax();
+})();
+
