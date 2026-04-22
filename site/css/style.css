@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&family=Dancing+Script:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
     .masonry-gallery {
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -7,13 +7,13 @@
     }
     /* Light Golden-White Background */
     :root {
-    --color-bg: linear-gradient(160deg, #FFF9E6 0%, #FFFDF7 40%, #ffffff 100%);
-    --color-bg-solid: #FFF9E6;
-    /* Warm Cream (fallback) */
+    --color-bg: #ffffff;
+    --color-bg-solid: #ffffff;
+    /* Pure White */
     --color-text: #222;
     /* Soft Charcoal */
-    --color-heading: #0F172A;
-    /* Slate Black */
+    --color-heading: #1B3A6B;
+    /* Navy Blue */
     --color-primary: #C2410C;
     /* Deep Rust / Terracotta */
     --color-secondary: #B45309;
@@ -25,13 +25,13 @@
     --color-shadow-heavy: rgba(15, 23, 42, 0.08);
     --color-glass: rgba(255, 249, 230, 0.75);
     --color-glass-border: rgba(180, 130, 40, 0.08);
-    --color-card-bg: #FFFDF5;
-    /* Very warm white for cards */
-    --color-section-bg: #FFF8E1;
-    /* Soft golden cream for sections */
+    --color-card-bg: #ffffff;
+    /* Pure White */
+    --color-section-bg: #f8fafc;
+    /* Very light neutral for sections */
 
     /* Typography */
-    --font-heading: 'Bebas Neue', sans-serif;
+    --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-accent: 'Poppins', sans-serif;
 
@@ -102,19 +102,10 @@
 
 /* Metallic Black Gradient for Headings */
 .heading-bright-blue {
-    /* Ensure metallic style is applied even with this class */
-    background: linear-gradient(to right,
-            #000000 0%,
-            #000000 40%,
-            #FFD700 50%,
-            #000000 60%,
-            #000000 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 12s linear infinite;
+    color: #1B3A6B;
+    -webkit-text-fill-color: #1B3A6B;
+    background: none;
+    animation: none;
 }
 
 [data-theme="dark"] .heading-bright-blue {
@@ -129,27 +120,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* Premium Metallic Luster (Black to Bright Gold) */
+/* Premium Metallic Luster */
 .metallic-luster {
-    background: linear-gradient(to right,
-            #000000 0%,
-            /* Black */
-            #1a1a1a 25%,
-            /* Very Dark Gray */
-            #FFD700 50%,
-            /* Gold (Highlight) */
-            #1a1a1a 75%,
-            /* Very Dark Gray */
-            #000000 100%
-            /* Black */
-        );
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 12s linear infinite;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    color: #1B3A6B;
+    -webkit-text-fill-color: #1B3A6B;
+    background: none;
+    animation: none;
+    filter: none;
 }
 
 [data-theme="dark"] .metallic-luster {
@@ -187,7 +164,7 @@
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background: linear-gradient(90deg, transparent, #FFD700, transparent);
+    background: linear-gradient(90deg, transparent, #C2410C, transparent);
     border-radius: 2px;
 }
 
@@ -271,9 +248,8 @@ html {
 
 /* 1. Global Reset & Body Defaults */
 body {
-    background: linear-gradient(160deg, #FFF9E6 0%, #FFFDF7 40%, #ffffff 100%) fixed;
-    background-color: #FFF9E6;
-    /* Fallback for browsers that don't support gradient backgrounds */
+    background: #ffffff;
+    background-color: #ffffff;
     color: var(--color-text);
     font-family: var(--font-body);
     font-size: 16px;
@@ -285,44 +261,61 @@ body {
     max-width: 100%;
 }
 
-/* 2. Headings (H1 - H3): Metallic Black Gradient */
+/* 2. Headings (H1 - H3): Solid Navy Blue */
 h1, h2, h3 {
     font-family: var(--font-heading);
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 0.08em;
-    margin-bottom: 1rem;
-    
-    /* Global Metallic Black Gradient with Golden Shine */
-    background: linear-gradient(to right,
-            #000000 0%,
-            #000000 40%,
-            #FFD700 50%,
-            #000000 60%,
-            #000000 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 12s linear infinite;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.4rem;
+    color: #1B3A6B;
+    -webkit-text-fill-color: #1B3A6B;
+    background: none;
+}
+
+/* Stylish red underline — block-level so it's never clipped */
+h1::after, h2::after, h3::after {
+    content: '';
+    display: block;
+    margin: 0.45rem auto 0;
+    height: 3px;
+    border-radius: 100px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        #C2410C 20%,
+        #ef4444 50%,
+        #C2410C 80%,
+        transparent 100%);
+}
+
+h1::after { width: 5rem; }
+h2::after { width: 4rem; }
+h3::after { width: 2.75rem; height: 2px; }
+
+/* Left-aligned headings */
+h1.align-left::after,
+h2.align-left::after,
+h3.align-left::after {
+    margin-left: 0;
+}
+
+/* Suppress underline on hero titles and nav elements */
+.hero-title::after,
+.hero h1::after,
+.destination-hero h1::after,
+.booking-hero h1::after,
+nav h1::after,
+nav h2::after,
+nav h3::after {
+    display: none;
 }
 
 .metallic-gold,
 .metallic-luster {
     font-family: var(--font-heading);
-    background: linear-gradient(to right,
-            #000000 0%,
-            #000000 40%,
-            #FFD700 50%,
-            #000000 60%,
-            #000000 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 12s linear infinite;
+    color: #1B3A6B;
+    -webkit-text-fill-color: #1B3A6B;
+    background: none;
 }
 
 /* 3. Subheadings (H4 - H6): Solid Dark or Accent */
@@ -356,23 +349,15 @@ a {
     transition: var(--transition-base);
 }
 
-/* Utility: Force Metallic Text */
+/* Utility: Force Navy Blue headings */
 .text-metallic,
-.shining-blue-text, 
+.shining-blue-text,
 .heading-bright-blue {
     font-family: var(--font-heading);
-    background: linear-gradient(to right,
-            #000000 0%,
-            #000000 40%,
-            #FFD700 50%,
-            #000000 60%,
-            #000000 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 12s linear infinite;
+    color: #1B3A6B;
+    -webkit-text-fill-color: #1B3A6B;
+    background: none;
+    animation: none;
 }
 
 img {
@@ -398,9 +383,9 @@ textarea:focus-visible,
 
 /* Layout */
 .container {
-    max-width: 1600px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    padding: 0 1.5rem;
 }
 
 .section {
@@ -415,7 +400,7 @@ nav {
     width: 100%;
     z-index: 1000;
     padding: 0.75rem 0;
-    background: rgba(255, 253, 245, 0.92);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(194, 65, 12, 0.1);
@@ -425,7 +410,7 @@ nav {
 
 nav.scrolled {
     padding: 0.5rem 0;
-    background: rgba(255, 253, 245, 0.98);
+    background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -594,15 +579,13 @@ nav.scrolled {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 3.2rem !important;
-    /* Reduced size to keep in one line */
+    font-size: clamp(3.5rem, 6vw, 5.8rem) !important;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.05;
     margin-bottom: 0.2rem;
     color: #ffffff;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    letter-spacing: 0.05em;
-    /* white-space: nowrap;  Removed to allow wrapping on mobile */
+    letter-spacing: 0.02em;
 }
 
 .booking-hero {
@@ -709,19 +692,10 @@ nav.scrolled {
     margin-bottom: 0;
     display: block;
     line-height: 1.1;
-    /* Explicitly apply metallic style with golden shine on black base */
-    background: linear-gradient(to right,
-            #000000 0%,
-            #000000 40%,
-            #FFD700 50%,
-            #000000 60%,
-            #000000 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 12s linear infinite;
+    color: #1B3A6B;
+    -webkit-text-fill-color: #1B3A6B;
+    background: none;
+    animation: none;
 }
 
 /* Page-specific styles (moved from inline <style> blocks) */
@@ -1511,8 +1485,7 @@ nav.scrolled {
 }
 
 .destinations-page {
-    background: linear-gradient(135deg, #F3E5F5 0%, #FFF3E0 100%);
-    background-attachment: fixed;
+    background: #ffffff;
 }
 
 .destinations-page .grid-2 {
@@ -2443,12 +2416,12 @@ nav.scrolled {
 }
 
 .destination-detail-page .editorial-note {
-    background-color: #f8fafc;
+    background-color: #ffffff;
     border-radius: 1.5rem;
     padding: 2.5rem;
     margin: 2rem 0;
     text-align: left;
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .destination-detail-page .tips-grid {
@@ -2546,25 +2519,43 @@ nav.scrolled {
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 0;
     display: block;
     line-height: 1.2;
-    /* Apply Golden Shine over Blue Base */
-    background: linear-gradient(to right,
-            #1e3a8a 0%,
-            #1e3a8a 40%,
-            #FFD700 50%,
-            #1e3a8a 60%,
-            #1e3a8a 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: metallic 12s linear infinite;
+    color: #1B3A6B;
+    -webkit-text-fill-color: #1B3A6B;
+    background: none;
+    animation: none;
+    /* Emboss effect */
+    text-shadow:
+        0 1px 0 rgba(255,255,255,0.9),
+        0 -1px 0 rgba(0,0,0,0.15),
+        0 2px 6px rgba(27, 58, 107, 0.18),
+        0 4px 16px rgba(27, 58, 107, 0.10);
+}
+
+/* Light blue glowing box for all guide sections */
+.destination-detail-page .guide-section {
+    background: #ffffff;
+    border: 1px solid rgba(147, 197, 253, 0.5);
+    border-radius: 1.25rem;
+    padding: 2rem 2.5rem;
+    margin-top: 2.5rem;
+    box-shadow:
+        0 0 0 3px rgba(147, 197, 253, 0.12),
+        0 4px 24px rgba(59, 130, 246, 0.08),
+        0 1px 4px rgba(59, 130, 246, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.destination-detail-page .guide-section:hover {
+    box-shadow:
+        0 0 0 3px rgba(147, 197, 253, 0.22),
+        0 8px 32px rgba(59, 130, 246, 0.13),
+        0 2px 8px rgba(59, 130, 246, 0.08);
 }
 
 @keyframes metallicGoldShine {
@@ -2638,13 +2629,109 @@ nav.scrolled {
 
 .destination-detail-page .nearby-highlight {
     margin-top: 4rem;
-    padding: 0;
-    border: none;
-    box-shadow: none;
-    background: none;
-    position: relative;
-    overflow: visible;
-    z-index: 10;
+}
+
+/* ---- Nearby Cards Grid ---- */
+.nearby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+}
+
+.nearby-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    color: inherit;
+    background: #ffffff;
+    border: 1px solid rgba(147, 197, 253, 0.55);
+    border-radius: 1.1rem;
+    padding: 1.25rem 1.5rem 1rem;
+    gap: 1rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    box-shadow:
+        0 0 0 3px rgba(147, 197, 253, 0.10),
+        0 4px 18px rgba(59, 130, 246, 0.07);
+}
+
+.nearby-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow:
+        0 0 0 3px rgba(147, 197, 253, 0.20),
+        0 8px 28px rgba(59, 130, 246, 0.14);
+}
+
+.nearby-card-inner {
+    flex: 1;
+}
+
+.nearby-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.nearby-icon {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.nearby-distance {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #2563eb;
+    background: rgba(219, 234, 254, 0.7);
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+.nearby-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-heading);
+    margin: 0 0 0.4rem;
+    line-height: 1.3;
+}
+
+/* suppress the red underline ::after on nearby cards */
+.nearby-title::after { display: none !important; }
+
+.nearby-desc {
+    font-size: 0.85rem;
+    color: #475569;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.nearby-link {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+}
+
+.nearby-card:hover .nearby-link {
+    color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+    .nearby-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .nearby-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .destination-detail-page .nearby-highlight::after {
@@ -2657,45 +2744,8 @@ nav.scrolled {
     background: none !important;
     -webkit-text-fill-color: initial !important;
     color: var(--color-heading) !important;
-    border-left: 6px solid #FFD700;
+    border-left: 6px solid #94A3B8;
     padding-left: 1rem;
-}
-
-.destination-detail-page .nearby-highlight .attraction-card {
-    border: 1px solid rgba(0, 0, 0, 0.04);
-}
-
-.destination-detail-page .nearby-highlight .attraction-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
-}
-
-.destination-detail-page .nearby-highlight .attraction-title {
-    color: #0b4f6c;
-    border-bottom-color: #00d26a;
-}
-
-.destination-detail-page .nearby-highlight .attraction-desc {
-    color: #3b4a5a;
-    opacity: 0.95;
-}
-
-.destination-detail-page .nearby-highlight .btn-text {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    padding: 0.4rem 0.9rem;
-    border-radius: 999px;
-    background: #00d26a;
-    color: #ffffff !important;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    box-shadow: 0 8px 18px rgba(0, 210, 106, 0.25);
-}
-
-.destination-detail-page .nearby-highlight .btn-text::after {
-    content: "→";
-    font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -2993,7 +3043,7 @@ nav.scrolled {
 
 .index-page .panel-icon {
     font-size: 1.5rem;
-    background: #f8fafc;
+    background: transparent;
     padding: 0.75rem;
     border-radius: 50%;
 }
@@ -3038,21 +3088,24 @@ nav.scrolled {
 }
 
 .index-page .status-best {
-    background: linear-gradient(135deg, #86efac 0%, #22c55e 100%);
-    color: #14532d;
-    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+    background: transparent;
+    color: #3f6212;
+    border: 1px solid #86efac;
+    box-shadow: none;
 }
 
 .index-page .status-good {
-    background: linear-gradient(135deg, #fde047 0%, #eab308 100%);
-    color: #713f12;
-    box-shadow: 0 2px 8px rgba(234, 179, 8, 0.3);
+    background: transparent;
+    color: #92400e;
+    border: 1px solid #fcd34d;
+    box-shadow: none;
 }
 
 .index-page .status-avoid {
-    background: linear-gradient(135deg, #fca5a5 0%, #ef4444 100%);
-    color: #7f1d1d;
-    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+    background: transparent;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
+    box-shadow: none;
 }
 
 .index-page .season-info h4 {
@@ -3128,8 +3181,8 @@ nav.scrolled {
 
 /* Card Styling */
 .card {
-    background: linear-gradient(135deg, #ffe4e6 0%, #dbeafe 100%);
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     border-radius: 1rem;
     overflow: hidden;
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
@@ -3356,7 +3409,7 @@ nav.scrolled {
     background: none !important;
     -webkit-text-fill-color: initial !important;
     color: var(--color-heading) !important;
-    border-left: 6px solid #FFD700;
+    border-left: 6px solid #94A3B8;
     padding-left: 1rem;
 }
 
@@ -3588,7 +3641,7 @@ nav.scrolled {
     }
 
     .hero-title {
-        font-size: clamp(2.2rem, 4vw, 3.5rem);
+        font-size: clamp(2.8rem, 5vw, 4.5rem);
     }
 
     .hero-subtitle {
@@ -3613,7 +3666,7 @@ nav.scrolled {
     }
 
     .container {
-        padding: 0 1.25rem;
+        padding: 0 1rem;
     }
 
     .grid-3 {
@@ -3680,7 +3733,7 @@ nav.scrolled {
 
     /* Hero Typography Fixes for Mobile */
     .hero-title {
-        font-size: clamp(2.5rem, 10vw, 3.5rem) !important;
+        font-size: clamp(2.8rem, 10vw, 3.8rem) !important;
         /* Reduced max size */
         margin-bottom: 0.5rem;
         white-space: normal;
@@ -3725,6 +3778,22 @@ nav.scrolled {
         max-width: 26ch;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    /* Index page hero: left-align on mobile, remove auto margins */
+    .index-page .hero-content {
+        padding: 1.5rem 0;
+    }
+
+    .index-page .hero-title {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+    .index-page .hero-subtitle {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .hero-desc {
@@ -4071,7 +4140,7 @@ nav.scrolled {
 .card-icon-circle {
     width: 60px;
     height: 60px;
-    background: #fff4ed;
+    background: #f8fafc;
     border-radius: 1.25rem;
     display: flex;
     align-items: center;
@@ -4087,10 +4156,10 @@ nav.scrolled {
 }
 
 .timeline-item {
-    background: #fafafa;
+    background: #ffffff;
     padding: 1.5rem;
     border-radius: 1.25rem;
-    border: 1px solid rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.06);
     position: relative;
     padding-left: 2rem;
 }
@@ -4156,7 +4225,7 @@ nav.scrolled {
 
 /* Stay/Accommodations Section */
 .stay-section {
-    background: #fafafa;
+    background: #ffffff;
 }
 
 .stay-grid {
@@ -4355,7 +4424,7 @@ nav.scrolled {
 .dev-banner::before {
     content: '●';
     margin-right: 8px;
-    color: #ffd700;
+    color: #E2E8F0;
     animation: pulse 2s infinite;
 }
 
@@ -4559,12 +4628,12 @@ nav,
 }
 
 .diversity-card {
-    background: #fafafa;
+    background: #ffffff;
     border-radius: 1.5rem;
     padding: 2rem 1rem;
     text-align: center;
     transition: var(--transition-base);
-    border: 1px solid transparent;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     cursor: default;
 }
 
@@ -4578,15 +4647,15 @@ nav,
 .diversity-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #FFF9E6 0%, #FFFDF5 100%);
+    background: #f8fafc;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 8px 20px rgba(194, 65, 12, 0.1);
-    border: 2px solid rgba(194, 65, 12, 0.1);
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.06);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -4637,7 +4706,7 @@ nav,
 
 /* Common Destination Styles */
 .editorial-container {
-    max-width: 1260px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -5121,16 +5190,17 @@ nav,
 /* Boxed Light Blue Footer Redesign */
 .footer-main {
     position: relative;
-    max-width: 1540px; /* Matching container width approx */
-    margin: 6rem auto 2rem !important; /* Boxed version, centered */
-    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%) !important;
-    color: #0c4a6e !important; /* Deep Blue text */
+    max-width: 100%;
+    margin: 6rem 0 0 !important;
+    background: #f8fafc !important;
+    color: #0c4a6e !important;
     padding: 4rem 2rem 2.5rem !important;
-    border-radius: 2.5rem !important;
-    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    border-radius: 0 !important;
+    border: none !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.06) !important;
     overflow: hidden;
     font-family: var(--font-body);
-    box-shadow: 0 20px 50px -10px rgba(0, 50, 100, 0.06) !important;
+    box-shadow: none !important;
 }
 
 .footer-watermark-bg {
@@ -5532,7 +5602,7 @@ nav,
 }
 
 .card-header {
-    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    background: #ffffff;
     padding: 1.25rem;
     display: flex;
     justify-content: space-between;
@@ -5740,39 +5810,47 @@ nav,
 }
 
 /* =========================================
-   PROJECT-WIDE BACKGROUND OVERRIDE
-   Light Blue -> Light Red
+   INDEX PAGE OVERRIDES
    ========================================= */
 
-:root {
-    --mesh-light-blue: #e0f2fe;
-    --mesh-light-red:  #ffe4e6;
-    
-    --vibrant-gradient: linear-gradient(135deg, var(--mesh-light-blue) 0%, var(--mesh-light-red) 100%);
+/* ---- Index page: destination cards — light blue glow ---- */
+.index-page .card {
+    border: 1px solid rgba(147, 197, 253, 0.55);
+    box-shadow:
+        0 0 0 3px rgba(147, 197, 253, 0.10),
+        0 4px 18px rgba(59, 130, 246, 0.07);
 }
 
-/* 1. Body Background */
-body {
-    background: var(--vibrant-gradient) fixed !important;
-    background-color: #ffffff !important;
-    color: #1e293b !important;
+.index-page .card:hover {
+    transform: translateY(-8px) scale(1.015);
+    border-color: rgba(59, 130, 246, 0.5);
+    box-shadow:
+        0 0 0 4px rgba(147, 197, 253, 0.20),
+        0 16px 40px rgba(59, 130, 246, 0.15);
 }
 
-/* 2. Transparency to reveal background */
-main, 
-section, 
-.section,
-.diversity-strip,
-.diversity-card,
-.dashboard-panel,
-.diversity-grid,
-.travel-dashboard,
-.stay-section,
-#culture,
-#destinations,
-#guide {
-    background: transparent !important;
-    background-color: transparent !important;
+.index-page .card-content {
+    background: #ffffff;
+}
+
+/* Tags */
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: #2563eb;
+    background: rgba(219, 234, 254, 0.7);
+    border: 1px solid rgba(147, 197, 253, 0.5);
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
 }
 
 /* 3. Hero Section: Show image while keeping background visible
@@ -5783,6 +5861,9 @@ section,
     position: relative;
     overflow: hidden;
     min-height: 75vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: clamp(2rem, 8vw, 8rem);
 }
 
 .index-page header.hero::before {
@@ -5796,29 +5877,94 @@ section,
     z-index: -1;
 }
 
-/* Add a soft overlay to the image to blend with background if needed, 
-   but user wants to SEE the image, so we keep it clear. */
-header.hero::after {
+/* Left-to-right gradient overlay for text legibility on left-aligned hero */
+.index-page header.hero::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+    background: linear-gradient(105deg,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0.38) 45%,
+        rgba(0, 0, 0, 0.08) 75%,
+        rgba(0, 0, 0, 0.0) 100%);
     z-index: 0;
     pointer-events: none;
 }
 
-/* 4. Glassmorphism for containers */
+/* Hero title on dark image: always white regardless of global gradient */
+.index-page .hero-title,
+.index-page .hero-title.metallic-luster {
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+    animation: none !important;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Transparent hero content — no background box */
+.index-page .hero-content {
+    background: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    text-align: left;
+    max-width: 680px;
+    padding: 2.5rem 0;
+}
+
+/* Decorative orange-gold accent bar above the title */
+.index-page .hero-content::before {
+    content: '';
+    display: block;
+    width: 3.5rem;
+    height: 4px;
+    background: linear-gradient(to right, #f97316, #fbbf24);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+}
+
+/* Elegant tagline style for index hero subtitle */
+.index-page .hero-subtitle {
+    font-size: 1.25rem !important;
+    text-transform: none !important;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.82) !important;
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Left-aligned description */
+.index-page .hero p.hero-desc {
+    margin: 0.5rem 0 2rem !important;
+    max-width: 560px;
+    font-size: 1rem !important;
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.78) !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-left: 2px solid rgba(251, 191, 36, 0.5);
+    padding-left: 0.9rem;
+    font-style: normal;
+}
+
+/* 4. Clean white for containers */
 .diversity-card, 
 .dashboard-panel, 
 .card-content, 
 .stay-grid > div,
 .highlight-card {
-    background: rgba(255, 255, 255, 0.6) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
-    backdrop-filter: blur(8px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    background: #ffffff !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.06) !important;
     border-radius: 1.5rem !important;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
 }
 
 /* 5. Navbar */
@@ -5936,5 +6082,22 @@ header.hero,
     
     .lightbox-content {
         max-width: 95%;
+    }
+}
+
+/* Mobile: reduce left padding on index hero */
+@media (max-width: 768px) {
+    .index-page header.hero {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .index-page .hero-content::before {
+        width: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .index-page .hero p.hero-desc {
+        font-size: 0.92rem !important;
     }
 }
