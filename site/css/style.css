@@ -1275,20 +1275,30 @@ nav.scrolled {
 }
 
 .crafts-page {
+    --craft-bg: #fff9f2;
+    --craft-ink: #1f2937;
+    --craft-accent: #0f766e;
+    --craft-chip: #fef3c7;
+    --craft-card: #ffffff;
+    --craft-line: rgba(15, 23, 42, 0.08);
     font-family: 'Manrope', 'Inter', sans-serif;
-    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.8), rgba(248, 250, 252, 0.9)), #f8fafc;
+    color: var(--craft-ink);
+    background: #ffffff;
 }
 
 .crafts-page .destination-hero {
     position: relative;
-    min-height: 55vh;
+    min-height: 62vh;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
 }
 
 .crafts-page .destination-hero::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(10, 10, 35, 0.2), rgba(10, 10, 35, 0.5));
+    background: none;
 }
 
 .crafts-page .hero-content-inner {
@@ -1296,27 +1306,121 @@ nav.scrolled {
     z-index: 1;
 }
 
+.crafts-page .shining-blue-text {
+    font-size: clamp(2.1rem, 4.8vw, 3.5rem);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.25rem;
+    display: block;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+}
+
+.crafts-page .destination-hero::before {
+    background: none !important;
+    display: none !important;
+}
+
+.crafts-page main {
+    text-align: left;
+}
+
+.crafts-page .container {
+    max-width: 100% !important;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.crafts-page .editorial-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.crafts-page .guide-section {
+    background: var(--craft-card);
+    border-radius: 1.35rem;
+    border: 1px solid var(--craft-line);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+    padding: 2.25rem;
+    margin-top: 2.25rem;
+}
+
+.crafts-page .guide-section:nth-of-type(1) {
+    background: #fff9e8;
+}
+
+.crafts-page .guide-section:nth-of-type(2) {
+    background: #eefcf3;
+}
+
+.crafts-page .guide-section:nth-of-type(3) {
+    background: #fff0f6;
+}
+
+.crafts-page .guide-section:nth-of-type(4) {
+    background: #fff6ea;
+}
+
+.crafts-page .guide-section:nth-of-type(5) {
+    background: #f3efff;
+}
+
+.crafts-page .guide-section:nth-of-type(6) {
+    background: #ecf6ff;
+}
+
+.crafts-page .guide-section:nth-of-type(7) {
+    background: #f0fbff;
+}
+
+.crafts-page .section-header {
+    margin-bottom: 1.8rem !important;
+    margin-top: 0 !important;
+    text-align: left;
+}
+
+.crafts-page .section-header h2,
+.crafts-page .heading-bright-blue {
+    display: inline-block;
+}
+
+.crafts-page .section-header p {
+    margin-top: 0.45rem !important;
+    color: #475569;
+}
+
+.crafts-page .lead-text {
+    font-size: 1.08rem;
+    line-height: 1.95;
+    color: #0f172a;
+    max-width: none;
+    width: 100%;
+}
+
 .crafts-page .grid-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     text-align: left;
 }
 
 .crafts-page .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
     text-align: left;
 }
 
 .crafts-page .attraction-card {
-    background: white;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    border-radius: 1.1rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -1326,189 +1430,265 @@ nav.scrolled {
 }
 
 .crafts-page .attraction-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+    border-color: rgba(15, 118, 110, 0.35);
+    box-shadow: 0 16px 34px rgba(15, 23, 42, 0.11);
 }
 
 .crafts-page .attraction-img-wrapper {
     overflow: hidden;
-    aspect-ratio: 4/3;
+    aspect-ratio: 4 / 3;
+    background: #ffffff;
 }
 
 .crafts-page .attraction-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 1.2s ease;
+    transition: transform 0.8s ease;
     cursor: zoom-in;
 }
 
 .crafts-page .attraction-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 .crafts-page .attraction-content {
-    padding: 1.5rem;
+    padding: 1.2rem 1.2rem 1.35rem;
     flex-grow: 1;
 }
 
 .crafts-page .attraction-tag {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-primary);
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    display: block;
+    letter-spacing: 0.11em;
+    color: #0f766e;
+    font-weight: 700;
+    margin-bottom: 0.55rem;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 999px;
+    padding: 0.33rem 0.62rem;
 }
 
 .crafts-page .attraction-title {
-    font-size: 1.35rem;
-    margin-bottom: 0.6rem;
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: 1.28rem;
+    margin-bottom: 0.52rem;
+    font-weight: 800;
+    line-height: 1.28;
+    color: #0f172a;
 }
 
 .crafts-page .attraction-desc {
-    font-size: 0.95rem;
-    opacity: 0.8;
-    line-height: 1.6;
-    color: var(--color-text);
-}
-
-.crafts-page .guide-section,
-.crafts-page .editorial-container,
-.crafts-page .section-header {
-    background: none;
-    padding: 0;
-    box-shadow: none;
-    border-radius: 0;
-}
-
-/* Removed specific override to allow global metallic style */
-.crafts-page .section-header h2,
-.crafts-page .heading-bright-blue {
-    display: inline-block; /* Keep layout if needed */
-}
-
-.crafts-page .section-header {
-    margin-bottom: 2.5rem !important;
-    margin-top: 0 !important;
-}
-
-.crafts-page .section-header p {
-    margin-top: 0.5rem !important;
-}
-
-/* Removed color !important overrides */
-
-.crafts-page .shining-blue-text {
-    font-size: clamp(2rem, 5vw, 3rem);
-    text-align: center;
-    margin-top: 1.8rem;
-    margin-bottom: 0;
-    display: block;
-    line-height: 1.15;
-}
-
-.crafts-page .destination-hero::before {
-    background: none !important;
-    display: none !important;
-}
-
-.crafts-page .lead-text {
-    font-size: 1.1rem;
-    line-height: 1.9;
-    color: #0f172a;
-    max-width: 900px;
+    font-size: 0.94rem;
+    line-height: 1.62;
+    color: #374151;
 }
 
 .crafts-page .editorial-note {
-    background-color: #fff7ed;
-    border-radius: 1.5rem;
-    padding: 2.5rem;
-    margin: 2rem 0;
+    background: #fff4e8;
+    border-radius: 1.2rem;
+    padding: 1.9rem;
+    margin: 0.3rem 0 0;
     text-align: left;
-    border: 1px solid rgba(249, 115, 22, 0.2);
-    box-shadow: 0 12px 24px rgba(249, 115, 22, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    box-shadow: 0 10px 24px rgba(245, 158, 11, 0.12);
 }
 
 .crafts-page .styled-list {
-    padding-left: 1.2rem;
-    margin-bottom: 1.5rem;
+    padding-left: 1.1rem;
+    margin-bottom: 0;
 }
 
 .crafts-page .styled-list li {
-    font-size: 0.95rem;
-    margin-bottom: 0.75rem;
-    color: #444;
-    line-height: 1.6;
+    font-size: 0.98rem;
+    margin-bottom: 0.85rem;
+    color: #334155;
+    line-height: 1.7;
 }
 
 .crafts-page .styled-list li strong {
-    color: #333;
-    border-bottom: 2px solid #E91E63;
+    color: #0f172a;
+    border-bottom: 2px solid rgba(244, 114, 182, 0.65);
     display: inline-block;
     line-height: 1.2;
     margin-right: 0.3rem;
 }
 
-.crafts-page main {
-    text-align: left;
-}
-
 @media (max-width: 768px) {
+    .crafts-page .destination-hero {
+        min-height: 46vh;
+        border-bottom-left-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+    }
+
     .crafts-page .editorial-container {
-        padding: 0 1rem;
+        padding: 0 0.9rem 3rem;
+    }
+
+    .crafts-page .container {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
+    .crafts-page .guide-section {
+        padding: 1.35rem;
+        margin-top: 1.4rem;
     }
 
     .crafts-page .editorial-note {
-        padding: 2rem 1.5rem;
+        padding: 1.25rem;
     }
 
     .crafts-page .grid-2,
     .crafts-page .grid-3 {
-        gap: 1.5rem;
-        padding-bottom: 1rem;
+        gap: 1rem;
     }
 
     .crafts-page .shining-blue-text {
-        font-size: 1.4rem;
-        margin-top: 1rem;
-        padding: 0 1rem;
+        font-size: 1.45rem;
+        margin-top: 1.1rem;
+        padding: 0 0.8rem;
     }
 
     .crafts-page .section-header h2,
     .crafts-page .heading-bright-blue {
-        font-size: 1.5rem !important;
+        font-size: 1.42rem !important;
     }
 }
 
 .destinations-page {
+    --dest-ink: #1f2937;
+    --dest-line: rgba(15, 23, 42, 0.08);
+    font-family: 'Manrope', 'Inter', sans-serif;
+    color: var(--dest-ink);
+    background:
+        radial-gradient(circle at 10% 15%, rgba(59, 130, 246, 0.14) 0, rgba(59, 130, 246, 0) 34%),
+        radial-gradient(circle at 88% 26%, rgba(20, 184, 166, 0.12) 0, rgba(20, 184, 166, 0) 36%),
+        linear-gradient(180deg, #f8fbff 0%, #fbfffe 58%, #ffffff 100%);
+}
+
+.destinations-page .destination-hero {
+    position: relative;
+    min-height: 60vh;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    overflow: hidden;
+}
+
+.destinations-page .destination-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, rgba(10, 25, 53, 0.16), rgba(10, 25, 53, 0.55)),
+        radial-gradient(circle at 78% 24%, rgba(56, 189, 248, 0.24), transparent 42%);
+}
+
+.destinations-page .destination-hero::before {
+    background: none !important;
+    display: none !important;
+}
+
+.destinations-page .container {
+    max-width: 100% !important;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.destinations-page .editorial-container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.destinations-page .shining-blue-text {
+    font-size: clamp(2rem, 4.6vw, 3.4rem);
+    text-align: center;
+    margin-top: 1.9rem;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+}
+
+.destinations-page main {
+    text-align: left;
+}
+
+.destinations-page .guide-section {
     background: #ffffff;
+    border-radius: 1.35rem;
+    border: 1px solid var(--dest-line);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.06);
+    padding: 2.2rem;
+    margin-top: 2.25rem !important;
+}
+
+.destinations-page .guide-section:nth-of-type(1) {
+    background: linear-gradient(135deg, #f8fbff, #ffffff);
+}
+
+.destinations-page .guide-section:nth-of-type(2),
+.destinations-page .guide-section:nth-of-type(4),
+.destinations-page .guide-section:nth-of-type(6) {
+    background: linear-gradient(135deg, #f0f9ff, #ffffff);
+}
+
+.destinations-page .guide-section:nth-of-type(3),
+.destinations-page .guide-section:nth-of-type(5),
+.destinations-page .guide-section:nth-of-type(7) {
+    background: linear-gradient(135deg, #f8fafc, #ffffff);
+}
+
+.destinations-page .section-header,
+.destinations-page .section-header h2,
+.destinations-page .heading-bright-blue {
+    text-align: left !important;
+    align-items: flex-start !important;
+}
+
+.destinations-page .section-header {
+    margin-bottom: 1.8rem !important;
+    margin-top: 0 !important;
+}
+
+.destinations-page .section-header p {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-top: 0.45rem !important;
+    color: #475569;
+}
+
+.destinations-page .lead-text {
+    font-size: 1.08rem;
+    line-height: 1.9;
+    color: #0f172a;
+    max-width: none;
+    width: 100%;
 }
 
 .destinations-page .grid-2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
     text-align: left;
 }
 
 .destinations-page .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
     text-align: left;
 }
 
 .destinations-page .attraction-card {
-    background: white;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    height: 100%;
+    background: #ffffff;
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    border-radius: 1.1rem;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -1518,44 +1698,45 @@ nav.scrolled {
 }
 
 .destinations-page .attraction-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-6px);
+    border-color: rgba(2, 132, 199, 0.35);
+    box-shadow: 0 16px 34px rgba(15, 23, 42, 0.11);
 }
 
 .destinations-page .attraction-img-wrapper {
     overflow: hidden;
-    aspect-ratio: 4/3;
+    aspect-ratio: 4 / 3;
+    background: #f8fafc;
 }
 
 .destinations-page .attraction-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 1.2s ease;
+    transition: transform 0.8s ease;
 }
 
 .destinations-page .attraction-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
 
 .destinations-page .attraction-content {
-    padding: 1.5rem;
+    padding: 1.2rem 1.2rem 1.35rem;
     flex-grow: 1;
 }
 
 .destinations-page .attraction-title {
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
-    color: var(--color-heading); /* Keep card title solid */
-    font-weight: 600;
-    line-height: 1.3;
+    font-size: 1.22rem;
+    margin-bottom: 0.52rem;
+    color: #0f172a;
+    font-weight: 800;
+    line-height: 1.28;
 }
 
 .destinations-page .attraction-desc {
-    font-size: 0.95rem;
-    opacity: 0.8;
-    line-height: 1.6;
-    color: var(--color-text);
+    font-size: 0.94rem;
+    line-height: 1.62;
+    color: #374151;
     display: -webkit-box;
     line-clamp: 3;
     -webkit-line-clamp: 3;
@@ -1563,68 +1744,41 @@ nav.scrolled {
     overflow: hidden;
 }
 
-.destinations-page .guide-section,
-.destinations-page .editorial-container,
-.destinations-page .section-header,
-.destinations-page .section-header h2,
-.destinations-page .heading-bright-blue {
-    text-align: left !important;
-    align-items: flex-start !important;
-}
-
-.destinations-page .section-header {
-    margin-bottom: 2.5rem !important;
-    margin-top: 0 !important;
-}
-
-.destinations-page .section-header p {
-    text-align: left !important;
-    margin-left: 0 !important;
-    margin-top: 0.5rem !important;
-}
-
-/* Removed redundant block */
-
-.destinations-page .destination-hero::before {
-    background: none !important;
-    display: none !important;
-}
-
-.destinations-page .lead-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444;
-    max-width: 900px;
-}
-
-.destinations-page main {
-    text-align: left;
-}
-
-.destinations-page .guide-section {
-    margin-top: 6rem !important;
-}
-
 @media (max-width: 768px) {
+    .destinations-page .destination-hero {
+        min-height: 46vh;
+        border-bottom-left-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+    }
+
+    .destinations-page .container {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+    }
+
     .destinations-page .editorial-container {
-        padding: 0 1rem;
+        padding: 0 0.9rem 3rem;
+    }
+
+    .destinations-page .guide-section {
+        padding: 1.35rem;
+        margin-top: 1.4rem !important;
     }
 
     .destinations-page .grid-2,
     .destinations-page .grid-3 {
-        gap: 1.5rem;
-        padding-bottom: 1rem;
+        gap: 1rem;
     }
 
     .destinations-page .shining-blue-text {
-        font-size: 1.4rem;
-        margin-top: 1rem;
-        padding: 0 1rem;
+        font-size: 1.45rem;
+        margin-top: 1.1rem;
+        padding: 0 0.8rem;
     }
 
     .destinations-page .section-header h2,
     .destinations-page .heading-bright-blue {
-        font-size: 1.5rem !important;
+        font-size: 1.42rem !important;
     }
 }
 
